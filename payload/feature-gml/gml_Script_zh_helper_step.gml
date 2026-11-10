@@ -21,9 +21,9 @@ if(zh_tap_wait>0){
  if(zh_tap_wait==0){
   var px=device_mouse_x_to_gui(0),py=device_mouse_y_to_gui(0);
   if(!global.zh_port_mode && px>=346 && px<384 && py>=2 && py<24 && zh_tap_x>=346 && zh_tap_y<24){panel=!panel;global.zh_input_cooldown=3;}
-  else if(panel && px>=62 && px<322 && py>=40 && py<172 && zh_tap_x>=62 && zh_tap_x<322 && zh_tap_y>=40 && zh_tap_y<172){
+  else if(panel && px>=62 && px<322 && py>=40 && py<172){
    var row=floor((py-40)/22);
-   if(row==floor((zh_tap_y-40)/22)){zh_choice=row;action=row;global.zh_input_cooldown=3;}
+   zh_choice=row;action=row;global.zh_input_cooldown=3;
   }
  }
 }
