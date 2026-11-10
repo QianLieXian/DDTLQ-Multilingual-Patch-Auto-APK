@@ -43,6 +43,7 @@ try {
     New-Item -ItemType Directory -Path $newDex -Force | Out-Null
     Copy-Item -LiteralPath (Join-Path $sourceDir 'Launcher.smali') -Destination (Join-Path $newDex 'Launcher.smali')
     Copy-Item -LiteralPath (Join-Path $sourceDir 'LauncherReady.smali') -Destination (Join-Path $newDex 'Launcher$Ready.smali')
+    Copy-Item -LiteralPath (Join-Path $sourceDir 'CrashApp.smali') -Destination (Join-Path $newDex 'CrashApp.smali')
     $embedded = Join-Path $stage 'assets\embedded'
     $ddtlq = Join-Path $stage 'assets\ddtlq'
     New-Item -ItemType Directory -Path $embedded,$ddtlq -Force | Out-Null
@@ -58,6 +59,7 @@ try {
     $oldPackage = $xml.manifest.package
     $xml.manifest.package = 'com.qianliexian.ddtlq.zh'
     $app = $xml.manifest.application
+    $app.SetAttribute('name',$ns,'com.qianliexian.ddtlq.CrashApp')
     $app.SetAttribute('label',$ns,'DDTLQ 汉化（测试版）')
     $app.SetAttribute('icon',$ns,'@drawable/ddtlq_icon')
     $app.SetAttribute('roundIcon',$ns,'@drawable/ddtlq_icon')
@@ -84,7 +86,7 @@ try {
     $xml.Save($manifestPath)
     $yamlPath=Join-Path $stage 'apktool.yml'
     $yaml=[IO.File]::ReadAllText($yamlPath)
-    $yaml=$yaml -replace 'versionCode: 32','versionCode: 2010403' -replace 'versionName: dev','versionName: 2.01.04-zh-r3'
+    $yaml=$yaml -replace 'versionCode: 32','versionCode: 2010404' -replace 'versionName: dev','versionName: 2.01.04-zh-r4-diagnostic'
     [IO.File]::WriteAllText($yamlPath,$yaml,(New-Object Text.UTF8Encoding($false)))
     $unsigned = Join-Path $nativeRoot 'DDTLQ-2.01.04-zh-port-unsigned.apk'
     & $java.FullName '-jar' $apktool 'b' $stage '-o' $unsigned >> (Join-Path $build 'apktool.log')

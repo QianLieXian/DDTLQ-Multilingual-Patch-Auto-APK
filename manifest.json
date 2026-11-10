@@ -1,5 +1,5 @@
 {
-  "version": "2.01.04-zh-r3",
+  "version": "2.01.04-zh-r4-diagnostic",
   "pc_data_sha256": "22109979ad640925cd32f1e6e6b557866f06b38464ce62ed61d9315d487338b8",
   "utmt": {
     "url": "https://github.com/UnderminersTeam/UndertaleModTool/releases/download/0.9.2.0/UTMT_CLI_v0.9.2.0-Windows.zip",
@@ -27,6 +27,10 @@
       "sha256": "89e6929273adc14cc07b64103ad62babdbf808fc486f4dec5de46c155f56e525"
     },
     {
+      "path": "android/CrashApp.smali",
+      "sha256": "4d310a35a2d9945e2d15d4398e4ae785e3de59ea54971b0718df7b136614ed22"
+    },
+    {
       "path": "android/ddtlq_icon.xml",
       "sha256": "ecd8ac6aed1bb3dae5eb01477adc2dcc1a950819a750f1d717c1a4a6862ca093"
     },
@@ -40,7 +44,7 @@
     },
     {
       "path": "android/Launcher.smali",
-      "sha256": "1ba078b85747b0d289e039d8e0790b9c8e8ebd754231a3422ca07a2eabcdfef1"
+      "sha256": "0e774c8123adca3ebe5b02e079a1c2514ef478fb4d7f4d8fa10b3d8dc569f62d"
     },
     {
       "path": "android/LauncherReady.smali",
@@ -52,7 +56,7 @@
     },
     {
       "path": "build_android.ps1",
-      "sha256": "33fecc7965e4962f1a979860ee6aa33d7caefbee6dc09c2c615d8e13383bcc0c"
+      "sha256": "e47010a77e4505dfee18495a856a01c5c1ac89e83fd11a8f03e71bf39ffafc66"
     },
     {
       "path": "common.ps1",
@@ -96,7 +100,7 @@
     },
     {
       "path": "payload/cjk-glyphs.json",
-      "sha256": "f365448694e3c70b7ebed9892eb7aa95b4f2fe0a0e2a95c0d99db4a452608547"
+      "sha256": "b4de3cec752b1b80abe46192d4df0d3218b6a6ba12d288cd555fe84cde68f082"
     },
     {
       "path": "payload/feature-gml/gml_Object_o_zh_tools_Create_0.gml",
@@ -280,7 +284,7 @@
     },
     {
       "path": "payload/ui10-glyphs.json",
-      "sha256": "15a0a634582afa9c1dc327dc14f0ce9694a760414c5d253dadead1f05924669e"
+      "sha256": "e8d013f5278ec7ee77370784e4bffcbd7a9660ae728b845fccc5a1d2ca44bc37"
     },
     {
       "path": "payload/wrapper-functions.json",

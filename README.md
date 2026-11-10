@@ -1,5 +1,7 @@
 # DDTLQ 2.01.04 简体中文补丁
 
+> r4 为启动诊断版，尚未确认解决安卓闪退。已补齐助手新增“辅”字，修正同大小数据的升级缓存问题，增加运行库预检和本地错误报告。启动页点击“查看／复制错误报告”可查看记录；底层崩溃不一定产生 Java 报告。报告不会自动上传。
+
 适用于《Doki Doki Tri-Line Quest》2.01.04 Beta。包含按语境翻译并校对的文本、中文字体、可选助手和本地安卓制作工具。仅发布补丁，不含原游戏、音频、CG 或完整 APK。
 
 从 [Releases](https://github.com/QianLieXian/DDTLQ-Chinese-Patch/releases) 下载补丁，解压到原 Windows 游戏目录。

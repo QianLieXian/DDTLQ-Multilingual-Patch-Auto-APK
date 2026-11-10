@@ -24,7 +24,7 @@
  invoke-virtual {v0,v1,v1,v1,v1},Landroid/widget/LinearLayout;->setPadding(IIII)V
  new-instance v1,Landroid/widget/TextView;
  invoke-direct {v1,p0},Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
- const-string v2,"DDTLQ 2.01.04 汉化"
+ const-string v2,"DDTLQ 2.01.04 汉化 r4 启动诊断"
  invoke-virtual {v1,v2},Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
  const/high16 v2,0x41c00000
  invoke-virtual {v1,v2},Landroid/widget/TextView;->setTextSize(F)V
@@ -56,7 +56,18 @@
  invoke-virtual {v1,p0},Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
  iput-object v1,p0,Lcom/qianliexian/ddtlq/Launcher;->manageButton:Landroid/widget/Button;
  invoke-virtual {v0,v1},Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
- invoke-virtual {p0,v0},Lcom/qianliexian/ddtlq/Launcher;->setContentView(Landroid/view/View;)V
+ new-instance v1,Landroid/widget/Button;
+ invoke-direct {v1,p0},Landroid/widget/Button;-><init>(Landroid/content/Context;)V
+ const/4 v2,0x3
+ invoke-virtual {v1,v2},Landroid/widget/Button;->setId(I)V
+ const-string v2,"查看／复制错误报告"
+ invoke-virtual {v1,v2},Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
+ invoke-virtual {v1,p0},Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+ invoke-virtual {v0,v1},Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+ new-instance v1,Landroid/widget/ScrollView;
+ invoke-direct {v1,p0},Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
+ invoke-virtual {v1,v0},Landroid/widget/ScrollView;->addView(Landroid/view/View;)V
+ invoke-virtual {p0,v1},Lcom/qianliexian/ddtlq/Launcher;->setContentView(Landroid/view/View;)V
  new-instance v0,Ljava/lang/Thread;
  invoke-direct {v0,p0},Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
  invoke-virtual {v0},Ljava/lang/Thread;->start()V
@@ -77,6 +88,10 @@
  int-to-long v1,v1
  invoke-virtual {p2},Ljava/io/File;->length()J
  move-result-wide v3
+ const-string v6,"embedded/data.win"
+ invoke-virtual {v6,p1},Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+ move-result v5
+ if-nez v5,:copy
  cmp-long v5,v1,v3
  if-nez v5,:copy
  invoke-virtual {v0},Ljava/io/InputStream;->close()V
@@ -158,16 +173,19 @@
  const-string v2,"ddtlq/full-save.ini"
  invoke-direct {p0,v2,v1},Lcom/qianliexian/ddtlq/Launcher;->copyAsset(Ljava/lang/String;Ljava/io/File;)V
  :save_done
+ const-string v1,"net.perfectdreams.butterscotch.android.ButterscotchNative"
+ invoke-static {v1},Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
  new-instance v1,Lcom/qianliexian/ddtlq/Launcher$Ready;
  const/4 v2,0x0
  invoke-direct {v1,p0,v2},Lcom/qianliexian/ddtlq/Launcher$Ready;-><init>(Lcom/qianliexian/ddtlq/Launcher;Ljava/lang/String;)V
  invoke-virtual {p0,v1},Lcom/qianliexian/ddtlq/Launcher;->runOnUiThread(Ljava/lang/Runnable;)V
  :try_end
- .catch Ljava/lang/Exception; {:try_start .. :try_end} :failed
+ .catch Ljava/lang/Throwable; {:try_start .. :try_end} :failed
  return-void
  :failed
  move-exception v0
- invoke-virtual {v0},Ljava/lang/Exception;->toString()Ljava/lang/String;
+ invoke-static {p0,v0},Lcom/qianliexian/ddtlq/CrashApp;->record(Landroid/content/Context;Ljava/lang/Throwable;)V
+ invoke-virtual {v0},Ljava/lang/Throwable;->toString()Ljava/lang/String;
  move-result-object v0
  new-instance v1,Lcom/qianliexian/ddtlq/Launcher$Ready;
  invoke-direct {v1,p0,v0},Lcom/qianliexian/ddtlq/Launcher$Ready;-><init>(Lcom/qianliexian/ddtlq/Launcher;Ljava/lang/String;)V
@@ -179,7 +197,7 @@
  .locals 2
  iget-object v0,p0,Lcom/qianliexian/ddtlq/Launcher;->status:Landroid/widget/TextView;
  if-nez p1,:error
- const-string v1,"左侧摇杆移动；确认、返回、暂停均可触控。游戏右上角“助手”提供画廊、金币和回血开关。安卓移植为测试版。"
+ const-string v1,"左侧摇杆移动；确认、返回、暂停均可触控。上方中央“助手”提供图鉴、画廊及资源开关。此版修正字库并记录启动异常，尚未确认解决手机闪退。"
  invoke-virtual {v0,v1},Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
  const/4 v1,0x1
  iget-object v0,p0,Lcom/qianliexian/ddtlq/Launcher;->startButton:Landroid/widget/Button;
@@ -196,6 +214,22 @@
  .locals 4
  invoke-virtual {p1},Landroid/view/View;->getId()I
  move-result v0
+ const/4 v1,0x3
+ if-ne v0,v1,:normal_click
+ invoke-static {p0},Lcom/qianliexian/ddtlq/CrashApp;->report(Landroid/content/Context;)Ljava/lang/String;
+ move-result-object v0
+ iget-object v1,p0,Lcom/qianliexian/ddtlq/Launcher;->status:Landroid/widget/TextView;
+ invoke-virtual {v1,v0},Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+ const-string v1,"clipboard"
+ invoke-virtual {p0,v1},Lcom/qianliexian/ddtlq/Launcher;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+ move-result-object v1
+ check-cast v1,Landroid/content/ClipboardManager;
+ const-string v2,"DDTLQ 启动日志"
+ invoke-static {v2,v0},Landroid/content/ClipData;->newPlainText(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Landroid/content/ClipData;
+ move-result-object v2
+ invoke-virtual {v1,v2},Landroid/content/ClipboardManager;->setPrimaryClip(Landroid/content/ClipData;)V
+ return-void
+ :normal_click
  const/4 v1,0x1
  if-ne v0,v1,:manage
  const-string v0,"net.perfectdreams.butterscotch.android.GameActivity"
