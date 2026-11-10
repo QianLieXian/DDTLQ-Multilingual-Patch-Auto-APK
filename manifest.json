@@ -1,0 +1,306 @@
+{
+  "version": "2.01.04-zh-r3",
+  "pc_data_sha256": "22109979ad640925cd32f1e6e6b557866f06b38464ce62ed61d9315d487338b8",
+  "utmt": {
+    "url": "https://github.com/UnderminersTeam/UndertaleModTool/releases/download/0.9.2.0/UTMT_CLI_v0.9.2.0-Windows.zip",
+    "sha256": "e7573e45d107be34f81f955c6e4afc3c7c8f2628e5a6f307a871e3825b3dfb40"
+  },
+  "apktool": {
+    "url": "https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar",
+    "sha256": "dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423"
+  },
+  "open_runner": {
+    "url": "https://nightly.link/ButterscotchRunner/Butterscotch/actions/artifacts/13538733114.zip",
+    "sha256": "add7d25291a7de0667fb3827f96040e9941d8bbaf522038c1fa342074fdc33c0"
+  },
+  "java": {
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_x64_windows_hotspot_17.0.20.1_1.zip",
+    "sha256": "bc21a93923103cdaac93ee337b0ae4365e739fde36df823dd456bc67c8a9d352"
+  },
+  "signer": {
+    "url": "https://github.com/patrickfav/uber-apk-signer/releases/download/v1.3.0/uber-apk-signer-1.3.0.jar",
+    "sha256": "e1299fd6fcf4da527dd53735b56127e8ea922a321128123b9c32d619bba1d835"
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "89e6929273adc14cc07b64103ad62babdbf808fc486f4dec5de46c155f56e525"
+    },
+    {
+      "path": "android/ddtlq_icon.xml",
+      "sha256": "ecd8ac6aed1bb3dae5eb01477adc2dcc1a950819a750f1d717c1a4a6862ca093"
+    },
+    {
+      "path": "android/default_landscape.json",
+      "sha256": "75bb2041ea146e6dbde39e400302ebb5f5fe31d3f04752a8ad354e4e04916953"
+    },
+    {
+      "path": "android/default_portrait.json",
+      "sha256": "980032ad8e4c9fcf3b06d335cb8ddfed77c4abec5c07128f1d5daf0e7d333b87"
+    },
+    {
+      "path": "android/Launcher.smali",
+      "sha256": "1ba078b85747b0d289e039d8e0790b9c8e8ebd754231a3422ca07a2eabcdfef1"
+    },
+    {
+      "path": "android/LauncherReady.smali",
+      "sha256": "245a0067233124fe19c8d48673215a3462555be78031063ad7149139b976dc9a"
+    },
+    {
+      "path": "android/library.json",
+      "sha256": "e79792ae5ed40e8672ee9dcb04941a47165b50f257f400376e2da32e1e113bf0"
+    },
+    {
+      "path": "build_android.ps1",
+      "sha256": "33fecc7965e4962f1a979860ee6aa33d7caefbee6dc09c2c615d8e13383bcc0c"
+    },
+    {
+      "path": "common.ps1",
+      "sha256": "6617570f94d3748c799b80d5cb0ecee3b932befe90c809e22699282198e43a29"
+    },
+    {
+      "path": "import_save.ps1",
+      "sha256": "436bffa019042e25b8d4e35fd56c5e8e1224ca2e277987a4a1ba8c1d0defa8c4"
+    },
+    {
+      "path": "licenses/Butterscotch-AGPL-3.0.txt",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "path": "licenses/fusion-pixel-components/ark-pixel/OFL.txt",
+      "sha256": "3ab41567e68e3988ba1ef16dd2644eca95ca5648ea12e7d46e6287fc0bbe5aee"
+    },
+    {
+      "path": "licenses/fusion-pixel-components/cubic-11/OFL.txt",
+      "sha256": "2b6e5938e5cffa0b9e183bd05f8c363e174e7ebed1a0556e2855fd1707fa2188"
+    },
+    {
+      "path": "licenses/fusion-pixel-components/galmuri/LICENSE.txt",
+      "sha256": "86a3ee9495f942f0243f18c103da9faca27adb88142613edb8bb852e56c892c1"
+    },
+    {
+      "path": "licenses/Fusion-Pixel-OFL.txt",
+      "sha256": "bc518cf64b8032c07690f33cc270c35c179255a6ac8efa7c165ebae7e8f76a63"
+    },
+    {
+      "path": "licenses/NOTICE.txt",
+      "sha256": "c24c8085516951de7194fc615d277649d6f3f98ae374dbe1e7e41575fa872157"
+    },
+    {
+      "path": "patch_original_apk.ps1",
+      "sha256": "56603c916bc2c7d513b3bbff11b41169d9c33a9a9f528c329c9a690447791ae5"
+    },
+    {
+      "path": "patch_pc.ps1",
+      "sha256": "19af5b088a84ec1f56f7d1741c542964d58be5628221a8340439ee4ae35468d6"
+    },
+    {
+      "path": "payload/cjk-glyphs.json",
+      "sha256": "f365448694e3c70b7ebed9892eb7aa95b4f2fe0a0e2a95c0d99db4a452608547"
+    },
+    {
+      "path": "payload/feature-gml/gml_Object_o_zh_tools_Create_0.gml",
+      "sha256": "29f74ab4572c5a8baafe651615451dbe2c43abebeb00c4db5b24317b19a71952"
+    },
+    {
+      "path": "payload/feature-gml/gml_Object_o_zh_tools_Draw_64.gml",
+      "sha256": "0fa6361c44901efd4218a7829bc11ec93fa5db51127364f06c665356c65c72de"
+    },
+    {
+      "path": "payload/feature-gml/gml_Object_o_zh_tools_Step_0.gml",
+      "sha256": "2433d70e88a132b327d269deab938199b1d776591bb8199ab6558866733f1e86"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_controls.gml",
+      "sha256": "5435b9a5decb41e6ef3f44d36929c7e2486a42323fd29dbd215f07aea825c603"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_display.gml",
+      "sha256": "a04919429cecf73c5a46d8a676a34caeea9d4286dc079d502319c071c4d78e88"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_draw_text.gml",
+      "sha256": "c196c5a5d0018566b4ab793db037afccce2f3ffc2bf635c2718cb6045333e839"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_draw_text_color.gml",
+      "sha256": "de0551e9976d1404eb0ad66a6f293b967d98948573758e040dde7910ff56bb74"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_draw_text_ext.gml",
+      "sha256": "3fb34412988c070521566cd6615c7744c68d1c0bf45db3d0ec1655bc6c0d251e"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_draw_text_ext_color.gml",
+      "sha256": "7573cc1ad20d4ff9d79dab9641945cb3a8bfb26b70ef694a8ad2bb891ff6304d"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_draw_text_ext_transformed.gml",
+      "sha256": "d9484979df6dfbfe1fa085be7424bd418ee4542485d944aa5a0073b2998a8979"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_draw_text_ext_transformed_color.gml",
+      "sha256": "8aa12ba6d4766e1ef9d6a11bf4e3e30d32ca99f0fa6ee8f31cc9e0d6ebdacba9"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_draw_text_transformed.gml",
+      "sha256": "1007f4443312a6f30586f2425978924bb2c53c1725956aac6bf2841e47c532ab"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_draw_text_transformed_color.gml",
+      "sha256": "53a4ef4eece5b6b9d31a51a0c8a5e48b9159599cd8e37e427bf720d0574749a7"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_equipment_name.gml",
+      "sha256": "733c1ce853429611aeaa376a121ffeb21daf41a0bacfb2d7f0deca5b70b4b109"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_full_save.gml",
+      "sha256": "7c7359eeb1590b59951b395c7ed38b18d11ddb7d44a8ff02c8bc75af96098576"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_helper_step.gml",
+      "sha256": "1578f594dbe88ca8696bd6a9dae3c8493e529e1135df8748d364d9759c259155"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_keyboard_check.gml",
+      "sha256": "126fc8b2b40e83fa209f2c106fa58f9f6308e7f898ddeae2d1c10a982aab1128"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_keyboard_check_pressed.gml",
+      "sha256": "b6ae34d51269d73b57a6c3979fbe201fe625dd57b36287078ab55c3813065604"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_mouse_check_button.gml",
+      "sha256": "fae942f76acdcce1f61cd744d2b8f233a85dd07f2a20878c900bbc81554aa183"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_mouse_check_button_pressed.gml",
+      "sha256": "04811d60e62af095794c272f4032754f0edc1b44b114e708d217aee623ab09d1"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_mouse_check_button_released.gml",
+      "sha256": "41095bb41600f8b0b6b7dfe4bf9f7b0ba55d6845f243ed76ebcf050fcd98384a"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_register.gml",
+      "sha256": "df7b99abe75d6989a4768fe4a062c99ecb07bf86e804994549afe7b3d189c141"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_repair_equipment.gml",
+      "sha256": "b38f6726c1f996fa815c8e76506cea1049e79e76d6b49db1ed46d5a9569d29b1"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_safe_spawn.gml",
+      "sha256": "1b992656f9c42cdd13d0aef1a6676a70cc4f4d5b29cb1c6169e97741ef437be0"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_settings_save.gml",
+      "sha256": "53294e9d40e7ce0246632a883748f6165eadac175ba94eb572937f726441e7ce"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_string_height_ext.gml",
+      "sha256": "eba2866695f86ab341ec9ad0d57105e3c6ea6ddda9300bcaea4769f8fdab9436"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_wrap.gml",
+      "sha256": "bb0a374006106fdc8c182cd439cc79e7e8128851c7feede38c735b0953860e90"
+    },
+    {
+      "path": "payload/patch-features.csx",
+      "sha256": "89f54cfb4d23bed1c187109fb054f00add412bb2bf1c9f7cfce327c47fd5ad68"
+    },
+    {
+      "path": "payload/patch-font.csx",
+      "sha256": "726a28ce4a0c0f40338fa55956213ac9fe59f54f21fa21073ca483f1c45c2b0e"
+    },
+    {
+      "path": "payload/patch-port.csx",
+      "sha256": "f745f6a9c597357542045369eae11e97d8d8f48bb0ed37164b6525fd11fe1281"
+    },
+    {
+      "path": "payload/patch-strings.csx",
+      "sha256": "2974ba11efbb1b2fbb31353af9b2c4ca63901016be6397fb5c48826919ab6fae"
+    },
+    {
+      "path": "payload/port-functions.json",
+      "sha256": "35e5620d647174a797468f00b50166ef42c8344f22df3379d5dfb2b19a941a5a"
+    },
+    {
+      "path": "payload/port-gml/gml_Script_zh_port_device_mouse_check_button_pressed.gml",
+      "sha256": "b7bdc426c544fbbe4fd9e0ff700036cb3625a0561c73433ca695cf0c1ef9ce90"
+    },
+    {
+      "path": "payload/port-gml/gml_Script_zh_port_device_mouse_check_button_released.gml",
+      "sha256": "882417c5f43ec7ce1e0d11acf59a3282e66e88abd468bc6c06d1c0fe1f1b7392"
+    },
+    {
+      "path": "payload/port-gml/gml_Script_zh_port_device_mouse_x_to_gui.gml",
+      "sha256": "14a999a14dff139016a896a206a7af43e1678ba5c68e05aca51444eed51dd32d"
+    },
+    {
+      "path": "payload/port-gml/gml_Script_zh_port_device_mouse_y_to_gui.gml",
+      "sha256": "73f7e982aed208b9a76dc32b0264c7baae924066e576f08f87577893dcc4d0f9"
+    },
+    {
+      "path": "payload/port-gml/gml_Script_zh_port_ds_grid_add.gml",
+      "sha256": "a680f5b9d05c6bef2c6221e6c49de98d4a464bc4e5b168be15ec2523e80903a8"
+    },
+    {
+      "path": "payload/port-gml/gml_Script_zh_port_ds_grid_clear.gml",
+      "sha256": "ca61d5ae211ed9a1766f8b5c70e57e7e8c9b2c5963b9bac09ee7901b610ae807"
+    },
+    {
+      "path": "payload/port-gml/gml_Script_zh_port_ds_grid_value_exists.gml",
+      "sha256": "410f06491846c131b80f80b068076b94435ba8258c33cb3182cf94914bac5adf"
+    },
+    {
+      "path": "payload/port-gml/gml_Script_zh_port_point_in_triangle.gml",
+      "sha256": "ee55edcccbb3eee6f7b327cccc104a1e83c8684ef845e1d848a4ffab9e7c64ca"
+    },
+    {
+      "path": "payload/port-gml/gml_Script_zh_port_register.gml",
+      "sha256": "8f84bc6adf0a64aace112d9c7923c38062547831a99006b0f5c328c8e66c3219"
+    },
+    {
+      "path": "payload/port-gml/gml_Script_zh_port_show_message.gml",
+      "sha256": "e67eabf5f5f7c4f60fa05d165470b07b7dcbcd775a8728b26b8c4de775378f05"
+    },
+    {
+      "path": "payload/port-gml/gml_Script_zh_port_url_open.gml",
+      "sha256": "1191f6bf154cb97401640cad16d7b6a0debc97751734c3d1cc7f7ec811476d04"
+    },
+    {
+      "path": "payload/translations.json",
+      "sha256": "52116bb3ab8eb85673ba66f1a7e158ff9f7816788332830f0a7e604aaa45a270"
+    },
+    {
+      "path": "payload/ui10-glyphs.json",
+      "sha256": "15a0a634582afa9c1dc327dc14f0ce9694a760414c5d253dadead1f05924669e"
+    },
+    {
+      "path": "payload/wrapper-functions.json",
+      "sha256": "bd9e8249b5126df6299d1f03b7088ecf06fe9442b27de5eb7f10a84cca025b4b"
+    },
+    {
+      "path": "saves/Memory Quartz Line 99.ini",
+      "sha256": "67d6c3ff1d08b990e7c2a34a38f8538684934b545cda90fafad484b9700ffe0c"
+    },
+    {
+      "path": "一键制作安卓APK.bat",
+      "sha256": "39b72ffcb767a6830c2f76dbd700b8e82ab1263120d2d4008f315d63cf1bb841"
+    },
+    {
+      "path": "一键汉化Windows.bat",
+      "sha256": "a461537988dd90a1fcaa908740b7b5dd0ff2e910c089cef58e7a1545d4625bf4"
+    },
+    {
+      "path": "原版安卓APK汉化.bat",
+      "sha256": "58a60c3f309d8227b84819ac6e7a8db595486de5e6bcfe4d6c64de5c98b1081e"
+    },
+    {
+      "path": "导入任务存档并全开画廊.bat",
+      "sha256": "c554b603745887895a8d6c437ef35d6242c889fbfb54551de06a4e60900e7bf8"
+    }
+  ]
+}

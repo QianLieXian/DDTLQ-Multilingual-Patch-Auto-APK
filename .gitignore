@@ -1,0 +1,8 @@
+tools/
+output/
+payload/applied-strings.json
+*.apk
+*.win
+*.dat
+*.exe
+*.download
