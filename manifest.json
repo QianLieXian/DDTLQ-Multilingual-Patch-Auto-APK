@@ -60,7 +60,7 @@
     },
     {
       "path": "import_save.ps1",
-      "sha256": "436bffa019042e25b8d4e35fd56c5e8e1224ca2e277987a4a1ba8c1d0defa8c4"
+      "sha256": "a57424f564008385d047522467f810e357afcb41707edd6863e54e59979af5ed"
     },
     {
       "path": "licenses/Butterscotch-AGPL-3.0.txt",
@@ -84,7 +84,7 @@
     },
     {
       "path": "licenses/NOTICE.txt",
-      "sha256": "c24c8085516951de7194fc615d277649d6f3f98ae374dbe1e7e41575fa872157"
+      "sha256": "3df499c3401cde9ebf84644398e67e45c804eb672e572b1960616bb212fce6f0"
     },
     {
       "path": "patch_original_apk.ps1",
@@ -100,11 +100,11 @@
     },
     {
       "path": "payload/feature-gml/gml_Object_o_zh_tools_Create_0.gml",
-      "sha256": "29f74ab4572c5a8baafe651615451dbe2c43abebeb00c4db5b24317b19a71952"
+      "sha256": "085a732eae987905091cbf3d19145dc5b034cde4fe473899431c13b2230860de"
     },
     {
       "path": "payload/feature-gml/gml_Object_o_zh_tools_Draw_64.gml",
-      "sha256": "0fa6361c44901efd4218a7829bc11ec93fa5db51127364f06c665356c65c72de"
+      "sha256": "03bf7fa1c4eaf1e53432069800143a7e74ae221f425b0227ae451889c10ec796"
     },
     {
       "path": "payload/feature-gml/gml_Object_o_zh_tools_Step_0.gml",
@@ -156,11 +156,11 @@
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_full_save.gml",
-      "sha256": "7c7359eeb1590b59951b395c7ed38b18d11ddb7d44a8ff02c8bc75af96098576"
+      "sha256": "c04514a3db9c8b831e84b8755ce067c5b2ef3d9810466348be96c138a77a5c1d"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_helper_step.gml",
-      "sha256": "1002753ae59e8a0140300d55925bd98ad1d6615278717c30805bd7e99d7168a8"
+      "sha256": "0f9335faadbcfb62b8c7a28b8aaa94f0a82664e04ccc98e976a8437a58d22fa4"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_keyboard_check.gml",
@@ -169,6 +169,10 @@
     {
       "path": "payload/feature-gml/gml_Script_zh_keyboard_check_pressed.gml",
       "sha256": "b6ae34d51269d73b57a6c3979fbe201fe625dd57b36287078ab55c3813065604"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_migrate_synthetic_save.gml",
+      "sha256": "9035a2d81e978d272f9bf9e88bafc8d3485850637eb78283c154f42f4a50c088"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_mouse_check_button.gml",
@@ -184,7 +188,7 @@
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_register.gml",
-      "sha256": "df7b99abe75d6989a4768fe4a062c99ecb07bf86e804994549afe7b3d189c141"
+      "sha256": "3923dedc4a6577dd438355fee7c58d726a6b8785167e3453649159615b25bb8a"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_repair_equipment.gml",
@@ -196,7 +200,7 @@
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_settings_save.gml",
-      "sha256": "53294e9d40e7ce0246632a883748f6165eadac175ba94eb572937f726441e7ce"
+      "sha256": "9ef8a89e53e3ebbccae8f6453e98982e57bda933618aa02b1ef5f70af1db706d"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_string_height_ext.gml",
@@ -208,7 +212,7 @@
     },
     {
       "path": "payload/patch-features.csx",
-      "sha256": "89f54cfb4d23bed1c187109fb054f00add412bb2bf1c9f7cfce327c47fd5ad68"
+      "sha256": "160f89b52f04d68420303d549ac3d411947bd1ce788f8967cd31a10779f3d747"
     },
     {
       "path": "payload/patch-font.csx",
@@ -284,7 +288,7 @@
     },
     {
       "path": "saves/Memory Quartz Line 99.ini",
-      "sha256": "67d6c3ff1d08b990e7c2a34a38f8538684934b545cda90fafad484b9700ffe0c"
+      "sha256": "2a7b73d934708e005276a7c13f2b60e3515275de9c6f1ddd66bbdaf8d61d9566"
     },
     {
       "path": "一键制作安卓APK.bat",
@@ -299,7 +303,7 @@
       "sha256": "58a60c3f309d8227b84819ac6e7a8db595486de5e6bcfe4d6c64de5c98b1081e"
     },
     {
-      "path": "导入任务存档并全开画廊.bat",
+      "path": "导入城镇辅助存档.bat",
       "sha256": "c554b603745887895a8d6c437ef35d6242c889fbfb54551de06a4e60900e7bf8"
     }
   ]

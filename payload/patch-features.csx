@@ -30,6 +30,15 @@ import.QueueFindReplace("gml_Object_o_brain_dressup_Draw_64","var next_int = str
 import.QueueFindReplace("gml_Object_o_brain_dressup_Draw_64","var next_int2 = string_width(\"Piercing \");","var next_int2 = max(26, string_width(\"Piercing \") + 6);",true);
 import.QueueFindReplace("gml_Object_o_brain_Draw_64","var space = 5;","var space = 6;",true);
 foreach(var code in new[]{"gml_Object_o_start_menu_Draw_64","gml_Object_o_brain_dressup_Draw_64"})import.QueueFindReplace(code,controlsOriginal,"zh_controls(index);",true);
+
+// Display-only unlock: never mark enemies defeated or modify plot flags.
+foreach(var code in new[]{"gml_Object_o_brain_dressup_Step_0","gml_Object_o_brain_dressup_Draw_64"})import.QueueFindReplace(code,"var ntw = enemy_index(80085, 0);","var ntw = 65;",true);
+import.QueueFindReplace("gml_Object_o_brain_dressup_Step_0","var wp = waifu_page * 12;","if(index + waifu_page*12 >= 65){if(key_down_prs){index=0;waifu_page=0;}else index=max(0,64-waifu_page*12);} var wp = waifu_page * 12;",true);
+import.QueueFindReplace("gml_Object_o_brain_dressup_Step_0","global.waifu[index + wp] == 1","(index + wp < 65 && (global.zh_dex || global.waifu[index + wp] == 1))",true);
+import.QueueFindReplace("gml_Object_o_brain_dressup_Step_0","global.waifu[i + wp] == 1","(i + wp < 65 && (global.zh_dex || global.waifu[i + wp] == 1))",true);
+import.QueueFindReplace("gml_Object_o_brain_dressup_Step_0","waif_text[i] = \"????\";","waif_text[i] = (i+wp>=65) ? \"\" : \"????\";",true);
+foreach(var pair in new[]{new[]{"\"Strong against : \" + strong","\"Strong against : \" + zh_display(strong)"},new[]{"\"Weak against : \" + weak","\"Weak against : \" + zh_display(weak)"},new[]{"\"Name : \" + waif_text[index]","\"Name : \" + zh_display(waif_text[index])"},new[]{"\"Weak against : \" + str_wk","\"Weak against : \" + zh_display(str_wk)"},new[]{"\"Afinnity : \" + str_aff","\"Afinnity : \" + zh_display(str_aff)"}})import.QueueFindReplace("gml_Object_o_brain_dressup_Draw_64",pair[0],pair[1],true);
+import.QueueAppend("gml_Script_scr_load_game","\nzh_migrate_synthetic_save(argument0);\n");
 var result=import.Import();if(!result.Successful)throw new Exception(result.PrintAllErrors(true));
 // Redirect only the original calls; wrappers keep their original built-in targets.
 var wrapperNames=JsonDocument.Parse(File.ReadAllText(Path.Combine(featureRoot,"wrapper-functions.json"))).RootElement;

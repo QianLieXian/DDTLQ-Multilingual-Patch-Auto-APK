@@ -1,6 +1,6 @@
 字体使用 Fusion Pixel Font 2026.10.25 的 10px / 12px 简体中文字形，Copyright (c) 2022 TakWolf，遵循 SIL OFL 1.1，组件许可见本目录。
 源代码与原字体：https://github.com/TakWolf/fusion-pixel-font
-安卓移植使用 Butterscotch 开源运行组件（AGPL-3.0），完整上游源码：https://github.com/ButterscotchRunner/Butterscotch
+安卓移植使用 Butterscotch 开源运行组件（AGPL-3.0），完整上游源码：https://github.com/ButterscotchRunner/Butterscotch/tree/ec4fc0b0a3669b7ea36e8e37ed94de16f96d1624
 运行组件构建：https://github.com/ButterscotchRunner/Butterscotch/actions/runs/42289035133
 UndertaleModTool：https://github.com/UnderminersTeam/UndertaleModTool （GPL-3.0，仅自动下载调用，不随补丁分发二进制）
 Apktool：https://github.com/iBotPeaches/Apktool （Apache-2.0，仅自动下载调用）

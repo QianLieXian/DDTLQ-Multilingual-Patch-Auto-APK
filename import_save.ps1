@@ -15,7 +15,8 @@ try {
     if(Test-Path -LiteralPath $helper){
         $text=[IO.File]::ReadAllText($helper)
         if($text -match '(?m)^Gallery='){$text=$text -replace '(?m)^Gallery=.*$','Gallery=1'}else{$text+="`r`n[Helper]`r`nGallery=1`r`n"}
-    }else{$text="[Helper]`r`nGallery=1`r`nRecovery=0`r`nDebug=0`r`n"}
+    }else{$text="[Helper]`r`nGallery=1`r`nRecovery=0`r`nDebug=0`r`nDex=1`r`n"}
+    if($text -match '(?m)^Dex\s*='){$text=$text -replace '(?m)^Dex\s*=.*$','Dex=1'}else{$text=$text -replace '(?m)^\[Helper\]\s*$',('[Helper]'+"`r`nDex=1")}
     [IO.File]::WriteAllText($helper,$text,(New-Object Text.UTF8Encoding($false)))
     Write-Host '已导入。原存档已另存 backup 文件。启动游戏选择读取存档即可。' -ForegroundColor Green
     exit 0

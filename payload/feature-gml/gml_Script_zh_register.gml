@@ -12,3 +12,5 @@ zh_keyboard_check_pressed(0);
 
 zh_mouse_check_button(0);zh_mouse_check_button_pressed(0);zh_mouse_check_button_released(0);
 zh_repair_equipment();zh_equipment_name(0);
+
+zh_migrate_synthetic_save(99);
