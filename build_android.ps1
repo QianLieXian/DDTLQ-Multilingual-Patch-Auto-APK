@@ -60,7 +60,7 @@ try {
     $xml.manifest.package = 'com.qianliexian.ddtlq.zh'
     $app = $xml.manifest.application
     $app.SetAttribute('name',$ns,'com.qianliexian.ddtlq.CrashApp')
-    $app.SetAttribute('label',$ns,'DDTLQ 汉化（测试版）')
+    $app.SetAttribute('label',$ns,'DDTLQ 汉化')
     $app.SetAttribute('icon',$ns,'@drawable/ddtlq_icon')
     $app.SetAttribute('roundIcon',$ns,'@drawable/ddtlq_icon')
     $app.SetAttribute('extractNativeLibs',$ns,'true')
@@ -86,7 +86,7 @@ try {
     $xml.Save($manifestPath)
     $yamlPath=Join-Path $stage 'apktool.yml'
     $yaml=[IO.File]::ReadAllText($yamlPath)
-    $yaml=$yaml -replace 'versionCode: 32','versionCode: 2010404' -replace 'versionName: dev','versionName: 2.01.04-zh-r4-diagnostic'
+    $yaml=$yaml -replace 'versionCode: 32','versionCode: 2010405' -replace 'versionName: dev','versionName: 2.01.04-zh-r5'
     [IO.File]::WriteAllText($yamlPath,$yaml,(New-Object Text.UTF8Encoding($false)))
     $unsigned = Join-Path $nativeRoot 'DDTLQ-2.01.04-zh-port-unsigned.apk'
     & $java.FullName '-jar' $apktool 'b' $stage '-o' $unsigned >> (Join-Path $build 'apktool.log')
@@ -100,12 +100,12 @@ try {
     if ($signed.Count -ne 1) { throw '没有找到唯一的签名成品。' }
     & $java.FullName '-jar' $signer '-a' $signed[0].FullName '-y' >> (Join-Path $build 'sign.log')
     if ($LASTEXITCODE -ne 0) { throw 'APK 签名验证失败。' }
-    $final = Join-Path $build 'DDTLQ-2.01.04-zh-android-test.apk'
+    $final = Join-Path $build 'DDTLQ-2.01.04-zh-r5-android.apk'
     Move-Item -LiteralPath $signed[0].FullName -Destination $final
     $zip = [IO.Compression.ZipFile]::OpenRead($final)
     try { foreach ($name in @('assets/embedded/data.win','assets/embedded/audiogroup1.dat','assets/embedded/audiogroup2.dat','assets/ddtlq/full-save.ini','classes18.dex')) { if (!$zip.GetEntry($name)) { throw ('最终 APK 缺少：' + $name) } } } finally { $zip.Dispose() }
     (Get-FileHash -LiteralPath $final).Hash | Set-Content -LiteralPath (Join-Path $build 'APK.sha256.txt') -Encoding ASCII
-    Write-Host ('已生成本地安卓测试包：' + $final) -ForegroundColor Green
+    Write-Host ('已生成本地安卓包：' + $final) -ForegroundColor Green
     Write-Host '无需原版安卓 APK。使用开源运行组件，尚需安卓真机验证。'
     exit 0
 } catch { Write-Host ('失败：' + $_.Exception.Message) -ForegroundColor Red; exit 1 }

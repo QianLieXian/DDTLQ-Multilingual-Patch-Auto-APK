@@ -73,4 +73,6 @@ ds_grid_set(o_quest_system.ds_quest,1,64,-1);
 ds_grid_set(o_quest_system.ds_quest,1,65,-1);
 for(var j=0;j<o_achievements.ds_quest_number;j+=1)ds_grid_set(o_achievements.ds_quest,1,j,0);
 for(var b=0;b<=6;b+=1)global.stage[0,b]=1;
+global.zh_load_target=rm_City;global.zh_load_x=256;global.zh_load_y=288;
+o_start_variables.xx=256;o_start_variables.yy=288;
 return true;

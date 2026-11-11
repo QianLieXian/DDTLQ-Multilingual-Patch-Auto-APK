@@ -14,3 +14,4 @@ zh_mouse_check_button(0);zh_mouse_check_button_pressed(0);zh_mouse_check_button_
 zh_repair_equipment();zh_equipment_name(0);
 
 zh_migrate_synthetic_save(99);
+zh_prepare_load(99);zh_finish_load();

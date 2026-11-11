@@ -10,3 +10,5 @@ if(file_exists("DDTLQ_ZH.ini")) {
 }
 
 global.zh_port_mode=false;global.zh_panel=false;global.zh_input_cooldown=0;zh_choice=0;zh_tap_wait=0;zh_tap_x=-1;zh_tap_y=-1;
+
+global.zh_load_active=false;global.zh_load_error="";

@@ -1,3 +1,4 @@
+if(global.zh_load_active){zh_finish_load();return;}
 if(global.zh_fix_countdown>0){global.zh_fix_countdown-=1;if(global.zh_fix_countdown==0){with(o_line_overworld)zh_safe_spawn();}}
 if(hint_timer>0)hint_timer-=1;
 var action=-1;
@@ -39,7 +40,7 @@ if(action==3){global.Dev=1-global.Dev;hint="原版调试开关已更新。";zh_s
 if(action==4){if(zh_full_save())hint="已生成资源副本，保留当前剧情进度。";else hint="请在城镇自由行动时生成存档。";}
 if(action==5){if(instance_exists(o_textbox)||instance_exists(o_cutscene)||instance_exists(o_brain)||(instance_exists(o_pause)&&!instance_exists(o_start_menu))||instance_exists(o_fade_room)){hint="请先结束对白、战斗或过场再读档。";}else if(file_exists("Memory Quartz Line 99.ini")){
  if(file_exists("Memory Quartz Line 0.ini"))file_copy("Memory Quartz Line 0.ini","Memory Quartz Line 0.before-fullsave-"+string(date_current_datetime())+"-"+string(current_time)+".ini");
- scr_load_game(99);with(o_brain_dressup){Actual_Menu="winky";pause=0;}panel=false;global.zh_panel=false;global.zh_input_cooldown=4;hint="已读取辅助副本，可继续推进剧情。";
+ scr_load_game(99);if(global.zh_load_active){with(o_brain_dressup){Actual_Menu="winky";pause=0;}panel=false;global.zh_panel=false;global.zh_input_cooldown=4;hint="正在读取存档并切换场景……";}else hint=global.zh_load_error;
 }else hint="尚未生成辅助副本。";}
 if(action>=0)hint_timer=240;
 if(global.zh_cheat){with(o_line){Hp=Max_Hp;Mp=Max_Mp;}with(o_companion){Hp=Max_Hp;}}

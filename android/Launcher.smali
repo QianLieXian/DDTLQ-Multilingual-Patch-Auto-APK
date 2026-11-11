@@ -24,7 +24,7 @@
  invoke-virtual {v0,v1,v1,v1,v1},Landroid/widget/LinearLayout;->setPadding(IIII)V
  new-instance v1,Landroid/widget/TextView;
  invoke-direct {v1,p0},Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
- const-string v2,"DDTLQ 2.01.04 汉化 r4 启动诊断"
+ const-string v2,"DDTLQ 2.01.04 汉化 r5"
  invoke-virtual {v1,v2},Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
  const/high16 v2,0x41c00000
  invoke-virtual {v1,v2},Landroid/widget/TextView;->setTextSize(F)V
@@ -197,7 +197,7 @@
  .locals 2
  iget-object v0,p0,Lcom/qianliexian/ddtlq/Launcher;->status:Landroid/widget/TextView;
  if-nez p1,:error
- const-string v1,"左侧摇杆移动；确认、返回、暂停均可触控。上方中央“助手”提供图鉴、画廊及资源开关。此版修正字库并记录启动异常，尚未确认解决手机闪退。"
+ const-string v1,"左侧摇杆移动；确认、返回、暂停均可触控。上方中央“助手”提供图鉴、画廊及资源开关。读取辅助副本后会核验场景切换；错误报告可在本页查看。"
  invoke-virtual {v0,v1},Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
  const/4 v1,0x1
  iget-object v0,p0,Lcom/qianliexian/ddtlq/Launcher;->startButton:Landroid/widget/Button;

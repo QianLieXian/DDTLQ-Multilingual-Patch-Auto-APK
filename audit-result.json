@@ -1,10 +1,10 @@
 {
   "original_files_unchanged": 5,
-  "package_files_verified": 72,
+  "package_files_verified": 74,
   "apk_size": 543592213,
-  "apk_sha256": "ad8b79074d3f64e8697d4500212f394cb65c3cba9cb4e5ce58bd1860516117f2",
-  "android_game_sha256": "12b1ac0a4edb72ce3dbe0ec5db7a3494060fd7bb1cba4d138a3023d75da03e26",
-  "pc_data_sha256": "838e6201cd410e77ddedaf37a558fe13306841286ae81f1f94eb0d1d187d542b",
+  "apk_sha256": "7d11957a0f88d087ba787483b2a46c512116090977d5883c35b4718b8f399393",
+  "android_game_sha256": "5483272d22dd7f0a82d1d3364ef7dca5886c0452c5d6c302fb42051c7b4a6d19",
+  "pc_data_sha256": "cca4043df266045a8a10929ff7b318f34d15f9c725803f93401b68390f6f0852",
   "safe_spawn": {
     "room": 6,
     "x": 256,
