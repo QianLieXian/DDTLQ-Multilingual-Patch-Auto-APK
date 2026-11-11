@@ -98,6 +98,30 @@
       "positionY": 0.085,
       "scale": 0.12,
       "opacity": 0.7
+    },
+    {
+      "type": "MouseButton",
+      "id": "54f5a874-9494-4c10-a15e-d04d7d024a00",
+      "positionX": 0.2,
+      "positionY": 0.085,
+      "scale": 0.12,
+      "opacity": 0.8,
+      "button": "LEFT_BUTTON",
+      "toggle": true,
+      "sprite": "ddtlq-mouse-left.png",
+      "spritePressed": "ddtlq-mouse-left.png"
+    },
+    {
+      "type": "MouseButton",
+      "id": "54f5a874-9494-4c10-a15e-d04d7d024a01",
+      "positionX": 0.30000000000000004,
+      "positionY": 0.085,
+      "scale": 0.12,
+      "opacity": 0.8,
+      "button": "RIGHT_BUTTON",
+      "toggle": true,
+      "sprite": "ddtlq-mouse-right.png",
+      "spritePressed": "ddtlq-mouse-right.png"
     }
   ]
 }

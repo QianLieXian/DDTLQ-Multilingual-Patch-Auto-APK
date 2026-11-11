@@ -1,0 +1,20 @@
+{
+  "locale": "ru",
+  "core_count": 4890,
+  "ui_count": 52,
+  "unchanged_core_ids": [
+    1988,
+    3290,
+    3291,
+    4007
+  ],
+  "glyphs12": 74,
+  "glyphs10": 169,
+  "core_sha256": "3301e03cea02d1e50250046f075fcf06c82ad4086a3d58d98894fcccaa899c33",
+  "status": "compiled-local-build-and-city-smoke-passed",
+  "windows_build_checked": true,
+  "android_apk_signature_and_contents_checked": true,
+  "city_smoke_checked": true,
+  "android_device_tested": false,
+  "full_playthrough_tested": false
+}

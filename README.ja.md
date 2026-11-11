@@ -23,3 +23,7 @@
 - 既存のAndroid版ゲームやAndroid用の原本ファイルを用意する必要はありません。
 - Windows版・Android版ともに、自分が所有する対応バージョンのゲームデータが必要です。
 - 公開配布物に含まれるのは日本語化パッチと関連ツールのみです。ゲーム本体や完全なゲームAPKは配布されません。
+
+画面をタップするとクリック、押したまま動かすとドラッグできます。L/Rでマウスの左／右ボタンを切り替えます。通常はLを使ってください。上部の補助ボタンでメニューを開きます。メニュー上をドラッグしただけでは項目を実行しません。
+
+[简体中文](README.md) · [English](README.en.md) · [Português](README.pt-BR.md) · [Русский](README.ru.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md)

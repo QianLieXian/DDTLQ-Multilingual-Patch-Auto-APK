@@ -43,12 +43,19 @@ try {
     Copy-Item -LiteralPath (Join-Path $sourceDir 'Launcher.smali') -Destination (Join-Path $newDex 'Launcher.smali')
     Copy-Item -LiteralPath (Join-Path $sourceDir 'LauncherReady.smali') -Destination (Join-Path $newDex 'Launcher$Ready.smali')
     Copy-Item -LiteralPath (Join-Path $sourceDir 'CrashApp.smali') -Destination (Join-Path $newDex 'CrashApp.smali')
+    Copy-Item -LiteralPath (Join-Path $PatchRoot 'android\TouchDispatch.smali') -Destination (Join-Path $newDex 'TouchDispatch.smali')
+    & (Join-Path $PatchRoot 'android\patch-native-input.ps1') -Stage $stage
     $embedded = Join-Path $stage 'assets\embedded'
     $ddtlq = Join-Path $stage 'assets\ddtlq'
     New-Item -ItemType Directory -Path $embedded,$ddtlq -Force | Out-Null
     Copy-Item -LiteralPath $portData -Destination (Join-Path $embedded 'data.win')
     foreach ($name in @('audiogroup1.dat','audiogroup2.dat')) { Copy-Item -LiteralPath (Join-Path $GameDirectory $name) -Destination (Join-Path $embedded $name) }
     Copy-Item -LiteralPath (Join-Path $sourceDir 'library.json') -Destination (Join-Path $ddtlq 'library.json')
+    $touchIcons=Get-Content -LiteralPath (Join-Path $PatchRoot 'android\touch-icons.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+    foreach($icon in $touchIcons.PSObject.Properties){
+        if($icon.Name -notmatch '^ddtlq-mouse-(left|right)\.png$'){throw 'Unexpected touch icon name.'}
+        [IO.File]::WriteAllBytes((Join-Path $ddtlq $icon.Name),[Convert]::FromBase64String($icon.Value))
+    }
     Copy-Item -LiteralPath (Join-Path $PatchRoot 'saves\Memory Quartz Line 99.ini') -Destination (Join-Path $ddtlq 'full-save.ini')
     foreach ($layout in @('default_landscape.json','default_portrait.json')) { Copy-Item -LiteralPath (Join-Path $sourceDir $layout) -Destination (Join-Path $stage ('assets\layouts\' + $layout)) -Force }
     Copy-Item -LiteralPath (Join-Path $sourceDir 'ddtlq_icon.xml') -Destination (Join-Path $stage 'res\drawable\ddtlq_icon.xml')

@@ -23,13 +23,13 @@ if(zh_tap_wait>0){
  if(zh_tap_wait==0){
   var px=device_mouse_x_to_gui(0),py=device_mouse_y_to_gui(0);
   if(!global.zh_port_mode && px>=342 && px<384 && py>=2 && py<24 && zh_tap_x>=342 && zh_tap_y<24){panel=!panel;global.zh_input_cooldown=3;}
-  else if(panel && px>=42 && px<342 && py>=40 && py<180){
+  else if(panel && global.zh_input_cooldown==0 && px>=42 && px<342 && py>=40 && py<180 && zh_tap_x>=42 && zh_tap_x<342 && zh_tap_y>=40 && zh_tap_y<180 && floor((py-40)/20)==floor((zh_tap_y-40)/20) && point_distance(px,py,zh_tap_x,zh_tap_y)<=10){
    var row=floor((py-40)/20);
    zh_choice=row;action=row;global.zh_input_cooldown=3;
   }
  }
 }
-if(mouse_check_button(mb_left)){zh_tap_x=device_mouse_x_to_gui(0);zh_tap_y=device_mouse_y_to_gui(0);}
+if(mouse_check_button_pressed(mb_left)){zh_tap_x=device_mouse_x_to_gui(0);zh_tap_y=device_mouse_y_to_gui(0);}
 if(mouse_check_button_released(mb_left))zh_tap_wait=1;
 global.zh_panel=panel;
 if(action==6){global.zh_dex=1-global.zh_dex;hint="全图鉴开关已更新，剧情击败记录不变。";zh_settings_save();}

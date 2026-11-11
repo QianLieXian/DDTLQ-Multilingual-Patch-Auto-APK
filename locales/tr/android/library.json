@@ -1,0 +1,20 @@
+[
+  {
+    "id": "224b6ad0-f10d-4d22-a43d-000002010400",
+    "title": "DDTLQ 2.01.04 Türkçe Yama",
+    "gameType": {
+      "type": "GameMakerStudio",
+      "wadVersion": 17,
+      "filename": "data.win"
+    },
+    "importedAtMillis": 0,
+    "favorited": false,
+    "saveSlots": [
+      {
+        "id": "00000000-0000-4000-8000-000000000001",
+        "active": true,
+        "fancyName": "Varsayılan Kayıt"
+      }
+    ]
+  }
+]

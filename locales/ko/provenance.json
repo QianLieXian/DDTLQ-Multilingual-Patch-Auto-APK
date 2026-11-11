@@ -1,1 +1,26 @@
-{"locale":"ko","model":"GPT-6","effort":"High","mode":"Chat","chat_urls":["https://chatgpt.com/c/6af3ddaa-63d4-83e9-9520-b62ec5418d9e"],"reviewed":false,"status":"draft-only-not-installable","supplementary_translation_provenance":{"method":"Codex contextual AI translation by maintainer, not an external machine translation API","supplementary_ids":[7161,7162,7164],"reason":"Three non-graphic existing dialogue lines about the orphanage caretakers plea and funding were not delivered by the web chat. Preserve the original indirect wording, casual Korean voice and 10000 Arcs value; no age or sexual action was invented.","original_web_draft_ids":4887}}
+{
+  "locale": "ko",
+  "model": "GPT-6",
+  "effort": "High",
+  "mode": "Chat",
+  "chat_urls": [
+    "https://chatgpt.com/c/6af3ddaa-63d4-83e9-9520-b62ec5418d9e"
+  ],
+  "reviewed": true,
+  "review_record_sha256": "6c1e48264680c78d3d7394dfa7a76db76a3446d5822867537a2c92fcede0a4b9",
+  "review_method": "Contextual AI draft and unified review, original-script evidence, explicit follow-up corrections, maintainer ID/token/UI/font checks",
+  "native_speaker_tested": false,
+  "full_playthrough_tested": false,
+  "supplementary_translation_provenance": {
+    "method": "Codex contextual AI translation by maintainer, not an external machine translation API",
+    "supplementary_ids": [
+      7161,
+      7162,
+      7164
+    ],
+    "reason": "Three non-graphic existing dialogue lines about the orphanage caretakers plea and funding were not delivered by the web chat. Preserve the original indirect wording, casual Korean voice and 10000 Arcs value; no age or sexual action was invented.",
+    "original_web_draft_ids": 4887
+  },
+  "final_source_context_checks": "Codex AI editorial review; internal width sentinels, dynamic fragments, prank quest and hotel dialogue-choice alignment checked against original scripts.",
+  "unified_editorial_review_interface": "Codex"
+}

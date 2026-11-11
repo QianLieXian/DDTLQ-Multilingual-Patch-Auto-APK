@@ -1,1 +1,33 @@
-{"locale":"de","model":"GPT-6","effort":"High","mode":"Chat","chat_urls":["https://chatgpt.com/c/6af3dc78-53e4-83ea-a655-8da51d7e8671"],"reviewed":false,"status":"draft-only-not-installable"}
+{
+  "locale": "de",
+  "model": "GPT-6",
+  "effort": "High",
+  "mode": "Chat",
+  "chat_urls": [
+    "https://chatgpt.com/c/6af3dc78-53e4-83ea-a655-8da51d7e8671"
+  ],
+  "reviewed": true,
+  "review_record_sha256": "6b5910031af5ec51a8c071711ab82740661ff02ccd9d40334ba34a8e0f00f9df",
+  "review_method": "Local Codex AI contextual review of English source, Chinese context and target draft; not a browser GPT review. All flagged rows individually decided; whole-draft terminology/numeric/name/ID anchor scans, original-GML checks, token/newline/Unicode/font/UI-width validation.",
+  "native_speaker_tested": false,
+  "full_playthrough_tested": false,
+  "draft_origin": {
+    "model": "GPT-6",
+    "effort": "High",
+    "mode": "Chat",
+    "chat_urls": [
+      "https://chatgpt.com/c/6af3dc78-53e4-83ea-a655-8da51d7e8671"
+    ]
+  },
+  "review_provenance": {
+    "draft": "Preserved GPT-6 High Chat draft/recovered review where present",
+    "supplement": "Local Codex AI contextual review, not browser Chat review",
+    "coverage": "All flagged core rows individually decided; full-draft name, numeric, formatting and ID anchor scan; terminology concordance and original GML scene checks",
+    "native_speaker_tested": false,
+    "full_playthrough_tested": false
+  },
+  "review_corrections": 101,
+  "review_decisions": 193,
+  "final_source_context_checks": "Codex AI editorial review; internal width sentinels, dynamic fragments, prank quest and hotel dialogue-choice alignment checked against original scripts.",
+  "unified_editorial_review_interface": "Codex"
+}

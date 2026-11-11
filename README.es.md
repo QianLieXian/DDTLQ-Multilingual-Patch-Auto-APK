@@ -1,0 +1,17 @@
+# Doki Doki Tri-Line Quest (DDTLQ) — Español
+
+## Windows
+1. Extrae el paquete completo del parche. Ten tu propia copia compatible de DDTLQ 2.01.04 Beta para Windows.
+2. Ejecuta `WindowsPatch.bat`, elige **5 — Español** y pulsa **Enter**.
+3. Indica la carpeta del juego original. Inicia la nueva copia creada en `output`; los originales se conservan.
+
+## Android
+1. En Windows, ejecuta `Build-APK.bat`, elige **5 — Español** y pulsa **Enter**.
+2. Indica la misma carpeta del juego original para Windows. No necesitas un APK original ni una instalación previa en Android.
+3. El proceso prepara las herramientas y crea un APK firmado en `output`. Transfiérelo e instálalo en un dispositivo **Android 7 o posterior, ARM64**.
+
+La distribución pública contiene el parche y las herramientas; cada jugador aporta su propia copia compatible del juego.
+
+Toca la pantalla para hacer clic; mantén el dedo y muévelo para arrastrar. L/R seleccionan el botón izquierdo/derecho del ratón; normalmente usa L. Abre el menú de ayuda con el botón superior. Arrastrar por una opción no la activa.
+
+[简体中文](README.md) · [English](README.en.md) · [Português](README.pt-BR.md) · [Русский](README.ru.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md)

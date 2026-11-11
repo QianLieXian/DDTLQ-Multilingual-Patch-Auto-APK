@@ -1,0 +1,19 @@
+{
+  "locale": "ko",
+  "core_count": 4890,
+  "ui_count": 52,
+  "unchanged_core_ids": [
+    1231,
+    1988,
+    4007
+  ],
+  "glyphs12": 1034,
+  "glyphs10": 1129,
+  "core_sha256": "180af27425725997f8dab62895376d1d3a9795da0a9d05976195118724ea26bb",
+  "status": "compiled-local-build-and-city-smoke-passed",
+  "windows_build_checked": true,
+  "android_apk_signature_and_contents_checked": true,
+  "city_smoke_checked": true,
+  "android_device_tested": false,
+  "full_playthrough_tested": false
+}

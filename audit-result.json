@@ -1,101 +1,134 @@
 {
-  "scope": "Multilingual r6 development checkpoint, not a completed formal release",
-  "formal_multilingual_release_published": false,
-  "source_only_manifest_files_verified": 350,
-  "original_files_unchanged": 5,
-  "complete_drafts": [
+  "version": "2.01.04-multilingual-r6",
+  "original_game_hashes_preserved": 5,
+  "languages": [
+    {
+      "locale": "zh-CN",
+      "core_count": 4890,
+      "ui_count": 52,
+      "missing_ids": 0,
+      "empty_entries": 0,
+      "windows_build_checked": true,
+      "android_signature_and_embedded_data_checked": true,
+      "headless_city_load_240_frames": true,
+      "android_device_tested": false,
+      "full_playthrough_tested": false
+    },
+    {
+      "locale": "en",
+      "core_count": 4890,
+      "ui_count": 52,
+      "missing_ids": 0,
+      "empty_entries": 0,
+      "windows_build_checked": true,
+      "android_signature_and_embedded_data_checked": true,
+      "headless_city_load_240_frames": true,
+      "android_device_tested": false,
+      "full_playthrough_tested": false
+    },
     {
       "locale": "pt-BR",
-      "core": 4890,
-      "ui": 52
+      "core_count": 4890,
+      "ui_count": 52,
+      "missing_ids": 0,
+      "empty_entries": 0,
+      "windows_build_checked": true,
+      "android_signature_and_embedded_data_checked": true,
+      "headless_city_load_240_frames": true,
+      "android_device_tested": false,
+      "full_playthrough_tested": false
     },
     {
       "locale": "ru",
-      "core": 4890,
-      "ui": 52
+      "core_count": 4890,
+      "ui_count": 52,
+      "missing_ids": 0,
+      "empty_entries": 0,
+      "windows_build_checked": true,
+      "android_signature_and_embedded_data_checked": true,
+      "headless_city_load_240_frames": true,
+      "android_device_tested": false,
+      "full_playthrough_tested": false
     },
     {
       "locale": "es",
-      "core": 4890,
-      "ui": 52
+      "core_count": 4890,
+      "ui_count": 52,
+      "missing_ids": 0,
+      "empty_entries": 0,
+      "windows_build_checked": true,
+      "android_signature_and_embedded_data_checked": true,
+      "headless_city_load_240_frames": true,
+      "android_device_tested": false,
+      "full_playthrough_tested": false
     },
     {
       "locale": "de",
-      "core": 4890,
-      "ui": 52
+      "core_count": 4890,
+      "ui_count": 52,
+      "missing_ids": 0,
+      "empty_entries": 0,
+      "windows_build_checked": true,
+      "android_signature_and_embedded_data_checked": true,
+      "headless_city_load_240_frames": true,
+      "android_device_tested": false,
+      "full_playthrough_tested": false
     },
     {
       "locale": "ja",
-      "core": 4890,
-      "ui": 52
+      "core_count": 4890,
+      "ui_count": 52,
+      "missing_ids": 0,
+      "empty_entries": 0,
+      "windows_build_checked": true,
+      "android_signature_and_embedded_data_checked": true,
+      "headless_city_load_240_frames": true,
+      "android_device_tested": false,
+      "full_playthrough_tested": false
     },
     {
       "locale": "fr",
-      "core": 4890,
-      "ui": 52
+      "core_count": 4890,
+      "ui_count": 52,
+      "missing_ids": 0,
+      "empty_entries": 0,
+      "windows_build_checked": true,
+      "android_signature_and_embedded_data_checked": true,
+      "headless_city_load_240_frames": true,
+      "android_device_tested": false,
+      "full_playthrough_tested": false
     },
     {
       "locale": "ko",
-      "core": 4890,
-      "ui": 52
+      "core_count": 4890,
+      "ui_count": 52,
+      "missing_ids": 0,
+      "empty_entries": 0,
+      "windows_build_checked": true,
+      "android_signature_and_embedded_data_checked": true,
+      "headless_city_load_240_frames": true,
+      "android_device_tested": false,
+      "full_playthrough_tested": false
     },
     {
       "locale": "tr",
-      "core": 4890,
-      "ui": 52
+      "core_count": 4890,
+      "ui_count": 52,
+      "missing_ids": 0,
+      "empty_entries": 0,
+      "windows_build_checked": true,
+      "android_signature_and_embedded_data_checked": true,
+      "headless_city_load_240_frames": true,
+      "android_device_tested": false,
+      "full_playthrough_tested": false
     }
   ],
-  "reviewed_new_languages_with_local_builds": [
-    "pt-BR",
-    "ja"
-  ],
-  "pending_new_languages": [
-    "ru",
-    "es",
-    "de",
-    "fr",
-    "ko",
-    "tr"
-  ],
-  "local_apks": [
-    {
-      "sha256": "cdb09d686b7f0457df5214d5bc6b1732981493820329b138462ae8f87f27def4",
-      "bytes": 543137557,
-      "signed_and_structure_checked": true,
-      "device_tested": false,
-      "public_upload": false,
-      "local_filename": "DDTLQ-2.01.04-en-r6-android.apk"
-    },
-    {
-      "sha256": "d78263e4ef6c329036db11cd7de7215f2389c3cfcbd105ae209c28e26d2f722c",
-      "bytes": 543305493,
-      "signed_and_structure_checked": true,
-      "device_tested": false,
-      "public_upload": false,
-      "local_filename": "DDTLQ-2.01.04-pt-BR-r6-android.apk"
-    },
-    {
-      "sha256": "fbc990b5c1a4fc1e441f2110f3af24782704e68843ddb8b765b5e755063236b5",
-      "bytes": 543538965,
-      "signed_and_structure_checked": true,
-      "device_tested": false,
-      "public_upload": false,
-      "local_filename": "DDTLQ-2.01.04-ja-r6-android.apk"
-    },
-    {
-      "sha256": "1ea17ee414d4ae6b868b18229dd5c5660dc3a893a3e627ea45a6f71337c58d97",
-      "bytes": 543592213,
-      "signed_and_structure_checked": true,
-      "device_tested": false,
-      "public_upload": false,
-      "local_filename": "DDTLQ-2.01.04-zh-CN-r6-android.apk"
-    }
-  ],
-  "android_device_tested": false,
-  "full_playthrough_tested": false,
-  "korean_separately_attributed_maintainer_ai_ids": [
-    7161,
-    7162,
-    7164
-  ]
+  "town_performance": {
+    "before_gml_ms_per_frame": 39.8,
+    "after_gml_ms_per_frame": 5.68,
+    "method": "same-save local Butterscotch comparison; not an Android-device measurement"
+  },
+  "public_game_assets_included": false,
+  "public_apks_included": false,
+  "native_speaker_review_claimed": false
 }

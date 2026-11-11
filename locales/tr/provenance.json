@@ -1,1 +1,24 @@
-{"locale":"tr","model":"GPT-6","effort":"High","mode":"Chat","chat_urls":["https://chatgpt.com/c/6af3ddad-f410-83ea-b625-7989105e5eaa"],"reviewed":false,"status":"draft-only-not-installable"}
+{
+  "locale": "tr",
+  "model": "GPT-6",
+  "effort": "High",
+  "mode": "Chat",
+  "chat_urls": [
+    "https://chatgpt.com/c/6af3ddad-f410-83ea-b625-7989105e5eaa"
+  ],
+  "reviewed": true,
+  "review_record_sha256": "72543623ae824d8bb9c54c46ffe453973f3bfac2db3f203595450926d7d3a87c",
+  "review_method": "Contextual AI draft and unified review, original-script evidence, explicit follow-up corrections, maintainer ID/token/UI/font checks",
+  "native_speaker_tested": false,
+  "full_playthrough_tested": false,
+  "review_provenance": {
+    "reviewer": "Codex contextual AI review",
+    "web_draft_model": "GPT-6 High Chat",
+    "reviewed_flagged_core": 270,
+    "contextual_core_corrections": 59,
+    "native_speaker_review": false,
+    "full_playthrough": false
+  },
+  "final_source_context_checks": "Codex AI editorial review; internal width sentinels, dynamic fragments, prank quest and hotel dialogue-choice alignment checked against original scripts.",
+  "unified_editorial_review_interface": "Codex"
+}

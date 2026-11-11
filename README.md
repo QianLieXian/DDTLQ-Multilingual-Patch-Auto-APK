@@ -1,66 +1,40 @@
-# Doki Doki Tri-Line Quest / DDTLQ 汉化与多语言补丁 · Windows & Android
+# Doki Doki Tri-Line Quest (DDTLQ) 多语言补丁与 Android APK 打包器
 
-**《Doki Doki Tri-Line Quest》（DDTLQ）2.01.04 Beta 非官方本地化项目。** 提供 Windows 汉化、语言选择安装器，以及使用自己原版游戏文件制作 Android APK 的工具。
+《Doki Doki Tri-Line Quest》2.01.04 Beta 非官方多语言补丁。Windows 一键选择语言安装，也能使用自己的原版 Windows 游戏自动制作安卓 APK。
 
-Unofficial **Doki Doki Tri-Line Quest translation patches and Android APK builder**, with a 10-language installer for Windows and local Android builds.
+[简体中文](README.md) · [English](README.en.md) · [Português](README.pt-BR.md) · [Русский](README.ru.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md)
 
-[English](README.en.md) · [下载正式 Latest](https://github.com/QianLieXian/DDTLQ-Multilingual-Patch-Auto-APK/releases/latest) · [原作购买页](https://kiwistate.itch.io/dokidoki-tri-line-quest) · [反馈问题](https://github.com/QianLieXian/DDTLQ-Multilingual-Patch-Auto-APK/issues) · [多语言源码与进度](https://github.com/QianLieXian/DDTLQ-Multilingual-Patch-Auto-APK/tree/multilingual)
+[下载正式 Latest](https://github.com/QianLieXian/DDTLQ-Multilingual-Patch-Auto-APK/releases/latest) · [取得原作](https://kiwistate.itch.io/dokidoki-tri-line-quest) · [反馈问题](https://github.com/QianLieXian/DDTLQ-Multilingual-Patch-Auto-APK/issues)
 
-> **当前状态：** 正式版为中文 r5。8 种新增语言的正文和界面译稿均已按 ID 收齐，正在统一校对、字体检查和构建验证。未就绪语言会明确标记并阻止安装。多语言版尚未发布正式 Release。
+## 使用
 
-## 一键安装
+完整解压补丁后，按用途运行：
 
-当前正式 r5 压缩包使用 **“一键汉化Windows.bat”** 和 **“一键制作安卓APK.bat”**，只提供中文；下面的新语言选择入口属于开发中的多语言包。
+- **电脑：** 双击 `WindowsPatch.bat`，选择语言编号、回车，指定原版游戏文件夹。运行 `output` 中的新游戏副本。
+- **安卓：** 在电脑双击 `Build-APK.bat`，选择语言编号、回车，指定同一个原版 Windows 游戏文件夹。自动准备工具、打包并签名，将 `output` 中的 APK 复制到手机安装。**无需原版安卓 APK。**
 
-**Windows：** 完整解压补丁，双击 **WindowsPatch.bat**，输入语言编号，按回车。按提示拖入原版游戏目录，也可以直接把游戏文件夹拖到 BAT 上。完成后运行 `output` 新副本里的游戏，原游戏文件保持原样。
+首次需要联网下载并校验工具。支持指定校验值的 **2.01.04 Beta** 原版，其他版本会拒绝处理。电脑需 Windows PowerShell 5.1；手机需 **Android 7+、ARM64**。原游戏文件保持原样。
 
-**Android：** 双击 **Build-APK.bat**，选择语言和同一个原版 Windows 游戏目录。首次自动下载并校验便携工具和开源运行组件，签名 APK 生成在 `output`。**不需要原版安卓 APK，也不需要安装开发环境。**
+## 十种语言
 
-仅适用于校验匹配的 2.01.04 Beta；同名版本、其他发行包或第三方 MOD 不一定兼容。Windows 需要 PowerShell 5.1；安卓需要 **Android 7 及以上、ARM64**。
+**1 简体中文 · 2 English · 3 Português (Brasil) · 4 Русский · 5 Español · 6 Deutsch · 7 日本語 · 8 Français · 9 한국어 · 10 Türkçe**
 
-## 语言菜单
+语言数量和顺序与 [Hole Dweller 项目](https://github.com/QianLieXian/HoleDweller-zhCN-Auto-APK) 一致。每种语言按 **4,890 条核心文本、52 条附加界面文本**核对。英文保留原文；其他译文采用 AI 语境翻译及统一校对，没有调用机器翻译服务。新增八种语言的初稿主要来自 GPT-6 High 聊天模式，后续 Codex 审校和个别补译记录在各语言来源文件中。未宣称母语人工审校或全剧情通关无误。
 
-| 编号 | 语言 | 文本来源与进度 |
-| --- | --- | --- |
-| 1 | 简体中文 | 沿用已审校中文补丁 |
-| 2 | English | 原版文本；新增助手界面为英文 |
-| 3 | Português (Brasil) | 审校、字体和本地构建已通过，待正式发布 |
-| 4 | Русский | 译稿收齐，统一审校中 |
-| 5 | Español | 译稿收齐，统一审校中 |
-| 6 | Deutsch | 译稿收齐，统一审校中 |
-| 7 | 日本語 | 审校、字体和本地构建已通过，待正式发布 |
-| 8 | Français | 译稿收齐，统一审校中 |
-| 9 | 한국어 | 译稿收齐，统一审校中 |
-| 10 | Türkçe | 译稿收齐，统一审校中 |
+## 触控、作弊与存档
 
-语言数量及顺序与 [Hole Dweller 多语言项目](https://github.com/QianLieXian/HoleDweller-zhCN-Auto-APK) 一致。每种目标语言包含 **4,890 条核心文本和 52 条助手、存档提示及安卓界面文案**。新增译稿主要通过 GPT-6 High 聊天模式做语境翻译；单独补译条目记录具体来源。条目、占位符、字体和构建通过校验后才开放安装。未宣称经过全部母语审校或全剧情通关测试。
+左摇杆移动，右侧确认/返回，下方暂停，上方中央打开助手。直接点击画面相当于鼠标点击，按住移动可拖动；顶部 **L / R** 切换左/右鼠标键，普通点击和拖动用 L。运行组件菜单可调整布局。助手只在明确按下对应按钮时操作，拖动经过菜单不算点击。
 
-## 安卓触控与作弊助手
+助手提供图鉴、CG 画廊显示开关，弧币、回血回蓝、原版调试及资源副本。电脑快捷键：F5 图鉴、F6 画廊、F7 弧币、F8 恢复、F9 助手、F10 调试、F11 生成副本、F12 读取副本。
 
-左摇杆移动，右侧确认和返回，下方暂停，上方中央 **“助手”** 打开菜单。支持直接点选，以及方向、确认、返回按键操作。
+附带的是**可继续剧情的城镇资源辅助档**。图鉴、CG 使用独立显示开关，不强制完成剧情。Windows 可运行 `导入城镇辅助存档.bat`；安卓可从启动页导入自己的存档，或用“助手 → 读取辅助副本”。旧档会备份，成功提示需等待实际进入目标场景。中文包可覆盖旧中文版本，其他语言使用独立包名和存档。
 
-助手提供图鉴、CG 画廊显示开关，弧币、回血回蓝、原版调试，以及生成和读取资源副本。Windows 快捷键：F5 图鉴、F6 画廊、F7 弧币、F8 恢复、F9 助手、F10 调试、F11 生成副本、F12 读取副本。
+## 城镇卡顿修复
 
-中文 APK 保留既有包名，便于覆盖更新；其他语言使用独立包名和存档。安卓存档从启动页 **“存档与设置”** 导入，再到游戏标题页读取。
+移除了每次文字绘制时遍历数千条翻译分支的开销。本地同存档城镇测试中，脚本耗时由约 39.8 降至 5.7 毫秒/帧；这不是所有手机的帧率保证。[测试方法与限制](maintainer/TOWN-PERFORMANCE.md)。
 
-## 存档与 CG
+## 下载与许可
 
-附带 **可继续剧情的城镇资源辅助档，不是全流程通关档**。图鉴和画廊使用独立显示开关，不强改任务完成状态。
+仓库和 Releases **只提供补丁、翻译、配置及教程，不提供原游戏、音频、CG 或完整游戏 APK**。请自行取得兼容原作；APK 仅在本地生成。正式版本发布为 Latest。
 
-Windows 运行 **“导入城镇辅助存档.bat”**，旧档会先备份。安卓可以使用 **“助手 → 读取辅助副本”**；只有实际切换场景并恢复人物坐标后才提示成功。导入自己的外部存档前也请备份。
-
-## 常见问题
-
-**DDTLQ 汉化补丁在哪里下载？** 进入上方正式 Latest，下载补丁附件并完整解压。不要只下载一个 BAT。
-
-**有没有 Doki Doki Tri-Line Quest 安卓版 APK 下载？** 这里提供本地 APK 打包器，玩家使用自己拥有的兼容 Windows 游戏生成。公开仓库和 Releases 不提供完整游戏 APK。
-
-**有方框、物品名错误或闪退怎么办？** 反馈语言、补丁版本、设备和具体界面；启动页可以查看或复制本地错误报告，记录不会自动上传。
-
-**为什么某个语言不能安装？** 译稿或验证尚未完成，安装器会明确提示。开发进度不会冒充已完成的正式版本。
-
-## 发布与许可
-
-只发布补丁、翻译、配置和教程，**不包含原游戏、音频、CG 或完整 APK**。原作内容归原作者所有，请从作者页面取得游戏。新发布默认使用正式 **Latest**。
-
-[校验记录](VALIDATION.md) · [字体与开源组件许可](licenses/NOTICE.txt)
+[校验与测试限制](VALIDATION.md) · [字体及开源组件许可](licenses/NOTICE.txt) · [Android 触控修改源码说明](android/TOUCH-PATCH.md)

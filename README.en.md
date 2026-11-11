@@ -1,41 +1,38 @@
-# Doki Doki Tri-Line Quest (DDTLQ) Translation Patch & Android APK Builder
+# Doki Doki Tri-Line Quest (DDTLQ) — Multilingual Patch & Android APK Builder
 
-Unofficial localization tools for **Doki Doki Tri-Line Quest 2.01.04 Beta**. Install a language patch on Windows, or build an Android APK locally from your own compatible Windows game files.
+Unofficial translation patches for **DDTLQ 2.01.04 Beta**, with language-select Windows installers and a local Android APK builder.
 
-[简体中文](README.md) · [Latest stable release](https://github.com/QianLieXian/DDTLQ-Multilingual-Patch-Auto-APK/releases/latest) · [Original game](https://kiwistate.itch.io/dokidoki-tri-line-quest) · [Report a problem](https://github.com/QianLieXian/DDTLQ-Multilingual-Patch-Auto-APK/issues) · [Multilingual source and progress](https://github.com/QianLieXian/DDTLQ-Multilingual-Patch-Auto-APK/tree/multilingual)
+[简体中文](README.md) · [English](README.en.md) · [Português](README.pt-BR.md) · [Русский](README.ru.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md)
 
-**Development status:** the published stable release is the Chinese r5 patch. Drafts for all eight new languages have been collected by actual ID; unified review, font checks, and builds are still in progress. Portuguese and Japanese have passed review, font compilation, and local builds. Unfinished languages remain unavailable. The multilingual version has no formal release yet.
+[Download Latest](https://github.com/QianLieXian/DDTLQ-Multilingual-Patch-Auto-APK/releases/latest) · [Get the original game](https://kiwistate.itch.io/dokidoki-tri-line-quest)
 
-## Windows installation
+## Install
 
-The current stable r5 archive is Chinese-only and uses `一键汉化Windows.bat` and `一键制作安卓APK.bat`. The language-selecting entry points below belong to the multilingual development package.
+- **Windows:** extract the complete patch, run `WindowsPatch.bat`, select a language, press Enter and provide your original game folder. Run the new copy under `output`.
+- **Android:** on Windows, run `Build-APK.bat`, select a language, press Enter and provide the same original Windows game folder. Tools download and verify automatically; copy the signed APK from `output` to your phone. **No original Android APK or separately installed development environment is required.**
 
-Extract the complete patch archive, run **WindowsPatch.bat**, enter a language number, and press Enter. Provide your original game folder when prompted, or drag that folder onto the BAT. Run the new game copy under `output`. The original files stay intact.
-
-Only the supported, checksum-matching 2.01.04 Beta game data is accepted. Other builds and third-party modifications are rejected. Windows PowerShell 5.1 is sufficient; pinned portable tools download on first use.
-
-## Android APK builder
-
-Run **Build-APK.bat**, choose a language, and provide the same original Windows game folder. The builder verifies its tool downloads and creates a signed APK under `output`. You do not need an original Android APK or a separately installed development environment.
-
-Requirements: **Android 7 or later, ARM64**. The Chinese edition keeps its existing application ID for updates; other languages use separate application IDs and separate saves. Import saves through **Saves and settings** on the launch page, then load from the game title screen.
-
-Controls: left joystick to move, Confirm and Back on the right, Pause near the bottom, and **Helper** at the top center. The Helper menu provides gallery/bestiary view toggles, resources, regeneration, original debug mode, and save-copy actions. These do not mark story quests complete.
+Requires the checksum-matching original **2.01.04 Beta**, Windows PowerShell 5.1 for building, and **Android 7+, ARM64** for playing. The original game files are preserved.
 
 ## Languages
 
-Menu order: **1 简体中文 · 2 English · 3 Português (Brasil) · 4 Русский · 5 Español · 6 Deutsch · 7 日本語 · 8 Français · 9 한국어 · 10 Türkçe**.
+**1 简体中文 · 2 English · 3 Português (Brasil) · 4 Русский · 5 Español · 6 Deutsch · 7 日本語 · 8 Français · 9 한국어 · 10 Türkçe**
 
-English preserves the original game text. Chinese uses the existing reviewed patch. The eight new translations were primarily produced through **GPT-6 High in Chat mode**, with 4,890 core entries and 52 added interface entries per language. Separately supplemented entries record their actual origin. A language is enabled only after checking text completeness, placeholders, font coverage, and the build. Native-speaker review and complete walkthrough testing are not claimed.
+Each locale is checked against 4,890 core entries and 52 added interface entries. English retains the original game text. Other locales use contextual AI translation and editorial review, without machine-translation services. The eight new drafts were primarily produced in GPT-6 High Chat; Codex review and separately supplemented entries record their actual provenance. Native-speaker approval and complete walkthrough testing are not claimed.
 
-## Saves and troubleshooting
+## Touch, helper and saves
 
-The supplied save is a **safe city resource save**, not a fully story-cleared save. The Windows importer backs up old saves. On Android, use **Helper → Load helper copy** for the supplied auxiliary slot. Loading is reported as successful only after the destination scene and player position have been restored.
+Move with the left stick; Confirm/Back are on the right, Pause below, and Helper at the top. Tap the canvas to click and hold/move to drag. **L/R** select the canvas mouse button; use L for normal clicking and dragging. The runner menu allows layout adjustments.
 
-Report the language, patch version, device, and affected screen if you encounter missing glyphs, wrong item names, or a crash. Local error reports can be viewed or copied from the launcher; they are not uploaded automatically.
+The helper provides gallery/bestiary display toggles, resources, regeneration, original debug mode and save copies. Desktop shortcuts: F5 bestiary, F6 gallery, F7 money, F8 regeneration, F9 helper, F10 debug, F11 save copy, F12 load copy. Display unlocks do not complete story quests.
 
-## Downloads and ownership
+The included auxiliary save preserves story progression and starts in the town. Windows uses `导入城镇辅助存档.bat`; Android supports save import on the launcher or loading the supplied copy through Helper. Loading reports success after the destination scene is entered. Chinese updates retain the existing application ID; other languages have separate IDs and saves.
 
-This repository and its Releases contain **patch source, translations, configuration, and instructions only**. They do not include the original game, audio, CG, or complete game APKs. Obtain the game from its author and build your APK locally.
+## Town performance
 
-New public versions use regular **Latest** releases. Development work is not advertised as a finished multilingual release. [License notices](licenses/NOTICE.txt) · [Validation](VALIDATION.md)
+Display translation now uses an indexed lookup instead of repeatedly searching thousands of cases. A local same-save town comparison reduced total GML script time from approximately 39.8 to 5.7 ms/frame. This is not an Android-device frame-rate guarantee. [Method and limitations](maintainer/TOWN-PERFORMANCE.md).
+
+## Distribution
+
+Public downloads contain **patch source, translations, configuration and instructions only**. Original game files, audio, CG and complete game APKs are excluded. Obtain a compatible original game and build locally. Public versions use regular Latest releases.
+
+[Validation](VALIDATION.md) · [License notices](licenses/NOTICE.txt) · [Touch patch source](android/TOUCH-PATCH.md)

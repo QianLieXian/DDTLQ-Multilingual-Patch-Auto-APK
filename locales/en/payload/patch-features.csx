@@ -41,6 +41,14 @@ import.QueueFindReplace("gml_Object_o_brain_dressup_Step_0","global.waifu[i + wp
 import.QueueFindReplace("gml_Object_o_brain_dressup_Step_0","waif_text[i] = \"????\";","waif_text[i] = (i+wp>=65) ? \"\" : \"????\";",true);
 foreach(var pair in new[]{new[]{"\"Strong against : \" + strong","\"Strong against : \" + zh_display(strong)"},new[]{"\"Weak against : \" + weak","\"Weak against : \" + zh_display(weak)"},new[]{"\"Name : \" + waif_text[index]","\"Name : \" + zh_display(waif_text[index])"},new[]{"\"Weak against : \" + str_wk","\"Weak against : \" + zh_display(str_wk)"},new[]{"\"Afinnity : \" + str_aff","\"Afinnity : \" + zh_display(str_aff)"}})import.QueueFindReplace("gml_Object_o_brain_dressup_Draw_64",pair[0],pair[1],true);
 import.QueueAppend("gml_Script_scr_load_game","\nzh_migrate_synthetic_save(argument0);\n");
+
+// Original bug: this fortune hint passes the list name inside the string.
+var fortuneRows=JsonDocument.Parse(File.ReadAllText(Path.Combine(featureRoot,"translations.json"))).RootElement;
+string fortuneHint=fortuneRows.EnumerateArray().First(r=>r.GetProperty("id").GetInt32()==4463).GetProperty("zh").GetString();
+if(fortuneHint.StartsWith("text_adv_list,"))fortuneHint=fortuneHint.Substring("text_adv_list,".Length).TrimStart();
+string fortuneLiteral="\""+fortuneHint.Replace("\\","\\\\").Replace("\"","\\\"").Replace("\n","\\n").Replace("\r","\\r")+"\"";
+import.QueueFindReplace("gml_Object_o_shop_fortuneteller_Create_0","ds_list_add(\"text_adv_list,On the top floor, you will be met by someone whose attention has been captivated by your potential.\");","ds_list_add(text_adv_list, "+fortuneLiteral+");",true);
+
 var result=import.Import();if(!result.Successful)throw new Exception(result.PrintAllErrors(true));
 // Redirect only the original calls; wrappers keep their original built-in targets.
 var wrapperNames=JsonDocument.Parse(File.ReadAllText(Path.Combine(featureRoot,"wrapper-functions.json"))).RootElement;

@@ -100,8 +100,8 @@ def compile_locale(locale, fonts12, fonts10):
     allowed = translated.get('allowed_unchanged', {})
     for ident, text in texts.items():
         original = core[ident]['en']
-        if ident == 4007 and text != original:
-            raise ValueError('ID 4007 is an internal wrapping-width sentinel and must preserve the source')
+        if ident in [1988, 4007] and text != original:
+            raise ValueError(f'ID {ident} is an internal wrapping-width sentinel and must preserve the source')
         if ident in [6185, 6186]:
             if text.count('*') != 1 or (ident == 6185 and not text.endswith(' ')) or (ident == 6186 and not text.startswith(' ')):
                 raise ValueError(f'Dynamic currency fragment boundary mismatch at {ident}')
@@ -138,7 +138,7 @@ def compile_locale(locale, fonts12, fonts10):
         if path.name == 'gml_Script_zh_display.gml':
             continue
         path.write_text(replace_literals(path.read_text('utf-8-sig'), mapping), encoding='utf8')
-    display = ['var s=string(argument0);', 'switch(s){']
+    display = ['var s=string(argument0);', 'if(!variable_global_exists("zh_display_map"))global.zh_display_map=-1;', 'if(!ds_exists(global.zh_display_map,ds_type_map)){', ' global.zh_display_map=ds_map_create();', ' var m=global.zh_display_map;']
     seen = {}
     for row in legacy_rows:
         original, target = row['source'], row['zh']
@@ -147,9 +147,9 @@ def compile_locale(locale, fonts12, fonts10):
         if original in seen and seen[original] != target:
             raise ValueError(f'Conflicting rendering translation: {original}')
         if original not in seen:
-            display.append(f'case {json.dumps(original,ensure_ascii=False)}: return {json.dumps(target,ensure_ascii=False)};')
+            display.append(f' ds_map_add(m,{json.dumps(original,ensure_ascii=False)},{json.dumps(target,ensure_ascii=False)});')
         seen[original] = target
-    display += ['}', 'return s;']
+    display += ['}', 'if(ds_map_exists(global.zh_display_map,s))return ds_map_find_value(global.zh_display_map,s);', 'return s;']
     if not seen:
         display = ['return string(argument0);']
     (temp / 'payload/feature-gml/gml_Script_zh_display.gml').write_text('\n'.join(display)+'\n', encoding='utf8')

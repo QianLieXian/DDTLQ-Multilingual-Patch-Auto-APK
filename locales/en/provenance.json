@@ -6,5 +6,6 @@
     "https://chatgpt.com/c/6af3d31d-4850-83ea-a23b-aba9fe3ba5b1"
   ],
   "scope": "52 additional helper/Android interface entries; core English uses original game text",
-  "reviewed": true
+  "reviewed": true,
+  "final_source_context_checks": "Codex AI editorial review; internal width sentinels, dynamic fragments, prank quest and hotel dialogue-choice alignment checked against original scripts."
 }

@@ -24,19 +24,19 @@
       "number": 4,
       "locale": "ru",
       "name": "Русский",
-      "status": "pending"
+      "status": "available"
     },
     {
       "number": 5,
       "locale": "es",
       "name": "Español",
-      "status": "pending"
+      "status": "available"
     },
     {
       "number": 6,
       "locale": "de",
       "name": "Deutsch",
-      "status": "pending"
+      "status": "available"
     },
     {
       "number": 7,
@@ -48,19 +48,19 @@
       "number": 8,
       "locale": "fr",
       "name": "Français",
-      "status": "pending"
+      "status": "available"
     },
     {
       "number": 9,
       "locale": "ko",
       "name": "한국어",
-      "status": "pending"
+      "status": "available"
     },
     {
       "number": 10,
       "locale": "tr",
       "name": "Türkçe",
-      "status": "pending"
+      "status": "available"
     }
   ]
 }
