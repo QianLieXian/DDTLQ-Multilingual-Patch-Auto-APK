@@ -6,3 +6,11 @@ payload/applied-strings.json
 *.dat
 *.exe
 *.download
+*.droid
+*.dll
+*.so
+*.jks
+*.keystore
+*.pyc
+__pycache__/
+_compile/

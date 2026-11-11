@@ -1,5 +1,5 @@
 {
-  "version": "2.01.04-zh-r5",
+  "version": "2.01.04-multilingual-r6-development",
   "pc_data_sha256": "22109979ad640925cd32f1e6e6b557866f06b38464ce62ed61d9315d487338b8",
   "utmt": {
     "url": "https://github.com/UnderminersTeam/UndertaleModTool/releases/download/0.9.2.0/UTMT_CLI_v0.9.2.0-Windows.zip",
@@ -24,7 +24,7 @@
   "files": [
     {
       "path": ".gitignore",
-      "sha256": "89e6929273adc14cc07b64103ad62babdbf808fc486f4dec5de46c155f56e525"
+      "sha256": "da0cc24592e01bdfe1af9303da6f9f607e3f6d7ae69a837c6db7c81c466c1fdb"
     },
     {
       "path": "android/CrashApp.smali",
@@ -55,16 +55,24 @@
       "sha256": "e79792ae5ed40e8672ee9dcb04941a47165b50f257f400376e2da32e1e113bf0"
     },
     {
+      "path": "Build-APK.bat",
+      "sha256": "0c54cc7bf69472906e6f126e1bec0866bdd027b421afb1f39b92bab67a9656e5"
+    },
+    {
       "path": "build_android.ps1",
-      "sha256": "9b21c33a50471c867b50496cb8eb82acdbbd0f654c761b2ac5ac255561df9c81"
+      "sha256": "d70c56919d562bc53cbbbd54fb11803238f95f0a1a5be6f530c9248ad207b0f1"
     },
     {
       "path": "common.ps1",
-      "sha256": "6617570f94d3748c799b80d5cb0ecee3b932befe90c809e22699282198e43a29"
+      "sha256": "279a04e9c3b3dbec6a418707ee6682bfd9f2c62adc186b8b83253cb611c98ce0"
     },
     {
       "path": "import_save.ps1",
       "sha256": "a57424f564008385d047522467f810e357afcb41707edd6863e54e59979af5ed"
+    },
+    {
+      "path": "languages.json",
+      "sha256": "7dbd7c2b03218f6587a2013f2816b08c5b23fc58f7b198cf948a72893b7efe40"
     },
     {
       "path": "licenses/Butterscotch-AGPL-3.0.txt",
@@ -91,12 +99,508 @@
       "sha256": "3df499c3401cde9ebf84644398e67e45c804eb672e572b1960616bb212fce6f0"
     },
     {
+      "path": "locales/en/android/CrashApp.smali",
+      "sha256": "8dd7402672c301f43440ef4e859901352a1d4478b7f860141ff9e2ed1eda07cb"
+    },
+    {
+      "path": "locales/en/android/ddtlq_icon.xml",
+      "sha256": "ecd8ac6aed1bb3dae5eb01477adc2dcc1a950819a750f1d717c1a4a6862ca093"
+    },
+    {
+      "path": "locales/en/android/default_landscape.json",
+      "sha256": "aff210dcc9d1d31d19af559a7165ef83c463268617dc77737a53a874bc29faf3"
+    },
+    {
+      "path": "locales/en/android/default_portrait.json",
+      "sha256": "65eb2c034223d4d48744687f93664cb96e2336fb403db717014c837b5468565d"
+    },
+    {
+      "path": "locales/en/android/Launcher.smali",
+      "sha256": "cde010f0670a3ad347a31acca913b814795648977fdc4446309e53e32896f36e"
+    },
+    {
+      "path": "locales/en/android/LauncherReady.smali",
+      "sha256": "a8567de49af272e6f4c7cbba77a1a5661f8184a66fa6398f50486f126c540d89"
+    },
+    {
+      "path": "locales/en/android/library.json",
+      "sha256": "9621219109952301ee92c242d974a55ea7483fd54b536f6ac8b7687c8c86614b"
+    },
+    {
+      "path": "locales/en/payload/cjk-glyphs.json",
+      "sha256": "0ac047563d7513ee4d9ece813dacdcbb2c46ed9d92f0daf67420ed32749d4fc7"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Object_o_zh_tools_Create_0.gml",
+      "sha256": "d38910a7860b3132445cafc4bc21820d53fe024c72c4f03286cba91644d18926"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Object_o_zh_tools_Draw_64.gml",
+      "sha256": "15a56153b463cc411c39969ac2b1cbbc4587284c45c99161f4c530b02feb09c0"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Object_o_zh_tools_Step_0.gml",
+      "sha256": "170a6a1d345389fc3d4b4bfb7451afd5105628e73a98d03301e85e2a2abc57a3"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_controls.gml",
+      "sha256": "cca24c7bdeccbd74e12fe6b94ace9d23395d28e444a9bfbd834848b783f6f797"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_display.gml",
+      "sha256": "99f672f398d790f2a511be2144511f89e997d6835f0470c482d2f2e2f393248b"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_draw_text.gml",
+      "sha256": "c196c5a5d0018566b4ab793db037afccce2f3ffc2bf635c2718cb6045333e839"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_draw_text_color.gml",
+      "sha256": "de0551e9976d1404eb0ad66a6f293b967d98948573758e040dde7910ff56bb74"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_draw_text_ext.gml",
+      "sha256": "3fb34412988c070521566cd6615c7744c68d1c0bf45db3d0ec1655bc6c0d251e"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_draw_text_ext_color.gml",
+      "sha256": "7573cc1ad20d4ff9d79dab9641945cb3a8bfb26b70ef694a8ad2bb891ff6304d"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed.gml",
+      "sha256": "d9484979df6dfbfe1fa085be7424bd418ee4542485d944aa5a0073b2998a8979"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed_color.gml",
+      "sha256": "8aa12ba6d4766e1ef9d6a11bf4e3e30d32ca99f0fa6ee8f31cc9e0d6ebdacba9"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_draw_text_transformed.gml",
+      "sha256": "1007f4443312a6f30586f2425978924bb2c53c1725956aac6bf2841e47c532ab"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_draw_text_transformed_color.gml",
+      "sha256": "53a4ef4eece5b6b9d31a51a0c8a5e48b9159599cd8e37e427bf720d0574749a7"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_equipment_name.gml",
+      "sha256": "733c1ce853429611aeaa376a121ffeb21daf41a0bacfb2d7f0deca5b70b4b109"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_finish_load.gml",
+      "sha256": "04518040162fec6779865c682a22cd177bc2e84595e0c68826eae8e8cd9d430f"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_full_save.gml",
+      "sha256": "c04514a3db9c8b831e84b8755ce067c5b2ef3d9810466348be96c138a77a5c1d"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_helper_step.gml",
+      "sha256": "dd4f2948129e65e1a57ff6eb6eefb181f9df39f4e8e945a70be1e108334ba607"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_keyboard_check.gml",
+      "sha256": "126fc8b2b40e83fa209f2c106fa58f9f6308e7f898ddeae2d1c10a982aab1128"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_keyboard_check_pressed.gml",
+      "sha256": "b6ae34d51269d73b57a6c3979fbe201fe625dd57b36287078ab55c3813065604"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_migrate_synthetic_save.gml",
+      "sha256": "459087fe97dd79034684a5b0e9a7962a859ca5eb88fae1cc21ddbe1058877ed6"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_mouse_check_button.gml",
+      "sha256": "fae942f76acdcce1f61cd744d2b8f233a85dd07f2a20878c900bbc81554aa183"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_mouse_check_button_pressed.gml",
+      "sha256": "04811d60e62af095794c272f4032754f0edc1b44b114e708d217aee623ab09d1"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_mouse_check_button_released.gml",
+      "sha256": "41095bb41600f8b0b6b7dfe4bf9f7b0ba55d6845f243ed76ebcf050fcd98384a"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_prepare_load.gml",
+      "sha256": "07ce2376b6262fbbb4739990478e3b3f24f2f38fa4c221bd7aa9b029ae1c6d32"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_register.gml",
+      "sha256": "bdb75c8dedfca78c88e94656b4c31046e573c13346182fdf6146551b9c9f1259"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_repair_equipment.gml",
+      "sha256": "b38f6726c1f996fa815c8e76506cea1049e79e76d6b49db1ed46d5a9569d29b1"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_safe_spawn.gml",
+      "sha256": "1b992656f9c42cdd13d0aef1a6676a70cc4f4d5b29cb1c6169e97741ef437be0"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_settings_save.gml",
+      "sha256": "9ef8a89e53e3ebbccae8f6453e98982e57bda933618aa02b1ef5f70af1db706d"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_string_height_ext.gml",
+      "sha256": "eba2866695f86ab341ec9ad0d57105e3c6ea6ddda9300bcaea4769f8fdab9436"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_wrap.gml",
+      "sha256": "52efa668e7f450533e12276643593ea462b626a453c8af47f1101b5746c35a36"
+    },
+    {
+      "path": "locales/en/payload/patch-features.csx",
+      "sha256": "80c81e93082009284f38e501509caaf49f736c2a62eae7754e8db9d4c08e930f"
+    },
+    {
+      "path": "locales/en/payload/patch-font.csx",
+      "sha256": "20806d26beb96a35ef2aa67c5a39fd7fdd8fc4d9387960f5050f72439640cd52"
+    },
+    {
+      "path": "locales/en/payload/patch-port.csx",
+      "sha256": "f745f6a9c597357542045369eae11e97d8d8f48bb0ed37164b6525fd11fe1281"
+    },
+    {
+      "path": "locales/en/payload/patch-strings.csx",
+      "sha256": "2974ba11efbb1b2fbb31353af9b2c4ca63901016be6397fb5c48826919ab6fae"
+    },
+    {
+      "path": "locales/en/payload/port-functions.json",
+      "sha256": "35e5620d647174a797468f00b50166ef42c8344f22df3379d5dfb2b19a941a5a"
+    },
+    {
+      "path": "locales/en/payload/port-gml/gml_Script_zh_port_device_mouse_check_button_pressed.gml",
+      "sha256": "b7bdc426c544fbbe4fd9e0ff700036cb3625a0561c73433ca695cf0c1ef9ce90"
+    },
+    {
+      "path": "locales/en/payload/port-gml/gml_Script_zh_port_device_mouse_check_button_released.gml",
+      "sha256": "882417c5f43ec7ce1e0d11acf59a3282e66e88abd468bc6c06d1c0fe1f1b7392"
+    },
+    {
+      "path": "locales/en/payload/port-gml/gml_Script_zh_port_device_mouse_x_to_gui.gml",
+      "sha256": "14a999a14dff139016a896a206a7af43e1678ba5c68e05aca51444eed51dd32d"
+    },
+    {
+      "path": "locales/en/payload/port-gml/gml_Script_zh_port_device_mouse_y_to_gui.gml",
+      "sha256": "73f7e982aed208b9a76dc32b0264c7baae924066e576f08f87577893dcc4d0f9"
+    },
+    {
+      "path": "locales/en/payload/port-gml/gml_Script_zh_port_ds_grid_add.gml",
+      "sha256": "a680f5b9d05c6bef2c6221e6c49de98d4a464bc4e5b168be15ec2523e80903a8"
+    },
+    {
+      "path": "locales/en/payload/port-gml/gml_Script_zh_port_ds_grid_clear.gml",
+      "sha256": "ca61d5ae211ed9a1766f8b5c70e57e7e8c9b2c5963b9bac09ee7901b610ae807"
+    },
+    {
+      "path": "locales/en/payload/port-gml/gml_Script_zh_port_ds_grid_value_exists.gml",
+      "sha256": "410f06491846c131b80f80b068076b94435ba8258c33cb3182cf94914bac5adf"
+    },
+    {
+      "path": "locales/en/payload/port-gml/gml_Script_zh_port_point_in_triangle.gml",
+      "sha256": "ee55edcccbb3eee6f7b327cccc104a1e83c8684ef845e1d848a4ffab9e7c64ca"
+    },
+    {
+      "path": "locales/en/payload/port-gml/gml_Script_zh_port_register.gml",
+      "sha256": "8f84bc6adf0a64aace112d9c7923c38062547831a99006b0f5c328c8e66c3219"
+    },
+    {
+      "path": "locales/en/payload/port-gml/gml_Script_zh_port_show_message.gml",
+      "sha256": "e67eabf5f5f7c4f60fa05d165470b07b7dcbcd775a8728b26b8c4de775378f05"
+    },
+    {
+      "path": "locales/en/payload/port-gml/gml_Script_zh_port_url_open.gml",
+      "sha256": "1191f6bf154cb97401640cad16d7b6a0debc97751734c3d1cc7f7ec811476d04"
+    },
+    {
+      "path": "locales/en/payload/translations.json",
+      "sha256": "4bbc86b3c6fa8e49bb2881c530aee6bb34a5c269367eb989b97e384094b17c44"
+    },
+    {
+      "path": "locales/en/payload/ui10-glyphs.json",
+      "sha256": "ce1d8af20334b77fd71705021e995b55c2ab07d6118719417746de70f4b34ada"
+    },
+    {
+      "path": "locales/en/payload/wrapper-functions.json",
+      "sha256": "bd9e8249b5126df6299d1f03b7088ecf06fe9442b27de5eb7f10a84cca025b4b"
+    },
+    {
+      "path": "locales/en/provenance.json",
+      "sha256": "eb5f68053109628507957f8701da14137696b977e958d7c80c2ebdfb14e3f617"
+    },
+    {
+      "path": "locales/en/translations.json",
+      "sha256": "b08f232260cb51a1ea3dad9ce7bde71d4e58e627a6a0f23cdb24e0872b553587"
+    },
+    {
+      "path": "locales/en/ui.json",
+      "sha256": "b49d30e98e0ee26485b7a46d4f64e9714cdc87d96fb9b923d5abb0ac1dd3a867"
+    },
+    {
+      "path": "locales/en/validation.json",
+      "sha256": "9b1fee6bccdbf6864c9b92096c99c856eb8655362a771dcd24fd2532aa86a15f"
+    },
+    {
+      "path": "locales/zh-CN/android/CrashApp.smali",
+      "sha256": "dd2e316b55e1450b4b9ea71ec557e8da38d75c5742d2ed55c22d7486e0bcf67d"
+    },
+    {
+      "path": "locales/zh-CN/android/ddtlq_icon.xml",
+      "sha256": "ecd8ac6aed1bb3dae5eb01477adc2dcc1a950819a750f1d717c1a4a6862ca093"
+    },
+    {
+      "path": "locales/zh-CN/android/default_landscape.json",
+      "sha256": "75bb2041ea146e6dbde39e400302ebb5f5fe31d3f04752a8ad354e4e04916953"
+    },
+    {
+      "path": "locales/zh-CN/android/default_portrait.json",
+      "sha256": "980032ad8e4c9fcf3b06d335cb8ddfed77c4abec5c07128f1d5daf0e7d333b87"
+    },
+    {
+      "path": "locales/zh-CN/android/Launcher.smali",
+      "sha256": "b15fffbc630fe30a7d2386e753f1d84a0290d8929b71da0a7f31ee09fc2c5faa"
+    },
+    {
+      "path": "locales/zh-CN/android/LauncherReady.smali",
+      "sha256": "a8567de49af272e6f4c7cbba77a1a5661f8184a66fa6398f50486f126c540d89"
+    },
+    {
+      "path": "locales/zh-CN/android/library.json",
+      "sha256": "e79792ae5ed40e8672ee9dcb04941a47165b50f257f400376e2da32e1e113bf0"
+    },
+    {
+      "path": "locales/zh-CN/payload/cjk-glyphs.json",
+      "sha256": "54b08d618a6969fa3cb873e8e1ca6c530737860860a31b3090f7a9ad83fee7c4"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Object_o_zh_tools_Create_0.gml",
+      "sha256": "d38910a7860b3132445cafc4bc21820d53fe024c72c4f03286cba91644d18926"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Object_o_zh_tools_Draw_64.gml",
+      "sha256": "6e0c34961214f40671324399bac2c8f9e49a4dca040e68faaf852b52a396ae2e"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Object_o_zh_tools_Step_0.gml",
+      "sha256": "170a6a1d345389fc3d4b4bfb7451afd5105628e73a98d03301e85e2a2abc57a3"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_controls.gml",
+      "sha256": "1059686ddbf1eaf087688e5583def7e5fe692bdb4fcde81150f06beef7f85d1d"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_display.gml",
+      "sha256": "b8fa27ca9946f60a53324bd42d3fd29177f4b9a54757db62866f833b14678b52"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_draw_text.gml",
+      "sha256": "c196c5a5d0018566b4ab793db037afccce2f3ffc2bf635c2718cb6045333e839"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_draw_text_color.gml",
+      "sha256": "de0551e9976d1404eb0ad66a6f293b967d98948573758e040dde7910ff56bb74"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_draw_text_ext.gml",
+      "sha256": "3fb34412988c070521566cd6615c7744c68d1c0bf45db3d0ec1655bc6c0d251e"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_draw_text_ext_color.gml",
+      "sha256": "7573cc1ad20d4ff9d79dab9641945cb3a8bfb26b70ef694a8ad2bb891ff6304d"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed.gml",
+      "sha256": "d9484979df6dfbfe1fa085be7424bd418ee4542485d944aa5a0073b2998a8979"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed_color.gml",
+      "sha256": "8aa12ba6d4766e1ef9d6a11bf4e3e30d32ca99f0fa6ee8f31cc9e0d6ebdacba9"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_draw_text_transformed.gml",
+      "sha256": "1007f4443312a6f30586f2425978924bb2c53c1725956aac6bf2841e47c532ab"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_draw_text_transformed_color.gml",
+      "sha256": "53a4ef4eece5b6b9d31a51a0c8a5e48b9159599cd8e37e427bf720d0574749a7"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_equipment_name.gml",
+      "sha256": "733c1ce853429611aeaa376a121ffeb21daf41a0bacfb2d7f0deca5b70b4b109"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_finish_load.gml",
+      "sha256": "fda6467e18d1e58be53f36413789b9ce019bebd2ace0ba3499774d43c34faab7"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_full_save.gml",
+      "sha256": "c04514a3db9c8b831e84b8755ce067c5b2ef3d9810466348be96c138a77a5c1d"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_helper_step.gml",
+      "sha256": "779513812cd910ddf20ba7a195afd108bb68c9fa14afe307f7671585d3a44e51"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_keyboard_check.gml",
+      "sha256": "126fc8b2b40e83fa209f2c106fa58f9f6308e7f898ddeae2d1c10a982aab1128"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_keyboard_check_pressed.gml",
+      "sha256": "b6ae34d51269d73b57a6c3979fbe201fe625dd57b36287078ab55c3813065604"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_migrate_synthetic_save.gml",
+      "sha256": "459087fe97dd79034684a5b0e9a7962a859ca5eb88fae1cc21ddbe1058877ed6"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_mouse_check_button.gml",
+      "sha256": "fae942f76acdcce1f61cd744d2b8f233a85dd07f2a20878c900bbc81554aa183"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_mouse_check_button_pressed.gml",
+      "sha256": "04811d60e62af095794c272f4032754f0edc1b44b114e708d217aee623ab09d1"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_mouse_check_button_released.gml",
+      "sha256": "41095bb41600f8b0b6b7dfe4bf9f7b0ba55d6845f243ed76ebcf050fcd98384a"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_prepare_load.gml",
+      "sha256": "f1f71f6dddfe2e1178156e47f8e479d515332e299a89c0f7f610241765784300"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_register.gml",
+      "sha256": "bdb75c8dedfca78c88e94656b4c31046e573c13346182fdf6146551b9c9f1259"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_repair_equipment.gml",
+      "sha256": "b38f6726c1f996fa815c8e76506cea1049e79e76d6b49db1ed46d5a9569d29b1"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_safe_spawn.gml",
+      "sha256": "1b992656f9c42cdd13d0aef1a6676a70cc4f4d5b29cb1c6169e97741ef437be0"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_settings_save.gml",
+      "sha256": "9ef8a89e53e3ebbccae8f6453e98982e57bda933618aa02b1ef5f70af1db706d"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_string_height_ext.gml",
+      "sha256": "eba2866695f86ab341ec9ad0d57105e3c6ea6ddda9300bcaea4769f8fdab9436"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_wrap.gml",
+      "sha256": "52efa668e7f450533e12276643593ea462b626a453c8af47f1101b5746c35a36"
+    },
+    {
+      "path": "locales/zh-CN/payload/patch-features.csx",
+      "sha256": "80c81e93082009284f38e501509caaf49f736c2a62eae7754e8db9d4c08e930f"
+    },
+    {
+      "path": "locales/zh-CN/payload/patch-font.csx",
+      "sha256": "20806d26beb96a35ef2aa67c5a39fd7fdd8fc4d9387960f5050f72439640cd52"
+    },
+    {
+      "path": "locales/zh-CN/payload/patch-port.csx",
+      "sha256": "f745f6a9c597357542045369eae11e97d8d8f48bb0ed37164b6525fd11fe1281"
+    },
+    {
+      "path": "locales/zh-CN/payload/patch-strings.csx",
+      "sha256": "2974ba11efbb1b2fbb31353af9b2c4ca63901016be6397fb5c48826919ab6fae"
+    },
+    {
+      "path": "locales/zh-CN/payload/port-functions.json",
+      "sha256": "35e5620d647174a797468f00b50166ef42c8344f22df3379d5dfb2b19a941a5a"
+    },
+    {
+      "path": "locales/zh-CN/payload/port-gml/gml_Script_zh_port_device_mouse_check_button_pressed.gml",
+      "sha256": "b7bdc426c544fbbe4fd9e0ff700036cb3625a0561c73433ca695cf0c1ef9ce90"
+    },
+    {
+      "path": "locales/zh-CN/payload/port-gml/gml_Script_zh_port_device_mouse_check_button_released.gml",
+      "sha256": "882417c5f43ec7ce1e0d11acf59a3282e66e88abd468bc6c06d1c0fe1f1b7392"
+    },
+    {
+      "path": "locales/zh-CN/payload/port-gml/gml_Script_zh_port_device_mouse_x_to_gui.gml",
+      "sha256": "14a999a14dff139016a896a206a7af43e1678ba5c68e05aca51444eed51dd32d"
+    },
+    {
+      "path": "locales/zh-CN/payload/port-gml/gml_Script_zh_port_device_mouse_y_to_gui.gml",
+      "sha256": "73f7e982aed208b9a76dc32b0264c7baae924066e576f08f87577893dcc4d0f9"
+    },
+    {
+      "path": "locales/zh-CN/payload/port-gml/gml_Script_zh_port_ds_grid_add.gml",
+      "sha256": "a680f5b9d05c6bef2c6221e6c49de98d4a464bc4e5b168be15ec2523e80903a8"
+    },
+    {
+      "path": "locales/zh-CN/payload/port-gml/gml_Script_zh_port_ds_grid_clear.gml",
+      "sha256": "ca61d5ae211ed9a1766f8b5c70e57e7e8c9b2c5963b9bac09ee7901b610ae807"
+    },
+    {
+      "path": "locales/zh-CN/payload/port-gml/gml_Script_zh_port_ds_grid_value_exists.gml",
+      "sha256": "410f06491846c131b80f80b068076b94435ba8258c33cb3182cf94914bac5adf"
+    },
+    {
+      "path": "locales/zh-CN/payload/port-gml/gml_Script_zh_port_point_in_triangle.gml",
+      "sha256": "ee55edcccbb3eee6f7b327cccc104a1e83c8684ef845e1d848a4ffab9e7c64ca"
+    },
+    {
+      "path": "locales/zh-CN/payload/port-gml/gml_Script_zh_port_register.gml",
+      "sha256": "8f84bc6adf0a64aace112d9c7923c38062547831a99006b0f5c328c8e66c3219"
+    },
+    {
+      "path": "locales/zh-CN/payload/port-gml/gml_Script_zh_port_show_message.gml",
+      "sha256": "e67eabf5f5f7c4f60fa05d165470b07b7dcbcd775a8728b26b8c4de775378f05"
+    },
+    {
+      "path": "locales/zh-CN/payload/port-gml/gml_Script_zh_port_url_open.gml",
+      "sha256": "1191f6bf154cb97401640cad16d7b6a0debc97751734c3d1cc7f7ec811476d04"
+    },
+    {
+      "path": "locales/zh-CN/payload/translations.json",
+      "sha256": "7d2ef6c096a43b1ed4716b586ed0a3f7e810e1a73df2a893b4ea047d4c3cae93"
+    },
+    {
+      "path": "locales/zh-CN/payload/ui10-glyphs.json",
+      "sha256": "0185b886ecfc88e43b18c793ba1a678e7418b3586bae20c614be3b2475dd1281"
+    },
+    {
+      "path": "locales/zh-CN/payload/wrapper-functions.json",
+      "sha256": "bd9e8249b5126df6299d1f03b7088ecf06fe9442b27de5eb7f10a84cca025b4b"
+    },
+    {
+      "path": "locales/zh-CN/translations.json",
+      "sha256": "a7a2659a7b746e5716b9c37d14662bd55ce6a263071433f266bfd4621674070a"
+    },
+    {
+      "path": "locales/zh-CN/ui.json",
+      "sha256": "48ac0f759e7d6474e2be9383574cbd20ce825cd8bbc78b63dfcd37b22e928c71"
+    },
+    {
+      "path": "locales/zh-CN/validation.json",
+      "sha256": "1abe7717cd9b23ae1b07795d3ca7bf1eda634a92ffff308d6503c2ac96af57cd"
+    },
+    {
+      "path": "maintainer/compile_locale.py",
+      "sha256": "007e8df9fe4c6eabc0309e511f505ee2632fa9b106216e03a04536cfce7bb3a8"
+    },
+    {
+      "path": "maintainer/merge_batches.py",
+      "sha256": "3cb7d372ab8d8f069beafc710f4ff2cef7a6e106d0e1c32d072d21fe2a250288"
+    },
+    {
+      "path": "maintainer/refresh_manifest.py",
+      "sha256": "b292588838d96da52e7f2275c87c3742818d53522c5d93578c0602c669ad6a00"
+    },
+    {
       "path": "patch_original_apk.ps1",
-      "sha256": "56603c916bc2c7d513b3bbff11b41169d9c33a9a9f528c329c9a690447791ae5"
+      "sha256": "850d2e2bce946a07097ca6568620b9691182922220524308aa46c5fc2c9ee4a5"
     },
     {
       "path": "patch_pc.ps1",
-      "sha256": "19af5b088a84ec1f56f7d1741c542964d58be5628221a8340439ee4ae35468d6"
+      "sha256": "39199c214dc4007909bfc182598fb81a62e1832e25d168117fb1d6684e4e99e8"
     },
     {
       "path": "payload/cjk-glyphs.json",
@@ -108,7 +612,7 @@
     },
     {
       "path": "payload/feature-gml/gml_Object_o_zh_tools_Draw_64.gml",
-      "sha256": "03bf7fa1c4eaf1e53432069800143a7e74ae221f425b0227ae451889c10ec796"
+      "sha256": "6e0c34961214f40671324399bac2c8f9e49a4dca040e68faaf852b52a396ae2e"
     },
     {
       "path": "payload/feature-gml/gml_Object_o_zh_tools_Step_0.gml",
@@ -116,7 +620,7 @@
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_controls.gml",
-      "sha256": "5435b9a5decb41e6ef3f44d36929c7e2486a42323fd29dbd215f07aea825c603"
+      "sha256": "1059686ddbf1eaf087688e5583def7e5fe692bdb4fcde81150f06beef7f85d1d"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_display.gml",
@@ -168,7 +672,7 @@
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_helper_step.gml",
-      "sha256": "549f4e092f5c7ea5024f1c449cdddde973f7a8fbab126505cd01f35b4e5decd0"
+      "sha256": "779513812cd910ddf20ba7a195afd108bb68c9fa14afe307f7671585d3a44e51"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_keyboard_check.gml",
@@ -220,15 +724,15 @@
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_wrap.gml",
-      "sha256": "bb0a374006106fdc8c182cd439cc79e7e8128851c7feede38c735b0953860e90"
+      "sha256": "52efa668e7f450533e12276643593ea462b626a453c8af47f1101b5746c35a36"
     },
     {
       "path": "payload/patch-features.csx",
-      "sha256": "7441c7dc27839cca0f11c05a5acd0359ae9f800c9c33e3f6d0274a20f873e7f1"
+      "sha256": "80c81e93082009284f38e501509caaf49f736c2a62eae7754e8db9d4c08e930f"
     },
     {
       "path": "payload/patch-font.csx",
-      "sha256": "726a28ce4a0c0f40338fa55956213ac9fe59f54f21fa21073ca483f1c45c2b0e"
+      "sha256": "20806d26beb96a35ef2aa67c5a39fd7fdd8fc4d9387960f5050f72439640cd52"
     },
     {
       "path": "payload/patch-port.csx",
@@ -303,12 +807,20 @@
       "sha256": "2a7b73d934708e005276a7c13f2b60e3515275de9c6f1ddd66bbdaf8d61d9566"
     },
     {
+      "path": "translation-source.json",
+      "sha256": "1088c9fe373f4cbf44420e9bcacb00002c20849b9d602fa25c1125057749a73d"
+    },
+    {
+      "path": "WindowsPatch.bat",
+      "sha256": "306242b828fd2509a28f70979b6f6af962b60d0abe302e0602595eed8ea98ebd"
+    },
+    {
       "path": "一键制作安卓APK.bat",
-      "sha256": "39b72ffcb767a6830c2f76dbd700b8e82ab1263120d2d4008f315d63cf1bb841"
+      "sha256": "0c54cc7bf69472906e6f126e1bec0866bdd027b421afb1f39b92bab67a9656e5"
     },
     {
       "path": "一键汉化Windows.bat",
-      "sha256": "a461537988dd90a1fcaa908740b7b5dd0ff2e910c089cef58e7a1545d4625bf4"
+      "sha256": "306242b828fd2509a28f70979b6f6af962b60d0abe302e0602595eed8ea98ebd"
     },
     {
       "path": "原版安卓APK汉化.bat",

@@ -1,0 +1,103 @@
+{
+  "id": "cb231fdd-df1d-44da-b850-ebb5a0a225f3",
+  "fancyName": "DDTLQ Touch Controls",
+  "orientation": "PORTRAIT",
+  "elements": [
+    {
+      "type": "Joystick",
+      "id": "3c3b7c87-7155-598e-8bd8-f4b334137601",
+      "positionX": 0.12,
+      "positionY": 0.79,
+      "scale": 0.3,
+      "opacity": 0.65,
+      "up": {
+        "type": "Keyboard",
+        "vk": 38
+      },
+      "down": {
+        "type": "Keyboard",
+        "vk": 40
+      },
+      "left": {
+        "type": "Keyboard",
+        "vk": 37
+      },
+      "right": {
+        "type": "Keyboard",
+        "vk": 39
+      }
+    },
+    {
+      "type": "Key",
+      "id": "120b3039-202b-5527-a843-f1a094c33a89",
+      "positionX": 0.9,
+      "positionY": 0.68,
+      "scale": 0.17,
+      "opacity": 0.65,
+      "label": "Confirm",
+      "trigger": {
+        "type": "Press"
+      },
+      "binding": {
+        "type": "Keyboard",
+        "vk": 90
+      }
+    },
+    {
+      "type": "Key",
+      "id": "acc46b2e-2bbb-5706-b6d5-ff516726631b",
+      "positionX": 0.79,
+      "positionY": 0.82,
+      "scale": 0.15,
+      "opacity": 0.65,
+      "label": "Back",
+      "trigger": {
+        "type": "Press"
+      },
+      "binding": {
+        "type": "Keyboard",
+        "vk": 88
+      }
+    },
+    {
+      "type": "Key",
+      "id": "fb54174d-4f16-5291-838b-1d3b1790a4b2",
+      "positionX": 0.64,
+      "positionY": 0.86,
+      "scale": 0.14,
+      "opacity": 0.65,
+      "label": "Pause",
+      "trigger": {
+        "type": "Press"
+      },
+      "binding": {
+        "type": "Keyboard",
+        "vk": 13
+      }
+    },
+    {
+      "type": "Key",
+      "id": "6c76af98-61c8-50ba-917e-e1e8307bf135",
+      "positionX": 0.5,
+      "positionY": 0.085,
+      "scale": 0.14,
+      "opacity": 0.65,
+      "label": "Helper",
+      "trigger": {
+        "type": "Press"
+      },
+      "binding": {
+        "type": "Keyboard",
+        "vk": 120
+      }
+    },
+    {
+      "type": "Menu",
+      "id": "15d9e027-48a4-537a-bae9-11910b1bb07c",
+      "positionX": 0.055,
+      "positionY": 0.085,
+      "scale": 0.12,
+      "opacity": 0.7
+    }
+  ]
+}

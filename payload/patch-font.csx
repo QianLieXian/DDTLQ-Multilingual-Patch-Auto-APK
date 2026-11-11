@@ -59,8 +59,9 @@ foreach(var font in Data.Fonts)
 }
 // A distinct 10px UI font keeps status/result text smaller without shrinking dialogue.
 var smallRows=JsonDocument.Parse(File.ReadAllText(Path.Combine(patchRoot,"ui10-glyphs.json"))).RootElement;
-int swidth=1024,sheight=1024,cellWidth=14,cellHeight=16;
-if(smallRows.GetArrayLength()>swidth/cellWidth*sheight/cellHeight)throw new Exception("UI font atlas full");
+int swidth=1024,sheight=256,cellWidth=14,cellHeight=16;
+while(smallRows.GetArrayLength()>swidth/cellWidth*sheight/cellHeight)sheight*=2;
+if(sheight>4096)throw new Exception("UI font exceeds mobile texture limit");
 var smallPixels=new byte[swidth*sheight*4];
 var smallFont=new UndertaleFont{Name=Data.Strings.MakeString("fnt_zh_ui10"),DisplayName=Data.Strings.MakeString("Fusion Pixel UI 10"),EmSize=10,RangeStart=32,RangeEnd=65535,ScaleX=1,ScaleY=1};
 int smallIndex=0;
@@ -79,5 +80,5 @@ foreach(var row in smallRows.EnumerateArray()) {
 var orderedSmall=smallFont.Glyphs.OrderBy(g=>g.Character).ToArray();smallFont.Glyphs.Clear();foreach(var g in orderedSmall)smallFont.Glyphs.Add(g);
 var smallImage=new GMImage(swidth,sheight);smallPixels.AsSpan().CopyTo(smallImage.GetRawImageData());
 var smallTexture=new UndertaleEmbeddedTexture{Name=Data.Strings.MakeString("ZH_UI10"),TextureData=new UndertaleEmbeddedTexture.TexData{Image=smallImage.ConvertToPng()}};Data.EmbeddedTextures.Add(smallTexture);
-var smallPage=new UndertaleTexturePageItem{Name=Data.Strings.MakeString("ZH_UI10"),SourceWidth=1024,SourceHeight=1024,TargetWidth=1024,TargetHeight=1024,BoundingWidth=1024,BoundingHeight=1024,TexturePage=smallTexture};Data.TexturePageItems.Add(smallPage);smallFont.Texture=smallPage;Data.Fonts.Add(smallFont);
+var smallPage=new UndertaleTexturePageItem{Name=Data.Strings.MakeString("ZH_UI10"),SourceWidth=(ushort)swidth,SourceHeight=(ushort)sheight,TargetWidth=(ushort)swidth,TargetHeight=(ushort)sheight,BoundingWidth=(ushort)swidth,BoundingHeight=(ushort)sheight,TexturePage=smallTexture};Data.TexturePageItems.Add(smallPage);smallFont.Texture=smallPage;Data.Fonts.Add(smallFont);
 Console.WriteLine("Compact UI font: "+smallFont.Glyphs.Count+" glyphs");

@@ -11,5 +11,6 @@
     "y": 288,
     "collision_center_and_four_neighbors": false
   },
-  "device_tested": false
+  "device_tested": false,
+  "scope": "Historical Chinese r5 release only; not a completed multilingual release"
 }

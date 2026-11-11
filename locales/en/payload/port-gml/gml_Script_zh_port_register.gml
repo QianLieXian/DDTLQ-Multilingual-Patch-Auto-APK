@@ -1,0 +1,10 @@
+zh_port_device_mouse_x_to_gui(0);
+zh_port_device_mouse_y_to_gui(0);
+zh_port_ds_grid_add(0,0,0,0);
+zh_port_ds_grid_value_exists(0,0,0,0,0,0);
+zh_port_ds_grid_clear(0,0);
+zh_port_device_mouse_check_button_pressed(0,0);
+zh_port_device_mouse_check_button_released(0,0);
+zh_port_point_in_triangle(0,0,0,0,0,0,0,0);
+zh_port_url_open(0);
+zh_port_show_message(0);

@@ -45,7 +45,7 @@ var result=import.Import();if(!result.Successful)throw new Exception(result.Prin
 // Redirect only the original calls; wrappers keep their original built-in targets.
 var wrapperNames=JsonDocument.Parse(File.ReadAllText(Path.Combine(featureRoot,"wrapper-functions.json"))).RootElement;
 int redirected=0;
-foreach(var code in Data.Code.Where(c=>!c.Name.Content.StartsWith("gml_Script_zh_")&&!c.Name.Content.StartsWith("gml_Object_o_zh_")))
+foreach(var code in Data.Code.Where(c=>!c.Name.Content.StartsWith("gml_Script_zh_")&&!c.Name.Content.StartsWith("gml_Object_o_zh_")&&c.Name.Content!="gml_Object_o_start_variables_Draw_75"))
  foreach(var ins in code.Instructions)
   if(ins.Kind==UndertaleInstruction.Opcode.Call&&ins.ValueFunction!=null)
    foreach(var name in wrapperNames.EnumerateArray())

@@ -1,14 +1,13 @@
-﻿param([string]$GameDirectory)
+﻿param([string]$GameDirectory, [string]$Language)
 try {
     . (Join-Path $PSScriptRoot 'common.ps1')
-    if (!$GameDirectory) { $GameDirectory = Split-Path $PSScriptRoot -Parent }
-    if (Test-Path -LiteralPath $GameDirectory -PathType Leaf) { $GameDirectory = Split-Path (Resolve-Path -LiteralPath $GameDirectory).Path -Parent }
-    $GameDirectory = (Resolve-Path -LiteralPath $GameDirectory).Path
+    Select-PatchLanguage $Language
+    $GameDirectory = Resolve-GameDirectory $GameDirectory
     $source = Join-Path $GameDirectory 'data.win'
     if (!(Test-Path -LiteralPath $source) -or (Get-FileHash -LiteralPath $source).Hash -ne $PatchManifest.pc_data_sha256) { throw '请将指定版本的原版 Windows 游戏文件夹拖到 BAT 上。' }
     foreach ($name in @('audiogroup1.dat','audiogroup2.dat')) { if (!(Test-Path -LiteralPath (Join-Path $GameDirectory $name))) { throw ('缺少游戏文件：' + $name) } }
     Initialize-Patch
-    $build = Join-Path $OutputDirectory ('Android-PC-' + [Guid]::NewGuid().ToString('N'))
+    $build = Join-Path $OutputDirectory ('Android-PC-' + $script:PatchLocale + '-' + [Guid]::NewGuid().ToString('N'))
     New-Item -ItemType Directory -Path $build | Out-Null
     $pcData = Join-Path $build 'translated.win'
     Invoke-GamePatch $source $pcData (Join-Path $build 'build.log')
@@ -38,7 +37,7 @@ try {
     Write-Host '正在制作安卓运行外壳……'
     & $java.FullName '-jar' $apktool 'd' $baseApk[0].FullName '-o' $stage *> (Join-Path $build 'apktool.log')
     if ($LASTEXITCODE -ne 0) { throw '安卓外壳解析失败。' }
-    $sourceDir = Join-Path $PatchRoot 'android'
+    $sourceDir = $script:PatchAndroid
     $newDex = Join-Path $stage 'smali_classes18\com\qianliexian\ddtlq'
     New-Item -ItemType Directory -Path $newDex -Force | Out-Null
     Copy-Item -LiteralPath (Join-Path $sourceDir 'Launcher.smali') -Destination (Join-Path $newDex 'Launcher.smali')
@@ -57,10 +56,10 @@ try {
     $manifestPath = Join-Path $stage 'AndroidManifest.xml'
     [xml]$xml = Get-Content -LiteralPath $manifestPath -Raw -Encoding UTF8
     $oldPackage = $xml.manifest.package
-    $xml.manifest.package = 'com.qianliexian.ddtlq.zh'
+    $xml.manifest.package = $script:PatchPackage
     $app = $xml.manifest.application
     $app.SetAttribute('name',$ns,'com.qianliexian.ddtlq.CrashApp')
-    $app.SetAttribute('label',$ns,'DDTLQ 汉化')
+    $app.SetAttribute('label',$ns,$script:PatchLabel)
     $app.SetAttribute('icon',$ns,'@drawable/ddtlq_icon')
     $app.SetAttribute('roundIcon',$ns,'@drawable/ddtlq_icon')
     $app.SetAttribute('extractNativeLibs',$ns,'true')
@@ -72,9 +71,9 @@ try {
         }
         if ($activity.GetAttribute('name',$ns) -eq 'net.perfectdreams.butterscotch.android.GameActivity') { $activity.SetAttribute('screenOrientation',$ns,'sensorLandscape') }
     }
-    foreach ($provider in @($app.provider)) { $authority = $provider.GetAttribute('authorities',$ns); if ($authority) { $provider.SetAttribute('authorities',$ns,$authority.Replace($oldPackage,'com.qianliexian.ddtlq.zh')) } }
+    foreach ($provider in @($app.provider)) { $authority = $provider.GetAttribute('authorities',$ns); if ($authority) { $provider.SetAttribute('authorities',$ns,$authority.Replace($oldPackage,$script:PatchPackage)) } }
     foreach ($permission in @($xml.manifest.'uses-permission')) { if ($permission.GetAttribute('name',$ns) -eq 'com.google.android.gms.permission.AD_ID') { $xml.manifest.RemoveChild($permission) | Out-Null } }
-    foreach ($permission in @($xml.manifest.permission) + @($xml.manifest.'uses-permission')) { if ($permission) { $name=$permission.GetAttribute('name',$ns);if($name.StartsWith($oldPackage+'.')){$permission.SetAttribute('name',$ns,$name.Replace($oldPackage,'com.qianliexian.ddtlq.zh'))} } }
+    foreach ($permission in @($xml.manifest.permission) + @($xml.manifest.'uses-permission')) { if ($permission) { $name=$permission.GetAttribute('name',$ns);if($name.StartsWith($oldPackage+'.')){$permission.SetAttribute('name',$ns,$name.Replace($oldPackage,$script:PatchPackage))} } }
     $launcher = $xml.CreateElement('activity')
     $launcher.SetAttribute('name',$ns,'com.qianliexian.ddtlq.Launcher')
     $launcher.SetAttribute('exported',$ns,'true')
@@ -86,7 +85,7 @@ try {
     $xml.Save($manifestPath)
     $yamlPath=Join-Path $stage 'apktool.yml'
     $yaml=[IO.File]::ReadAllText($yamlPath)
-    $yaml=$yaml -replace 'versionCode: 32','versionCode: 2010405' -replace 'versionName: dev','versionName: 2.01.04-zh-r5'
+    $yaml=$yaml -replace 'versionCode: 32','versionCode: 2010406' -replace 'versionName: dev',('versionName: ' + $script:PatchVersion)
     [IO.File]::WriteAllText($yamlPath,$yaml,(New-Object Text.UTF8Encoding($false)))
     $unsigned = Join-Path $nativeRoot 'DDTLQ-2.01.04-zh-port-unsigned.apk'
     & $java.FullName '-jar' $apktool 'b' $stage '-o' $unsigned >> (Join-Path $build 'apktool.log')
@@ -100,7 +99,7 @@ try {
     if ($signed.Count -ne 1) { throw '没有找到唯一的签名成品。' }
     & $java.FullName '-jar' $signer '-a' $signed[0].FullName '-y' >> (Join-Path $build 'sign.log')
     if ($LASTEXITCODE -ne 0) { throw 'APK 签名验证失败。' }
-    $final = Join-Path $build 'DDTLQ-2.01.04-zh-r5-android.apk'
+    $final = Join-Path $build ('DDTLQ-' + $script:PatchVersion + '-android.apk')
     Move-Item -LiteralPath $signed[0].FullName -Destination $final
     $zip = [IO.Compression.ZipFile]::OpenRead($final)
     try { foreach ($name in @('assets/embedded/data.win','assets/embedded/audiogroup1.dat','assets/embedded/audiogroup2.dat','assets/ddtlq/full-save.ini','classes18.dex')) { if (!$zip.GetEntry($name)) { throw ('最终 APK 缺少：' + $name) } } } finally { $zip.Dispose() }
