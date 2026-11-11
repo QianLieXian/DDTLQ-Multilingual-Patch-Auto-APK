@@ -4,7 +4,7 @@ Unofficial localization tools for **Doki Doki Tri-Line Quest 2.01.04 Beta**. Ins
 
 [简体中文](README.md) · [Latest stable release](https://github.com/QianLieXian/DDTLQ-Chinese-Patch/releases/latest) · [Original game](https://kiwistate.itch.io/dokidoki-tri-line-quest) · [Report a problem](https://github.com/QianLieXian/DDTLQ-Chinese-Patch/issues)
 
-**Development status:** the published stable release is the Chinese r5 patch. The 10-language installer is in development; the eight new translations are incomplete. Unfinished languages are clearly marked and cannot be installed. English placeholders are not presented as translations.
+**Development status:** the published stable release is the Chinese r5 patch. Drafts for all eight new languages have been collected by actual ID; unified review, font checks, and builds are still in progress. Portuguese and Japanese have passed review, font compilation, and local builds. Unfinished languages remain unavailable. The multilingual version has no formal release yet.
 
 ## Windows installation
 
@@ -26,7 +26,7 @@ Controls: left joystick to move, Confirm and Back on the right, Pause near the b
 
 Menu order: **1 简体中文 · 2 English · 3 Português (Brasil) · 4 Русский · 5 Español · 6 Deutsch · 7 日本語 · 8 Français · 9 한국어 · 10 Türkçe**.
 
-English preserves the original game text. Chinese uses the existing reviewed patch. The eight new translations are being produced through **GPT-6 High in Chat mode**, with 4,890 core entries and 52 added interface entries per language. A language is enabled only after checking text completeness, placeholders, font coverage, and the build. Native-speaker review and complete walkthrough testing are not claimed.
+English preserves the original game text. Chinese uses the existing reviewed patch. The eight new translations were primarily produced through **GPT-6 High in Chat mode**, with 4,890 core entries and 52 added interface entries per language. Separately supplemented entries record their actual origin. A language is enabled only after checking text completeness, placeholders, font coverage, and the build. Native-speaker review and complete walkthrough testing are not claimed.
 
 ## Saves and troubleshooting
 

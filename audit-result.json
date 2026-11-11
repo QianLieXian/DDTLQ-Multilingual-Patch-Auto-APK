@@ -1,16 +1,101 @@
 {
+  "scope": "Multilingual r6 development checkpoint, not a completed formal release",
+  "formal_multilingual_release_published": false,
+  "source_only_manifest_files_verified": 350,
   "original_files_unchanged": 5,
-  "package_files_verified": 74,
-  "apk_size": 543592213,
-  "apk_sha256": "7d11957a0f88d087ba787483b2a46c512116090977d5883c35b4718b8f399393",
-  "android_game_sha256": "5483272d22dd7f0a82d1d3364ef7dca5886c0452c5d6c302fb42051c7b4a6d19",
-  "pc_data_sha256": "cca4043df266045a8a10929ff7b318f34d15f9c725803f93401b68390f6f0852",
-  "safe_spawn": {
-    "room": 6,
-    "x": 256,
-    "y": 288,
-    "collision_center_and_four_neighbors": false
-  },
-  "device_tested": false,
-  "scope": "Historical Chinese r5 release only; not a completed multilingual release"
+  "complete_drafts": [
+    {
+      "locale": "pt-BR",
+      "core": 4890,
+      "ui": 52
+    },
+    {
+      "locale": "ru",
+      "core": 4890,
+      "ui": 52
+    },
+    {
+      "locale": "es",
+      "core": 4890,
+      "ui": 52
+    },
+    {
+      "locale": "de",
+      "core": 4890,
+      "ui": 52
+    },
+    {
+      "locale": "ja",
+      "core": 4890,
+      "ui": 52
+    },
+    {
+      "locale": "fr",
+      "core": 4890,
+      "ui": 52
+    },
+    {
+      "locale": "ko",
+      "core": 4890,
+      "ui": 52
+    },
+    {
+      "locale": "tr",
+      "core": 4890,
+      "ui": 52
+    }
+  ],
+  "reviewed_new_languages_with_local_builds": [
+    "pt-BR",
+    "ja"
+  ],
+  "pending_new_languages": [
+    "ru",
+    "es",
+    "de",
+    "fr",
+    "ko",
+    "tr"
+  ],
+  "local_apks": [
+    {
+      "sha256": "cdb09d686b7f0457df5214d5bc6b1732981493820329b138462ae8f87f27def4",
+      "bytes": 543137557,
+      "signed_and_structure_checked": true,
+      "device_tested": false,
+      "public_upload": false,
+      "local_filename": "DDTLQ-2.01.04-en-r6-android.apk"
+    },
+    {
+      "sha256": "d78263e4ef6c329036db11cd7de7215f2389c3cfcbd105ae209c28e26d2f722c",
+      "bytes": 543305493,
+      "signed_and_structure_checked": true,
+      "device_tested": false,
+      "public_upload": false,
+      "local_filename": "DDTLQ-2.01.04-pt-BR-r6-android.apk"
+    },
+    {
+      "sha256": "fbc990b5c1a4fc1e441f2110f3af24782704e68843ddb8b765b5e755063236b5",
+      "bytes": 543538965,
+      "signed_and_structure_checked": true,
+      "device_tested": false,
+      "public_upload": false,
+      "local_filename": "DDTLQ-2.01.04-ja-r6-android.apk"
+    },
+    {
+      "sha256": "1ea17ee414d4ae6b868b18229dd5c5660dc3a893a3e627ea45a6f71337c58d97",
+      "bytes": 543592213,
+      "signed_and_structure_checked": true,
+      "device_tested": false,
+      "public_upload": false,
+      "local_filename": "DDTLQ-2.01.04-zh-CN-r6-android.apk"
+    }
+  ],
+  "android_device_tested": false,
+  "full_playthrough_tested": false,
+  "korean_separately_attributed_maintainer_ai_ids": [
+    7161,
+    7162,
+    7164
+  ]
 }

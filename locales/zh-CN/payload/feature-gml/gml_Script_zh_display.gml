@@ -1908,7 +1908,6 @@ case "I just can't hold back! I need more.": return "我忍不住了！还要更
 case "Aww~~ you were right.": return "啊呜~~你说得对。";
 case "This is the best in the world.": return "这就是世上最棒的东西。";
 case "Press the button to fuck": return "按下按钮开始做爱";
-case "Heyasdaswerswerwerwwerwerwerwerewrerasdawrwerdasdas": return "喂……";
 case "Hello and have a nice day, the Onahole are waiting for you.": return "你好，祝你今天愉快，肉便器们在等你。";
 case "Oh that's a nice dingledong enjoy your day.": return "哦，家伙真不错，祝你今天愉快。";
 case "What, was I masturbating? No, I think you are wrong, I am at work <3": return "什么，我在自慰？没有吧，你看错了，我在工作呢<3";
@@ -3619,8 +3618,8 @@ case "This must be the last key.": return "应该是最后一把钥匙了。";
 case "( How stupid she is, I knew from the first moment she was a succubus in abstinence, this is what you deserve Hiu Hiu Hiu Hiu )": return "（真蠢，从一开始，我就知道她是只禁欲的魅魔。活该，嘻嘻嘻嘻。）";
 case "YES YES YES YES OK I WILL DO IT I NEED IT NOW Please let me TOUCH THAT PENIS!": return "好好好好，我做，我现在就要，求你，让我摸那根鸡巴！";
 case "Hiu Hiu Hiu for that money you can only pay a handjob that will be your punishment for misbehaving in the bar, but if you do it right you can drink all the cum you can get.": return "咻咻咻，这点钱，只够买次手交，算是你在酒吧乱来的惩罚。不过要是做得好，弄到多少精液，都随你喝。";
-case "P-please sir I beg you I BEG YOU I just Have this * breathing heavily while holding ": return "求、求你，先生，我求你了，求求你，我只有这个。*抓着东西，大口喘气";
-case " Arcs * let me suck your dick if you want I will become your wife or your slave whatever you want.": return "阿克币*让我给你口，愿意的话，我可以做你的老婆、奴隶，随你喜欢。";
+case "P-please sir I beg you I BEG YOU I just Have this * breathing heavily while holding ": return "求、求你，先生，我求你了，求求你，我只有这些。*大口喘着气，抓着 ";
+case " Arcs * let me suck your dick if you want I will become your wife or your slave whatever you want.": return " 阿克币*让我给你口。愿意的话，我可以做你的老婆、奴隶，随你喜欢。";
 case "I BEG YOU I CAN'T TAKE IT ANYMORE": return "求求你了，我真的受不了了。";
 case "YES PLEASE TAKE MY MONEY!!!": return "好，求你，拿走我的钱！！！";
 case "Hand over all your money to the man to try to suck his dick.": return "把所有钱交给那男人，试着求他，让你吸他的屌。";

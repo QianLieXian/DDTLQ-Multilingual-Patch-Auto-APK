@@ -1,0 +1,14 @@
+{
+  "locale": "pt-BR",
+  "model": "GPT-6",
+  "effort": "High",
+  "mode": "Chat",
+  "chat_urls": [
+    "https://chatgpt.com/c/6af3d31d-4850-83ea-a23b-aba9fe3ba5b1"
+  ],
+  "reviewed": true,
+  "review_method": "Contextual AI draft, full review, original-script checks, explicit follow-up corrections, ID/token/UI bounds validation",
+  "raw_review_sha256": "cc7ad79dbec5fb5dde390b23431fa61c388eaa2fb5b7901927a6e9945a3141f9",
+  "native_speaker_tested": false,
+  "full_playthrough_tested": false
+}

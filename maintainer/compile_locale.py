@@ -14,7 +14,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LITERAL = re.compile(r'"(?:[^"\\]|\\.)*"')
-TOKENS = re.compile(r'%(?:\d+\$)?[-+0 #]*\d*(?:\.\d+)?[sdif]|\{[A-Za-z_][A-Za-z_0-9]*\}|<3|\\[nrt]')
+# Ordinary prose such as "100% in my work" is not a printf placeholder.
+# Preserve literal percent signs too, without consuming the following word.
+TOKENS = re.compile(r'%(?:\d+\$)?[-+0#]*\d*(?:\.\d+)?[sdif](?![A-Za-z])|%|\{[A-Za-z_][A-Za-z_0-9]*\}|<3|\\[nrt]')
 
 def load(path):
     return json.loads(path.read_text('utf-8-sig'))
@@ -39,7 +41,7 @@ def indexed(rows, expected, label):
                          f'extra={sorted(result.keys()-expected.keys(),key=str)}')
     return result
 
-def glyphs(folder, size, variant, wanted):
+def glyphs(folder, size, variant, wanted, fallback12=None):
     result = {}
     for fallback in [variant, 'latin', 'zh_hans', 'ja', 'ko']:
         path = folder / f'fusion-pixel-{size}px-monospaced-{fallback}.bdf'
@@ -54,6 +56,19 @@ def glyphs(folder, size, variant, wanted):
                 'advance': int(re.search(r'DWIDTH (\d+)', block)[1]),
                 'bits': block.split('BITMAP\n', 1)[1].split('ENDCHAR', 1)[0].strip().splitlines()}
     missing = wanted - result.keys()
+    if size == 10 and variant == 'cyrillic' and fallback12 is not None:
+        # The 10px Fusion face lacks Cyrillic. Its 12px face contains compact
+        # 5px-wide Cyrillic bitmaps which fit the existing small UI atlas intact.
+        # Move these up one pixel to compensate for the non-ASCII baseline shift
+        # in patch-font.csx; preserve every bitmap row, including Ё and descenders.
+        cyrillic = {cp for cp in missing if 0x0400 <= cp <= 0x052F}
+        for row in glyphs(fallback12, 12, 'latin', cyrillic):
+            row = {**row, 'yoff': row['yoff'] + 1}
+            for index, bits in enumerate(row['bits']):
+                if int(bits, 16) and not 0 <= 11-row['yoff']-row['height']+index < 12:
+                    raise ValueError(f'Cyrillic UI fallback exceeds atlas cell: {row["cp"]}')
+            result[row['cp']] = row
+        missing = wanted - result.keys()
     if missing:
         raise ValueError(f'{size}px missing glyphs: ' + repr(''.join(map(chr, sorted(missing)))))
     return [result[cp] for cp in sorted(result)]
@@ -85,6 +100,11 @@ def compile_locale(locale, fonts12, fonts10):
     allowed = translated.get('allowed_unchanged', {})
     for ident, text in texts.items():
         original = core[ident]['en']
+        if ident == 4007 and text != original:
+            raise ValueError('ID 4007 is an internal wrapping-width sentinel and must preserve the source')
+        if ident in [6185, 6186]:
+            if text.count('*') != 1 or (ident == 6185 and not text.endswith(' ')) or (ident == 6186 and not text.startswith(' ')):
+                raise ValueError(f'Dynamic currency fragment boundary mismatch at {ident}')
         if locale not in ['zh-CN', 'en']:
             if collections.Counter(TOKENS.findall(original)) != collections.Counter(TOKENS.findall(text)):
                 raise ValueError(f'Placeholder mismatch at {ident}')
@@ -136,9 +156,9 @@ def compile_locale(locale, fonts12, fonts10):
     chars = {ord(c) for text in list(texts.values()) + list(ui_texts.values()) for c in text if c not in '\n\r\t'}
     if any(cp > 65535 for cp in chars):
         raise ValueError('The GameMaker font format cannot represent non-BMP characters')
-    variant = {'zh-CN': 'zh_hans', 'ja': 'ja', 'ko': 'ko'}.get(locale, 'latin')
+    variant = {'zh-CN': 'zh_hans', 'ja': 'ja', 'ko': 'ko', 'ru': 'cyrillic'}.get(locale, 'latin')
     big = glyphs(fonts12, 12, variant, {cp for cp in chars if cp > 126})
-    small = glyphs(fonts10, 10, variant, chars | set(range(32, 127)))
+    small = glyphs(fonts10, 10, variant, chars | set(range(32, 127)), fallback12=fonts12)
     advances={row['cp']:row['advance'] for row in small}
     def text_width(value):
         return max(sum(advances.get(ord(c),0) for c in line) for line in value.split('\n'))

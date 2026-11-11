@@ -6,7 +6,7 @@ Unofficial **Doki Doki Tri-Line Quest translation patches and Android APK builde
 
 [English](README.en.md) · [下载正式 Latest](https://github.com/QianLieXian/DDTLQ-Chinese-Patch/releases/latest) · [原作购买页](https://kiwistate.itch.io/dokidoki-tri-line-quest) · [反馈问题](https://github.com/QianLieXian/DDTLQ-Chinese-Patch/issues)
 
-> **当前状态：** 正式版为中文 r5。10 语言安装器正在制作，新增的 8 种译稿尚未全部完成。未就绪语言会明确标记并阻止安装，不用英文占位冒充翻译。开发中的多语言版本尚未发布为正式 Release。
+> **当前状态：** 正式版为中文 r5。8 种新增语言的正文和界面译稿均已按 ID 收齐，正在统一校对、字体检查和构建验证。未就绪语言会明确标记并阻止安装。多语言版尚未发布正式 Release。
 
 ## 一键安装
 
@@ -24,16 +24,16 @@ Unofficial **Doki Doki Tri-Line Quest translation patches and Android APK builde
 | --- | --- | --- |
 | 1 | 简体中文 | 沿用已审校中文补丁 |
 | 2 | English | 原版文本；新增助手界面为英文 |
-| 3 | Português (Brasil) | 巴西葡萄牙语，AI 翻译中 |
-| 4 | Русский | 俄语，AI 翻译中 |
-| 5 | Español | 西班牙语，待完成 |
-| 6 | Deutsch | 德语，待完成 |
-| 7 | 日本語 | 日语，待完成 |
-| 8 | Français | 法语，待完成 |
-| 9 | 한국어 | 韩语，待完成 |
-| 10 | Türkçe | 土耳其语，待完成 |
+| 3 | Português (Brasil) | 审校、字体和本地构建已通过，待正式发布 |
+| 4 | Русский | 译稿收齐，统一审校中 |
+| 5 | Español | 译稿收齐，统一审校中 |
+| 6 | Deutsch | 译稿收齐，统一审校中 |
+| 7 | 日本語 | 审校、字体和本地构建已通过，待正式发布 |
+| 8 | Français | 译稿收齐，统一审校中 |
+| 9 | 한국어 | 译稿收齐，统一审校中 |
+| 10 | Türkçe | 译稿收齐，统一审校中 |
 
-语言数量及顺序与 [Hole Dweller 多语言项目](https://github.com/QianLieXian/HoleDweller-zhCN-Auto-APK) 一致。每种目标语言包含 **4,890 条核心文本和 52 条助手、存档提示及安卓界面文案**。新增译稿通过 GPT-6 High 聊天模式做语境翻译；条目、占位符、字体和构建通过校验后才开放安装。未宣称经过全部母语审校或全剧情通关测试。
+语言数量及顺序与 [Hole Dweller 多语言项目](https://github.com/QianLieXian/HoleDweller-zhCN-Auto-APK) 一致。每种目标语言包含 **4,890 条核心文本和 52 条助手、存档提示及安卓界面文案**。新增译稿主要通过 GPT-6 High 聊天模式做语境翻译；单独补译条目记录具体来源。条目、占位符、字体和构建通过校验后才开放安装。未宣称经过全部母语审校或全剧情通关测试。
 
 ## 安卓触控与作弊助手
 

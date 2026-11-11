@@ -1,0 +1,1 @@
+draw_text_ext_transformed_color(argument0, argument1, zh_wrap(zh_display(argument2), argument4), argument3, argument4, argument5, argument6, argument7, argument8, argument9, argument10, argument11, argument12);
