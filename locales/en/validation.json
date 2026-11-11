@@ -1,0 +1,11 @@
+{
+  "locale": "en",
+  "core_count": 4890,
+  "ui_count": 52,
+  "unchanged_core_ids": [],
+  "glyphs12": 2,
+  "glyphs10": 97,
+  "core_sha256": "b08f232260cb51a1ea3dad9ce7bde71d4e58e627a6a0f23cdb24e0872b553587",
+  "status": "desktop-build-and-helper-verified",
+  "verification": "Compiled with pinned UndertaleModCli; 180-frame controls screen and F9 helper screenshot checked in the existing runner. Android package pending."
+}

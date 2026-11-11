@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "game": "DDTLQ 2.01.04 Beta",
+  "languages": [
+    {
+      "number": 1,
+      "locale": "zh-CN",
+      "name": "简体中文",
+      "status": "available"
+    },
+    {
+      "number": 2,
+      "locale": "en",
+      "name": "English",
+      "status": "available"
+    },
+    {
+      "number": 3,
+      "locale": "pt-BR",
+      "name": "Português (Brasil)",
+      "status": "available"
+    },
+    {
+      "number": 4,
+      "locale": "ru",
+      "name": "Русский",
+      "status": "pending"
+    },
+    {
+      "number": 5,
+      "locale": "es",
+      "name": "Español",
+      "status": "pending"
+    },
+    {
+      "number": 6,
+      "locale": "de",
+      "name": "Deutsch",
+      "status": "pending"
+    },
+    {
+      "number": 7,
+      "locale": "ja",
+      "name": "日本語",
+      "status": "available"
+    },
+    {
+      "number": 8,
+      "locale": "fr",
+      "name": "Français",
+      "status": "pending"
+    },
+    {
+      "number": 9,
+      "locale": "ko",
+      "name": "한국어",
+      "status": "pending"
+    },
+    {
+      "number": 10,
+      "locale": "tr",
+      "name": "Türkçe",
+      "status": "pending"
+    }
+  ]
+}

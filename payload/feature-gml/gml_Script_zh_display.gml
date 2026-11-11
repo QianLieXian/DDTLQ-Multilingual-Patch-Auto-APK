@@ -700,7 +700,6 @@ case "y : ": return "纵坐标：";
 case "state : ": return "状态：";
 case "xscale : ": return "横向缩放：";
 case "   REC": return "   录像";
-case "Heyasdaswerswerwerwwerwerwerwerewrerasdawrwerdasdas": return "喂……";
 case "C_ID : ": return "角色编号：";
 case "Talk T : ": return "对话时间：";
 case "Guy T : ": return "人物时间：";

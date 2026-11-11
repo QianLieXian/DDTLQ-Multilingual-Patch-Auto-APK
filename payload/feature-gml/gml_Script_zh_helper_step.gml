@@ -22,8 +22,8 @@ if(zh_tap_wait>0){
  zh_tap_wait-=1;
  if(zh_tap_wait==0){
   var px=device_mouse_x_to_gui(0),py=device_mouse_y_to_gui(0);
-  if(!global.zh_port_mode && px>=346 && px<384 && py>=2 && py<24 && zh_tap_x>=346 && zh_tap_y<24){panel=!panel;global.zh_input_cooldown=3;}
-  else if(panel && px>=62 && px<322 && py>=40 && py<180){
+  if(!global.zh_port_mode && px>=342 && px<384 && py>=2 && py<24 && zh_tap_x>=342 && zh_tap_y<24){panel=!panel;global.zh_input_cooldown=3;}
+  else if(panel && px>=42 && px<342 && py>=40 && py<180){
    var row=floor((py-40)/20);
    zh_choice=row;action=row;global.zh_input_cooldown=3;
   }

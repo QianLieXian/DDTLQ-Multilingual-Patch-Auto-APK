@@ -1,6 +1,7 @@
 ﻿param([string]$ApkPath)
 try {
     . (Join-Path $PSScriptRoot 'common.ps1')
+    Select-PatchLanguage 'zh-CN'
     if (!$ApkPath) {
         $candidate = @(Get-ChildItem -LiteralPath $PSScriptRoot -Filter '*.apk' -File)
         if ($candidate.Count -eq 1) { $ApkPath = $candidate[0].FullName }
