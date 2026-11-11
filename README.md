@@ -4,7 +4,7 @@
 
 Unofficial **Doki Doki Tri-Line Quest translation patches and Android APK builder**, with a 10-language installer for Windows and local Android builds.
 
-[English](README.en.md) · [下载正式 Latest](https://github.com/QianLieXian/DDTLQ-Chinese-Patch/releases/latest) · [原作购买页](https://kiwistate.itch.io/dokidoki-tri-line-quest) · [反馈问题](https://github.com/QianLieXian/DDTLQ-Chinese-Patch/issues)
+[English](README.en.md) · [下载正式 Latest](https://github.com/QianLieXian/DDTLQ-Multilingual-Patch-Auto-APK/releases/latest) · [原作购买页](https://kiwistate.itch.io/dokidoki-tri-line-quest) · [反馈问题](https://github.com/QianLieXian/DDTLQ-Multilingual-Patch-Auto-APK/issues) · [多语言源码与进度](https://github.com/QianLieXian/DDTLQ-Multilingual-Patch-Auto-APK/tree/multilingual)
 
 > **当前状态：** 正式版为中文 r5。8 种新增语言的正文和界面译稿均已按 ID 收齐，正在统一校对、字体检查和构建验证。未就绪语言会明确标记并阻止安装。多语言版尚未发布正式 Release。
 

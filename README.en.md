@@ -2,7 +2,7 @@
 
 Unofficial localization tools for **Doki Doki Tri-Line Quest 2.01.04 Beta**. Install a language patch on Windows, or build an Android APK locally from your own compatible Windows game files.
 
-[简体中文](README.md) · [Latest stable release](https://github.com/QianLieXian/DDTLQ-Chinese-Patch/releases/latest) · [Original game](https://kiwistate.itch.io/dokidoki-tri-line-quest) · [Report a problem](https://github.com/QianLieXian/DDTLQ-Chinese-Patch/issues)
+[简体中文](README.md) · [Latest stable release](https://github.com/QianLieXian/DDTLQ-Multilingual-Patch-Auto-APK/releases/latest) · [Original game](https://kiwistate.itch.io/dokidoki-tri-line-quest) · [Report a problem](https://github.com/QianLieXian/DDTLQ-Multilingual-Patch-Auto-APK/issues) · [Multilingual source and progress](https://github.com/QianLieXian/DDTLQ-Multilingual-Patch-Auto-APK/tree/multilingual)
 
 **Development status:** the published stable release is the Chinese r5 patch. Drafts for all eight new languages have been collected by actual ID; unified review, font checks, and builds are still in progress. Portuguese and Japanese have passed review, font compilation, and local builds. Unfinished languages remain unavailable. The multilingual version has no formal release yet.
 
