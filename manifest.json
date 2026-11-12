@@ -1,5 +1,5 @@
 ﻿{
-  "version": "2.01.04-multilingual-r8",
+  "version": "2.01.04-multilingual-r9",
   "pc_data_sha256": "22109979ad640925cd32f1e6e6b557866f06b38464ce62ed61d9315d487338b8",
   "utmt": {
     "url": "https://github.com/UnderminersTeam/UndertaleModTool/releases/download/0.9.2.0/UTMT_CLI_v0.9.2.0-Windows.zip",
@@ -28,7 +28,7 @@
     },
     {
       "path": "android/CrashApp.smali",
-      "sha256": "694307dcc071a7707ee2e27781694326af58a0f4789373d697ce33ef63e55c37"
+      "sha256": "cbb6160655bb2f4261bf830b2f6645915e4e6d55ff2988d3c1993436d112e6f9"
     },
     {
       "path": "android/ddtlq_icon.xml",
@@ -48,7 +48,7 @@
     },
     {
       "path": "android/Launcher.smali",
-      "sha256": "44e359eff9bcb0173065425cbf194be2d5c27c0ea59197ab706dea48d562b02b"
+      "sha256": "c6164a2fbe98eb6c7d74bafad88e3866f69799144ae08c31d951f2fe45fe81a7"
     },
     {
       "path": "android/LauncherReady.smali",
@@ -80,11 +80,11 @@
     },
     {
       "path": "build_android.ps1",
-      "sha256": "022eacb2f37ea92dfde48d082c833b44dfde52722e841322c2ebf07c586397c5"
+      "sha256": "75df4f9641f56b350e51542dc080fd5c440f89f7d732e4b55e96ac0962569cdb"
     },
     {
       "path": "common.ps1",
-      "sha256": "a750006c414a27f7a9f7304f37823f1bab0e974d0e49ee7187497b8f74d3ac0a"
+      "sha256": "28e47cac5268dc6266cfd087f5a367ccd75114f1c4bd7f5f0f213d6965e56ff1"
     },
     {
       "path": "import_save.ps1",
@@ -120,7 +120,7 @@
     },
     {
       "path": "locales/de/android/CrashApp.smali",
-      "sha256": "1c298192cf5e0d2f37369fb98aeea3c0eed7d1d1569dc60e36a102044d1e2fba"
+      "sha256": "514c333eef81dd71234a6fbc69806ccbea8706794e43cff722355f97cad7e52d"
     },
     {
       "path": "locales/de/android/ddtlq_icon.xml",
@@ -140,7 +140,7 @@
     },
     {
       "path": "locales/de/android/Launcher.smali",
-      "sha256": "8252c94115214658d96ad7419e4d3b31dd8da76d17c64f8b7e8c383b7333ce12"
+      "sha256": "a6016d24b49b75db327dc8e80b944a7430c5c940d07de85c70197e7acc7cb1c4"
     },
     {
       "path": "locales/de/android/LauncherReady.smali",
@@ -200,35 +200,35 @@
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_draw_text.gml",
-      "sha256": "c196c5a5d0018566b4ab793db037afccce2f3ffc2bf635c2718cb6045333e839"
+      "sha256": "e4b6d02fa1bbed41b084f7704b14e4cbba77ca54a47e8a76fa64eb22ac458bf3"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_draw_text_color.gml",
-      "sha256": "de0551e9976d1404eb0ad66a6f293b967d98948573758e040dde7910ff56bb74"
+      "sha256": "470ec209f2ccc816f73a055b3b1e07e0ce75cc3c06a1df32522f124d65872695"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_draw_text_ext.gml",
-      "sha256": "3fb34412988c070521566cd6615c7744c68d1c0bf45db3d0ec1655bc6c0d251e"
+      "sha256": "864ac230162900cbd756b5c335d289a0140360318551ab8056b8caf198c32d55"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_draw_text_ext_color.gml",
-      "sha256": "7573cc1ad20d4ff9d79dab9641945cb3a8bfb26b70ef694a8ad2bb891ff6304d"
+      "sha256": "c7832dfccb5f0dfde1ec56f4f1423de9527e8b8cb661cab49cdd8478ef34b36c"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed.gml",
-      "sha256": "d9484979df6dfbfe1fa085be7424bd418ee4542485d944aa5a0073b2998a8979"
+      "sha256": "36080340e91988f417b70d23748243a1e7d82659f455226a85c0e90aea9280b2"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed_color.gml",
-      "sha256": "8aa12ba6d4766e1ef9d6a11bf4e3e30d32ca99f0fa6ee8f31cc9e0d6ebdacba9"
+      "sha256": "4cb8862b28d7b2e7cbca9879bc3a379ef0ea1b1b5ae1e3db14a03a5e125c18d4"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_draw_text_transformed.gml",
-      "sha256": "1007f4443312a6f30586f2425978924bb2c53c1725956aac6bf2841e47c532ab"
+      "sha256": "6d517169ce90c44efb9a5f6bf44ae4d9c57f09377e568b605d0764ef518d08e9"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_draw_text_transformed_color.gml",
-      "sha256": "53a4ef4eece5b6b9d31a51a0c8a5e48b9159599cd8e37e427bf720d0574749a7"
+      "sha256": "30b82e8d6b9d3b6a231f0e3fc42be2b5798bac8c42a2e2c1b77ff64d6b4b6c68"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_equipment_name.gml",
@@ -416,7 +416,7 @@
     },
     {
       "path": "locales/de/ui.json",
-      "sha256": "159a74530a2823970fdb29492fece7ca477bd1f0a4c3086a2b3599e3ea47745b"
+      "sha256": "afad0b9e52ea074ea015ea4518048c2a407c4a5228af5f7bef601e4e580a0802"
     },
     {
       "path": "locales/de/validation.json",
@@ -424,7 +424,7 @@
     },
     {
       "path": "locales/en/android/CrashApp.smali",
-      "sha256": "749570614382af76597f52b929693761417da1e4625e048ec983b319a242a52e"
+      "sha256": "64f38610d99d88fa3f5132f10a0dfbe469e84085cdc5b9747d9762a6724368af"
     },
     {
       "path": "locales/en/android/ddtlq_icon.xml",
@@ -444,7 +444,7 @@
     },
     {
       "path": "locales/en/android/Launcher.smali",
-      "sha256": "c39b46098c5ad6f7e61fe59cb79df9b7ecf3ac0d9634ca3287d3c6212cb4f44b"
+      "sha256": "50edea912aa6d559a6f332cf5b8adf775229f33dbf5e46c0eea11ce35af06492"
     },
     {
       "path": "locales/en/android/LauncherReady.smali",
@@ -504,35 +504,35 @@
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_draw_text.gml",
-      "sha256": "c196c5a5d0018566b4ab793db037afccce2f3ffc2bf635c2718cb6045333e839"
+      "sha256": "e4b6d02fa1bbed41b084f7704b14e4cbba77ca54a47e8a76fa64eb22ac458bf3"
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_draw_text_color.gml",
-      "sha256": "de0551e9976d1404eb0ad66a6f293b967d98948573758e040dde7910ff56bb74"
+      "sha256": "470ec209f2ccc816f73a055b3b1e07e0ce75cc3c06a1df32522f124d65872695"
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_draw_text_ext.gml",
-      "sha256": "3fb34412988c070521566cd6615c7744c68d1c0bf45db3d0ec1655bc6c0d251e"
+      "sha256": "864ac230162900cbd756b5c335d289a0140360318551ab8056b8caf198c32d55"
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_draw_text_ext_color.gml",
-      "sha256": "7573cc1ad20d4ff9d79dab9641945cb3a8bfb26b70ef694a8ad2bb891ff6304d"
+      "sha256": "c7832dfccb5f0dfde1ec56f4f1423de9527e8b8cb661cab49cdd8478ef34b36c"
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed.gml",
-      "sha256": "d9484979df6dfbfe1fa085be7424bd418ee4542485d944aa5a0073b2998a8979"
+      "sha256": "36080340e91988f417b70d23748243a1e7d82659f455226a85c0e90aea9280b2"
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed_color.gml",
-      "sha256": "8aa12ba6d4766e1ef9d6a11bf4e3e30d32ca99f0fa6ee8f31cc9e0d6ebdacba9"
+      "sha256": "4cb8862b28d7b2e7cbca9879bc3a379ef0ea1b1b5ae1e3db14a03a5e125c18d4"
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_draw_text_transformed.gml",
-      "sha256": "1007f4443312a6f30586f2425978924bb2c53c1725956aac6bf2841e47c532ab"
+      "sha256": "6d517169ce90c44efb9a5f6bf44ae4d9c57f09377e568b605d0764ef518d08e9"
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_draw_text_transformed_color.gml",
-      "sha256": "53a4ef4eece5b6b9d31a51a0c8a5e48b9159599cd8e37e427bf720d0574749a7"
+      "sha256": "30b82e8d6b9d3b6a231f0e3fc42be2b5798bac8c42a2e2c1b77ff64d6b4b6c68"
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_equipment_name.gml",
@@ -716,7 +716,7 @@
     },
     {
       "path": "locales/en/ui.json",
-      "sha256": "032998816fa5734808897d3647295f0598a16039355bacb97e8183919e78cc2e"
+      "sha256": "d31dfd3b2d21450265060b6ebbeb1ba9b8acf85abe4888a30a1e4b4a3df0f108"
     },
     {
       "path": "locales/en/validation.json",
@@ -724,7 +724,7 @@
     },
     {
       "path": "locales/es/android/CrashApp.smali",
-      "sha256": "edd4080a0d10711bf781889ea0a9316422a3e27d9d562086346ae2b0e762de39"
+      "sha256": "5addb980ca1a19a1f7018e471fbeabd03b88766d781282b002afeacec31f1404"
     },
     {
       "path": "locales/es/android/ddtlq_icon.xml",
@@ -744,7 +744,7 @@
     },
     {
       "path": "locales/es/android/Launcher.smali",
-      "sha256": "4b15bf702c5f7682e0bb1be5892ac7b5405d9214f77cd63811085fb085ffda9c"
+      "sha256": "319ea1174b49d7e67ed3895dd52be68e0cd59d7f6fac87b5654c373ae495db68"
     },
     {
       "path": "locales/es/android/LauncherReady.smali",
@@ -804,35 +804,35 @@
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_draw_text.gml",
-      "sha256": "c196c5a5d0018566b4ab793db037afccce2f3ffc2bf635c2718cb6045333e839"
+      "sha256": "e4b6d02fa1bbed41b084f7704b14e4cbba77ca54a47e8a76fa64eb22ac458bf3"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_draw_text_color.gml",
-      "sha256": "de0551e9976d1404eb0ad66a6f293b967d98948573758e040dde7910ff56bb74"
+      "sha256": "470ec209f2ccc816f73a055b3b1e07e0ce75cc3c06a1df32522f124d65872695"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_draw_text_ext.gml",
-      "sha256": "3fb34412988c070521566cd6615c7744c68d1c0bf45db3d0ec1655bc6c0d251e"
+      "sha256": "864ac230162900cbd756b5c335d289a0140360318551ab8056b8caf198c32d55"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_draw_text_ext_color.gml",
-      "sha256": "7573cc1ad20d4ff9d79dab9641945cb3a8bfb26b70ef694a8ad2bb891ff6304d"
+      "sha256": "c7832dfccb5f0dfde1ec56f4f1423de9527e8b8cb661cab49cdd8478ef34b36c"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed.gml",
-      "sha256": "d9484979df6dfbfe1fa085be7424bd418ee4542485d944aa5a0073b2998a8979"
+      "sha256": "36080340e91988f417b70d23748243a1e7d82659f455226a85c0e90aea9280b2"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed_color.gml",
-      "sha256": "8aa12ba6d4766e1ef9d6a11bf4e3e30d32ca99f0fa6ee8f31cc9e0d6ebdacba9"
+      "sha256": "4cb8862b28d7b2e7cbca9879bc3a379ef0ea1b1b5ae1e3db14a03a5e125c18d4"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_draw_text_transformed.gml",
-      "sha256": "1007f4443312a6f30586f2425978924bb2c53c1725956aac6bf2841e47c532ab"
+      "sha256": "6d517169ce90c44efb9a5f6bf44ae4d9c57f09377e568b605d0764ef518d08e9"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_draw_text_transformed_color.gml",
-      "sha256": "53a4ef4eece5b6b9d31a51a0c8a5e48b9159599cd8e37e427bf720d0574749a7"
+      "sha256": "30b82e8d6b9d3b6a231f0e3fc42be2b5798bac8c42a2e2c1b77ff64d6b4b6c68"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_equipment_name.gml",
@@ -1020,7 +1020,7 @@
     },
     {
       "path": "locales/es/ui.json",
-      "sha256": "68927ebcf7266032335c9a54d9a670b5d644c43e12e4ac4ae3a7d6898fd4f4d2"
+      "sha256": "4eef3fa8fa0881f12ade6f7395018902de33cecd4007d96e953dd4cff883e99b"
     },
     {
       "path": "locales/es/validation.json",
@@ -1028,7 +1028,7 @@
     },
     {
       "path": "locales/fr/android/CrashApp.smali",
-      "sha256": "bfef2db784f89fdbabc2f6e8ae67ba742ce6ca2da51eacc6c52ba9f6437ce7e9"
+      "sha256": "b7b9a400a773f4a2c47980ad2e74381636f21521bf50d57d5ce32557a0d97ab8"
     },
     {
       "path": "locales/fr/android/ddtlq_icon.xml",
@@ -1048,7 +1048,7 @@
     },
     {
       "path": "locales/fr/android/Launcher.smali",
-      "sha256": "a8d05283bdc6de090594bbaf0dba7ef552c8f6c990d61cd292083a42960b5004"
+      "sha256": "b56c87d89b3451e72e7816205d4bed92be9c25e5516a669061adeebf636087b9"
     },
     {
       "path": "locales/fr/android/LauncherReady.smali",
@@ -1108,35 +1108,35 @@
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_draw_text.gml",
-      "sha256": "c196c5a5d0018566b4ab793db037afccce2f3ffc2bf635c2718cb6045333e839"
+      "sha256": "e4b6d02fa1bbed41b084f7704b14e4cbba77ca54a47e8a76fa64eb22ac458bf3"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_draw_text_color.gml",
-      "sha256": "de0551e9976d1404eb0ad66a6f293b967d98948573758e040dde7910ff56bb74"
+      "sha256": "470ec209f2ccc816f73a055b3b1e07e0ce75cc3c06a1df32522f124d65872695"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_draw_text_ext.gml",
-      "sha256": "3fb34412988c070521566cd6615c7744c68d1c0bf45db3d0ec1655bc6c0d251e"
+      "sha256": "864ac230162900cbd756b5c335d289a0140360318551ab8056b8caf198c32d55"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_draw_text_ext_color.gml",
-      "sha256": "7573cc1ad20d4ff9d79dab9641945cb3a8bfb26b70ef694a8ad2bb891ff6304d"
+      "sha256": "c7832dfccb5f0dfde1ec56f4f1423de9527e8b8cb661cab49cdd8478ef34b36c"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed.gml",
-      "sha256": "d9484979df6dfbfe1fa085be7424bd418ee4542485d944aa5a0073b2998a8979"
+      "sha256": "36080340e91988f417b70d23748243a1e7d82659f455226a85c0e90aea9280b2"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed_color.gml",
-      "sha256": "8aa12ba6d4766e1ef9d6a11bf4e3e30d32ca99f0fa6ee8f31cc9e0d6ebdacba9"
+      "sha256": "4cb8862b28d7b2e7cbca9879bc3a379ef0ea1b1b5ae1e3db14a03a5e125c18d4"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_draw_text_transformed.gml",
-      "sha256": "1007f4443312a6f30586f2425978924bb2c53c1725956aac6bf2841e47c532ab"
+      "sha256": "6d517169ce90c44efb9a5f6bf44ae4d9c57f09377e568b605d0764ef518d08e9"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_draw_text_transformed_color.gml",
-      "sha256": "53a4ef4eece5b6b9d31a51a0c8a5e48b9159599cd8e37e427bf720d0574749a7"
+      "sha256": "30b82e8d6b9d3b6a231f0e3fc42be2b5798bac8c42a2e2c1b77ff64d6b4b6c68"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_equipment_name.gml",
@@ -1324,7 +1324,7 @@
     },
     {
       "path": "locales/fr/ui.json",
-      "sha256": "b058dfdfce9ff9a1408e8f73530ea0a718776889ee19b46d710b38d4a2bd436a"
+      "sha256": "4e2951c5207191cabe95cc109d14ba75237d0c938bdba0adc20772cc400ddf3a"
     },
     {
       "path": "locales/fr/validation.json",
@@ -1332,7 +1332,7 @@
     },
     {
       "path": "locales/ja/android/CrashApp.smali",
-      "sha256": "25cf09b830b26c98822605aa18e528db54b1a2d0d62f1ea63e938b4fb8e7ae22"
+      "sha256": "8a50e982fcb7da79a47ad1249ac847ed5f1cf3286b752ef1fd7d25736447797b"
     },
     {
       "path": "locales/ja/android/ddtlq_icon.xml",
@@ -1352,7 +1352,7 @@
     },
     {
       "path": "locales/ja/android/Launcher.smali",
-      "sha256": "8961e85e59bd29e9c64ebd920af4bbcf2b97cdf294b1a2f39892fd7a58ba24f6"
+      "sha256": "3c0084c6b9f08f5f0184705238e4f7d901d7c2714dde3b0f4fd0a529f978beec"
     },
     {
       "path": "locales/ja/android/LauncherReady.smali",
@@ -1412,35 +1412,35 @@
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_draw_text.gml",
-      "sha256": "c196c5a5d0018566b4ab793db037afccce2f3ffc2bf635c2718cb6045333e839"
+      "sha256": "e4b6d02fa1bbed41b084f7704b14e4cbba77ca54a47e8a76fa64eb22ac458bf3"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_draw_text_color.gml",
-      "sha256": "de0551e9976d1404eb0ad66a6f293b967d98948573758e040dde7910ff56bb74"
+      "sha256": "470ec209f2ccc816f73a055b3b1e07e0ce75cc3c06a1df32522f124d65872695"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_draw_text_ext.gml",
-      "sha256": "3fb34412988c070521566cd6615c7744c68d1c0bf45db3d0ec1655bc6c0d251e"
+      "sha256": "864ac230162900cbd756b5c335d289a0140360318551ab8056b8caf198c32d55"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_draw_text_ext_color.gml",
-      "sha256": "7573cc1ad20d4ff9d79dab9641945cb3a8bfb26b70ef694a8ad2bb891ff6304d"
+      "sha256": "c7832dfccb5f0dfde1ec56f4f1423de9527e8b8cb661cab49cdd8478ef34b36c"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed.gml",
-      "sha256": "d9484979df6dfbfe1fa085be7424bd418ee4542485d944aa5a0073b2998a8979"
+      "sha256": "36080340e91988f417b70d23748243a1e7d82659f455226a85c0e90aea9280b2"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed_color.gml",
-      "sha256": "8aa12ba6d4766e1ef9d6a11bf4e3e30d32ca99f0fa6ee8f31cc9e0d6ebdacba9"
+      "sha256": "4cb8862b28d7b2e7cbca9879bc3a379ef0ea1b1b5ae1e3db14a03a5e125c18d4"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_draw_text_transformed.gml",
-      "sha256": "1007f4443312a6f30586f2425978924bb2c53c1725956aac6bf2841e47c532ab"
+      "sha256": "6d517169ce90c44efb9a5f6bf44ae4d9c57f09377e568b605d0764ef518d08e9"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_draw_text_transformed_color.gml",
-      "sha256": "53a4ef4eece5b6b9d31a51a0c8a5e48b9159599cd8e37e427bf720d0574749a7"
+      "sha256": "30b82e8d6b9d3b6a231f0e3fc42be2b5798bac8c42a2e2c1b77ff64d6b4b6c68"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_equipment_name.gml",
@@ -1624,7 +1624,7 @@
     },
     {
       "path": "locales/ja/ui.json",
-      "sha256": "adc7441ae1d08af878682f62ad7becd7b3130f4857e7e4d8b5b34e04f0efa26b"
+      "sha256": "d5f6bdd521bde8089ce26c995ed107f185b7cd2796495279342227c010fa6272"
     },
     {
       "path": "locales/ja/validation.json",
@@ -1632,7 +1632,7 @@
     },
     {
       "path": "locales/ko/android/CrashApp.smali",
-      "sha256": "a4562e193580147649eaffd2d45e5bed89fe28aac11a21495d09d2abd34444d4"
+      "sha256": "49ce815b065815ff89f1bc1888e75621f1400cdeced4b63ec2f6107fad50c646"
     },
     {
       "path": "locales/ko/android/ddtlq_icon.xml",
@@ -1652,7 +1652,7 @@
     },
     {
       "path": "locales/ko/android/Launcher.smali",
-      "sha256": "519af6066a8e7f222a45b1ac4b0322382b40b52ff1db52b0954be514c1f3bac7"
+      "sha256": "5cc980571c38b13e6a8c2604f6e51e32db52b59dbca80a921b0dc85116f7d6c4"
     },
     {
       "path": "locales/ko/android/LauncherReady.smali",
@@ -1712,35 +1712,35 @@
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_draw_text.gml",
-      "sha256": "c196c5a5d0018566b4ab793db037afccce2f3ffc2bf635c2718cb6045333e839"
+      "sha256": "e4b6d02fa1bbed41b084f7704b14e4cbba77ca54a47e8a76fa64eb22ac458bf3"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_draw_text_color.gml",
-      "sha256": "de0551e9976d1404eb0ad66a6f293b967d98948573758e040dde7910ff56bb74"
+      "sha256": "470ec209f2ccc816f73a055b3b1e07e0ce75cc3c06a1df32522f124d65872695"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_draw_text_ext.gml",
-      "sha256": "3fb34412988c070521566cd6615c7744c68d1c0bf45db3d0ec1655bc6c0d251e"
+      "sha256": "864ac230162900cbd756b5c335d289a0140360318551ab8056b8caf198c32d55"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_draw_text_ext_color.gml",
-      "sha256": "7573cc1ad20d4ff9d79dab9641945cb3a8bfb26b70ef694a8ad2bb891ff6304d"
+      "sha256": "c7832dfccb5f0dfde1ec56f4f1423de9527e8b8cb661cab49cdd8478ef34b36c"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed.gml",
-      "sha256": "d9484979df6dfbfe1fa085be7424bd418ee4542485d944aa5a0073b2998a8979"
+      "sha256": "36080340e91988f417b70d23748243a1e7d82659f455226a85c0e90aea9280b2"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed_color.gml",
-      "sha256": "8aa12ba6d4766e1ef9d6a11bf4e3e30d32ca99f0fa6ee8f31cc9e0d6ebdacba9"
+      "sha256": "4cb8862b28d7b2e7cbca9879bc3a379ef0ea1b1b5ae1e3db14a03a5e125c18d4"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_draw_text_transformed.gml",
-      "sha256": "1007f4443312a6f30586f2425978924bb2c53c1725956aac6bf2841e47c532ab"
+      "sha256": "6d517169ce90c44efb9a5f6bf44ae4d9c57f09377e568b605d0764ef518d08e9"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_draw_text_transformed_color.gml",
-      "sha256": "53a4ef4eece5b6b9d31a51a0c8a5e48b9159599cd8e37e427bf720d0574749a7"
+      "sha256": "30b82e8d6b9d3b6a231f0e3fc42be2b5798bac8c42a2e2c1b77ff64d6b4b6c68"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_equipment_name.gml",
@@ -1928,7 +1928,7 @@
     },
     {
       "path": "locales/ko/ui.json",
-      "sha256": "b9ecb33b15450106651e488bc9bb4dc6d16f04ddaf10241cbc61e8d7c4d9c15c"
+      "sha256": "8b4c8252123338eecfc5fc3176b9609a87d00ed1ad2a4a4612c3b48bd6dca2f6"
     },
     {
       "path": "locales/ko/validation.json",
@@ -1936,7 +1936,7 @@
     },
     {
       "path": "locales/pt-BR/android/CrashApp.smali",
-      "sha256": "c4e1c222947c63a10a1bbc88ba264f80305cf474bb9a5edc484e337e6e9b4db5"
+      "sha256": "5bfea84f321a5b74d291f8376dc84e38708660092ed40e5b6b12c2d9d469b723"
     },
     {
       "path": "locales/pt-BR/android/ddtlq_icon.xml",
@@ -1956,7 +1956,7 @@
     },
     {
       "path": "locales/pt-BR/android/Launcher.smali",
-      "sha256": "b5d3a56103d07e38a41029b06f19d0d204742d89b94c96429af69e115a18a61c"
+      "sha256": "1ffd71138ab86463ef245e44ad9b109cf93204817fbf3332d74ba20cf82dfaf6"
     },
     {
       "path": "locales/pt-BR/android/LauncherReady.smali",
@@ -2016,35 +2016,35 @@
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_draw_text.gml",
-      "sha256": "c196c5a5d0018566b4ab793db037afccce2f3ffc2bf635c2718cb6045333e839"
+      "sha256": "e4b6d02fa1bbed41b084f7704b14e4cbba77ca54a47e8a76fa64eb22ac458bf3"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_draw_text_color.gml",
-      "sha256": "de0551e9976d1404eb0ad66a6f293b967d98948573758e040dde7910ff56bb74"
+      "sha256": "470ec209f2ccc816f73a055b3b1e07e0ce75cc3c06a1df32522f124d65872695"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_draw_text_ext.gml",
-      "sha256": "3fb34412988c070521566cd6615c7744c68d1c0bf45db3d0ec1655bc6c0d251e"
+      "sha256": "864ac230162900cbd756b5c335d289a0140360318551ab8056b8caf198c32d55"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_draw_text_ext_color.gml",
-      "sha256": "7573cc1ad20d4ff9d79dab9641945cb3a8bfb26b70ef694a8ad2bb891ff6304d"
+      "sha256": "c7832dfccb5f0dfde1ec56f4f1423de9527e8b8cb661cab49cdd8478ef34b36c"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed.gml",
-      "sha256": "d9484979df6dfbfe1fa085be7424bd418ee4542485d944aa5a0073b2998a8979"
+      "sha256": "36080340e91988f417b70d23748243a1e7d82659f455226a85c0e90aea9280b2"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed_color.gml",
-      "sha256": "8aa12ba6d4766e1ef9d6a11bf4e3e30d32ca99f0fa6ee8f31cc9e0d6ebdacba9"
+      "sha256": "4cb8862b28d7b2e7cbca9879bc3a379ef0ea1b1b5ae1e3db14a03a5e125c18d4"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_draw_text_transformed.gml",
-      "sha256": "1007f4443312a6f30586f2425978924bb2c53c1725956aac6bf2841e47c532ab"
+      "sha256": "6d517169ce90c44efb9a5f6bf44ae4d9c57f09377e568b605d0764ef518d08e9"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_draw_text_transformed_color.gml",
-      "sha256": "53a4ef4eece5b6b9d31a51a0c8a5e48b9159599cd8e37e427bf720d0574749a7"
+      "sha256": "30b82e8d6b9d3b6a231f0e3fc42be2b5798bac8c42a2e2c1b77ff64d6b4b6c68"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_equipment_name.gml",
@@ -2228,7 +2228,7 @@
     },
     {
       "path": "locales/pt-BR/ui.json",
-      "sha256": "b172e63bda80ef74ac2e52baaf235439384f7a92807a3a8fab58ed3fa9d37a89"
+      "sha256": "183d9aa3a0b34ac833247c772a4e1b95608698ac7ad929f8a18b0d7242facfab"
     },
     {
       "path": "locales/pt-BR/validation.json",
@@ -2236,7 +2236,7 @@
     },
     {
       "path": "locales/ru/android/CrashApp.smali",
-      "sha256": "167a790a657f01cb150d47b20cfa4d5af199887062029bc4f24c1c6774311a0d"
+      "sha256": "f525a5bdde0ed2bd30dc87a0033172f48a852ab1d792940e780fa6437cc73642"
     },
     {
       "path": "locales/ru/android/ddtlq_icon.xml",
@@ -2256,7 +2256,7 @@
     },
     {
       "path": "locales/ru/android/Launcher.smali",
-      "sha256": "117bae24cf1e9cf0ee03c728c48447042da98f8e0e50bf1217555625a6215e8c"
+      "sha256": "385adb0d0c3cad44a9f77c0f6ef5e0118ea6ea29bb2758dea0bfb82772bc6c8b"
     },
     {
       "path": "locales/ru/android/LauncherReady.smali",
@@ -2316,35 +2316,35 @@
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_draw_text.gml",
-      "sha256": "c196c5a5d0018566b4ab793db037afccce2f3ffc2bf635c2718cb6045333e839"
+      "sha256": "e4b6d02fa1bbed41b084f7704b14e4cbba77ca54a47e8a76fa64eb22ac458bf3"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_draw_text_color.gml",
-      "sha256": "de0551e9976d1404eb0ad66a6f293b967d98948573758e040dde7910ff56bb74"
+      "sha256": "470ec209f2ccc816f73a055b3b1e07e0ce75cc3c06a1df32522f124d65872695"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_draw_text_ext.gml",
-      "sha256": "3fb34412988c070521566cd6615c7744c68d1c0bf45db3d0ec1655bc6c0d251e"
+      "sha256": "864ac230162900cbd756b5c335d289a0140360318551ab8056b8caf198c32d55"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_draw_text_ext_color.gml",
-      "sha256": "7573cc1ad20d4ff9d79dab9641945cb3a8bfb26b70ef694a8ad2bb891ff6304d"
+      "sha256": "c7832dfccb5f0dfde1ec56f4f1423de9527e8b8cb661cab49cdd8478ef34b36c"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed.gml",
-      "sha256": "d9484979df6dfbfe1fa085be7424bd418ee4542485d944aa5a0073b2998a8979"
+      "sha256": "36080340e91988f417b70d23748243a1e7d82659f455226a85c0e90aea9280b2"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed_color.gml",
-      "sha256": "8aa12ba6d4766e1ef9d6a11bf4e3e30d32ca99f0fa6ee8f31cc9e0d6ebdacba9"
+      "sha256": "4cb8862b28d7b2e7cbca9879bc3a379ef0ea1b1b5ae1e3db14a03a5e125c18d4"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_draw_text_transformed.gml",
-      "sha256": "1007f4443312a6f30586f2425978924bb2c53c1725956aac6bf2841e47c532ab"
+      "sha256": "6d517169ce90c44efb9a5f6bf44ae4d9c57f09377e568b605d0764ef518d08e9"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_draw_text_transformed_color.gml",
-      "sha256": "53a4ef4eece5b6b9d31a51a0c8a5e48b9159599cd8e37e427bf720d0574749a7"
+      "sha256": "30b82e8d6b9d3b6a231f0e3fc42be2b5798bac8c42a2e2c1b77ff64d6b4b6c68"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_equipment_name.gml",
@@ -2532,7 +2532,7 @@
     },
     {
       "path": "locales/ru/ui.json",
-      "sha256": "27de2dfd09d3eb3e1e7957109950703ca385e9952b5007f0ce344a93a226ccf2"
+      "sha256": "84ca8fbb1a8b65d2ac5c8105884ac04102d4ccd3487c1b389f0691a4d3ecb82b"
     },
     {
       "path": "locales/ru/validation.json",
@@ -2540,7 +2540,7 @@
     },
     {
       "path": "locales/tr/android/CrashApp.smali",
-      "sha256": "6a85b5e48b5f0982979dd06aa7aefbb2098ab2b8472b6cd7d7ea1a5342448948"
+      "sha256": "a848c7d36d43779cf669c8c0146a1a16ccf9c83f6c1ccff5670670b8314a9dcd"
     },
     {
       "path": "locales/tr/android/ddtlq_icon.xml",
@@ -2560,7 +2560,7 @@
     },
     {
       "path": "locales/tr/android/Launcher.smali",
-      "sha256": "959bf8b44e284a0ddb8141938e200c089849717221191eb3ce8dec98e30ec730"
+      "sha256": "3bcecfc02800f002b18510d68233aa2bd3316566e3b52bc73c54d25cbdb41607"
     },
     {
       "path": "locales/tr/android/LauncherReady.smali",
@@ -2620,35 +2620,35 @@
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_draw_text.gml",
-      "sha256": "c196c5a5d0018566b4ab793db037afccce2f3ffc2bf635c2718cb6045333e839"
+      "sha256": "e4b6d02fa1bbed41b084f7704b14e4cbba77ca54a47e8a76fa64eb22ac458bf3"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_draw_text_color.gml",
-      "sha256": "de0551e9976d1404eb0ad66a6f293b967d98948573758e040dde7910ff56bb74"
+      "sha256": "470ec209f2ccc816f73a055b3b1e07e0ce75cc3c06a1df32522f124d65872695"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_draw_text_ext.gml",
-      "sha256": "3fb34412988c070521566cd6615c7744c68d1c0bf45db3d0ec1655bc6c0d251e"
+      "sha256": "864ac230162900cbd756b5c335d289a0140360318551ab8056b8caf198c32d55"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_draw_text_ext_color.gml",
-      "sha256": "7573cc1ad20d4ff9d79dab9641945cb3a8bfb26b70ef694a8ad2bb891ff6304d"
+      "sha256": "c7832dfccb5f0dfde1ec56f4f1423de9527e8b8cb661cab49cdd8478ef34b36c"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed.gml",
-      "sha256": "d9484979df6dfbfe1fa085be7424bd418ee4542485d944aa5a0073b2998a8979"
+      "sha256": "36080340e91988f417b70d23748243a1e7d82659f455226a85c0e90aea9280b2"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed_color.gml",
-      "sha256": "8aa12ba6d4766e1ef9d6a11bf4e3e30d32ca99f0fa6ee8f31cc9e0d6ebdacba9"
+      "sha256": "4cb8862b28d7b2e7cbca9879bc3a379ef0ea1b1b5ae1e3db14a03a5e125c18d4"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_draw_text_transformed.gml",
-      "sha256": "1007f4443312a6f30586f2425978924bb2c53c1725956aac6bf2841e47c532ab"
+      "sha256": "6d517169ce90c44efb9a5f6bf44ae4d9c57f09377e568b605d0764ef518d08e9"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_draw_text_transformed_color.gml",
-      "sha256": "53a4ef4eece5b6b9d31a51a0c8a5e48b9159599cd8e37e427bf720d0574749a7"
+      "sha256": "30b82e8d6b9d3b6a231f0e3fc42be2b5798bac8c42a2e2c1b77ff64d6b4b6c68"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_equipment_name.gml",
@@ -2836,7 +2836,7 @@
     },
     {
       "path": "locales/tr/ui.json",
-      "sha256": "965660a98f388100fec49e1bafb5d16c33ac58411f6c9f47d7802e1d69427c2a"
+      "sha256": "ccb43960d72c3a9882e3b31eb8c973916825f8e2a1a21653dbc382b35cb085a8"
     },
     {
       "path": "locales/tr/validation.json",
@@ -2844,7 +2844,7 @@
     },
     {
       "path": "locales/zh-CN/android/CrashApp.smali",
-      "sha256": "adff5c1d83f0a859652cd2f3f95be4bd36871edf590f82f2ca8ea98808aa47f1"
+      "sha256": "10a24aef7d4b9740428903a9d0c536d97961b329a8d0f3313f036f4cd2107746"
     },
     {
       "path": "locales/zh-CN/android/ddtlq_icon.xml",
@@ -2864,7 +2864,7 @@
     },
     {
       "path": "locales/zh-CN/android/Launcher.smali",
-      "sha256": "7a09ba3955f961f850d3c8cf28fcf2f679a4d5ea3670212530e778ad0146ec32"
+      "sha256": "a8a2757598be991a4673d75b3c0340164ab58f5e2e3d4d7c7b0c9459ffc8175f"
     },
     {
       "path": "locales/zh-CN/android/LauncherReady.smali",
@@ -2924,35 +2924,35 @@
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_draw_text.gml",
-      "sha256": "c196c5a5d0018566b4ab793db037afccce2f3ffc2bf635c2718cb6045333e839"
+      "sha256": "e4b6d02fa1bbed41b084f7704b14e4cbba77ca54a47e8a76fa64eb22ac458bf3"
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_draw_text_color.gml",
-      "sha256": "de0551e9976d1404eb0ad66a6f293b967d98948573758e040dde7910ff56bb74"
+      "sha256": "470ec209f2ccc816f73a055b3b1e07e0ce75cc3c06a1df32522f124d65872695"
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_draw_text_ext.gml",
-      "sha256": "3fb34412988c070521566cd6615c7744c68d1c0bf45db3d0ec1655bc6c0d251e"
+      "sha256": "864ac230162900cbd756b5c335d289a0140360318551ab8056b8caf198c32d55"
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_draw_text_ext_color.gml",
-      "sha256": "7573cc1ad20d4ff9d79dab9641945cb3a8bfb26b70ef694a8ad2bb891ff6304d"
+      "sha256": "c7832dfccb5f0dfde1ec56f4f1423de9527e8b8cb661cab49cdd8478ef34b36c"
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed.gml",
-      "sha256": "d9484979df6dfbfe1fa085be7424bd418ee4542485d944aa5a0073b2998a8979"
+      "sha256": "36080340e91988f417b70d23748243a1e7d82659f455226a85c0e90aea9280b2"
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_draw_text_ext_transformed_color.gml",
-      "sha256": "8aa12ba6d4766e1ef9d6a11bf4e3e30d32ca99f0fa6ee8f31cc9e0d6ebdacba9"
+      "sha256": "4cb8862b28d7b2e7cbca9879bc3a379ef0ea1b1b5ae1e3db14a03a5e125c18d4"
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_draw_text_transformed.gml",
-      "sha256": "1007f4443312a6f30586f2425978924bb2c53c1725956aac6bf2841e47c532ab"
+      "sha256": "6d517169ce90c44efb9a5f6bf44ae4d9c57f09377e568b605d0764ef518d08e9"
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_draw_text_transformed_color.gml",
-      "sha256": "53a4ef4eece5b6b9d31a51a0c8a5e48b9159599cd8e37e427bf720d0574749a7"
+      "sha256": "30b82e8d6b9d3b6a231f0e3fc42be2b5798bac8c42a2e2c1b77ff64d6b4b6c68"
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_equipment_name.gml",
@@ -3132,7 +3132,7 @@
     },
     {
       "path": "locales/zh-CN/ui.json",
-      "sha256": "e7fa74f294ad1eca5b24f8c6b67adadad97ccd98a2e39cc8d50b8646d8a7ff38"
+      "sha256": "5908ad3aa056e6f86bd7069a318dbe014deda9a2d308597112cbbf4fd87eb399"
     },
     {
       "path": "locales/zh-CN/validation.json",
@@ -3164,7 +3164,7 @@
     },
     {
       "path": "maintainer/TOWN-PERFORMANCE.md",
-      "sha256": "ebd470ac63440997709615898d352fd348941cce7bcba0d4a3a051aeddd764ca"
+      "sha256": "66f7102308989dbf4a854fe512af1f2250ffc3a72e001ddfcefd6646565ec80c"
     },
     {
       "path": "maintainer/TRANSLATION-REVIEW.md",
@@ -3212,35 +3212,35 @@
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_draw_text.gml",
-      "sha256": "c196c5a5d0018566b4ab793db037afccce2f3ffc2bf635c2718cb6045333e839"
+      "sha256": "e4b6d02fa1bbed41b084f7704b14e4cbba77ca54a47e8a76fa64eb22ac458bf3"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_draw_text_color.gml",
-      "sha256": "de0551e9976d1404eb0ad66a6f293b967d98948573758e040dde7910ff56bb74"
+      "sha256": "470ec209f2ccc816f73a055b3b1e07e0ce75cc3c06a1df32522f124d65872695"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_draw_text_ext.gml",
-      "sha256": "3fb34412988c070521566cd6615c7744c68d1c0bf45db3d0ec1655bc6c0d251e"
+      "sha256": "864ac230162900cbd756b5c335d289a0140360318551ab8056b8caf198c32d55"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_draw_text_ext_color.gml",
-      "sha256": "7573cc1ad20d4ff9d79dab9641945cb3a8bfb26b70ef694a8ad2bb891ff6304d"
+      "sha256": "c7832dfccb5f0dfde1ec56f4f1423de9527e8b8cb661cab49cdd8478ef34b36c"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_draw_text_ext_transformed.gml",
-      "sha256": "d9484979df6dfbfe1fa085be7424bd418ee4542485d944aa5a0073b2998a8979"
+      "sha256": "36080340e91988f417b70d23748243a1e7d82659f455226a85c0e90aea9280b2"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_draw_text_ext_transformed_color.gml",
-      "sha256": "8aa12ba6d4766e1ef9d6a11bf4e3e30d32ca99f0fa6ee8f31cc9e0d6ebdacba9"
+      "sha256": "4cb8862b28d7b2e7cbca9879bc3a379ef0ea1b1b5ae1e3db14a03a5e125c18d4"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_draw_text_transformed.gml",
-      "sha256": "1007f4443312a6f30586f2425978924bb2c53c1725956aac6bf2841e47c532ab"
+      "sha256": "6d517169ce90c44efb9a5f6bf44ae4d9c57f09377e568b605d0764ef518d08e9"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_draw_text_transformed_color.gml",
-      "sha256": "53a4ef4eece5b6b9d31a51a0c8a5e48b9159599cd8e37e427bf720d0574749a7"
+      "sha256": "30b82e8d6b9d3b6a231f0e3fc42be2b5798bac8c42a2e2c1b77ff64d6b4b6c68"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_equipment_name.gml",
@@ -3416,35 +3416,35 @@
     },
     {
       "path": "README.de.md",
-      "sha256": "e82ec201ae77bf31a8a01e960c138c47c9ed83ee37c9a00f7fc33810e9d0922e"
+      "sha256": "75981080e558fd3b2b2f11ec3c61e379531de47c5fd57b040e254d2355e58570"
     },
     {
       "path": "README.es.md",
-      "sha256": "d63ad4cd48cc8223ba2e8c9a63143aa399af58626bef27ff1807d9f98581f690"
+      "sha256": "8efd7827a18850affc3cb66c5cad61441191e88111caacdf299650bc8587c104"
     },
     {
       "path": "README.fr.md",
-      "sha256": "cf70e3565844823b161bee6140c85c0e95fc385b46fa8c82a4080b66ff9dc767"
+      "sha256": "449e1cb5020a8b04e69c09c8ebacc661d523edd6fbb7075ad77e1f7a674dda9f"
     },
     {
       "path": "README.ja.md",
-      "sha256": "b75c1175fa9245ac3ec15b246ee4143ce5653373c7daac2c09849bfe0335f2d3"
+      "sha256": "afe436a485cbd7d47d6e5c7c766c1a0089d4c8abe8b3c36c209388d4a6259c32"
     },
     {
       "path": "README.ko.md",
-      "sha256": "d93df8329af7456664f2512000b2269b8bd8e84ab889c246faecc9e9e77b8602"
+      "sha256": "6a1b10170f5221630cceca677c90f7027f647f69b7f3711e632df8c90aee10c3"
     },
     {
       "path": "README.pt-BR.md",
-      "sha256": "e374e24de387c28c1cf5898d70660bb42b54ea6d64b9ca31048173f5caa3a3dc"
+      "sha256": "2e719799496affaf33a884568c1c5441734830f6398cd4ba5531a8a0bb490a9a"
     },
     {
       "path": "README.ru.md",
-      "sha256": "b0477dac9df2a9f8a13cc2509136b9ce96f1f981f5624d0730982ab7362f1615"
+      "sha256": "0114632b8fd027e3ad32f90647d71e89f1b1b5b761c917fb8b0cb72312f603bb"
     },
     {
       "path": "README.tr.md",
-      "sha256": "3768678e960e0ba0617f0f54a15f2f839656a307d033557b11cb637ef28c3069"
+      "sha256": "f49f7de15008ae6df649160ef2a44eeea4b3fb37aa7f2bf824d68c308b2154fd"
     },
     {
       "path": "saves/Memory Quartz Line 99.ini",
@@ -3481,6 +3481,66 @@
     {
       "path": "maintainer/R8-ANDROID-ZIP-AUDIT.json",
       "sha256": "4aa53190c72f78440d0b35e45af41c514c355cae3b8a104946b0739355868013"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_NineSliceBox.gml",
+      "sha256": "12610a03113f75c9f4cd043b4642def3c507051208a35c5fa45e64bbd444f970"
+    },
+    {
+      "path": "maintainer/r9-qa-render.csx",
+      "sha256": "7db7d9e98c191bef459466762e359ef51b448da355efc607a3862a415f7cad22"
+    },
+    {
+      "path": "maintainer/r9-qa-render.gml",
+      "sha256": "0b6e9bbde9fa29f59709161eea044f1c58062cc11e0e2ee37b9df85230d7c00c"
+    },
+    {
+      "path": "maintainer/r9-town-benchmark.csx",
+      "sha256": "432cb743d38c1fd16b536231d25ccfa5af94b30e887ccc1c120f0536a972976c"
+    },
+    {
+      "path": "maintainer/R9-TOWN-RENDER-AUDIT.json",
+      "sha256": "3fc79d9d1379f7e8a1d4f59f2220f13ea6df568dd467ee0ea1e9e522fdc7c28f"
+    },
+    {
+      "path": "locales/de/payload/feature-gml/gml_Script_NineSliceBox.gml",
+      "sha256": "12610a03113f75c9f4cd043b4642def3c507051208a35c5fa45e64bbd444f970"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_NineSliceBox.gml",
+      "sha256": "12610a03113f75c9f4cd043b4642def3c507051208a35c5fa45e64bbd444f970"
+    },
+    {
+      "path": "locales/es/payload/feature-gml/gml_Script_NineSliceBox.gml",
+      "sha256": "12610a03113f75c9f4cd043b4642def3c507051208a35c5fa45e64bbd444f970"
+    },
+    {
+      "path": "locales/fr/payload/feature-gml/gml_Script_NineSliceBox.gml",
+      "sha256": "12610a03113f75c9f4cd043b4642def3c507051208a35c5fa45e64bbd444f970"
+    },
+    {
+      "path": "locales/ja/payload/feature-gml/gml_Script_NineSliceBox.gml",
+      "sha256": "12610a03113f75c9f4cd043b4642def3c507051208a35c5fa45e64bbd444f970"
+    },
+    {
+      "path": "locales/ko/payload/feature-gml/gml_Script_NineSliceBox.gml",
+      "sha256": "12610a03113f75c9f4cd043b4642def3c507051208a35c5fa45e64bbd444f970"
+    },
+    {
+      "path": "locales/pt-BR/payload/feature-gml/gml_Script_NineSliceBox.gml",
+      "sha256": "12610a03113f75c9f4cd043b4642def3c507051208a35c5fa45e64bbd444f970"
+    },
+    {
+      "path": "locales/ru/payload/feature-gml/gml_Script_NineSliceBox.gml",
+      "sha256": "12610a03113f75c9f4cd043b4642def3c507051208a35c5fa45e64bbd444f970"
+    },
+    {
+      "path": "locales/tr/payload/feature-gml/gml_Script_NineSliceBox.gml",
+      "sha256": "12610a03113f75c9f4cd043b4642def3c507051208a35c5fa45e64bbd444f970"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_NineSliceBox.gml",
+      "sha256": "12610a03113f75c9f4cd043b4642def3c507051208a35c5fa45e64bbd444f970"
     }
   ]
 }

@@ -1,5 +1,7 @@
 # Doki Doki Tri-Line Quest (DDTLQ) — Deutsch
 
+**Weniger Ruckeln in der Stadt, r9:** Unsichtbare Fenster und Texte werden nicht mehr gezeichnet; drei geprüfte Rahmengrafiken brauchen sichtbar höchstens neun Zeichenaufrufe. Alle 108 Bildvergleiche sind pixelgenau gleich. Die Nachtstadt benötigt im Windows-Original im Mittel 4,31→0,41 ms Verarbeitungszeit, Android-Daten im lokalen Runner 5,52→0,53 ms Skriptzeit. Keine Telefon-FPS-Messung; der Telefontest steht noch aus. Der r8-Startfix bleibt erhalten.
+
 **Android-Absturz behoben, r8:** Fehlerhafte ZIP-Datendeskriptoren der r7-APKs verhinderten das Laden der Startklassen. Für alle Sprachen werden die Header vor dem Signieren normalisiert und Struktur sowie CRC-Prüfsummen danach geprüft. APK mit r8 neu erstellen. Der erneute Test auf dem betroffenen Telefon steht noch aus.
 
 Du brauchst eine eigene, kompatible Windows-Version von DDTLQ 2.01.04 Beta. Starte `WindowsPatch.bat` für Windows oder `Build-APK.bat` für Android. Wähle **6 — Deutsch** und drücke Enter; gib anschließend deinen Windows-Spielordner an. Das Ergebnis liegt in `output`. Für Android wird eine signierte APK aus deinen eigenen Spieldateien gebaut; eine vorhandene Android-APK ist nicht nötig. Unterstützt werden Android 7 oder neuer und ARM64. Dieses Paket enthält nur Übersetzung und Werkzeuge, kein vollständiges Spiel.

@@ -94,7 +94,7 @@ try {
     $xml.Save($manifestPath)
     $yamlPath=Join-Path $stage 'apktool.yml'
     $yaml=[IO.File]::ReadAllText($yamlPath)
-    $yaml=$yaml -replace 'versionCode: 32','versionCode: 2010408' -replace 'versionName: dev',('versionName: ' + $script:PatchVersion)
+    $yaml=$yaml -replace 'versionCode: 32','versionCode: 2010409' -replace 'versionName: dev',('versionName: ' + $script:PatchVersion)
     [IO.File]::WriteAllText($yamlPath,$yaml,(New-Object Text.UTF8Encoding($false)))
     $unsigned = Join-Path $nativeRoot 'DDTLQ-2.01.04-zh-port-unsigned.apk'
     & $java.FullName '-jar' $apktool 'b' $stage '-o' $unsigned >> (Join-Path $build 'apktool.log')

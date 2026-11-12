@@ -1,5 +1,9 @@
 # Doki Doki Tri-Line Quest (DDTLQ) — Multilingual Patch & Android APK Builder
 
+**Town slowdown fix r9:** Invisible panels and text skip rendering; three verified skins need at most nine draws when visible. All 108 visual comparisons are pixel-identical. Native Windows night-town processing averaged 4.31→0.41 ms; Android-ported data measured 5.52→0.53 ms of script time locally. These are not phone FPS measurements. Phone retesting is pending; the r8 startup fix remains.
+
+**Android crash fix r8:** Fixed inconsistent ZIP data descriptors in r7 APKs that prevented startup classes from loading. Every language now normalizes ZIP headers before signing and validates entry structure and decompressed CRCs after signing. Rebuild with r8. The repaired APK still awaits a phone retest.
+
 Unofficial translation patches for **DDTLQ 2.01.04 Beta**, with language-select Windows installers and a local Android APK builder.
 
 [简体中文](README.md) · [English](README.en.md) · [Português](README.pt-BR.md) · [Русский](README.ru.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md)

@@ -50,7 +50,7 @@
  invoke-direct {v1,v0,v2},Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
  new-instance v0,Ljava/io/PrintWriter;
  invoke-direct {v0,v1},Ljava/io/PrintWriter;-><init>(Ljava/io/File;)V
- const-string v1,"DDTLQ r8 Java crash report"
+ const-string v1,"DDTLQ r9 Java crash report"
  invoke-virtual {v0,v1},Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
  sget-object v1,Landroid/os/Build;->MODEL:Ljava/lang/String;
  invoke-virtual {v0,v1},Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
@@ -113,7 +113,7 @@
 .method public static report(Landroid/content/Context;)Ljava/lang/String;
  .locals 9
  new-instance v0,Ljava/lang/StringBuilder;
- const-string v1,"Informe de errores local de DDTLQ r8.\n\n"
+ const-string v1,"Informe de errores local de DDTLQ r9.\n\n"
  invoke-direct {v0,v1},Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
  invoke-virtual {p0},Landroid/content/Context;->getFilesDir()Ljava/io/File;
  move-result-object v1

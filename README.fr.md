@@ -1,5 +1,7 @@
 # Doki Doki Tri-Line Quest (DDTLQ) — Français
 
+**Fluidité de la ville, r9 :** Les panneaux et textes invisibles ne sont plus dessinés ; trois habillages vérifiés utilisent au plus neuf appels. Les 108 comparaisons sont identiques pixel par pixel. La ville de nuit passe de 4,31 à 0,41 ms de traitement avec le programme Windows initial, et de 5,52 à 0,53 ms de script avec les données Android dans le moteur local. Ce ne sont pas des FPS sur téléphone ; le test mobile reste à faire. Le correctif de démarrage r8 est conservé.
+
 **Correction du plantage Android, r8 :** Des descripteurs ZIP incohérents dans les APK r7 empêchaient le chargement des classes de démarrage. Pour toutes les langues, les en-têtes sont normalisés avant signature ; la structure et les CRC sont vérifiés après signature. Recréez votre APK avec r8. Le nouvel essai sur le téléphone concerné reste à faire.
 
 Il vous faut votre propre version Windows compatible de DDTLQ 2.01.04 Beta. Lancez `WindowsPatch.bat` pour Windows ou `Build-APK.bat` pour Android. Choisissez **8 — Français**, appuyez sur Entrée, puis indiquez le dossier de votre jeu Windows. Le résultat est placé dans `output`. Le programme crée une APK signée à partir de vos propres fichiers ; aucune APK Android d’origine n’est nécessaire. Android 7 ou plus récent, ARM64. Ce paquet contient uniquement le correctif et les outils, pas le jeu complet.

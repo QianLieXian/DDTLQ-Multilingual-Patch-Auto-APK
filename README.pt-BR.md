@@ -1,5 +1,7 @@
 # Doki Doki Tri-Line Quest — patch em português do Brasil
 
+**Correção da lentidão na cidade, r9:** Painéis e textos invisíveis não são desenhados; três molduras verificadas usam no máximo nove chamadas. As 108 comparações coincidem pixel a pixel. A cidade à noite passou de 4,31 para 0,41 ms de processamento no Windows original e de 5,52 para 0,53 ms de scripts com dados Android no executor local. Não são FPS medidos no celular; o novo teste no celular está pendente. A correção de início r8 foi mantida.
+
 **Correção de falha no Android, r8:** Descritores ZIP inconsistentes nos APKs r7 impediam o carregamento das classes de inicialização. Em todos os idiomas, os cabeçalhos são normalizados antes da assinatura; a estrutura e os CRCs são verificados depois. Gere o APK novamente com r8. Ainda falta repetir o teste no celular afetado.
 
 ## Instalação no Windows

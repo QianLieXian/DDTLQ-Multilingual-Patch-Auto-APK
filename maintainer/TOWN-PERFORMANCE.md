@@ -13,3 +13,7 @@ On November 12, 2026, an automated local Butterscotch comparison used the same C
 | Executed instructions | 2,148,170 | 310,940 |
 
 This demonstrates the script bottleneck and its removal in that local test. It is not a measured Android-device frame-rate claim or a full game walkthrough. Raw run logs are retained privately because testing uses the player's game data; the public distribution contains patch source only.
+
+## r9: invisible town UI and nine-slice drawing
+
+The translation lookup fix did not remove the thousands of transparent sprite tiles submitted by hidden poster panels. r9 skips zero-alpha panel/text drawing and reduces three verified flat skins to at most nine draws under nearest filtering. Linear filtering and unknown skins retain original tiling. Native Windows night-town sampling fell from 4.31491 to 0.40660 ms; local Android-ported GML time fell from 5.52 to 0.53 ms. 108 render pairs and both full night-town screenshot pairs match exactly. These are local results, not phone FPS claims. See R9-TOWN-RENDER-AUDIT.json and VALIDATION.md.

@@ -1,5 +1,7 @@
 # Doki Doki Tri-Line Quest (DDTLQ) — Español
 
+**Menos lentitud en la ciudad, r9:** Los paneles y textos invisibles ya no se dibujan. Tres diseños verificados usan como máximo nueve llamadas. Las 108 comparaciones coinciden píxel a píxel. La ciudad nocturna pasó de 4,31 a 0,41 ms de procesamiento en Windows y de 5,52 a 0,53 ms de scripts con datos Android en el ejecutor local. No son FPS medidos en un teléfono; falta probarlo en el móvil. Se conserva la corrección de inicio r8.
+
 **Corrección de cierre en Android, r8:** Los descriptores ZIP incoherentes de los APK r7 impedían cargar las clases de inicio. Todas las versiones normalizan las cabeceras antes de firmar y comprueban la estructura y los CRC después. Vuelve a crear el APK con r8. Falta repetir la prueba en el teléfono afectado.
 
 ## Windows

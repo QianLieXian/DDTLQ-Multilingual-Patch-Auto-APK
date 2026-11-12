@@ -1,5 +1,9 @@
 # Doki Doki Tri-Line Quest (DDTLQ) 多语言补丁与 Android APK 打包器
 
+**城镇卡顿修复 r9：** 跳过完全透明的面板与文字，三种已验证素材的可见面板最多绘制九块。108 组画面对比逐像素一致。原 Windows 程序夜间城镇平均处理耗时 4.31→0.41 ms；安卓移植数据在本地运行组件中的脚本耗时 5.52→0.53 ms，后者不是手机帧率实测。手机复测待确认，r8 闪退修复保留。
+
+**安卓闪退修复 r8：** 修复 r7 APK 压缩包描述信息不一致导致的启动类加载失败。所有语言的安卓打包流程已加入签名前规范化、签名后逐项结构与解压 CRC 校验。使用 r8 重新打包；本次修复包尚待用户手机复测。
+
 《Doki Doki Tri-Line Quest》2.01.04 Beta 非官方多语言补丁。Windows 一键选择语言安装，也能使用自己的原版 Windows 游戏自动制作安卓 APK。
 
 [简体中文](README.md) · [English](README.en.md) · [Português](README.pt-BR.md) · [Русский](README.ru.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md)

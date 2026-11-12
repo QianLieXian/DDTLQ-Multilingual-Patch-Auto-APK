@@ -1,5 +1,7 @@
 # Doki Doki Tri-Line Quest (DDTLQ) — Türkçe
 
+**Kasaba yavaşlama düzeltmesi r9:** Görünmez paneller ve yazılar çizilmez; doğrulanan üç çerçeve en fazla dokuz çizim çağrısı kullanır. 108 görsel karşılaştırmanın tüm pikselleri aynıdır. Gece kasabasında özgün Windows programının ortalama işlem süresi 4,31→0,41 ms, Android verilerinin yerel betik süresi 5,52→0,53 ms oldu. Bunlar telefon FPS ölçümleri değildir; telefondaki tekrar testi bekleniyor. r8 başlatma düzeltmesi korunur.
+
 **Android kapanma düzeltmesi r8:** r7 APK dosyalarındaki tutarsız ZIP veri tanımlayıcıları başlangıç sınıflarının yüklenmesini engelliyordu. Tüm dillerde imzalamadan önce başlıklar düzeltilir; sonrasında yapı ve açılmış verilerin CRC değerleri doğrulanır. APK dosyasını r8 ile yeniden oluşturun. Sorun yaşanan telefondaki tekrar testi henüz yapılmadı.
 
 ## Kurulum

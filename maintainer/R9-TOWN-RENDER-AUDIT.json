@@ -1,0 +1,76 @@
+{
+  "revision": "r9",
+  "issue": "Night town CPU slowdown: fully transparent panels and text still rendered",
+  "phone_observation": {
+    "NineSliceBox_ms": 41.18,
+    "NineSliceBox_ops": 259057,
+    "total_gml_ms": 73.16
+  },
+  "changes": [
+    "Skip NineSliceBox at zero draw alpha",
+    "Skip text translation/wrapping/drawing at zero effective draw alpha; explicit-colour calls use their explicit alpha argument",
+    "At nearest filtering, draw the three verified uniform skins in at most nine calls",
+    "Retain original tiling for linear filtering and unknown/patterned skins"
+  ],
+  "visual_regression": {
+    "alphas": [
+      0,
+      0.35,
+      1
+    ],
+    "fractional_position": "12.25,8.75",
+    "night_pc_png_pair_sha256": "4e7a2f5276b4c8bb1011171ce685c1aacd3977a02ff1e5b6bb2c393931cf602a",
+    "cases": 108,
+    "dimensions": [
+      "zero",
+      "smaller than tile",
+      "non-multiple",
+      "normal panel",
+      "large panel",
+      "negative"
+    ],
+    "filters": [
+      "nearest",
+      "linear"
+    ],
+    "night_android_png_pair_sha256": "4b091c960edebfbad9b0ddc30f7d7619d6d169f95ffc342c0784c9bd7c086804",
+    "compared_pixels": 10368000,
+    "different_pixels": 0
+  },
+  "night_benchmark": {
+    "native_windows": {
+      "before_mean_us": 4314.91,
+      "scope": "Begin Step through GUI End, after 120 town warm-up frames; original Windows game executable; isolated project name and save folder",
+      "after_mean_us": 406.6,
+      "samples": 240
+    },
+    "instances": 185,
+    "seed": 12345,
+    "local_butterscotch_pc_data": {
+      "after_ops": 26825,
+      "before_ops": 314251,
+      "after_gml_ms": 0.48,
+      "before_gml_ms": 5.44
+    },
+    "time": 0.9,
+    "room": 6,
+    "local_runner_zip_sha256": "84243ee874e8248d56f04cca83cf0805d5b5150468867a08b6d55fb66e76de2c",
+    "scope": "1000-frame local runs; last 120-frame profiler sample; these are not phone timings",
+    "local_butterscotch_android_data": {
+      "after_ops": 29787,
+      "before_ops": 317213,
+      "after_gml_ms": 0.53,
+      "before_gml_ms": 5.52
+    },
+    "save": "provided auxiliary slot 99 in isolated test folders"
+  },
+  "artifacts": {
+    "versionCode": 2010409,
+    "signature": "original certificate, v2/v3 and zipalign pass",
+    "invalid_descriptors": 0,
+    "pc_data_sha256": "1479559a45dfa6b6770ead0e521d52e2bf8dc37c96abae0e1def812f740c3fff",
+    "zip_entries": 235,
+    "apk_sha256": "652dbb78f7c69269d03df9cf78c70499fe5c504a2ffbf9e6461ca983416de59c"
+  },
+  "limits": "Android r9 phone retest and physical Xbox testing not performed. No game timing, movement, quests, lighting, saves, touch or controller logic changed."
+}
