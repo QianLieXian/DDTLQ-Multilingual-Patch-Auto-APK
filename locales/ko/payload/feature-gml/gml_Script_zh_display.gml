@@ -76,7 +76,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Bell has such a beautiful mission and I hope he can sprout more of these extinct flowers.","벨의 사명은 정말 아름다워. 멸종한 이 꽃들을 더 많이 피워 낼 수 있으면 좋겠어.");
  ds_map_add(m,"Viola","비올라");
  ds_map_add(m,"Lucy Monroe","루시 먼로");
- ds_map_add(m,"Lucy is great and I hope you do not let her down with her novel.","루시는 정말 멋진 사람이야. 네가 그녀의 소설을 망치지 않았으면 좋겠어.");
+ ds_map_add(m,"Lucy is great and I hope you do not let her down with her novel.","루시는 정말 멋진 사람이야. 그녀의 소설과 관련해서 실망시키지 않았으면 좋겠어.");
  ds_map_add(m,"Marael","마라엘");
  ds_map_add(m,"Miss Marael showed me a side of the succubus that nobody wanted to show me before and for that I am grateful.","마라엘 부인은 그동안 아무도 내게 보여 주려 하지 않았던 서큐버스의 한 면을 보여 줬어. 그 점이 정말 고마워.");
  ds_map_add(m,"Lemmy told Lili that apparently ZONE-tam is a famous news reporter. Mmm now that I think about it why do Lili and Lemmy get along so well?","레미는 릴리에게 ZONE-tam이 유명한 뉴스 기자라고 말했어. 음, 생각해 보니 릴리와 레미는 왜 그렇게 잘 맞는 걸까?");
@@ -414,7 +414,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Lost scholar","실종된 학자");
  ds_map_add(m,"Go take a bath!","목욕하러 가!");
  ds_map_add(m,"Head over to SailorCum to get a Rimjob. \n \n(Quest located in the VIP area under the bar)","세일러컴에게 가서 리밍 서비스를 받아.\n \n(퀘스트 위치: 술집 아래 VIP 구역)");
- ds_map_add(m,"Buy the inverted bunny costume from SailorCum and in return she will perform a rimjob on you !\n \n(Quest located in the VIP area under the bar)","세일러컴에게 뒤집어 입는 버니 의상을 사 줘. 그러면 보답으로 네 엉덩이를 핥아 줄 거야!\n \n(퀘스트 위치: 술집 아래 VIP 구역)");
+ ds_map_add(m,"Buy the inverted bunny costume from SailorCum and in return she will perform a rimjob on you !\n \n(Quest located in the VIP area under the bar)","세일러컴에게 역바니 의상을 사 줘. 그러면 보답으로 네 엉덩이를 핥아 줄 거야!\n \n(퀘스트 위치: 술집 아래 VIP 구역)");
  ds_map_add(m,"Save SailorCum!","세일러컴을 구해!");
  ds_map_add(m,"Find the stolen relics and return them to the knights of Elira.","도난당한 성유물을 찾아 엘리라의 기사들에게 돌려줘.");
  ds_map_add(m,"Return the relic to the church","성유물을 교회에 돌려줘.");
@@ -650,7 +650,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"To see a monster's damage affinity, you can check it in the Waifsteary.","몬스터의 피해 상성은 미소녀 도감에서 확인할 수 있어.");
  ds_map_add(m,"Line will have the affinity of the strongest element they possess, whether it's slash, pierce, impact, or magic.","라인의 상성은 자신이 가진 속성 중 가장 강한 것에 따라 결정돼. 참격, 관통, 충격, 마법 중 하나지.");
  ds_map_add(m,"These special cubes are really simple, so let's explain them.","이 특수 큐브들은 아주 간단해. 하나씩 설명해 줄게.");
- ds_map_add(m,"The potion cube will restore mana. The broken heart cube reduces the enemy's damage, attack interval, and healing.","물약 큐브는 마나를 회복해. 깨진 하트 큐브는 적의 공격력, 공격 간격, 회복 효과를 낮춰.");
+ ds_map_add(m,"The potion cube will restore mana. The broken heart cube reduces the enemy's damage, attack interval, and healing.","물약 큐브는 마나를 회복해. 깨진 하트 큐브는 적의 공격력, 공격 빈도, 회복 효과를 낮춰.");
  ds_map_add(m,"To heavy to run or fly","너무 무거워서 달리거나 날 수 없어.");
  ds_map_add(m,"Equipment","장비");
  ds_map_add(m,"WAIFSTEARY","미소녀 도감");

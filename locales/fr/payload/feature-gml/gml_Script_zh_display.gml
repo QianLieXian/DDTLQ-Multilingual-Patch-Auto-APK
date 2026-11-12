@@ -401,7 +401,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Find for a magician capable of manipulating the time of a dimensional rift.( Search For magician you alredy know)","Trouve un magicien capable de manipuler le temps d’une faille dimensionnelle. (Cherche un magicien que tu connais déjà.)");
  ds_map_add(m,"Beat the redhead that comes from another dimension.","Bats la rousse venue d’une autre dimension.");
  ds_map_add(m,"Go back and tell Dr.lili that you already turned on the generators.","Retourne voir le Dr Lili et dis-lui que tu as déjà remis les générateurs en marche.");
- ds_map_add(m,"Go restart the generators. The generators are in the left basement of the hospital.","Va redémarrer les générateurs. Ils se trouvent dans le sous-sol, à gauche de l’hôpital.");
+ ds_map_add(m,"Go restart the generators. The generators are in the left basement of the hospital.","Va redémarrer les générateurs. Ils se trouvent à gauche, dans le sous-sol de l’hôpital.");
  ds_map_add(m,"Grim Future.","Un avenir sinistre.");
  ds_map_add(m,"Go to the sabbath which the name that the guards give to the night club in the day.","Va au Sabbat, le nom que les gardes donnent à la boîte de nuit pendant la journée.");
  ds_map_add(m,"Go to the second floor of the hotel. There, Alura will be waiting for you to give you an armor and thus pass you as a guard (equip all 5 knight parts).","Va au deuxième étage de l’hôtel. Alura t’y attendra pour te donner une armure qui te permettra de te faire passer pour un garde (équipe les 5 pièces d’armure de chevalier).");
@@ -814,7 +814,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"There you have it, you little rascal.","Et voilà, petit chenapan.");
  ds_map_add(m,"Not now.","Pas maintenant.");
  ds_map_add(m,"Ok","D'accord");
- ds_map_add(m,"Unfortunately I can't find him, I'll sell it to you for a thousand Arcs if you want it so badly.","Malheureusement, je ne le trouve pas. Je te le vendrai mille Arcs si tu le veux à ce point.");
+ ds_map_add(m,"Unfortunately I can't find him, I'll sell it to you for a thousand Arcs if you want it so badly.","Malheureusement, je ne trouve pas son propriétaire. Je te vendrai la mallette mille Arcs si tu la veux à ce point.");
  ds_map_add(m,"You want to buy the briefcase I have? I was thinking of blackmailing the guy who lost it.","Tu veux acheter la mallette que j'ai ? Je pensais faire chanter le type qui l'a perdue.");
  ds_map_add(m,"And don't even think of taking a single Arc out of here, don't you see that why we have worked so hard, so that I can sleep like my ancestors. Yep Surrounded by money.","Et ne pense même pas à emporter un seul Arc d'ici. Tu ne vois pas pourquoi on a tant travaillé ? Pour que je puisse dormir comme mes ancêtres. Oui, entouré d'argent.");
  ds_map_add(m,"Hey Line you figured out where I keep all my Arcs.","Hé, Line, tu as découvert où je garde tous mes Arcs.");
@@ -4117,7 +4117,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"... the hunger that you feel is the gluttony of the succubus, as you are half elf it is not necessary that you copulate to get energy but the feeling of emptiness always exists... Line you are a very good girl I really hope this action doesn't bring you any tragedy.","... La faim que tu ressens est la voracité propre aux succubes. Comme tu es à moitié elfe, tu n'as pas besoin de rapports sexuels pour obtenir de l'énergie, mais cette sensation de vide est toujours présente... Line, tu es une très gentille fille. J'espère sincèrement que ce geste ne te causera aucun malheur.");
  ds_map_add(m,"Aghh I feel strange, a little more awake and very hungry.","Aghh, je me sens bizarre. Un peu plus éveillée, mais aussi très affamée.");
  ds_map_add(m,"That it is good to see new faces for a change.","Cela fait du bien de voir de nouveaux visages, pour changer.");
- ds_map_add(m,"I did not insist anymore, I told her that I was fine and if she had time to visit them that it would do her good.","Je n'ai pas insisté davantage. Je lui ai dit que j'allais bien et que lui rendre visite quand elle en aurait le temps lui ferait du bien.");
+ ds_map_add(m,"I did not insist anymore, I told her that I was fine and if she had time to visit them that it would do her good.","Je n’ai pas insisté davantage. Je lui ai dit que j’allais bien et que rendre visite aux enfants et à leurs responsables, quand elle en aurait le temps, lui ferait du bien.");
  ds_map_add(m,"She said she had no energy and wanted some time alone.","Elle a dit qu'elle n'avait plus d'énergie et qu'elle voulait rester seule quelque temps.");
  ds_map_add(m,"But I failed.","Mais j'ai échoué.");
  ds_map_add(m,"We talked, I tried to explain to her that they needed help without specifying that without her help all would be lost.","Nous avons discuté. J'ai essayé de lui expliquer qu'ils avaient besoin d'aide, sans préciser que tout serait perdu sans elle.");

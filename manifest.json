@@ -1,5 +1,5 @@
 {
-  "version": "2.01.04-multilingual-r6",
+  "version": "2.01.04-multilingual-r7",
   "pc_data_sha256": "22109979ad640925cd32f1e6e6b557866f06b38464ce62ed61d9315d487338b8",
   "utmt": {
     "url": "https://github.com/UnderminersTeam/UndertaleModTool/releases/download/0.9.2.0/UTMT_CLI_v0.9.2.0-Windows.zip",
@@ -43,6 +43,10 @@
       "sha256": "82320dfb9312adbe990b6cecf4b0ce18ec526a0affc1fdf98982c03314a826ac"
     },
     {
+      "path": "android/GamepadAxis.smali",
+      "sha256": "904445892e6002ccc54cfece8be463719f77153c94ba8cbc59dc8a3dabd23ebc"
+    },
+    {
       "path": "android/Launcher.smali",
       "sha256": "1200268712993cb7328c8fd08df1d8b9cf4a4fb9e4a41c50a1f4c7d50d9c1ff0"
     },
@@ -52,11 +56,11 @@
     },
     {
       "path": "android/library.json",
-      "sha256": "e79792ae5ed40e8672ee9dcb04941a47165b50f257f400376e2da32e1e113bf0"
+      "sha256": "49507e7614c4f656ec3a67b63b29db23901356a78c7ade30685edbc97aa779cc"
     },
     {
       "path": "android/patch-native-input.ps1",
-      "sha256": "439769041f40eb9c53b5410190221d4b838c0d40111f0e28744971f284358f9c"
+      "sha256": "13bf9cb810ac189452ab665b6002caf0d7b7af750d470006bee03c31616237e1"
     },
     {
       "path": "android/touch-icons.json",
@@ -64,7 +68,7 @@
     },
     {
       "path": "android/TOUCH-PATCH.md",
-      "sha256": "19f923aea895a5a29f68500ba71c3c4647ec4d30a1e1f5ffd9daace233ff438b"
+      "sha256": "6e7bbf857581594ba30ad02b1160552fe04f2134c2c3506bb746f5b12bb23af8"
     },
     {
       "path": "android/TouchDispatch.smali",
@@ -76,11 +80,11 @@
     },
     {
       "path": "build_android.ps1",
-      "sha256": "d34826a6d70e8b3436960f7af403ea212024e1b65d7164aea314aa9cf1fe7ed7"
+      "sha256": "2e643a655c7d4bc55341befe0a41eea05e4a213db6183a852a613b6df9bcdba1"
     },
     {
       "path": "common.ps1",
-      "sha256": "279a04e9c3b3dbec6a418707ee6682bfd9f2c62adc186b8b83253cb611c98ce0"
+      "sha256": "575cde74dda0c11c13bf43438a51f2903c49f0ce46e2b270e113281f052a17d3"
     },
     {
       "path": "import_save.ps1",
@@ -112,11 +116,11 @@
     },
     {
       "path": "licenses/NOTICE.txt",
-      "sha256": "e9def424cb1716cc46aa46b8218ba0c8671a80f33a662b021526c102c3c93f70"
+      "sha256": "cbc51543a5b0bc38946f8df5fecabe0969dcee07e304fbefa68b23ffbc383d44"
     },
     {
       "path": "locales/de/android/CrashApp.smali",
-      "sha256": "633f8133c285fb8afdad64903940b598bbf2b3a0a82500e196de558db178a5fc"
+      "sha256": "30b0e3b3dd635b9346b266d32c66f4d491b5899b9c32d2772d0ac3cf01560d0d"
     },
     {
       "path": "locales/de/android/ddtlq_icon.xml",
@@ -131,8 +135,12 @@
       "sha256": "1b9df7d68dbad9d15053fe8c938662a5bacafcb75267d69ff11452019cb9a801"
     },
     {
+      "path": "locales/de/android/GamepadAxis.smali",
+      "sha256": "9d708c17347e4bd26705830223fc6440f74874fbc3af97133d16435ec24b485b"
+    },
+    {
       "path": "locales/de/android/Launcher.smali",
-      "sha256": "08f98441d5139814a1adf454f7df127fbfe2ace18e7aee4693d63223b3f3f62d"
+      "sha256": "421e7da8e32028d810407fa2a890a284524a0960837080a518366a74ff28572a"
     },
     {
       "path": "locales/de/android/LauncherReady.smali",
@@ -140,11 +148,11 @@
     },
     {
       "path": "locales/de/android/library.json",
-      "sha256": "f330c9b9e95a2f9a5b16213d8cc0b182eabc699862ff4e999bc75f78fa2cfc1c"
+      "sha256": "f4a06014527bd3857fe07ae3d07e6875229b79b170db4f566fa9a957e24c7a22"
     },
     {
       "path": "locales/de/android/patch-native-input.ps1",
-      "sha256": "439769041f40eb9c53b5410190221d4b838c0d40111f0e28744971f284358f9c"
+      "sha256": "13bf9cb810ac189452ab665b6002caf0d7b7af750d470006bee03c31616237e1"
     },
     {
       "path": "locales/de/android/touch-icons.json",
@@ -168,7 +176,7 @@
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Object_o_zh_tools_Draw_64.gml",
-      "sha256": "e43703cb47e772faa347884dafe7fd344195823fa42ddbc18dca4d4d4bb64911"
+      "sha256": "f8615abb6c8dd25608ebea6b4fc3c700fdb011a81b60e33626bb5f4acaaa4dc8"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Object_o_zh_tools_Step_0.gml",
@@ -176,11 +184,19 @@
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_controls.gml",
-      "sha256": "54cf5890efb1d1ae8787e7ec1ae03cce91cd76f418cca7e32415342c9545b2e9"
+      "sha256": "6450b67e4e1a52ae0714c79f43be8cae6bc46e48289d29d58a02b6d022a01eb8"
+    },
+    {
+      "path": "locales/de/payload/feature-gml/gml_Script_zh_device_mouse_x_to_gui.gml",
+      "sha256": "541f3a889d1125aaf1923a2fb148de859be55dfda01e87322ef06fab59e90ed0"
+    },
+    {
+      "path": "locales/de/payload/feature-gml/gml_Script_zh_device_mouse_y_to_gui.gml",
+      "sha256": "8528db434639b282fdbadaffa6886f3550a584b2f2e8becdb0512c162142b434"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_display.gml",
-      "sha256": "074271d294fda11976626d15e06fb98f32ba6c1d723901197face94086596787"
+      "sha256": "d4e5a1f5d87bda869fb878b90a1937a4a92a83a57a54faaf4cdc38f30e3d5c74"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_draw_text.gml",
@@ -228,15 +244,15 @@
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_helper_step.gml",
-      "sha256": "e946baec59a222fd1b663c267cc92eb6f96148bbabfe4b5ae5fe1710f0405312"
+      "sha256": "2600361b3c63e32f46d2a3bd3bfcfe6e01b488a626c6620bd976e616170c4a37"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_keyboard_check.gml",
-      "sha256": "126fc8b2b40e83fa209f2c106fa58f9f6308e7f898ddeae2d1c10a982aab1128"
+      "sha256": "c39005f53c909dc4f414a8e13d9e858d9f19a6b78dd9024b97390d9469af72e8"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_keyboard_check_pressed.gml",
-      "sha256": "b6ae34d51269d73b57a6c3979fbe201fe625dd57b36287078ab55c3813065604"
+      "sha256": "caef8901e4d381760bcbcf8060f274408833fc814421479cd21af69f8ca95618"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_migrate_synthetic_save.gml",
@@ -244,15 +260,43 @@
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_mouse_check_button.gml",
-      "sha256": "fae942f76acdcce1f61cd744d2b8f233a85dd07f2a20878c900bbc81554aa183"
+      "sha256": "839934cd5d73bc301118dada6e1cc8bdc7689f509a3597e5d41bbea8c950bed1"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_mouse_check_button_pressed.gml",
-      "sha256": "04811d60e62af095794c272f4032754f0edc1b44b114e708d217aee623ab09d1"
+      "sha256": "80a2f235e26b6fc167eac8785f4bbe3e9a42e5dd2bdbce999022e9f3aa2abf85"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_mouse_check_button_released.gml",
-      "sha256": "41095bb41600f8b0b6b7dfe4bf9f7b0ba55d6845f243ed76ebcf050fcd98384a"
+      "sha256": "df493e08d36c2d340dedba11124c7e22b742222a931707735dfef285a7bb1f76"
+    },
+    {
+      "path": "locales/de/payload/feature-gml/gml_Script_zh_mouse_raw.gml",
+      "sha256": "79f1e815833156c6e5a7d80c3b06b53bc0cffe2f946932dac66fa308b4e0876e"
+    },
+    {
+      "path": "locales/de/payload/feature-gml/gml_Script_zh_mouse_x.gml",
+      "sha256": "f57f6b78506f10420816c544826432f794388de7faff81619189a323e09cbe60"
+    },
+    {
+      "path": "locales/de/payload/feature-gml/gml_Script_zh_mouse_y.gml",
+      "sha256": "0a104d0e778fabaebff4e4d57dbd31f005e9cf4560053e27da8efa0c397835fa"
+    },
+    {
+      "path": "locales/de/payload/feature-gml/gml_Script_zh_pad_cursor_draw.gml",
+      "sha256": "9ec05c153a69d2d59cc7394e2f040eac65457552f9dcbc702221fbfa0e248de9"
+    },
+    {
+      "path": "locales/de/payload/feature-gml/gml_Script_zh_pad_init.gml",
+      "sha256": "62cd088dae74141d0ab0ce21704bc925167cd451dbbfe3125dce1ee3f732b93a"
+    },
+    {
+      "path": "locales/de/payload/feature-gml/gml_Script_zh_pad_key.gml",
+      "sha256": "0821335f646f369036349ef28149fe9b75af307368eb19a77a4294f66f06905d"
+    },
+    {
+      "path": "locales/de/payload/feature-gml/gml_Script_zh_pad_poll.gml",
+      "sha256": "cde9098dd221ea94dc98e17f1fa3719080011c19c597146a9d31c4528e6ac33c"
     },
     {
       "path": "locales/de/payload/feature-gml/gml_Script_zh_prepare_load.gml",
@@ -284,7 +328,7 @@
     },
     {
       "path": "locales/de/payload/patch-features.csx",
-      "sha256": "a57691b8b6c8dcb2a775e9c97655d54ecfa9341d8704c82d524c928d0bb50d27"
+      "sha256": "eac24f661d624fb58a77cd9228111061b86d1c7ed745856aa24c2765e1c0cae6"
     },
     {
       "path": "locales/de/payload/patch-font.csx",
@@ -292,7 +336,7 @@
     },
     {
       "path": "locales/de/payload/patch-port.csx",
-      "sha256": "f745f6a9c597357542045369eae11e97d8d8f48bb0ed37164b6525fd11fe1281"
+      "sha256": "6f0376cae85f61fc33b6095054c8102c9c22649f86e95a3f02d778a8855aa27e"
     },
     {
       "path": "locales/de/payload/patch-strings.csx",
@@ -348,7 +392,7 @@
     },
     {
       "path": "locales/de/payload/translations.json",
-      "sha256": "333fc982a5559332e19978e3325964da1368a9ef6ca068449bf1806464e23283"
+      "sha256": "bde151aa61ef2f0d97da72b70e926b714a4de5ba0c1c374194d88f598ccc90fa"
     },
     {
       "path": "locales/de/payload/ui10-glyphs.json",
@@ -356,31 +400,31 @@
     },
     {
       "path": "locales/de/payload/wrapper-functions.json",
-      "sha256": "bd9e8249b5126df6299d1f03b7088ecf06fe9442b27de5eb7f10a84cca025b4b"
+      "sha256": "10cc04bdc3856fe07d9005c38b0d1ddf298230dcb6b2ff7a1b84bae3b2dad77e"
     },
     {
       "path": "locales/de/provenance.json",
-      "sha256": "4dc5087ac172387d0506ae3b4556ba63260e2272b25272290d50a26d6f20fbd0"
+      "sha256": "d02feb7c3b34207a7c70d767048eb3277cc43e1b680f02a7d0d50445e5362bc4"
     },
     {
       "path": "locales/de/review-progress.json",
-      "sha256": "76974d5e3b93ccc09055bdac17e5bb8bfa76d448d619e884db31c67874c97031"
+      "sha256": "e47a62c2b79efa4d99caf302d6e0e21be38b8f9872917a504f6cb73ac73b3959"
     },
     {
       "path": "locales/de/translations.json",
-      "sha256": "7b59e096059146e037b569403f2d75eb31b381813f92ac98c95a147d99c4ff6b"
+      "sha256": "73f4d3861a4b6db94324c9980e9eeb0c91271e0c5378817d1a1633008c6c0b63"
     },
     {
       "path": "locales/de/ui.json",
-      "sha256": "aacfe634176ff32112af37cd7148b88c05e0ed1af5c9f166fb5fe72dd728afa7"
+      "sha256": "e91c6bae561156a9959f3c4fc6563ff39e663fde1ec1e974ea2b434ce0e56c11"
     },
     {
       "path": "locales/de/validation.json",
-      "sha256": "b3508f35aa49a664ece1388b19be21fbbec4517b75ad7467b66b68b001981189"
+      "sha256": "8add5779d78383e9d8e41c6ac212ce111fcb1d89d3dbc7479b4c56c2a7c49dd4"
     },
     {
       "path": "locales/en/android/CrashApp.smali",
-      "sha256": "8dd7402672c301f43440ef4e859901352a1d4478b7f860141ff9e2ed1eda07cb"
+      "sha256": "15052819bfcaa9ff42013b65eb733b1a2c0fb92fe9a7e0c66b6fc16f688a76d5"
     },
     {
       "path": "locales/en/android/ddtlq_icon.xml",
@@ -395,8 +439,12 @@
       "sha256": "e7df7361f2cbb9b97cff22141b8bf98c835a03120aead53b55b956292a26afb0"
     },
     {
+      "path": "locales/en/android/GamepadAxis.smali",
+      "sha256": "9d708c17347e4bd26705830223fc6440f74874fbc3af97133d16435ec24b485b"
+    },
+    {
       "path": "locales/en/android/Launcher.smali",
-      "sha256": "cde010f0670a3ad347a31acca913b814795648977fdc4446309e53e32896f36e"
+      "sha256": "e165c2c9bf3e8cea76610aeb731541aac5b9674527092a9101617d5cf30a7d8d"
     },
     {
       "path": "locales/en/android/LauncherReady.smali",
@@ -404,7 +452,23 @@
     },
     {
       "path": "locales/en/android/library.json",
-      "sha256": "9621219109952301ee92c242d974a55ea7483fd54b536f6ac8b7687c8c86614b"
+      "sha256": "f30584540d8e865a8960804d9789ed33a0e86e180ce193eede439304e2ee3f00"
+    },
+    {
+      "path": "locales/en/android/patch-native-input.ps1",
+      "sha256": "13bf9cb810ac189452ab665b6002caf0d7b7af750d470006bee03c31616237e1"
+    },
+    {
+      "path": "locales/en/android/touch-icons.json",
+      "sha256": "4733b100d1ac60417f4596cb0d45c191df9c871972a588a22e799d3897248fe3"
+    },
+    {
+      "path": "locales/en/android/TOUCH-PATCH.md",
+      "sha256": "19f923aea895a5a29f68500ba71c3c4647ec4d30a1e1f5ffd9daace233ff438b"
+    },
+    {
+      "path": "locales/en/android/TouchDispatch.smali",
+      "sha256": "d57c43680601be6e0a360a0b65c37b7b343941317021f3dbb072dbefd4d6d938"
     },
     {
       "path": "locales/en/payload/cjk-glyphs.json",
@@ -416,7 +480,7 @@
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Object_o_zh_tools_Draw_64.gml",
-      "sha256": "15a56153b463cc411c39969ac2b1cbbc4587284c45c99161f4c530b02feb09c0"
+      "sha256": "be64b0a58f57d14ded2381c3a796f116a148945e2c1718ca8f3ff54c92590a7e"
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Object_o_zh_tools_Step_0.gml",
@@ -424,7 +488,15 @@
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_controls.gml",
-      "sha256": "cca24c7bdeccbd74e12fe6b94ace9d23395d28e444a9bfbd834848b783f6f797"
+      "sha256": "b640378ca50c770e854a426f20b5ddbf9ff4361d6f52a833a00bd9e0c3f54926"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_device_mouse_x_to_gui.gml",
+      "sha256": "541f3a889d1125aaf1923a2fb148de859be55dfda01e87322ef06fab59e90ed0"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_device_mouse_y_to_gui.gml",
+      "sha256": "8528db434639b282fdbadaffa6886f3550a584b2f2e8becdb0512c162142b434"
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_display.gml",
@@ -476,15 +548,15 @@
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_helper_step.gml",
-      "sha256": "660928e95cf7408840873124cd8b10e7582655bf1e0a5fd5d2847f320ec5955b"
+      "sha256": "d9c6b41a205bb39d49ec41ea848b17fba08b5350f9592f93bb12e2821bc180e6"
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_keyboard_check.gml",
-      "sha256": "126fc8b2b40e83fa209f2c106fa58f9f6308e7f898ddeae2d1c10a982aab1128"
+      "sha256": "c39005f53c909dc4f414a8e13d9e858d9f19a6b78dd9024b97390d9469af72e8"
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_keyboard_check_pressed.gml",
-      "sha256": "b6ae34d51269d73b57a6c3979fbe201fe625dd57b36287078ab55c3813065604"
+      "sha256": "caef8901e4d381760bcbcf8060f274408833fc814421479cd21af69f8ca95618"
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_migrate_synthetic_save.gml",
@@ -492,15 +564,43 @@
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_mouse_check_button.gml",
-      "sha256": "fae942f76acdcce1f61cd744d2b8f233a85dd07f2a20878c900bbc81554aa183"
+      "sha256": "839934cd5d73bc301118dada6e1cc8bdc7689f509a3597e5d41bbea8c950bed1"
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_mouse_check_button_pressed.gml",
-      "sha256": "04811d60e62af095794c272f4032754f0edc1b44b114e708d217aee623ab09d1"
+      "sha256": "80a2f235e26b6fc167eac8785f4bbe3e9a42e5dd2bdbce999022e9f3aa2abf85"
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_mouse_check_button_released.gml",
-      "sha256": "41095bb41600f8b0b6b7dfe4bf9f7b0ba55d6845f243ed76ebcf050fcd98384a"
+      "sha256": "df493e08d36c2d340dedba11124c7e22b742222a931707735dfef285a7bb1f76"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_mouse_raw.gml",
+      "sha256": "79f1e815833156c6e5a7d80c3b06b53bc0cffe2f946932dac66fa308b4e0876e"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_mouse_x.gml",
+      "sha256": "f57f6b78506f10420816c544826432f794388de7faff81619189a323e09cbe60"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_mouse_y.gml",
+      "sha256": "0a104d0e778fabaebff4e4d57dbd31f005e9cf4560053e27da8efa0c397835fa"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_pad_cursor_draw.gml",
+      "sha256": "9ec05c153a69d2d59cc7394e2f040eac65457552f9dcbc702221fbfa0e248de9"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_pad_init.gml",
+      "sha256": "62cd088dae74141d0ab0ce21704bc925167cd451dbbfe3125dce1ee3f732b93a"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_pad_key.gml",
+      "sha256": "0821335f646f369036349ef28149fe9b75af307368eb19a77a4294f66f06905d"
+    },
+    {
+      "path": "locales/en/payload/feature-gml/gml_Script_zh_pad_poll.gml",
+      "sha256": "cde9098dd221ea94dc98e17f1fa3719080011c19c597146a9d31c4528e6ac33c"
     },
     {
       "path": "locales/en/payload/feature-gml/gml_Script_zh_prepare_load.gml",
@@ -532,7 +632,7 @@
     },
     {
       "path": "locales/en/payload/patch-features.csx",
-      "sha256": "a57691b8b6c8dcb2a775e9c97655d54ecfa9341d8704c82d524c928d0bb50d27"
+      "sha256": "eac24f661d624fb58a77cd9228111061b86d1c7ed745856aa24c2765e1c0cae6"
     },
     {
       "path": "locales/en/payload/patch-font.csx",
@@ -540,7 +640,7 @@
     },
     {
       "path": "locales/en/payload/patch-port.csx",
-      "sha256": "f745f6a9c597357542045369eae11e97d8d8f48bb0ed37164b6525fd11fe1281"
+      "sha256": "6f0376cae85f61fc33b6095054c8102c9c22649f86e95a3f02d778a8855aa27e"
     },
     {
       "path": "locales/en/payload/patch-strings.csx",
@@ -604,7 +704,7 @@
     },
     {
       "path": "locales/en/payload/wrapper-functions.json",
-      "sha256": "bd9e8249b5126df6299d1f03b7088ecf06fe9442b27de5eb7f10a84cca025b4b"
+      "sha256": "10cc04bdc3856fe07d9005c38b0d1ddf298230dcb6b2ff7a1b84bae3b2dad77e"
     },
     {
       "path": "locales/en/provenance.json",
@@ -616,15 +716,15 @@
     },
     {
       "path": "locales/en/ui.json",
-      "sha256": "b49d30e98e0ee26485b7a46d4f64e9714cdc87d96fb9b923d5abb0ac1dd3a867"
+      "sha256": "3ef7da9d7384d3eb01b0a018af57d7ec54e343b245598dfb4d41d8a427379186"
     },
     {
       "path": "locales/en/validation.json",
-      "sha256": "51f91022550c944c9bbc2d32f3263fdecb10ed027c8455518499c3c5a5e99d37"
+      "sha256": "08bc6fa55e0885f958bdac94118cb8b767cf7be53026e173f01d7a4ce5e864b9"
     },
     {
       "path": "locales/es/android/CrashApp.smali",
-      "sha256": "010a99e37c50b9b175082b71435203dbb9bd2bf7d24d385de980977acdf0200e"
+      "sha256": "e89f7fbc75f6f11747d35db5de8096e0d40e4fc90e30a2bc60c2743aeceea556"
     },
     {
       "path": "locales/es/android/ddtlq_icon.xml",
@@ -639,8 +739,12 @@
       "sha256": "5e5f5488755594586d4bc9890f68e21dbbdc43b3ec52829807388f820c298c84"
     },
     {
+      "path": "locales/es/android/GamepadAxis.smali",
+      "sha256": "9d708c17347e4bd26705830223fc6440f74874fbc3af97133d16435ec24b485b"
+    },
+    {
       "path": "locales/es/android/Launcher.smali",
-      "sha256": "9fc89c8c6e193658308e34e989fd3722702b82be805e5afed888d498b834d8d4"
+      "sha256": "cb78929b0e19d41986d15d314d36a0129fae0eb7b9674ca8dd0d4237b7ef922b"
     },
     {
       "path": "locales/es/android/LauncherReady.smali",
@@ -648,11 +752,11 @@
     },
     {
       "path": "locales/es/android/library.json",
-      "sha256": "3315dcbcda99bf34dcd080ab423214b184271a12ec83e0318af9913d1bc9f67c"
+      "sha256": "3f32bac2471af2c638c2f44958f6faca537c5c50f2a6f11bb0dc41184fd95e8c"
     },
     {
       "path": "locales/es/android/patch-native-input.ps1",
-      "sha256": "439769041f40eb9c53b5410190221d4b838c0d40111f0e28744971f284358f9c"
+      "sha256": "13bf9cb810ac189452ab665b6002caf0d7b7af750d470006bee03c31616237e1"
     },
     {
       "path": "locales/es/android/touch-icons.json",
@@ -676,7 +780,7 @@
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Object_o_zh_tools_Draw_64.gml",
-      "sha256": "3dd760a50ab38a22245bc429d6af6170e536fd93320c6cf1d4556fbd57ba1e5b"
+      "sha256": "ed428b392bb8d0215e2cbffc48c59f70adb97f5fd16d368aa9c73fdf1c30e531"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Object_o_zh_tools_Step_0.gml",
@@ -684,11 +788,19 @@
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_controls.gml",
-      "sha256": "77a156aa6210e30562c574bb1f1244b014491bb651f27df0cc4563cbcef8a90c"
+      "sha256": "356f15772b2127e80d558f7a0a315806ca82b7996d4ad72fa98e6a7fe9ec4c37"
+    },
+    {
+      "path": "locales/es/payload/feature-gml/gml_Script_zh_device_mouse_x_to_gui.gml",
+      "sha256": "541f3a889d1125aaf1923a2fb148de859be55dfda01e87322ef06fab59e90ed0"
+    },
+    {
+      "path": "locales/es/payload/feature-gml/gml_Script_zh_device_mouse_y_to_gui.gml",
+      "sha256": "8528db434639b282fdbadaffa6886f3550a584b2f2e8becdb0512c162142b434"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_display.gml",
-      "sha256": "a9658b882875bd305d55ba880a23dae18fe245d9e73f028513d59cb5731f28e5"
+      "sha256": "28846e2eb9587b34b768ce1e9120bef49ac6a9690ab9f7766b93f7cd0da096f0"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_draw_text.gml",
@@ -736,15 +848,15 @@
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_helper_step.gml",
-      "sha256": "a48b924274f546fd1d8987e27f1f44457ef1b8ae21eb76af59f05021d2f433d0"
+      "sha256": "6ad05e8f9505f6f762ec00642b3a35f90dc1b7c9ed09f222a8c8044aed73f3ae"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_keyboard_check.gml",
-      "sha256": "126fc8b2b40e83fa209f2c106fa58f9f6308e7f898ddeae2d1c10a982aab1128"
+      "sha256": "c39005f53c909dc4f414a8e13d9e858d9f19a6b78dd9024b97390d9469af72e8"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_keyboard_check_pressed.gml",
-      "sha256": "b6ae34d51269d73b57a6c3979fbe201fe625dd57b36287078ab55c3813065604"
+      "sha256": "caef8901e4d381760bcbcf8060f274408833fc814421479cd21af69f8ca95618"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_migrate_synthetic_save.gml",
@@ -752,15 +864,43 @@
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_mouse_check_button.gml",
-      "sha256": "fae942f76acdcce1f61cd744d2b8f233a85dd07f2a20878c900bbc81554aa183"
+      "sha256": "839934cd5d73bc301118dada6e1cc8bdc7689f509a3597e5d41bbea8c950bed1"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_mouse_check_button_pressed.gml",
-      "sha256": "04811d60e62af095794c272f4032754f0edc1b44b114e708d217aee623ab09d1"
+      "sha256": "80a2f235e26b6fc167eac8785f4bbe3e9a42e5dd2bdbce999022e9f3aa2abf85"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_mouse_check_button_released.gml",
-      "sha256": "41095bb41600f8b0b6b7dfe4bf9f7b0ba55d6845f243ed76ebcf050fcd98384a"
+      "sha256": "df493e08d36c2d340dedba11124c7e22b742222a931707735dfef285a7bb1f76"
+    },
+    {
+      "path": "locales/es/payload/feature-gml/gml_Script_zh_mouse_raw.gml",
+      "sha256": "79f1e815833156c6e5a7d80c3b06b53bc0cffe2f946932dac66fa308b4e0876e"
+    },
+    {
+      "path": "locales/es/payload/feature-gml/gml_Script_zh_mouse_x.gml",
+      "sha256": "f57f6b78506f10420816c544826432f794388de7faff81619189a323e09cbe60"
+    },
+    {
+      "path": "locales/es/payload/feature-gml/gml_Script_zh_mouse_y.gml",
+      "sha256": "0a104d0e778fabaebff4e4d57dbd31f005e9cf4560053e27da8efa0c397835fa"
+    },
+    {
+      "path": "locales/es/payload/feature-gml/gml_Script_zh_pad_cursor_draw.gml",
+      "sha256": "9ec05c153a69d2d59cc7394e2f040eac65457552f9dcbc702221fbfa0e248de9"
+    },
+    {
+      "path": "locales/es/payload/feature-gml/gml_Script_zh_pad_init.gml",
+      "sha256": "62cd088dae74141d0ab0ce21704bc925167cd451dbbfe3125dce1ee3f732b93a"
+    },
+    {
+      "path": "locales/es/payload/feature-gml/gml_Script_zh_pad_key.gml",
+      "sha256": "0821335f646f369036349ef28149fe9b75af307368eb19a77a4294f66f06905d"
+    },
+    {
+      "path": "locales/es/payload/feature-gml/gml_Script_zh_pad_poll.gml",
+      "sha256": "cde9098dd221ea94dc98e17f1fa3719080011c19c597146a9d31c4528e6ac33c"
     },
     {
       "path": "locales/es/payload/feature-gml/gml_Script_zh_prepare_load.gml",
@@ -792,7 +932,7 @@
     },
     {
       "path": "locales/es/payload/patch-features.csx",
-      "sha256": "a57691b8b6c8dcb2a775e9c97655d54ecfa9341d8704c82d524c928d0bb50d27"
+      "sha256": "eac24f661d624fb58a77cd9228111061b86d1c7ed745856aa24c2765e1c0cae6"
     },
     {
       "path": "locales/es/payload/patch-font.csx",
@@ -800,7 +940,7 @@
     },
     {
       "path": "locales/es/payload/patch-port.csx",
-      "sha256": "f745f6a9c597357542045369eae11e97d8d8f48bb0ed37164b6525fd11fe1281"
+      "sha256": "6f0376cae85f61fc33b6095054c8102c9c22649f86e95a3f02d778a8855aa27e"
     },
     {
       "path": "locales/es/payload/patch-strings.csx",
@@ -856,7 +996,7 @@
     },
     {
       "path": "locales/es/payload/translations.json",
-      "sha256": "4865d434f629e60fbce0b26d542605d5ea8db0bb24f0bbd122b878922244bf3e"
+      "sha256": "689396291e9e2b78818bb2ec353e7d93995fd9bb84c4c8896b46311b2c65d9b8"
     },
     {
       "path": "locales/es/payload/ui10-glyphs.json",
@@ -864,31 +1004,31 @@
     },
     {
       "path": "locales/es/payload/wrapper-functions.json",
-      "sha256": "bd9e8249b5126df6299d1f03b7088ecf06fe9442b27de5eb7f10a84cca025b4b"
+      "sha256": "10cc04bdc3856fe07d9005c38b0d1ddf298230dcb6b2ff7a1b84bae3b2dad77e"
     },
     {
       "path": "locales/es/provenance.json",
-      "sha256": "399f7695df6a6a3bd29d2c6cab11d5f32230d5584d7473ad45a209fd3e82bae1"
+      "sha256": "a5f5157ad8d9f5e3e1e03804e4cfb171655b934b08c024e1007b38abbe394e0d"
     },
     {
       "path": "locales/es/review-progress.json",
-      "sha256": "8c90638386e02d5c17fc085d87eb3eae6635c84e444317609d7e0aae3d550e36"
+      "sha256": "966397f81700d3c9bd4ec302af5dabdff74b09a52a38c0b5267e07d40dca19a3"
     },
     {
       "path": "locales/es/translations.json",
-      "sha256": "f4956fbaf86a8744fe829d8300d834d358deedd2364fe875871ae1cd88df3df3"
+      "sha256": "5a5d8e8e3310fe0c08a3c82ad31e46f3ccc007f984026c533877d2d74eefe5f4"
     },
     {
       "path": "locales/es/ui.json",
-      "sha256": "3b4a910886d1ee34572f772371978ec3a3918d4696434e109111b71ed5b58db6"
+      "sha256": "7763f5b18a1fc6dc678b7c19eb34058a3e73ad571b9d2f7842443a2bcad7d03b"
     },
     {
       "path": "locales/es/validation.json",
-      "sha256": "a56dfc8dc7a8179d62b3302ce873be4783da6c275a1906798d0cbd38793da6d4"
+      "sha256": "a306974d9773ff01f9eeefb21fc989ed7531c38cc248b9c85b388a68d549a9c4"
     },
     {
       "path": "locales/fr/android/CrashApp.smali",
-      "sha256": "b1c0bc364773749f302d570af3e796b594a5e2407ab0d08c6f1ff23ecda3e6c8"
+      "sha256": "23947b0fc3ea6a18d7e20865ece3013210b38c6281fe57d0ab4f49f2d7dba64c"
     },
     {
       "path": "locales/fr/android/ddtlq_icon.xml",
@@ -903,8 +1043,12 @@
       "sha256": "19dbc76ff456b2bc8f9422f447697033434e2c8b631901b3a65bf09dd3fbc01a"
     },
     {
+      "path": "locales/fr/android/GamepadAxis.smali",
+      "sha256": "9d708c17347e4bd26705830223fc6440f74874fbc3af97133d16435ec24b485b"
+    },
+    {
       "path": "locales/fr/android/Launcher.smali",
-      "sha256": "d13c753fbf3c1ad968bc2c049f60bad34e1bb75ff18bebc2bb6e1b644acc5ef6"
+      "sha256": "f30696e76b07ea152708b7a922ad7e0570f4310fc4e5193b13fe00b99d34799a"
     },
     {
       "path": "locales/fr/android/LauncherReady.smali",
@@ -912,11 +1056,11 @@
     },
     {
       "path": "locales/fr/android/library.json",
-      "sha256": "a372167464f703031f7fcdc6a590a2a5549ca6aaf97e2e0eabb8a8d6dcab4ed1"
+      "sha256": "21f45cc1cbfc2d1c356e25575ef7a6f78e4510045f02a3b5a79ed6ee1649a268"
     },
     {
       "path": "locales/fr/android/patch-native-input.ps1",
-      "sha256": "439769041f40eb9c53b5410190221d4b838c0d40111f0e28744971f284358f9c"
+      "sha256": "13bf9cb810ac189452ab665b6002caf0d7b7af750d470006bee03c31616237e1"
     },
     {
       "path": "locales/fr/android/touch-icons.json",
@@ -940,7 +1084,7 @@
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Object_o_zh_tools_Draw_64.gml",
-      "sha256": "5f4051397564556a02f1f122603e40c1c4803b4642cf11329f52fdac1e0989df"
+      "sha256": "7fa69939ea3f8e83da74e1974c35b9ebd169c42268360d18823dda59a5ae3f60"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Object_o_zh_tools_Step_0.gml",
@@ -948,11 +1092,19 @@
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_controls.gml",
-      "sha256": "66179c650b7f3541c88f4b2338132c9a82762c68e02b7ec56c17fac61da295e2"
+      "sha256": "92d2418de56f5769a660ece77ac0302ac39febddfcd20139567fc91e1ff9c3bb"
+    },
+    {
+      "path": "locales/fr/payload/feature-gml/gml_Script_zh_device_mouse_x_to_gui.gml",
+      "sha256": "541f3a889d1125aaf1923a2fb148de859be55dfda01e87322ef06fab59e90ed0"
+    },
+    {
+      "path": "locales/fr/payload/feature-gml/gml_Script_zh_device_mouse_y_to_gui.gml",
+      "sha256": "8528db434639b282fdbadaffa6886f3550a584b2f2e8becdb0512c162142b434"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_display.gml",
-      "sha256": "13cfe831013b0f87bcc00c5b5fc8c9a8ab1cfe978d762d22a1c8e55cd1b586f5"
+      "sha256": "753d1acc731bc9c0f4fe6a5569c0ff61f51b8e324e585292715d5da61c291180"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_draw_text.gml",
@@ -1000,15 +1152,15 @@
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_helper_step.gml",
-      "sha256": "aecd91e4c41540c3f9d770cfdbaabbc2f03eb72279af2cc43068b23632f61ad7"
+      "sha256": "706fae38cffb32258927ce518671f1e9a62883003b500de995a112265a8522f1"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_keyboard_check.gml",
-      "sha256": "126fc8b2b40e83fa209f2c106fa58f9f6308e7f898ddeae2d1c10a982aab1128"
+      "sha256": "c39005f53c909dc4f414a8e13d9e858d9f19a6b78dd9024b97390d9469af72e8"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_keyboard_check_pressed.gml",
-      "sha256": "b6ae34d51269d73b57a6c3979fbe201fe625dd57b36287078ab55c3813065604"
+      "sha256": "caef8901e4d381760bcbcf8060f274408833fc814421479cd21af69f8ca95618"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_migrate_synthetic_save.gml",
@@ -1016,15 +1168,43 @@
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_mouse_check_button.gml",
-      "sha256": "fae942f76acdcce1f61cd744d2b8f233a85dd07f2a20878c900bbc81554aa183"
+      "sha256": "839934cd5d73bc301118dada6e1cc8bdc7689f509a3597e5d41bbea8c950bed1"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_mouse_check_button_pressed.gml",
-      "sha256": "04811d60e62af095794c272f4032754f0edc1b44b114e708d217aee623ab09d1"
+      "sha256": "80a2f235e26b6fc167eac8785f4bbe3e9a42e5dd2bdbce999022e9f3aa2abf85"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_mouse_check_button_released.gml",
-      "sha256": "41095bb41600f8b0b6b7dfe4bf9f7b0ba55d6845f243ed76ebcf050fcd98384a"
+      "sha256": "df493e08d36c2d340dedba11124c7e22b742222a931707735dfef285a7bb1f76"
+    },
+    {
+      "path": "locales/fr/payload/feature-gml/gml_Script_zh_mouse_raw.gml",
+      "sha256": "79f1e815833156c6e5a7d80c3b06b53bc0cffe2f946932dac66fa308b4e0876e"
+    },
+    {
+      "path": "locales/fr/payload/feature-gml/gml_Script_zh_mouse_x.gml",
+      "sha256": "f57f6b78506f10420816c544826432f794388de7faff81619189a323e09cbe60"
+    },
+    {
+      "path": "locales/fr/payload/feature-gml/gml_Script_zh_mouse_y.gml",
+      "sha256": "0a104d0e778fabaebff4e4d57dbd31f005e9cf4560053e27da8efa0c397835fa"
+    },
+    {
+      "path": "locales/fr/payload/feature-gml/gml_Script_zh_pad_cursor_draw.gml",
+      "sha256": "9ec05c153a69d2d59cc7394e2f040eac65457552f9dcbc702221fbfa0e248de9"
+    },
+    {
+      "path": "locales/fr/payload/feature-gml/gml_Script_zh_pad_init.gml",
+      "sha256": "62cd088dae74141d0ab0ce21704bc925167cd451dbbfe3125dce1ee3f732b93a"
+    },
+    {
+      "path": "locales/fr/payload/feature-gml/gml_Script_zh_pad_key.gml",
+      "sha256": "0821335f646f369036349ef28149fe9b75af307368eb19a77a4294f66f06905d"
+    },
+    {
+      "path": "locales/fr/payload/feature-gml/gml_Script_zh_pad_poll.gml",
+      "sha256": "cde9098dd221ea94dc98e17f1fa3719080011c19c597146a9d31c4528e6ac33c"
     },
     {
       "path": "locales/fr/payload/feature-gml/gml_Script_zh_prepare_load.gml",
@@ -1056,7 +1236,7 @@
     },
     {
       "path": "locales/fr/payload/patch-features.csx",
-      "sha256": "a57691b8b6c8dcb2a775e9c97655d54ecfa9341d8704c82d524c928d0bb50d27"
+      "sha256": "eac24f661d624fb58a77cd9228111061b86d1c7ed745856aa24c2765e1c0cae6"
     },
     {
       "path": "locales/fr/payload/patch-font.csx",
@@ -1064,7 +1244,7 @@
     },
     {
       "path": "locales/fr/payload/patch-port.csx",
-      "sha256": "f745f6a9c597357542045369eae11e97d8d8f48bb0ed37164b6525fd11fe1281"
+      "sha256": "6f0376cae85f61fc33b6095054c8102c9c22649f86e95a3f02d778a8855aa27e"
     },
     {
       "path": "locales/fr/payload/patch-strings.csx",
@@ -1120,7 +1300,7 @@
     },
     {
       "path": "locales/fr/payload/translations.json",
-      "sha256": "16ba1f2c3d59a23ac10e958c03e978f726cbc2571017a888cc8a1e5610bf5be9"
+      "sha256": "6379045cc1f8ad7621e995505b1cf5eb0d190cf2658bcc0019493b9fb1321430"
     },
     {
       "path": "locales/fr/payload/ui10-glyphs.json",
@@ -1128,31 +1308,31 @@
     },
     {
       "path": "locales/fr/payload/wrapper-functions.json",
-      "sha256": "bd9e8249b5126df6299d1f03b7088ecf06fe9442b27de5eb7f10a84cca025b4b"
+      "sha256": "10cc04bdc3856fe07d9005c38b0d1ddf298230dcb6b2ff7a1b84bae3b2dad77e"
     },
     {
       "path": "locales/fr/provenance.json",
-      "sha256": "2a3b45c0f2dcddeefd88e1c315bb7561a42b70edac602232302b7cd17aabf4cb"
+      "sha256": "c3e3cc86736eb1a3aa08fc8291e5a106f6b47b9bc494aff86475ac8dfaa5d10f"
     },
     {
       "path": "locales/fr/review-progress.json",
-      "sha256": "e1a7162257fa4cba9a7a44fa48665e38864ae107595d2c0681250696cfe9de99"
+      "sha256": "c6a51a4f1e32e3da1177c415b53c5f7c1a1d2c332eecdd31c8f2e8d768f718c7"
     },
     {
       "path": "locales/fr/translations.json",
-      "sha256": "1f947e9161394ceb630add8ae7f3ae10324308bb2e1d2338d5d078518555678b"
+      "sha256": "21e5919c463e89a56f274c2f385fa85de9a0b49afc97665b4916ecc3f59609fe"
     },
     {
       "path": "locales/fr/ui.json",
-      "sha256": "35ce05dcbdef6ccd7c5dc59147e8e6354ac5e9ae1249a6c1ae2eb1770d49a5e0"
+      "sha256": "f1460460ec2b74f24519a1666cec44e1c518b57c5c6de8cf1ad802773262b43c"
     },
     {
       "path": "locales/fr/validation.json",
-      "sha256": "f66e2a21586b2fff196f3fed47489f648261f2297cbc34bce0f569e58e42fa86"
+      "sha256": "3112280d3db6d3af9023e8a2c9487975c19327fb485b5a3869246e71ed425d98"
     },
     {
       "path": "locales/ja/android/CrashApp.smali",
-      "sha256": "966e281961cf27e1ba8fd3608dbdfbe2279a4201e1b6afd857590c3854487bf5"
+      "sha256": "f8420182cef9880eaaeea293ddf0344643a941b1a5ef19dbea8a2f6dfbaa4222"
     },
     {
       "path": "locales/ja/android/ddtlq_icon.xml",
@@ -1167,8 +1347,12 @@
       "sha256": "2ce36a1fe9d2b2e546a7d041d32355528bf119abb9dd85a661e8bc988c5fae80"
     },
     {
+      "path": "locales/ja/android/GamepadAxis.smali",
+      "sha256": "9d708c17347e4bd26705830223fc6440f74874fbc3af97133d16435ec24b485b"
+    },
+    {
       "path": "locales/ja/android/Launcher.smali",
-      "sha256": "1324fb374277e2288a49c3af48f296441933879163b0bd5560b657d7b82d05fe"
+      "sha256": "a84adb000d34c04d8e4f54c1a7daf6b2888439353bdec921520b301190501d42"
     },
     {
       "path": "locales/ja/android/LauncherReady.smali",
@@ -1176,15 +1360,19 @@
     },
     {
       "path": "locales/ja/android/library.json",
-      "sha256": "d15da45e2ebff42514d43a0463da80cf7246e1a00d1c066f9f0b9680e455a2b1"
+      "sha256": "694d937eb5aa60c5f736961d01c935fb43dc3299e279b3c426b78609caf0dc0b"
     },
     {
       "path": "locales/ja/android/patch-native-input.ps1",
-      "sha256": "439769041f40eb9c53b5410190221d4b838c0d40111f0e28744971f284358f9c"
+      "sha256": "13bf9cb810ac189452ab665b6002caf0d7b7af750d470006bee03c31616237e1"
     },
     {
       "path": "locales/ja/android/touch-icons.json",
       "sha256": "4733b100d1ac60417f4596cb0d45c191df9c871972a588a22e799d3897248fe3"
+    },
+    {
+      "path": "locales/ja/android/TOUCH-PATCH.md",
+      "sha256": "19f923aea895a5a29f68500ba71c3c4647ec4d30a1e1f5ffd9daace233ff438b"
     },
     {
       "path": "locales/ja/android/TouchDispatch.smali",
@@ -1192,7 +1380,7 @@
     },
     {
       "path": "locales/ja/payload/cjk-glyphs.json",
-      "sha256": "be3a9fb26a33d016410bb944446703bfe8633d01b9ba61ff354c37bc2bee841a"
+      "sha256": "acbadd6daafc69a1e29d037577c482cfb8f368a02b28b47c8ea7c54e7bd9ad10"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Object_o_zh_tools_Create_0.gml",
@@ -1200,7 +1388,7 @@
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Object_o_zh_tools_Draw_64.gml",
-      "sha256": "26f53e78be6681fd4636cf289747793710724f0892508397f054cd1813c9139d"
+      "sha256": "fdf4fae47cce77ac2f49bd0476714027ed0a4c2b19b759cd241fbf19f82daee5"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Object_o_zh_tools_Step_0.gml",
@@ -1208,11 +1396,19 @@
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_controls.gml",
-      "sha256": "3ef9409ca5d894838b50378895ad81d8ecb478700614704a2172c09dc70f5f45"
+      "sha256": "9d2fa1df39d53614c39603c8a1a7afa51e0a5e85acc2f9af247b93a8cccf0c7a"
+    },
+    {
+      "path": "locales/ja/payload/feature-gml/gml_Script_zh_device_mouse_x_to_gui.gml",
+      "sha256": "541f3a889d1125aaf1923a2fb148de859be55dfda01e87322ef06fab59e90ed0"
+    },
+    {
+      "path": "locales/ja/payload/feature-gml/gml_Script_zh_device_mouse_y_to_gui.gml",
+      "sha256": "8528db434639b282fdbadaffa6886f3550a584b2f2e8becdb0512c162142b434"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_display.gml",
-      "sha256": "3653c1c68799d79fe5f3a53f4329f337c1727611dac085bb5ecfe444386a2a14"
+      "sha256": "4dc309bccaa67b24c49c639e1a8b622db8fcd76594e34192d3bb18e8cb223772"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_draw_text.gml",
@@ -1260,15 +1456,15 @@
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_helper_step.gml",
-      "sha256": "381fadbd83c06822462b64e96b981563bbe529b7762e5dad7bdc6a8319024e21"
+      "sha256": "eeb3ebcd382bf3db06c684534991265de5f831c4388b1ea8794ec93a422a8a2a"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_keyboard_check.gml",
-      "sha256": "126fc8b2b40e83fa209f2c106fa58f9f6308e7f898ddeae2d1c10a982aab1128"
+      "sha256": "c39005f53c909dc4f414a8e13d9e858d9f19a6b78dd9024b97390d9469af72e8"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_keyboard_check_pressed.gml",
-      "sha256": "b6ae34d51269d73b57a6c3979fbe201fe625dd57b36287078ab55c3813065604"
+      "sha256": "caef8901e4d381760bcbcf8060f274408833fc814421479cd21af69f8ca95618"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_migrate_synthetic_save.gml",
@@ -1276,15 +1472,43 @@
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_mouse_check_button.gml",
-      "sha256": "fae942f76acdcce1f61cd744d2b8f233a85dd07f2a20878c900bbc81554aa183"
+      "sha256": "839934cd5d73bc301118dada6e1cc8bdc7689f509a3597e5d41bbea8c950bed1"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_mouse_check_button_pressed.gml",
-      "sha256": "04811d60e62af095794c272f4032754f0edc1b44b114e708d217aee623ab09d1"
+      "sha256": "80a2f235e26b6fc167eac8785f4bbe3e9a42e5dd2bdbce999022e9f3aa2abf85"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_mouse_check_button_released.gml",
-      "sha256": "41095bb41600f8b0b6b7dfe4bf9f7b0ba55d6845f243ed76ebcf050fcd98384a"
+      "sha256": "df493e08d36c2d340dedba11124c7e22b742222a931707735dfef285a7bb1f76"
+    },
+    {
+      "path": "locales/ja/payload/feature-gml/gml_Script_zh_mouse_raw.gml",
+      "sha256": "79f1e815833156c6e5a7d80c3b06b53bc0cffe2f946932dac66fa308b4e0876e"
+    },
+    {
+      "path": "locales/ja/payload/feature-gml/gml_Script_zh_mouse_x.gml",
+      "sha256": "f57f6b78506f10420816c544826432f794388de7faff81619189a323e09cbe60"
+    },
+    {
+      "path": "locales/ja/payload/feature-gml/gml_Script_zh_mouse_y.gml",
+      "sha256": "0a104d0e778fabaebff4e4d57dbd31f005e9cf4560053e27da8efa0c397835fa"
+    },
+    {
+      "path": "locales/ja/payload/feature-gml/gml_Script_zh_pad_cursor_draw.gml",
+      "sha256": "9ec05c153a69d2d59cc7394e2f040eac65457552f9dcbc702221fbfa0e248de9"
+    },
+    {
+      "path": "locales/ja/payload/feature-gml/gml_Script_zh_pad_init.gml",
+      "sha256": "62cd088dae74141d0ab0ce21704bc925167cd451dbbfe3125dce1ee3f732b93a"
+    },
+    {
+      "path": "locales/ja/payload/feature-gml/gml_Script_zh_pad_key.gml",
+      "sha256": "0821335f646f369036349ef28149fe9b75af307368eb19a77a4294f66f06905d"
+    },
+    {
+      "path": "locales/ja/payload/feature-gml/gml_Script_zh_pad_poll.gml",
+      "sha256": "cde9098dd221ea94dc98e17f1fa3719080011c19c597146a9d31c4528e6ac33c"
     },
     {
       "path": "locales/ja/payload/feature-gml/gml_Script_zh_prepare_load.gml",
@@ -1316,7 +1540,7 @@
     },
     {
       "path": "locales/ja/payload/patch-features.csx",
-      "sha256": "a57691b8b6c8dcb2a775e9c97655d54ecfa9341d8704c82d524c928d0bb50d27"
+      "sha256": "eac24f661d624fb58a77cd9228111061b86d1c7ed745856aa24c2765e1c0cae6"
     },
     {
       "path": "locales/ja/payload/patch-font.csx",
@@ -1324,7 +1548,7 @@
     },
     {
       "path": "locales/ja/payload/patch-port.csx",
-      "sha256": "f745f6a9c597357542045369eae11e97d8d8f48bb0ed37164b6525fd11fe1281"
+      "sha256": "6f0376cae85f61fc33b6095054c8102c9c22649f86e95a3f02d778a8855aa27e"
     },
     {
       "path": "locales/ja/payload/patch-strings.csx",
@@ -1380,35 +1604,35 @@
     },
     {
       "path": "locales/ja/payload/translations.json",
-      "sha256": "09f9956c51ad75854ad585f7e94a1c1fe61f2903013e7fb08b9af7064c5b422f"
+      "sha256": "a88238774d26527d23cdd840ea582f7e913b19c7e77d321d35dd68677e2b6618"
     },
     {
       "path": "locales/ja/payload/ui10-glyphs.json",
-      "sha256": "e5a059e81f4d0688d6b952819391e1a1f1e847261024d05d0d56f15db4a5dd0c"
+      "sha256": "2fabe641ced02d435a0638469f1cd1c082ea3b5aa94105bddec5103564dc121a"
     },
     {
       "path": "locales/ja/payload/wrapper-functions.json",
-      "sha256": "bd9e8249b5126df6299d1f03b7088ecf06fe9442b27de5eb7f10a84cca025b4b"
+      "sha256": "10cc04bdc3856fe07d9005c38b0d1ddf298230dcb6b2ff7a1b84bae3b2dad77e"
     },
     {
       "path": "locales/ja/provenance.json",
-      "sha256": "a7173c41414732ab3696305ed16f46fbb69bdcd30929886b4dc26c997d942984"
+      "sha256": "d8ca16d7c1018601400a185a683cc97e5a2640f643238dc21021936b41a879ac"
     },
     {
       "path": "locales/ja/translations.json",
-      "sha256": "6b98836e7000ea406d7326e6357f553da8072ed8951b302ba785ef362f2a6420"
+      "sha256": "9b7775fc0aa127ecd7454713fac9aae07e9b3f2d1f3f2711d832c4bb8f4d608a"
     },
     {
       "path": "locales/ja/ui.json",
-      "sha256": "9fda21dc06870c1a2da5900e68447edefe851ee0e84072e7df6af2e9843bc811"
+      "sha256": "f6b848f3e495d33905cacd94b82e2220b17ff92429b1b3e16aae5af88b6d2ccf"
     },
     {
       "path": "locales/ja/validation.json",
-      "sha256": "85aa70dba7c4725a233d06cdd3d2aa585623d5736bc6bb2b044f0f2b93cc88cb"
+      "sha256": "117cc4728560214db5ef6c16682164803264bc6321a338a48cf67b1f52a960ea"
     },
     {
       "path": "locales/ko/android/CrashApp.smali",
-      "sha256": "687c753663e6307038b1818772b171ca2e1fb874e814ea1a81c7ea3e4cc2a1ef"
+      "sha256": "48e4b37f1063de19049dcd5566bb46d0895c98a835b8721554f9e5dce43faa6d"
     },
     {
       "path": "locales/ko/android/ddtlq_icon.xml",
@@ -1423,8 +1647,12 @@
       "sha256": "a7d1a1d0960df58e1a694362b27fe5faa474712836d46bb4ac9474000fc7ff93"
     },
     {
+      "path": "locales/ko/android/GamepadAxis.smali",
+      "sha256": "9d708c17347e4bd26705830223fc6440f74874fbc3af97133d16435ec24b485b"
+    },
+    {
       "path": "locales/ko/android/Launcher.smali",
-      "sha256": "ef4c46254a1a48abfeed196ffe510090e5035fc3c824a0ca04f4f847b8e9c16e"
+      "sha256": "05540deb8205127bb4228e765261b1e95e978accac4e7d152da963e6f2386124"
     },
     {
       "path": "locales/ko/android/LauncherReady.smali",
@@ -1432,11 +1660,11 @@
     },
     {
       "path": "locales/ko/android/library.json",
-      "sha256": "dd0e7ae356c0cfffc2a910bf8f9ea3f1b72ce9c3d9c79f441e5eecb892568fe5"
+      "sha256": "e024c251f3a2b273cb885a4bf12785ff0d601f8861675aa12115216d774d88be"
     },
     {
       "path": "locales/ko/android/patch-native-input.ps1",
-      "sha256": "439769041f40eb9c53b5410190221d4b838c0d40111f0e28744971f284358f9c"
+      "sha256": "13bf9cb810ac189452ab665b6002caf0d7b7af750d470006bee03c31616237e1"
     },
     {
       "path": "locales/ko/android/touch-icons.json",
@@ -1460,7 +1688,7 @@
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Object_o_zh_tools_Draw_64.gml",
-      "sha256": "a3b4c9baccd237b08f65fa833fe391572e9f9e453e14d543f13ea1b8653a45e0"
+      "sha256": "f0e310e76b866d4aca913b9b5956f9d09bf98127b9c700d3df77b7929a35bac7"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Object_o_zh_tools_Step_0.gml",
@@ -1468,11 +1696,19 @@
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_controls.gml",
-      "sha256": "6ae0441ea7016e54bd8cba1cd222f295eedaa8fcaf3e651238513e852f6d4cb1"
+      "sha256": "b923c9e07c02a1ac714bed0dc852fc10419de29a58ae6243472bff2b7385a6bf"
+    },
+    {
+      "path": "locales/ko/payload/feature-gml/gml_Script_zh_device_mouse_x_to_gui.gml",
+      "sha256": "541f3a889d1125aaf1923a2fb148de859be55dfda01e87322ef06fab59e90ed0"
+    },
+    {
+      "path": "locales/ko/payload/feature-gml/gml_Script_zh_device_mouse_y_to_gui.gml",
+      "sha256": "8528db434639b282fdbadaffa6886f3550a584b2f2e8becdb0512c162142b434"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_display.gml",
-      "sha256": "ff3c0eb26cedf30435f6de93cd0f415b2f3d77aecec25b5a047a3c038689af22"
+      "sha256": "695f35ceaf1708a810392dbaf34c6fdfa53bc3beb2fa22fa30b68fe8e5ff3ab3"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_draw_text.gml",
@@ -1520,15 +1756,15 @@
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_helper_step.gml",
-      "sha256": "e7a91f709109f97fce82954bcaef4e7b580ea0743ed822763c71ca3e6c4a332f"
+      "sha256": "05ed7a817fe13703a68f9523f4182351669353a7e2c9653815559dde510461a0"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_keyboard_check.gml",
-      "sha256": "126fc8b2b40e83fa209f2c106fa58f9f6308e7f898ddeae2d1c10a982aab1128"
+      "sha256": "c39005f53c909dc4f414a8e13d9e858d9f19a6b78dd9024b97390d9469af72e8"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_keyboard_check_pressed.gml",
-      "sha256": "b6ae34d51269d73b57a6c3979fbe201fe625dd57b36287078ab55c3813065604"
+      "sha256": "caef8901e4d381760bcbcf8060f274408833fc814421479cd21af69f8ca95618"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_migrate_synthetic_save.gml",
@@ -1536,15 +1772,43 @@
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_mouse_check_button.gml",
-      "sha256": "fae942f76acdcce1f61cd744d2b8f233a85dd07f2a20878c900bbc81554aa183"
+      "sha256": "839934cd5d73bc301118dada6e1cc8bdc7689f509a3597e5d41bbea8c950bed1"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_mouse_check_button_pressed.gml",
-      "sha256": "04811d60e62af095794c272f4032754f0edc1b44b114e708d217aee623ab09d1"
+      "sha256": "80a2f235e26b6fc167eac8785f4bbe3e9a42e5dd2bdbce999022e9f3aa2abf85"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_mouse_check_button_released.gml",
-      "sha256": "41095bb41600f8b0b6b7dfe4bf9f7b0ba55d6845f243ed76ebcf050fcd98384a"
+      "sha256": "df493e08d36c2d340dedba11124c7e22b742222a931707735dfef285a7bb1f76"
+    },
+    {
+      "path": "locales/ko/payload/feature-gml/gml_Script_zh_mouse_raw.gml",
+      "sha256": "79f1e815833156c6e5a7d80c3b06b53bc0cffe2f946932dac66fa308b4e0876e"
+    },
+    {
+      "path": "locales/ko/payload/feature-gml/gml_Script_zh_mouse_x.gml",
+      "sha256": "f57f6b78506f10420816c544826432f794388de7faff81619189a323e09cbe60"
+    },
+    {
+      "path": "locales/ko/payload/feature-gml/gml_Script_zh_mouse_y.gml",
+      "sha256": "0a104d0e778fabaebff4e4d57dbd31f005e9cf4560053e27da8efa0c397835fa"
+    },
+    {
+      "path": "locales/ko/payload/feature-gml/gml_Script_zh_pad_cursor_draw.gml",
+      "sha256": "9ec05c153a69d2d59cc7394e2f040eac65457552f9dcbc702221fbfa0e248de9"
+    },
+    {
+      "path": "locales/ko/payload/feature-gml/gml_Script_zh_pad_init.gml",
+      "sha256": "62cd088dae74141d0ab0ce21704bc925167cd451dbbfe3125dce1ee3f732b93a"
+    },
+    {
+      "path": "locales/ko/payload/feature-gml/gml_Script_zh_pad_key.gml",
+      "sha256": "0821335f646f369036349ef28149fe9b75af307368eb19a77a4294f66f06905d"
+    },
+    {
+      "path": "locales/ko/payload/feature-gml/gml_Script_zh_pad_poll.gml",
+      "sha256": "cde9098dd221ea94dc98e17f1fa3719080011c19c597146a9d31c4528e6ac33c"
     },
     {
       "path": "locales/ko/payload/feature-gml/gml_Script_zh_prepare_load.gml",
@@ -1576,7 +1840,7 @@
     },
     {
       "path": "locales/ko/payload/patch-features.csx",
-      "sha256": "a57691b8b6c8dcb2a775e9c97655d54ecfa9341d8704c82d524c928d0bb50d27"
+      "sha256": "eac24f661d624fb58a77cd9228111061b86d1c7ed745856aa24c2765e1c0cae6"
     },
     {
       "path": "locales/ko/payload/patch-font.csx",
@@ -1584,7 +1848,7 @@
     },
     {
       "path": "locales/ko/payload/patch-port.csx",
-      "sha256": "f745f6a9c597357542045369eae11e97d8d8f48bb0ed37164b6525fd11fe1281"
+      "sha256": "6f0376cae85f61fc33b6095054c8102c9c22649f86e95a3f02d778a8855aa27e"
     },
     {
       "path": "locales/ko/payload/patch-strings.csx",
@@ -1640,7 +1904,7 @@
     },
     {
       "path": "locales/ko/payload/translations.json",
-      "sha256": "7e1354bf68c5e0c2cb2352665bc552649edffd3262c4cb0348c7a293152ba7b0"
+      "sha256": "060007a274e1a619c254ccd3f24b4ff1388332b488ae58701bd8710e083d5802"
     },
     {
       "path": "locales/ko/payload/ui10-glyphs.json",
@@ -1648,31 +1912,31 @@
     },
     {
       "path": "locales/ko/payload/wrapper-functions.json",
-      "sha256": "bd9e8249b5126df6299d1f03b7088ecf06fe9442b27de5eb7f10a84cca025b4b"
+      "sha256": "10cc04bdc3856fe07d9005c38b0d1ddf298230dcb6b2ff7a1b84bae3b2dad77e"
     },
     {
       "path": "locales/ko/provenance.json",
-      "sha256": "ba5d7f36f9654de0e1cff2975c06729cfb1bc78b1822f3ee4cb85765d05016ec"
+      "sha256": "0601fe41c2845d8a28be3d05023a8e61c90d2804fa107c4c5b5796a9f64d62e8"
     },
     {
       "path": "locales/ko/review-progress.json",
-      "sha256": "0b58ec340aeda87856854c1d55499f879695d689ab14b746a53ace521bbe3432"
+      "sha256": "e9cb08ceb89cfd1c15b941183702722f93fd2d9a864e56c512d2af39d8fde82b"
     },
     {
       "path": "locales/ko/translations.json",
-      "sha256": "180af27425725997f8dab62895376d1d3a9795da0a9d05976195118724ea26bb"
+      "sha256": "8925df3bbc3e21522e9623089f0fd3b9f92be0bc87d85528d0b99823aaa4197d"
     },
     {
       "path": "locales/ko/ui.json",
-      "sha256": "679b99f0ecaa542b6b660f3a95007971c602ac9ed0ddad43ddb20d6eae2a1cb1"
+      "sha256": "42758cd363520944a7ff231b76930038df0f723327585126a64d87eec7d268e6"
     },
     {
       "path": "locales/ko/validation.json",
-      "sha256": "985b7c8f18f7782d5bda7b2e39018d90f26040c767eba6b4e630da614abf77db"
+      "sha256": "3632afa74f87d34ef5fed91732bbbd7f0103b1f0cd99cbae7de4febbf48d48e1"
     },
     {
       "path": "locales/pt-BR/android/CrashApp.smali",
-      "sha256": "f3288e7cc2fbeb58cdc80fe98bb171f341d7de44ac0b0c5cf7addbe516ed2fa6"
+      "sha256": "68bf9a260392429f3027176543103aa3c27df44a991159bd6dc7da4b8aacf3a8"
     },
     {
       "path": "locales/pt-BR/android/ddtlq_icon.xml",
@@ -1687,8 +1951,12 @@
       "sha256": "9161d60cb890c37f27a960895c475817f058af5be738af1aa05aba9b83b4b115"
     },
     {
+      "path": "locales/pt-BR/android/GamepadAxis.smali",
+      "sha256": "9d708c17347e4bd26705830223fc6440f74874fbc3af97133d16435ec24b485b"
+    },
+    {
       "path": "locales/pt-BR/android/Launcher.smali",
-      "sha256": "23c4edf820118778536c81c68f50351db8ce22855effb32b67aa5b6ea5842d81"
+      "sha256": "ce157baf6fd51ee9185520c7cf019c7900d4c5f0dad81137abb2d710ed197600"
     },
     {
       "path": "locales/pt-BR/android/LauncherReady.smali",
@@ -1696,15 +1964,19 @@
     },
     {
       "path": "locales/pt-BR/android/library.json",
-      "sha256": "6716d54097fc29938b69cc546c582e8da0e1e8dfbc41c828f6e4f1e196f0eb31"
+      "sha256": "db69d5a1280fdca50eb573fcf7b6a0db2fb35536faeec8f35905821eaae9ce91"
     },
     {
       "path": "locales/pt-BR/android/patch-native-input.ps1",
-      "sha256": "439769041f40eb9c53b5410190221d4b838c0d40111f0e28744971f284358f9c"
+      "sha256": "13bf9cb810ac189452ab665b6002caf0d7b7af750d470006bee03c31616237e1"
     },
     {
       "path": "locales/pt-BR/android/touch-icons.json",
       "sha256": "4733b100d1ac60417f4596cb0d45c191df9c871972a588a22e799d3897248fe3"
+    },
+    {
+      "path": "locales/pt-BR/android/TOUCH-PATCH.md",
+      "sha256": "19f923aea895a5a29f68500ba71c3c4647ec4d30a1e1f5ffd9daace233ff438b"
     },
     {
       "path": "locales/pt-BR/android/TouchDispatch.smali",
@@ -1720,7 +1992,7 @@
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Object_o_zh_tools_Draw_64.gml",
-      "sha256": "925411f94f55aa3be1d07b8a716eeb9fd05351a0d25c17e238c9e9bea0301c9a"
+      "sha256": "a2d2bed9e08fe46cdc91e324639e40e3347ca38d2fb97514f0598b5559856649"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Object_o_zh_tools_Step_0.gml",
@@ -1728,11 +2000,19 @@
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_controls.gml",
-      "sha256": "de64c9328d553dfbc0aaf99cedf3ccd7370b082cb6956db00ee39a28531f8fd0"
+      "sha256": "cc6fcaff42c89555c46ad9e319a832fbac256e2506cdcf22a70ce27a58592092"
+    },
+    {
+      "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_device_mouse_x_to_gui.gml",
+      "sha256": "541f3a889d1125aaf1923a2fb148de859be55dfda01e87322ef06fab59e90ed0"
+    },
+    {
+      "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_device_mouse_y_to_gui.gml",
+      "sha256": "8528db434639b282fdbadaffa6886f3550a584b2f2e8becdb0512c162142b434"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_display.gml",
-      "sha256": "8767810a2dd45b135409d35b1a2d8143a33cb28548b369dfc5f12e826cd1039d"
+      "sha256": "045976d4bd6b028515ee45f5cc13b8a6543c90aa49c54e291035908de82c0969"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_draw_text.gml",
@@ -1780,15 +2060,15 @@
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_helper_step.gml",
-      "sha256": "ce29607cdeb15315ae9bc20bf91770d4ceedab9dd16ca2698bf0f52642a1363c"
+      "sha256": "e60ff5fb275d8263f682c67b234399c76f1f317aa2dbaec3689055485e2af97d"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_keyboard_check.gml",
-      "sha256": "126fc8b2b40e83fa209f2c106fa58f9f6308e7f898ddeae2d1c10a982aab1128"
+      "sha256": "c39005f53c909dc4f414a8e13d9e858d9f19a6b78dd9024b97390d9469af72e8"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_keyboard_check_pressed.gml",
-      "sha256": "b6ae34d51269d73b57a6c3979fbe201fe625dd57b36287078ab55c3813065604"
+      "sha256": "caef8901e4d381760bcbcf8060f274408833fc814421479cd21af69f8ca95618"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_migrate_synthetic_save.gml",
@@ -1796,15 +2076,43 @@
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_mouse_check_button.gml",
-      "sha256": "fae942f76acdcce1f61cd744d2b8f233a85dd07f2a20878c900bbc81554aa183"
+      "sha256": "839934cd5d73bc301118dada6e1cc8bdc7689f509a3597e5d41bbea8c950bed1"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_mouse_check_button_pressed.gml",
-      "sha256": "04811d60e62af095794c272f4032754f0edc1b44b114e708d217aee623ab09d1"
+      "sha256": "80a2f235e26b6fc167eac8785f4bbe3e9a42e5dd2bdbce999022e9f3aa2abf85"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_mouse_check_button_released.gml",
-      "sha256": "41095bb41600f8b0b6b7dfe4bf9f7b0ba55d6845f243ed76ebcf050fcd98384a"
+      "sha256": "df493e08d36c2d340dedba11124c7e22b742222a931707735dfef285a7bb1f76"
+    },
+    {
+      "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_mouse_raw.gml",
+      "sha256": "79f1e815833156c6e5a7d80c3b06b53bc0cffe2f946932dac66fa308b4e0876e"
+    },
+    {
+      "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_mouse_x.gml",
+      "sha256": "f57f6b78506f10420816c544826432f794388de7faff81619189a323e09cbe60"
+    },
+    {
+      "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_mouse_y.gml",
+      "sha256": "0a104d0e778fabaebff4e4d57dbd31f005e9cf4560053e27da8efa0c397835fa"
+    },
+    {
+      "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_pad_cursor_draw.gml",
+      "sha256": "9ec05c153a69d2d59cc7394e2f040eac65457552f9dcbc702221fbfa0e248de9"
+    },
+    {
+      "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_pad_init.gml",
+      "sha256": "62cd088dae74141d0ab0ce21704bc925167cd451dbbfe3125dce1ee3f732b93a"
+    },
+    {
+      "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_pad_key.gml",
+      "sha256": "0821335f646f369036349ef28149fe9b75af307368eb19a77a4294f66f06905d"
+    },
+    {
+      "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_pad_poll.gml",
+      "sha256": "cde9098dd221ea94dc98e17f1fa3719080011c19c597146a9d31c4528e6ac33c"
     },
     {
       "path": "locales/pt-BR/payload/feature-gml/gml_Script_zh_prepare_load.gml",
@@ -1836,7 +2144,7 @@
     },
     {
       "path": "locales/pt-BR/payload/patch-features.csx",
-      "sha256": "a57691b8b6c8dcb2a775e9c97655d54ecfa9341d8704c82d524c928d0bb50d27"
+      "sha256": "eac24f661d624fb58a77cd9228111061b86d1c7ed745856aa24c2765e1c0cae6"
     },
     {
       "path": "locales/pt-BR/payload/patch-font.csx",
@@ -1844,7 +2152,7 @@
     },
     {
       "path": "locales/pt-BR/payload/patch-port.csx",
-      "sha256": "f745f6a9c597357542045369eae11e97d8d8f48bb0ed37164b6525fd11fe1281"
+      "sha256": "6f0376cae85f61fc33b6095054c8102c9c22649f86e95a3f02d778a8855aa27e"
     },
     {
       "path": "locales/pt-BR/payload/patch-strings.csx",
@@ -1900,7 +2208,7 @@
     },
     {
       "path": "locales/pt-BR/payload/translations.json",
-      "sha256": "7b9f8fdfd15ad89a935305ccd04af2530411b5d68075e78781a67c5408385105"
+      "sha256": "9f5c702696a1d4e3fd2f2e4dd3fae56aade74e481cd95d3b32e98baec7a4e107"
     },
     {
       "path": "locales/pt-BR/payload/ui10-glyphs.json",
@@ -1908,27 +2216,27 @@
     },
     {
       "path": "locales/pt-BR/payload/wrapper-functions.json",
-      "sha256": "bd9e8249b5126df6299d1f03b7088ecf06fe9442b27de5eb7f10a84cca025b4b"
+      "sha256": "10cc04bdc3856fe07d9005c38b0d1ddf298230dcb6b2ff7a1b84bae3b2dad77e"
     },
     {
       "path": "locales/pt-BR/provenance.json",
-      "sha256": "9bc4df481e5e0e4b7709e15a8ed2e786eae390758afac92e6c8f4151fd4f0ca5"
+      "sha256": "947c5ebcd799237af9cff7783fc7f000a6168317f7e642091c3949b1300b3939"
     },
     {
       "path": "locales/pt-BR/translations.json",
-      "sha256": "937d1bad3478ca6a9baf9cda5e5d2aca842b8fab1054c019ce2391e4c529e2c0"
+      "sha256": "124cbb4f1e7f98269fcb7fe2e33101b63094ef90652010e5085a23af8cdad362"
     },
     {
       "path": "locales/pt-BR/ui.json",
-      "sha256": "8f64c1d6ae86efaa6a31edf853212642c366e292b341a7850885429087961bf1"
+      "sha256": "59705b986bc8f5791779817d5ac7b3eb9485cf71d98e835f8a99ae6a4dafad63"
     },
     {
       "path": "locales/pt-BR/validation.json",
-      "sha256": "9c3318f663edfbddee9e2d51ed166c9b0d661ced1f52f24b3b70193edc6ea514"
+      "sha256": "eccb88c37ec399501c23b1e85a8a62ddd31a634821e571ab253a21abd7dfe4bf"
     },
     {
       "path": "locales/ru/android/CrashApp.smali",
-      "sha256": "0fae4eb8ce0264392d3df726f7bae52cdab46cd7c66ea536a5b53d5b9983c38b"
+      "sha256": "534e80c1635a628f60c6d42c98a82f83e57bb7149dceed686de3e4515636dfd1"
     },
     {
       "path": "locales/ru/android/ddtlq_icon.xml",
@@ -1943,8 +2251,12 @@
       "sha256": "cc07c6b3de3beae955a8dde8c9cc56932546954ecf08735198b7f7115e13dd84"
     },
     {
+      "path": "locales/ru/android/GamepadAxis.smali",
+      "sha256": "9d708c17347e4bd26705830223fc6440f74874fbc3af97133d16435ec24b485b"
+    },
+    {
       "path": "locales/ru/android/Launcher.smali",
-      "sha256": "dfdeefc0ef2577caec92495f40335a13514503d711c5154d2db8dcb14c9374dd"
+      "sha256": "03522dd907a1a531c30bb463d662f1df0982f9e88103e6d508f26d3b2340544c"
     },
     {
       "path": "locales/ru/android/LauncherReady.smali",
@@ -1952,11 +2264,11 @@
     },
     {
       "path": "locales/ru/android/library.json",
-      "sha256": "1f23968bc2b291733ef23c16b2bbc1a6a4ab8619181c7547fc8ff859a535fee2"
+      "sha256": "bda11664c9219754e6211121629ba26b88fab95b349d05cb2a07da729a3f17f5"
     },
     {
       "path": "locales/ru/android/patch-native-input.ps1",
-      "sha256": "439769041f40eb9c53b5410190221d4b838c0d40111f0e28744971f284358f9c"
+      "sha256": "13bf9cb810ac189452ab665b6002caf0d7b7af750d470006bee03c31616237e1"
     },
     {
       "path": "locales/ru/android/touch-icons.json",
@@ -1980,7 +2292,7 @@
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Object_o_zh_tools_Draw_64.gml",
-      "sha256": "dadb078bc32e8226c9d70696c9526dfbb0568b7667d92dcc57489e55efca42fd"
+      "sha256": "55e32ddbb9c50dbef6e5fec6667b3743cd84f6b0902a35664c604ea9df8ee6a2"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Object_o_zh_tools_Step_0.gml",
@@ -1988,11 +2300,19 @@
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_controls.gml",
-      "sha256": "a263b85b256b6a2b8cf050dbd5c8d672a186dac41f489687571a5d303cd88af3"
+      "sha256": "079f16334e8a8ddb07b071c8ccdb229ab91da7b435b99e37901f0e15c666be25"
+    },
+    {
+      "path": "locales/ru/payload/feature-gml/gml_Script_zh_device_mouse_x_to_gui.gml",
+      "sha256": "541f3a889d1125aaf1923a2fb148de859be55dfda01e87322ef06fab59e90ed0"
+    },
+    {
+      "path": "locales/ru/payload/feature-gml/gml_Script_zh_device_mouse_y_to_gui.gml",
+      "sha256": "8528db434639b282fdbadaffa6886f3550a584b2f2e8becdb0512c162142b434"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_display.gml",
-      "sha256": "5f00ac5a5f3412ea11090045292332e8296ba6458c7094cb504be870bb592178"
+      "sha256": "dac2b928f273833d290b2b5c02e08bfee72a0907b913d5f2d4d92924a9cfa62f"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_draw_text.gml",
@@ -2040,15 +2360,15 @@
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_helper_step.gml",
-      "sha256": "f1c8354a93ea0250b218b2eab763c60814e61f2f5afa17c59eeb45c13b129526"
+      "sha256": "48a2464f15393cc7a9c61ac424bb8b3446d14ef605bf9123a5a2a8b94a64fbfe"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_keyboard_check.gml",
-      "sha256": "126fc8b2b40e83fa209f2c106fa58f9f6308e7f898ddeae2d1c10a982aab1128"
+      "sha256": "c39005f53c909dc4f414a8e13d9e858d9f19a6b78dd9024b97390d9469af72e8"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_keyboard_check_pressed.gml",
-      "sha256": "b6ae34d51269d73b57a6c3979fbe201fe625dd57b36287078ab55c3813065604"
+      "sha256": "caef8901e4d381760bcbcf8060f274408833fc814421479cd21af69f8ca95618"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_migrate_synthetic_save.gml",
@@ -2056,15 +2376,43 @@
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_mouse_check_button.gml",
-      "sha256": "fae942f76acdcce1f61cd744d2b8f233a85dd07f2a20878c900bbc81554aa183"
+      "sha256": "839934cd5d73bc301118dada6e1cc8bdc7689f509a3597e5d41bbea8c950bed1"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_mouse_check_button_pressed.gml",
-      "sha256": "04811d60e62af095794c272f4032754f0edc1b44b114e708d217aee623ab09d1"
+      "sha256": "80a2f235e26b6fc167eac8785f4bbe3e9a42e5dd2bdbce999022e9f3aa2abf85"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_mouse_check_button_released.gml",
-      "sha256": "41095bb41600f8b0b6b7dfe4bf9f7b0ba55d6845f243ed76ebcf050fcd98384a"
+      "sha256": "df493e08d36c2d340dedba11124c7e22b742222a931707735dfef285a7bb1f76"
+    },
+    {
+      "path": "locales/ru/payload/feature-gml/gml_Script_zh_mouse_raw.gml",
+      "sha256": "79f1e815833156c6e5a7d80c3b06b53bc0cffe2f946932dac66fa308b4e0876e"
+    },
+    {
+      "path": "locales/ru/payload/feature-gml/gml_Script_zh_mouse_x.gml",
+      "sha256": "f57f6b78506f10420816c544826432f794388de7faff81619189a323e09cbe60"
+    },
+    {
+      "path": "locales/ru/payload/feature-gml/gml_Script_zh_mouse_y.gml",
+      "sha256": "0a104d0e778fabaebff4e4d57dbd31f005e9cf4560053e27da8efa0c397835fa"
+    },
+    {
+      "path": "locales/ru/payload/feature-gml/gml_Script_zh_pad_cursor_draw.gml",
+      "sha256": "9ec05c153a69d2d59cc7394e2f040eac65457552f9dcbc702221fbfa0e248de9"
+    },
+    {
+      "path": "locales/ru/payload/feature-gml/gml_Script_zh_pad_init.gml",
+      "sha256": "62cd088dae74141d0ab0ce21704bc925167cd451dbbfe3125dce1ee3f732b93a"
+    },
+    {
+      "path": "locales/ru/payload/feature-gml/gml_Script_zh_pad_key.gml",
+      "sha256": "0821335f646f369036349ef28149fe9b75af307368eb19a77a4294f66f06905d"
+    },
+    {
+      "path": "locales/ru/payload/feature-gml/gml_Script_zh_pad_poll.gml",
+      "sha256": "cde9098dd221ea94dc98e17f1fa3719080011c19c597146a9d31c4528e6ac33c"
     },
     {
       "path": "locales/ru/payload/feature-gml/gml_Script_zh_prepare_load.gml",
@@ -2096,7 +2444,7 @@
     },
     {
       "path": "locales/ru/payload/patch-features.csx",
-      "sha256": "a57691b8b6c8dcb2a775e9c97655d54ecfa9341d8704c82d524c928d0bb50d27"
+      "sha256": "eac24f661d624fb58a77cd9228111061b86d1c7ed745856aa24c2765e1c0cae6"
     },
     {
       "path": "locales/ru/payload/patch-font.csx",
@@ -2104,7 +2452,7 @@
     },
     {
       "path": "locales/ru/payload/patch-port.csx",
-      "sha256": "f745f6a9c597357542045369eae11e97d8d8f48bb0ed37164b6525fd11fe1281"
+      "sha256": "6f0376cae85f61fc33b6095054c8102c9c22649f86e95a3f02d778a8855aa27e"
     },
     {
       "path": "locales/ru/payload/patch-strings.csx",
@@ -2160,7 +2508,7 @@
     },
     {
       "path": "locales/ru/payload/translations.json",
-      "sha256": "3d41d605a74bba35e591e04916d9c1bff25c597738c9ae3d2900e32266d9196b"
+      "sha256": "dac4b852fa887f3461df997b8b48f71b89ec4f51eb9622ed63bd039d6bc67a01"
     },
     {
       "path": "locales/ru/payload/ui10-glyphs.json",
@@ -2168,31 +2516,31 @@
     },
     {
       "path": "locales/ru/payload/wrapper-functions.json",
-      "sha256": "bd9e8249b5126df6299d1f03b7088ecf06fe9442b27de5eb7f10a84cca025b4b"
+      "sha256": "10cc04bdc3856fe07d9005c38b0d1ddf298230dcb6b2ff7a1b84bae3b2dad77e"
     },
     {
       "path": "locales/ru/provenance.json",
-      "sha256": "754510ca28118c279f81c28fb0a5837154dc8573192faf28b91509674e0b4362"
+      "sha256": "f54cf3828eb41b57b482b0c97dcdcd86e62e174c8f53c6bebbec9917073419ff"
     },
     {
       "path": "locales/ru/review-progress.json",
-      "sha256": "a2d4546d7a568e00e152a5c20e8f3f61a232bddbcd51620bdfa60640bfdbd527"
+      "sha256": "52732f455123a775a3b213137f82c54504b42c56e6c1e907056cb76544b52eab"
     },
     {
       "path": "locales/ru/translations.json",
-      "sha256": "3301e03cea02d1e50250046f075fcf06c82ad4086a3d58d98894fcccaa899c33"
+      "sha256": "eb6fd98f10d407780c427efe76611697473d2dde416a4c1a1c29cac4a4de9c3f"
     },
     {
       "path": "locales/ru/ui.json",
-      "sha256": "7fc62ca32768ac24af477804b7b483d1434c905848ddf4d2c3bd6cf34bcd0e5f"
+      "sha256": "7f798700cd350398a206fb124348f16e2e649811246a05449a140cd0fc5c3220"
     },
     {
       "path": "locales/ru/validation.json",
-      "sha256": "2c3b95ab993f4f11cc3896810ea261332e5a9915367480ecac4e4ebfd557036e"
+      "sha256": "6c816a6bbb5b9b985bcf21981c272b4d90d3950eabbd24fffc2faa5beea17035"
     },
     {
       "path": "locales/tr/android/CrashApp.smali",
-      "sha256": "1185fc2f8291ff429d8056d26f648d9126459612b0f86a9be4868b538dbcae12"
+      "sha256": "c53611722fa54f1dc4b32c479a6606a8c6bb87e252801239a5ea4867674fb591"
     },
     {
       "path": "locales/tr/android/ddtlq_icon.xml",
@@ -2207,8 +2555,12 @@
       "sha256": "a0813ed256f56bd3f9220306453cc68b52dac9eaf12f96625d4122efa04cebfa"
     },
     {
+      "path": "locales/tr/android/GamepadAxis.smali",
+      "sha256": "9d708c17347e4bd26705830223fc6440f74874fbc3af97133d16435ec24b485b"
+    },
+    {
       "path": "locales/tr/android/Launcher.smali",
-      "sha256": "cbb6a0998e4ef27a5ceb25f17fd40f7d13b153e27ac6b7f1737e2c1b1404b348"
+      "sha256": "2444097c118e7e844213a03337c40bb1ad4972ad0b94250ed432783f407f72fd"
     },
     {
       "path": "locales/tr/android/LauncherReady.smali",
@@ -2216,11 +2568,11 @@
     },
     {
       "path": "locales/tr/android/library.json",
-      "sha256": "6beb407c12fdbd07de45068e7b19869f110b222743e4c5e4c864d9b30fb138fd"
+      "sha256": "630d587f86dedbbff39109887be42d76f47bc49a137768fef237e32d6d2d0702"
     },
     {
       "path": "locales/tr/android/patch-native-input.ps1",
-      "sha256": "439769041f40eb9c53b5410190221d4b838c0d40111f0e28744971f284358f9c"
+      "sha256": "13bf9cb810ac189452ab665b6002caf0d7b7af750d470006bee03c31616237e1"
     },
     {
       "path": "locales/tr/android/touch-icons.json",
@@ -2244,7 +2596,7 @@
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Object_o_zh_tools_Draw_64.gml",
-      "sha256": "1f4f8ef65e497f726acbed5245e757b2cd7db02c4303c8d1b56da2bccacef381"
+      "sha256": "89b6b0edd19168dd6e6877bb5450da451cbcbddedd4226a3c13e083547996e59"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Object_o_zh_tools_Step_0.gml",
@@ -2252,11 +2604,19 @@
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_controls.gml",
-      "sha256": "afb5e2aa0b2651a67a5303694016ed1b4bff759bedcc498f73ea377267a9979b"
+      "sha256": "784492058a7174f32e97e17638a421395f058e474ea7de06891e8e1f95415952"
+    },
+    {
+      "path": "locales/tr/payload/feature-gml/gml_Script_zh_device_mouse_x_to_gui.gml",
+      "sha256": "541f3a889d1125aaf1923a2fb148de859be55dfda01e87322ef06fab59e90ed0"
+    },
+    {
+      "path": "locales/tr/payload/feature-gml/gml_Script_zh_device_mouse_y_to_gui.gml",
+      "sha256": "8528db434639b282fdbadaffa6886f3550a584b2f2e8becdb0512c162142b434"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_display.gml",
-      "sha256": "a21e0a741e6c9ad89f8828e50cf6a6a3bab50b8b94813e277df2c3f26cfd53a2"
+      "sha256": "133c3fc325182c92fda73b3ec15d7f762d59e5459990a5f801efa99a308919ef"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_draw_text.gml",
@@ -2304,15 +2664,15 @@
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_helper_step.gml",
-      "sha256": "7729194d19e4e66c59e21310886ee1825e71685d7ac353b7567a346da0321124"
+      "sha256": "373d7024b950eced8f10a94d2dbad3f109258913fb3d8c856c481b01f5343c1d"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_keyboard_check.gml",
-      "sha256": "126fc8b2b40e83fa209f2c106fa58f9f6308e7f898ddeae2d1c10a982aab1128"
+      "sha256": "c39005f53c909dc4f414a8e13d9e858d9f19a6b78dd9024b97390d9469af72e8"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_keyboard_check_pressed.gml",
-      "sha256": "b6ae34d51269d73b57a6c3979fbe201fe625dd57b36287078ab55c3813065604"
+      "sha256": "caef8901e4d381760bcbcf8060f274408833fc814421479cd21af69f8ca95618"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_migrate_synthetic_save.gml",
@@ -2320,15 +2680,43 @@
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_mouse_check_button.gml",
-      "sha256": "fae942f76acdcce1f61cd744d2b8f233a85dd07f2a20878c900bbc81554aa183"
+      "sha256": "839934cd5d73bc301118dada6e1cc8bdc7689f509a3597e5d41bbea8c950bed1"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_mouse_check_button_pressed.gml",
-      "sha256": "04811d60e62af095794c272f4032754f0edc1b44b114e708d217aee623ab09d1"
+      "sha256": "80a2f235e26b6fc167eac8785f4bbe3e9a42e5dd2bdbce999022e9f3aa2abf85"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_mouse_check_button_released.gml",
-      "sha256": "41095bb41600f8b0b6b7dfe4bf9f7b0ba55d6845f243ed76ebcf050fcd98384a"
+      "sha256": "df493e08d36c2d340dedba11124c7e22b742222a931707735dfef285a7bb1f76"
+    },
+    {
+      "path": "locales/tr/payload/feature-gml/gml_Script_zh_mouse_raw.gml",
+      "sha256": "79f1e815833156c6e5a7d80c3b06b53bc0cffe2f946932dac66fa308b4e0876e"
+    },
+    {
+      "path": "locales/tr/payload/feature-gml/gml_Script_zh_mouse_x.gml",
+      "sha256": "f57f6b78506f10420816c544826432f794388de7faff81619189a323e09cbe60"
+    },
+    {
+      "path": "locales/tr/payload/feature-gml/gml_Script_zh_mouse_y.gml",
+      "sha256": "0a104d0e778fabaebff4e4d57dbd31f005e9cf4560053e27da8efa0c397835fa"
+    },
+    {
+      "path": "locales/tr/payload/feature-gml/gml_Script_zh_pad_cursor_draw.gml",
+      "sha256": "9ec05c153a69d2d59cc7394e2f040eac65457552f9dcbc702221fbfa0e248de9"
+    },
+    {
+      "path": "locales/tr/payload/feature-gml/gml_Script_zh_pad_init.gml",
+      "sha256": "62cd088dae74141d0ab0ce21704bc925167cd451dbbfe3125dce1ee3f732b93a"
+    },
+    {
+      "path": "locales/tr/payload/feature-gml/gml_Script_zh_pad_key.gml",
+      "sha256": "0821335f646f369036349ef28149fe9b75af307368eb19a77a4294f66f06905d"
+    },
+    {
+      "path": "locales/tr/payload/feature-gml/gml_Script_zh_pad_poll.gml",
+      "sha256": "cde9098dd221ea94dc98e17f1fa3719080011c19c597146a9d31c4528e6ac33c"
     },
     {
       "path": "locales/tr/payload/feature-gml/gml_Script_zh_prepare_load.gml",
@@ -2360,7 +2748,7 @@
     },
     {
       "path": "locales/tr/payload/patch-features.csx",
-      "sha256": "a57691b8b6c8dcb2a775e9c97655d54ecfa9341d8704c82d524c928d0bb50d27"
+      "sha256": "eac24f661d624fb58a77cd9228111061b86d1c7ed745856aa24c2765e1c0cae6"
     },
     {
       "path": "locales/tr/payload/patch-font.csx",
@@ -2368,7 +2756,7 @@
     },
     {
       "path": "locales/tr/payload/patch-port.csx",
-      "sha256": "f745f6a9c597357542045369eae11e97d8d8f48bb0ed37164b6525fd11fe1281"
+      "sha256": "6f0376cae85f61fc33b6095054c8102c9c22649f86e95a3f02d778a8855aa27e"
     },
     {
       "path": "locales/tr/payload/patch-strings.csx",
@@ -2424,7 +2812,7 @@
     },
     {
       "path": "locales/tr/payload/translations.json",
-      "sha256": "820da98e865650e9ad60c4d103d70865690cc0837413739a3aef5d519dc01909"
+      "sha256": "0d4453cfd4965ec766a9f477e2610c7be4edbb66ca15c8f80f467dbb11099b1d"
     },
     {
       "path": "locales/tr/payload/ui10-glyphs.json",
@@ -2432,31 +2820,31 @@
     },
     {
       "path": "locales/tr/payload/wrapper-functions.json",
-      "sha256": "bd9e8249b5126df6299d1f03b7088ecf06fe9442b27de5eb7f10a84cca025b4b"
+      "sha256": "10cc04bdc3856fe07d9005c38b0d1ddf298230dcb6b2ff7a1b84bae3b2dad77e"
     },
     {
       "path": "locales/tr/provenance.json",
-      "sha256": "19d8ad06c8ff065f8fb094479f46452f312724807cd6dc360c0e24b573e3f51b"
+      "sha256": "0ff53837187a0b4874c5bd4392c3f2301a3118c5ecf8b62b6a862032d0ba5e5e"
     },
     {
       "path": "locales/tr/review-progress.json",
-      "sha256": "0690aff838ce081fb1bb7a1ac069381ae0c54595f371196aaa4fcbdd4eeaf12a"
+      "sha256": "c02ea7d5eea56c8dbccef75c4168c379905ec2aa10a674362697c4448feda2ae"
     },
     {
       "path": "locales/tr/translations.json",
-      "sha256": "3f4eecf88bf6dab66a04b8b6bc88f8a67d6c7761ecfd3cdb1a2f651e2162dffa"
+      "sha256": "f16601f14222f6623aeed40625cf4590197f8164e2f983168c8cf16d548d31da"
     },
     {
       "path": "locales/tr/ui.json",
-      "sha256": "e9b7a0b7113d05e56e6f3697c1deb5419207d3a32e58de6d3255099b7e9f0368"
+      "sha256": "f03132d28f6064109f8b541b9708c48240656d8fa0b6af6f2c91f06123ca8cb3"
     },
     {
       "path": "locales/tr/validation.json",
-      "sha256": "aeaeae93c6fb79af1153eee4b68236036500728b420cdc3a082cdbdb2cc75c8e"
+      "sha256": "cfaef25895ce9fc1f8aa46aab2c23ee28e089a5cc6f391814401b9f45056171e"
     },
     {
       "path": "locales/zh-CN/android/CrashApp.smali",
-      "sha256": "dd2e316b55e1450b4b9ea71ec557e8da38d75c5742d2ed55c22d7486e0bcf67d"
+      "sha256": "29b241d5610adb91e8488c0c87da584450f43fc8e85796c698a881f35936db77"
     },
     {
       "path": "locales/zh-CN/android/ddtlq_icon.xml",
@@ -2471,8 +2859,12 @@
       "sha256": "82320dfb9312adbe990b6cecf4b0ce18ec526a0affc1fdf98982c03314a826ac"
     },
     {
+      "path": "locales/zh-CN/android/GamepadAxis.smali",
+      "sha256": "9d708c17347e4bd26705830223fc6440f74874fbc3af97133d16435ec24b485b"
+    },
+    {
       "path": "locales/zh-CN/android/Launcher.smali",
-      "sha256": "b15fffbc630fe30a7d2386e753f1d84a0290d8929b71da0a7f31ee09fc2c5faa"
+      "sha256": "9084072ed60841b4d097233054349570021cbe8a645a4b8495cd9de4c40f3676"
     },
     {
       "path": "locales/zh-CN/android/LauncherReady.smali",
@@ -2480,15 +2872,19 @@
     },
     {
       "path": "locales/zh-CN/android/library.json",
-      "sha256": "e79792ae5ed40e8672ee9dcb04941a47165b50f257f400376e2da32e1e113bf0"
+      "sha256": "49507e7614c4f656ec3a67b63b29db23901356a78c7ade30685edbc97aa779cc"
     },
     {
       "path": "locales/zh-CN/android/patch-native-input.ps1",
-      "sha256": "439769041f40eb9c53b5410190221d4b838c0d40111f0e28744971f284358f9c"
+      "sha256": "13bf9cb810ac189452ab665b6002caf0d7b7af750d470006bee03c31616237e1"
     },
     {
       "path": "locales/zh-CN/android/touch-icons.json",
       "sha256": "4733b100d1ac60417f4596cb0d45c191df9c871972a588a22e799d3897248fe3"
+    },
+    {
+      "path": "locales/zh-CN/android/TOUCH-PATCH.md",
+      "sha256": "19f923aea895a5a29f68500ba71c3c4647ec4d30a1e1f5ffd9daace233ff438b"
     },
     {
       "path": "locales/zh-CN/android/TouchDispatch.smali",
@@ -2504,7 +2900,7 @@
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Object_o_zh_tools_Draw_64.gml",
-      "sha256": "6e0c34961214f40671324399bac2c8f9e49a4dca040e68faaf852b52a396ae2e"
+      "sha256": "aa81a2d47de750c49d38eb457fc9b8c9c5e25b99567801188d7153040033a97a"
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Object_o_zh_tools_Step_0.gml",
@@ -2512,7 +2908,15 @@
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_controls.gml",
-      "sha256": "1059686ddbf1eaf087688e5583def7e5fe692bdb4fcde81150f06beef7f85d1d"
+      "sha256": "b9622d073a774e8864ceef57e2e85936e6b9fb877d8866f1724add262bb56109"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_device_mouse_x_to_gui.gml",
+      "sha256": "541f3a889d1125aaf1923a2fb148de859be55dfda01e87322ef06fab59e90ed0"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_device_mouse_y_to_gui.gml",
+      "sha256": "8528db434639b282fdbadaffa6886f3550a584b2f2e8becdb0512c162142b434"
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_display.gml",
@@ -2564,15 +2968,15 @@
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_helper_step.gml",
-      "sha256": "99a7b2270374920adcc1d747d65e063bc31fadf9be351e2c60f9920fb87eaf05"
+      "sha256": "f5a2500d484b4c861dd198d739f4c598bf951b41f6da24ffd9b838b9ff568e66"
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_keyboard_check.gml",
-      "sha256": "126fc8b2b40e83fa209f2c106fa58f9f6308e7f898ddeae2d1c10a982aab1128"
+      "sha256": "c39005f53c909dc4f414a8e13d9e858d9f19a6b78dd9024b97390d9469af72e8"
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_keyboard_check_pressed.gml",
-      "sha256": "b6ae34d51269d73b57a6c3979fbe201fe625dd57b36287078ab55c3813065604"
+      "sha256": "caef8901e4d381760bcbcf8060f274408833fc814421479cd21af69f8ca95618"
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_migrate_synthetic_save.gml",
@@ -2580,15 +2984,43 @@
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_mouse_check_button.gml",
-      "sha256": "fae942f76acdcce1f61cd744d2b8f233a85dd07f2a20878c900bbc81554aa183"
+      "sha256": "839934cd5d73bc301118dada6e1cc8bdc7689f509a3597e5d41bbea8c950bed1"
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_mouse_check_button_pressed.gml",
-      "sha256": "04811d60e62af095794c272f4032754f0edc1b44b114e708d217aee623ab09d1"
+      "sha256": "80a2f235e26b6fc167eac8785f4bbe3e9a42e5dd2bdbce999022e9f3aa2abf85"
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_mouse_check_button_released.gml",
-      "sha256": "41095bb41600f8b0b6b7dfe4bf9f7b0ba55d6845f243ed76ebcf050fcd98384a"
+      "sha256": "df493e08d36c2d340dedba11124c7e22b742222a931707735dfef285a7bb1f76"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_mouse_raw.gml",
+      "sha256": "79f1e815833156c6e5a7d80c3b06b53bc0cffe2f946932dac66fa308b4e0876e"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_mouse_x.gml",
+      "sha256": "f57f6b78506f10420816c544826432f794388de7faff81619189a323e09cbe60"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_mouse_y.gml",
+      "sha256": "0a104d0e778fabaebff4e4d57dbd31f005e9cf4560053e27da8efa0c397835fa"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_pad_cursor_draw.gml",
+      "sha256": "9ec05c153a69d2d59cc7394e2f040eac65457552f9dcbc702221fbfa0e248de9"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_pad_init.gml",
+      "sha256": "62cd088dae74141d0ab0ce21704bc925167cd451dbbfe3125dce1ee3f732b93a"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_pad_key.gml",
+      "sha256": "0821335f646f369036349ef28149fe9b75af307368eb19a77a4294f66f06905d"
+    },
+    {
+      "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_pad_poll.gml",
+      "sha256": "cde9098dd221ea94dc98e17f1fa3719080011c19c597146a9d31c4528e6ac33c"
     },
     {
       "path": "locales/zh-CN/payload/feature-gml/gml_Script_zh_prepare_load.gml",
@@ -2620,7 +3052,7 @@
     },
     {
       "path": "locales/zh-CN/payload/patch-features.csx",
-      "sha256": "a57691b8b6c8dcb2a775e9c97655d54ecfa9341d8704c82d524c928d0bb50d27"
+      "sha256": "eac24f661d624fb58a77cd9228111061b86d1c7ed745856aa24c2765e1c0cae6"
     },
     {
       "path": "locales/zh-CN/payload/patch-font.csx",
@@ -2628,7 +3060,7 @@
     },
     {
       "path": "locales/zh-CN/payload/patch-port.csx",
-      "sha256": "f745f6a9c597357542045369eae11e97d8d8f48bb0ed37164b6525fd11fe1281"
+      "sha256": "6f0376cae85f61fc33b6095054c8102c9c22649f86e95a3f02d778a8855aa27e"
     },
     {
       "path": "locales/zh-CN/payload/patch-strings.csx",
@@ -2692,7 +3124,7 @@
     },
     {
       "path": "locales/zh-CN/payload/wrapper-functions.json",
-      "sha256": "bd9e8249b5126df6299d1f03b7088ecf06fe9442b27de5eb7f10a84cca025b4b"
+      "sha256": "10cc04bdc3856fe07d9005c38b0d1ddf298230dcb6b2ff7a1b84bae3b2dad77e"
     },
     {
       "path": "locales/zh-CN/translations.json",
@@ -2700,23 +3132,35 @@
     },
     {
       "path": "locales/zh-CN/ui.json",
-      "sha256": "48ac0f759e7d6474e2be9383574cbd20ce825cd8bbc78b63dfcd37b22e928c71"
+      "sha256": "4b11064f162ddcfbc0ce1e041be0c2b9e09a2efa6734bf0e63aa524f9e27762a"
     },
     {
       "path": "locales/zh-CN/validation.json",
-      "sha256": "e7a5ec20c7ab6c9da18616fbe6fb37a96911930d2b4ae8c8dd5bb79d3480df31"
+      "sha256": "d264a88de6bd6d40322e47314c79658d08751d4723bd3a89ee2d8ad901fede81"
     },
     {
       "path": "maintainer/compile_locale.py",
-      "sha256": "fdcc1e0522e59e120a6a29a56b82229d72d841e5c72ce48b9fd075502b93ae20"
+      "sha256": "5d4ea3661b43f98042dc250acc981abe11a94e9b06d59446e6da5bb0d234762d"
     },
     {
       "path": "maintainer/merge_batches.py",
       "sha256": "3cb7d372ab8d8f069beafc710f4ff2cef7a6e106d0e1c32d072d21fe2a250288"
     },
     {
+      "path": "maintainer/r7-qa-gamepad.csx",
+      "sha256": "7640a18624771aac3ed384636ec5b415f8c972c009f73ca30d10b6e0d9fcc339"
+    },
+    {
+      "path": "maintainer/r7-qa-gamepad.gml",
+      "sha256": "98d715ce5b16fc26a685e4194109961b6fdc9cd59dbd767e4db5deebcf675f1b"
+    },
+    {
+      "path": "maintainer/R7-TRANSLATION-AUDIT.json",
+      "sha256": "e07918677594d411f6e3a3e21c82c332ce60101a41923a3aa5f70de1fe8d6294"
+    },
+    {
       "path": "maintainer/refresh_manifest.py",
-      "sha256": "67831871d21ceb1a56d5624c942b57e77e394b1f5aa1e5f7dadb23fdec15e817"
+      "sha256": "f8bebd205886ba62fcf2eece3cd40df7bf76b12dc375acedd51aeee74b7055ed"
     },
     {
       "path": "maintainer/TOWN-PERFORMANCE.md",
@@ -2744,7 +3188,7 @@
     },
     {
       "path": "payload/feature-gml/gml_Object_o_zh_tools_Draw_64.gml",
-      "sha256": "6e0c34961214f40671324399bac2c8f9e49a4dca040e68faaf852b52a396ae2e"
+      "sha256": "aa81a2d47de750c49d38eb457fc9b8c9c5e25b99567801188d7153040033a97a"
     },
     {
       "path": "payload/feature-gml/gml_Object_o_zh_tools_Step_0.gml",
@@ -2752,7 +3196,15 @@
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_controls.gml",
-      "sha256": "1059686ddbf1eaf087688e5583def7e5fe692bdb4fcde81150f06beef7f85d1d"
+      "sha256": "b9622d073a774e8864ceef57e2e85936e6b9fb877d8866f1724add262bb56109"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_device_mouse_x_to_gui.gml",
+      "sha256": "44658e762983bde824e0d55d32000aa2a334808e0198a76d695a8b62023ddcbb"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_device_mouse_y_to_gui.gml",
+      "sha256": "d9a7d7fb01834c97f8a522a29006e9efb75d7a758246962e390304246eda1ecd"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_display.gml",
@@ -2804,15 +3256,15 @@
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_helper_step.gml",
-      "sha256": "99a7b2270374920adcc1d747d65e063bc31fadf9be351e2c60f9920fb87eaf05"
+      "sha256": "f5a2500d484b4c861dd198d739f4c598bf951b41f6da24ffd9b838b9ff568e66"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_keyboard_check.gml",
-      "sha256": "126fc8b2b40e83fa209f2c106fa58f9f6308e7f898ddeae2d1c10a982aab1128"
+      "sha256": "c39005f53c909dc4f414a8e13d9e858d9f19a6b78dd9024b97390d9469af72e8"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_keyboard_check_pressed.gml",
-      "sha256": "b6ae34d51269d73b57a6c3979fbe201fe625dd57b36287078ab55c3813065604"
+      "sha256": "caef8901e4d381760bcbcf8060f274408833fc814421479cd21af69f8ca95618"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_migrate_synthetic_save.gml",
@@ -2820,15 +3272,43 @@
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_mouse_check_button.gml",
-      "sha256": "fae942f76acdcce1f61cd744d2b8f233a85dd07f2a20878c900bbc81554aa183"
+      "sha256": "839934cd5d73bc301118dada6e1cc8bdc7689f509a3597e5d41bbea8c950bed1"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_mouse_check_button_pressed.gml",
-      "sha256": "04811d60e62af095794c272f4032754f0edc1b44b114e708d217aee623ab09d1"
+      "sha256": "80a2f235e26b6fc167eac8785f4bbe3e9a42e5dd2bdbce999022e9f3aa2abf85"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_mouse_check_button_released.gml",
-      "sha256": "41095bb41600f8b0b6b7dfe4bf9f7b0ba55d6845f243ed76ebcf050fcd98384a"
+      "sha256": "df493e08d36c2d340dedba11124c7e22b742222a931707735dfef285a7bb1f76"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_mouse_raw.gml",
+      "sha256": "79f1e815833156c6e5a7d80c3b06b53bc0cffe2f946932dac66fa308b4e0876e"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_mouse_x.gml",
+      "sha256": "3d5c5567c2b1fee6949843536152e9e082e9a70ecc9f1887c831e930c5e44f42"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_mouse_y.gml",
+      "sha256": "0b8a93c20dc6ec655c91aab5e5decd66b2bd960ff27117054f9b583e67ca6176"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_pad_cursor_draw.gml",
+      "sha256": "a2ed854ed0bfdc391bb6ce7d375ae4bc4bb30e77bf457d3ce9d6e8dabd9db323"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_pad_init.gml",
+      "sha256": "200dc8d164385d580ece14896e2af5a4ad0b133dc5dcaeffd02115bc81e70d68"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_pad_key.gml",
+      "sha256": "f5bd06e9319743990b5e3f1ee24c1faadc0b09627c73c0351422b6336507d2c7"
+    },
+    {
+      "path": "payload/feature-gml/gml_Script_zh_pad_poll.gml",
+      "sha256": "cde9098dd221ea94dc98e17f1fa3719080011c19c597146a9d31c4528e6ac33c"
     },
     {
       "path": "payload/feature-gml/gml_Script_zh_prepare_load.gml",
@@ -2860,7 +3340,7 @@
     },
     {
       "path": "payload/patch-features.csx",
-      "sha256": "a57691b8b6c8dcb2a775e9c97655d54ecfa9341d8704c82d524c928d0bb50d27"
+      "sha256": "eac24f661d624fb58a77cd9228111061b86d1c7ed745856aa24c2765e1c0cae6"
     },
     {
       "path": "payload/patch-font.csx",
@@ -2868,7 +3348,7 @@
     },
     {
       "path": "payload/patch-port.csx",
-      "sha256": "f745f6a9c597357542045369eae11e97d8d8f48bb0ed37164b6525fd11fe1281"
+      "sha256": "6f0376cae85f61fc33b6095054c8102c9c22649f86e95a3f02d778a8855aa27e"
     },
     {
       "path": "payload/patch-strings.csx",
@@ -2932,39 +3412,39 @@
     },
     {
       "path": "payload/wrapper-functions.json",
-      "sha256": "bd9e8249b5126df6299d1f03b7088ecf06fe9442b27de5eb7f10a84cca025b4b"
+      "sha256": "10cc04bdc3856fe07d9005c38b0d1ddf298230dcb6b2ff7a1b84bae3b2dad77e"
     },
     {
       "path": "README.de.md",
-      "sha256": "7946684e88d15b776b7d86aef53b8815b6dd094524e27aca83a2a656c3e26345"
+      "sha256": "8a1628f8d53c803e9ab850276614fd913dc7497a9a9d329987ddebd4aad2a071"
     },
     {
       "path": "README.es.md",
-      "sha256": "7a4fd5d38c37bc32fe25ae3e32fb6aa2f9851f6c12c5dcbc3fb41b7613e2183f"
+      "sha256": "0134d41a5f94662d70568e9f0dd56975b6d8be4246551d8d3d8946591f2b0364"
     },
     {
       "path": "README.fr.md",
-      "sha256": "c5d1fff751e13787c62c70c5c34d3d10ee8526f66ce9a035a26f6d1f47ec7073"
+      "sha256": "ca217e4e978a8b6bbc343c158dc680bbb3c0bf4a59a41a0050e3576450f60e4b"
     },
     {
       "path": "README.ja.md",
-      "sha256": "583111877e7e1d5c6480b6440dc329cf58b7e01eb343a065fe18859f3b5e8cff"
+      "sha256": "8c3c26571771a5a9dc303142fcddaa12a44d6e736fe29f9cfde52a61d76cc015"
     },
     {
       "path": "README.ko.md",
-      "sha256": "2e943299c2ac18931e8cd66edc06e83ee50e46ae048002da073f1ef0baaf1d26"
+      "sha256": "8692400182a225acf94e4d6022610c1f14c4eca78586305e14ba08ff7f733122"
     },
     {
       "path": "README.pt-BR.md",
-      "sha256": "e5c12e84a8e757598e5b34b3066297d4f554cd3313e856bb9d1b307b107c5183"
+      "sha256": "d3a9099aca4348c4c416a073ee218395a702728c6f0c79823970a8c77359017a"
     },
     {
       "path": "README.ru.md",
-      "sha256": "690c3d7f267930d6c6298edc7558462865611591a7ee934c12e2c711438cfadf"
+      "sha256": "dc6c02dae3b460d0416ab49d997c370fec238c0e6174eb1ca533d58c821c52e0"
     },
     {
       "path": "README.tr.md",
-      "sha256": "7b8e413aa2282d4e018f2565da3cf4157bfbc95c1ab366c72ea0af8ba57db9ce"
+      "sha256": "8e69657449b6b8f0568864975fe5968d3279db01f7f72de4d29a5b939d986093"
     },
     {
       "path": "saves/Memory Quartz Line 99.ini",

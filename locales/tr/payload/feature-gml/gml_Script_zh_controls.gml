@@ -6,9 +6,10 @@ var scheme=argument0, moving="Yön tuşları", accept="Z", back="X", pause="Ente
 if(scheme==1){moving="W A S D";accept="K";back="L";}
 if(scheme==2){moving="W A S D";accept="Boşluk";back="Q";pause="Tab";}
 if(os_type==os_android){moving="Sol analog çubuk";accept="Sağdaki Onay düğmesi (Z)";back="Sağdaki Geri düğmesi (X)";pause="Alttaki Duraklat düğmesi";}
+if(variable_global_exists("zh_pad_device") && global.zh_pad_device>=0){moving="Xbox LS / D-Pad";accept="A";back="B";pause="Start";}
 draw_text(20,52,moving+": Hareket");
 draw_text(20,84,accept+": Onay / Konuş / Etkileşim / Koş");
 draw_text(20,116,back+": İptal / Geri");
 draw_text(20,148,pause+": Menü / Duraklat / Savaştan çık");
-draw_text(20,180,"Dokunmatik ekran veya fare: blokları sürükle    N: Tam ekran");
+if(variable_global_exists("zh_pad_device") && global.zh_pad_device>=0)draw_text(20,180,"RS + RT/X | LT | LB/RB | Y/View");else draw_text(20,180,"Dokunmatik ekran veya fare: blokları sürükle    N: Tam ekran");
 draw_set_font(oldfont);draw_set_color(oldcolor);draw_set_alpha(oldalpha);draw_set_halign(oldh);draw_set_valign(oldv);

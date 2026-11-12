@@ -16,3 +16,5 @@ if(panel){
 if(panel)draw_text(50,161,"F5: полный бестиарий:"+string(global.zh_dex));
 if(hint_timer>0){draw_set_alpha(0.95);draw_set_color(c_black);draw_rectangle(0,194,384,216,false);draw_set_alpha(1);draw_set_color(c_white);draw_set_font(3);draw_text(3,195,hint);}
 draw_set_font(of);draw_set_color(oc);draw_set_alpha(oa);draw_set_halign(oh);draw_set_valign(ov);
+
+zh_pad_cursor_draw();

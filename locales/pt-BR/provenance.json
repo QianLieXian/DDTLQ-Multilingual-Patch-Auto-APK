@@ -11,5 +11,6 @@
   "raw_review_sha256": "cc7ad79dbec5fb5dde390b23431fa61c388eaa2fb5b7901927a6e9945a3141f9",
   "native_speaker_tested": false,
   "full_playthrough_tested": false,
-  "final_source_context_checks": "Codex AI editorial review; internal width sentinels, dynamic fragments, prank quest and hotel dialogue-choice alignment checked against original scripts."
+  "final_source_context_checks": "Codex AI editorial review; internal width sentinels, dynamic fragments, prank quest and hotel dialogue-choice alignment checked against original scripts.",
+  "r7_contextual_review": "Codex AI: full structural/meta scan and contextual priority review; see maintainer/R7-TRANSLATION-AUDIT.json; not native-speaker approval."
 }

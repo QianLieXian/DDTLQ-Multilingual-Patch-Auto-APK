@@ -15,6 +15,7 @@
         "active": true,
         "fancyName": "Sauvegarde par défaut"
       }
-    ]
+    ],
+    "enablePhysicalControllers": true
   }
 ]

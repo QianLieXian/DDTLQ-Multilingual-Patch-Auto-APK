@@ -15,6 +15,7 @@
         "active": true,
         "fancyName": "Сохранение по умолчанию"
       }
-    ]
+    ],
+    "enablePhysicalControllers": true
   }
 ]

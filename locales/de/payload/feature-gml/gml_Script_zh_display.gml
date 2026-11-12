@@ -365,7 +365,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Find/purchase a coat to be a pervert.","Finde oder kaufe einen Mantel, um als Perverser aufzutreten.");
  ds_map_add(m,"My naked awakening","Mein nacktes Erwachen");
  ds_map_add(m,"Go to the room where Lucy is staying (it's on the second floor of the hotel)","Geh zu dem Zimmer, in dem Lucy wohnt. (Es befindet sich im zweiten Stock des Hotels.)");
- ds_map_add(m,"Lucy needs you to do more quests to motivate her to finish her novel (to continue with the quest you need Lucy as a partner).","Lucy braucht dich, um weitere Quests zu erledigen und sie so zum Fertigstellen ihres Romans zu motivieren. (Um die Quest fortzusetzen, muss Lucy deine Partnerin sein.)");
+ ds_map_add(m,"Lucy needs you to do more quests to motivate her to finish her novel (to continue with the quest you need Lucy as a partner).","Erledige weitere Quests, um Lucy zum Fertigstellen ihres Romans zu motivieren. (Um die Quest fortzusetzen, muss Lucy deine Partnerin sein.)");
  ds_map_add(m,"Reload.","Neu laden.");
  ds_map_add(m,"Improve your reputation in the village by doing a quest.","Verbessere deinen Ruf im Dorf, indem du eine Quest erledigst.");
  ds_map_add(m,"The Lusty Half elf Maid","Die lüsterne Halbelfen-Dienstmagd");
@@ -585,11 +585,11 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Now, this restriction might seem bad, but it has a reason: these cubes are more powerful.","Diese Einschränkung mag schlecht erscheinen, hat aber einen Grund: Diese Würfel sind mächtiger.");
  ds_map_add(m,"For example, the magic cube deals double damage and the nature cube allows you to recover health.","Zum Beispiel verursacht der Magiewürfel doppelten Schaden, und der Naturwürfel stellt deine Lebenspunkte wieder her.");
  ds_map_add(m,"The chart in the middle indicates which type of damage has an advantage over another.","Die Tabelle in der Mitte zeigt, welche Schadensart gegenüber einer anderen im Vorteil ist.");
- ds_map_add(m,"Both Line and the monsters have their own elements, which can be either weak or strong.","Sowohl Line als auch die Monster haben eigene Elemente. Diese können stark oder schwach sein.");
+ ds_map_add(m,"Both Line and the monsters have their own elements, which can be either weak or strong.","Sowohl Line als auch die Monster haben eigene Elemente, die gegenüber anderen Elementen im Vor- oder Nachteil sein können.");
  ds_map_add(m,"To see a monster's damage affinity, you can check it in the Waifsteary.","Die Schadensaffinität eines Monsters kannst du im Waifsteary nachsehen.");
  ds_map_add(m,"Line will have the affinity of the strongest element they possess, whether it's slash, pierce, impact, or magic.","Line erhält die Affinität ihres stärksten Elements. Das kann Schnitt, Stich, Wucht oder Magie sein.");
  ds_map_add(m,"These special cubes are really simple, so let's explain them.","Diese besonderen Würfel sind ganz einfach. Ich erkläre sie dir kurz.");
- ds_map_add(m,"The potion cube will restore mana. The broken heart cube reduces the enemy's damage, attack interval, and healing.","Der Trankwürfel stellt Mana wieder her. Der Würfel mit dem gebrochenen Herzen verringert den Schaden, das Angriffsintervall und die Heilung des Gegners.");
+ ds_map_add(m,"The potion cube will restore mana. The broken heart cube reduces the enemy's damage, attack interval, and healing.","Der Trankwürfel stellt Mana wieder her. Der Würfel mit dem gebrochenen Herzen verringert den Schaden, die Angriffshäufigkeit und die Heilung des Gegners.");
  ds_map_add(m,"To heavy to run or fly","Zu schwer zum Rennen oder Fliegen");
  ds_map_add(m,"Equipment","Ausrüstung");
  ds_map_add(m,"EQUIPMENT","AUSRÜSTUNG");
@@ -814,7 +814,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"There you have it, you little rascal.","Da hast du's, du kleiner Schlingel.");
  ds_map_add(m,"Not now.","Jetzt nicht.");
  ds_map_add(m,"Ok","Okay");
- ds_map_add(m,"Unfortunately I can't find him, I'll sell it to you for a thousand Arcs if you want it so badly.","Leider kann ich ihn nicht finden. Wenn du ihn unbedingt willst, verkaufe ich ihn dir für tausend Arcs.");
+ ds_map_add(m,"Unfortunately I can't find him, I'll sell it to you for a thousand Arcs if you want it so badly.","Leider kann ich ihn nicht finden. Wenn du die Aktentasche unbedingt willst, verkaufe ich sie dir für tausend Arcs.");
  ds_map_add(m,"You want to buy the briefcase I have? I was thinking of blackmailing the guy who lost it.","Willst du die Aktentasche kaufen, die ich habe? Ich hatte überlegt, den Kerl zu erpressen, der sie verloren hat.");
  ds_map_add(m,"And don't even think of taking a single Arc out of here, don't you see that why we have worked so hard, so that I can sleep like my ancestors. Yep Surrounded by money.","Und denk gar nicht daran, auch nur einen einzigen Arc von hier mitzunehmen. Verstehst du jetzt, warum wir so hart gearbeitet haben? Damit ich wie meine Vorfahren schlafen kann. Ja, umgeben von Geld.");
  ds_map_add(m,"Hey Line you figured out where I keep all my Arcs.","Hey, Line, hast du herausgefunden, wo ich all meine Arcs aufbewahre?");
@@ -1351,7 +1351,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Oh sure, I've never eaten that kind of food before but it looks delicious.","Oh, gern. So etwas habe ich noch nie gegessen, aber es sieht köstlich aus.");
  ds_map_add(m,"Line! You arrived, did you see the feast I have prepared?","Line! Du bist da! Hast du das Festmahl gesehen, das ich vorbereitet habe?");
  ds_map_add(m,"Oh give me a second Honey, I'm doing the dishes.","Oh, gib mir eine Sekunde, Honey. Ich spüle gerade ab.");
- ds_map_add(m,"Thank you, to get to the library just follow this road to the west of town.","Danke. Um zur Bibliothek zu gelangen, folge einfach dieser Straße westlich der Stadt.");
+ ds_map_add(m,"Thank you, to get to the library just follow this road to the west of town.","Danke. Um zur Bibliothek zu gelangen, folge dieser Straße nach Westen.");
  ds_map_add(m,"Mmmm I will see if I can find out anything, do not worry, you can go back to reading your favorite books.","Mmmm, ich sehe nach, ob ich etwas herausfinden kann. Keine Sorge, du kannst wieder deine Lieblingsbücher lesen.");
  ds_map_add(m,"I don't know, the librarian is missing so the library is closed.","Keine Ahnung. Die Bibliothekarin wird vermisst, deshalb ist die Bibliothek geschlossen.");
  ds_map_add(m,"Oh, why what happened?","Oh, warum? Was ist passiert?");
@@ -1823,7 +1823,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Aww~~ you were right.","Aww~~ Du hattest recht.");
  ds_map_add(m,"This is the best in the world.","Das ist das Beste auf der ganzen Welt.");
  ds_map_add(m,"Press the button to fuck","Drücke den Knopf, um zu ficken.");
- ds_map_add(m,"Hello and have a nice day, the Onahole are waiting for you.","Hallo und einen schönen Tag! Die Onaholes warten auf dich.");
+ ds_map_add(m,"Hello and have a nice day, the Onahole are waiting for you.","Hallo und einen schönen Tag! Die Wichshülsen warten auf dich.");
  ds_map_add(m,"Oh that's a nice dingledong enjoy your day.","Oh, was für ein Prachtstück. Viel Spaß noch!");
  ds_map_add(m,"What, was I masturbating? No, I think you are wrong, I am at work <3","Was, habe ich masturbiert? Nein, da irrst du dich. Ich arbeite doch <3.");
  ds_map_add(m,"That I look tense oh it is just your imagination hehe-he","Ich wirke angespannt? Ach, das bildest du dir nur ein, hehe.");
@@ -3392,8 +3392,8 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Let's make a deal, I'll give you the laser beam and in exchange you let me record her first hypnosis.","Machen wir einen Deal. Ich gebe dir den Laserstrahl, und dafür darf ich ihre erste Hypnose aufzeichnen.");
  ds_map_add(m,"Wow that elf even gets naked when she fights.","Wow, diese Elfe zieht sich sogar beim Kämpfen aus.");
  ds_map_add(m,"Ok for my magic trick I need you Line really steal and say, haigure!","Okay, für meinen Zaubertrick brauche ich dich, Line. Bleib ganz still stehen und sag dann: Haigure!");
- ds_map_add(m,"After understanding Lili's plan, Mshonney takes everyone in the circus to the center.","Nachdem Frau Mshonney Lilis Plan verstanden hat, bringt sie alle Zirkusmitarbeiter in die Mitte.");
- ds_map_add(m,"Lili tells Mshonney everything behind Line's back.","Lili erzählt Frau Mshonney hinter Lines Rücken alles.");
+ ds_map_add(m,"After understanding Lili's plan, Mshonney takes everyone in the circus to the center.","Nachdem Frau Honney Lilis Plan verstanden hat, bringt sie alle Zirkusmitarbeiter in die Mitte.");
+ ds_map_add(m,"Lili tells Mshonney everything behind Line's back.","Lili erzählt Frau Honney hinter Lines Rücken alles.");
  ds_map_add(m,"Line! come here is show time.","Line! Komm her, die Show beginnt!");
  ds_map_add(m,"Well, if she's not my slave why does she fight for me?","Na ja, wenn sie nicht meine Sklavin ist, warum kämpft sie dann für mich?");
  ds_map_add(m,"Sorry, I don't believe you, that elf response you a lot to be your slave.","Tut mir leid, das glaube ich dir nicht. Diese Elfe widerspricht dir viel zu oft, um deine Sklavin zu sein.");

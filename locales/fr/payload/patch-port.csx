@@ -14,7 +14,7 @@ portImport.QueueAppend("gml_Object_o_start_variables_Step_0","\nwith(o_fade_room
 foreach(var function in new[]{"keyboard_check","keyboard_check_pressed"}) {
  string prefix="if(global.zh_panel || global.zh_input_cooldown>0)return false;\nswitch(argument0){\n";
  foreach(var pair in new[]{new[]{"ord(\"W\")","vk_up"},new[]{"ord(\"S\")","vk_down"},new[]{"ord(\"A\")","vk_left"},new[]{"ord(\"D\")","vk_right"},new[]{"ord(\"K\")","ord(\"Z\")"},new[]{"vk_space","ord(\"Z\")"},new[]{"ord(\"L\")","ord(\"X\")"},new[]{"ord(\"Q\")","ord(\"X\")"},new[]{"vk_tab","vk_enter"}})
-  prefix+="case "+pair[0]+": return "+function+"(argument0)||"+function+"("+pair[1]+");\n";
+  prefix+="case "+pair[0]+": return "+function+"(argument0)||"+function+"("+pair[1]+")||zh_pad_key(argument0,"+(function=="keyboard_check_pressed"?"1":"0")+");\n";
  prefix+="}\n";portImport.QueuePrepend("gml_Script_zh_"+function,prefix);
 }
 portImport.ThrowOnNoOpFindReplace=true;

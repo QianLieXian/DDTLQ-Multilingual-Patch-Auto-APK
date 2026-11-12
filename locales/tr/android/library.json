@@ -15,6 +15,7 @@
         "active": true,
         "fancyName": "Varsayılan Kayıt"
       }
-    ]
+    ],
+    "enablePhysicalControllers": true
   }
 ]

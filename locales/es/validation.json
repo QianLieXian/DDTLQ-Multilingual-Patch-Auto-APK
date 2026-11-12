@@ -115,11 +115,12 @@
   ],
   "glyphs12": 18,
   "glyphs10": 113,
-  "core_sha256": "f4956fbaf86a8744fe829d8300d834d358deedd2364fe875871ae1cd88df3df3",
-  "status": "compiled-local-build-and-city-smoke-passed",
+  "core_sha256": "5a5d8e8e3310fe0c08a3c82ad31e46f3ccc007f984026c533877d2d74eefe5f4",
+  "status": "r7-compiled-signed-city-smoke-passed",
   "windows_build_checked": true,
   "android_apk_signature_and_contents_checked": true,
   "city_smoke_checked": true,
+  "physical_controller_tested": false,
   "android_device_tested": false,
   "full_playthrough_tested": false
 }

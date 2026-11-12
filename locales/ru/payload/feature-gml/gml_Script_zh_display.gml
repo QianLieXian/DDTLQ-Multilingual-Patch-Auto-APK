@@ -73,7 +73,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Faye","Фэй");
  ds_map_add(m,"Faye must be the most unpleasant person I Have ever met, at least we ended up having sex or else I would have gone crazy.","Фэй, наверное, самый неприятный человек из всех, кого я встречала. Хорошо хоть в итоге мы переспали, иначе я бы просто сошла с ума.");
  ds_map_add(m,"Bell","Белл");
- ds_map_add(m,"Bell has such a beautiful mission and I hope he can sprout more of these extinct flowers.","У Белла такая прекрасная миссия. Надеюсь, он сможет вырастить ещё больше этих вымерших цветов.");
+ ds_map_add(m,"Bell has such a beautiful mission and I hope he can sprout more of these extinct flowers.","У Белл такая прекрасная миссия. Надеюсь, Белл сможет вырастить ещё больше этих вымерших цветов.");
  ds_map_add(m,"Viola","Виола");
  ds_map_add(m,"Lucy Monroe","Люси Монро");
  ds_map_add(m,"Lucy is great and I hope you do not let her down with her novel.","Люси замечательная. Надеюсь, ты не подведёшь её с романом.");
@@ -228,7 +228,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"There's a bard woman looking for an adventurer to inspire her. Show her that you're a worthy adventurer capable of inspiring others!","Женщина-бард ищет приключенца, который вдохновил бы её. Докажи, что ты достойная искательница приключений и можешь вдохновлять других!");
  ds_map_add(m,"After being attacked by a pervert who opened his leather coat and showed you everything, something awakened inside of you.","После нападения извращенца, который распахнул кожаное пальто и показал тебе всё, внутри тебя что-то пробудилось.");
  ds_map_add(m,"The island is cordoned off because someone stole the relics from the church. As part of the deal to stay on the island, you agree to help the knights of Elira search for the relics.","Остров оцепили после кражи церковных реликвий. В обмен на разрешение остаться на острове ты соглашаешься помочь рыцарям Элиры отыскать пропажу.");
- ds_map_add(m,"An Onahole stuck to the wall in the VIP area of the bar tells you that if you buy her entire outfit, she'll give you a rimjob!","Она-хол, прикреплённая к стене в VIP-зоне бара, говорит, что сделает тебе аннилингус, если ты купишь весь её наряд!");
+ ds_map_add(m,"An Onahole stuck to the wall in the VIP area of the bar tells you that if you buy her entire outfit, she'll give you a rimjob!","Она-хол, прикреплённая к стене в VIP-зоне бара, говорит, что сделает тебе анилингус, если ты купишь весь её наряд!");
  ds_map_add(m,"Lili says you're very stinky and need a bath.","Лили говорит, что от тебя ужасно воняет и тебе пора в ванну.");
  ds_map_add(m,"The librarian is lost, and no one knows where she is. Look for her, and perhaps you'll find more information about the people who go missing on the island.","Библиотекарша пропала, и никто не знает, где она. Найди её: возможно, так ты узнаешь больше о людях, исчезающих на острове.");
  ds_map_add(m,"Gildfried, a businessman on vacation on the island, unfortunately lost his briefcase, which is very important to him.","Гильфрид, бизнесмен, приехавший на остров в отпуск, потерял свой очень важный для него портфель.");
@@ -328,7 +328,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Go back to Marael.","Вернись к Мараэль.");
  ds_map_add(m,"Power awakening","Пробуждение силы");
  ds_map_add(m,"SaveHause","Убежище");
- ds_map_add(m,"At night he goes to the window adjoining Aldo's room.","Ночью он подходит к окну, примыкающему к комнате Альдо.");
+ ds_map_add(m,"At night he goes to the window adjoining Aldo's room.","Ночью подойди к окну рядом с комнатой Альдо.");
  ds_map_add(m,"After sleeping with callie you feel dirty go take a bath in her shower.","После ночи с Кэлли ты чувствуешь себя грязной. Сходи в душ к ней домой.");
  ds_map_add(m,"It looks like Callie wants to talk to you, go to her.","Похоже, Кэлли хочет поговорить с тобой. Иди к ней.");
  ds_map_add(m,"Explore Callie's home..","Осмотри дом Кэлли..");
@@ -404,7 +404,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Look for the smooshers' uniforms. (Sakura said she saw a slime sneaking around in one of them)","Найди униформу «Смушерс». (Сакура сказала, что видела слизь, которая кралась в одной из них.)");
  ds_map_add(m,"Smooshies Smoosh!","Смуши-смуш!");
  ds_map_add(m,"Return the key to the tentacle monster outside the library.","Верни ключ монстру с щупальцами возле библиотеки.");
- ds_map_add(m,"Search for the key to bring Lemmy's mistress back into control of her demon form.","Найди ключ, чтобы любовница Лемми снова смогла контролировать свою демоническую форму.");
+ ds_map_add(m,"Search for the key to bring Lemmy's mistress back into control of her demon form.","Найди ключ, чтобы хозяйка Лемми снова смогла контролировать свою демоническую форму.");
  ds_map_add(m,"Help Lemmy!","Помоги Лемми!");
  ds_map_add(m,"que anday viendo oe!","Чё пялишься, эй!");
  ds_map_add(m,"sexscene.","Сцена секса.");
@@ -414,8 +414,8 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Find out about the librarian's mysterious disappearance.","Выясни, почему библиотекарша таинственно исчезла.");
  ds_map_add(m,"Lost scholar","Пропавшая учёная");
  ds_map_add(m,"Go take a bath!","Иди прими ванну!");
- ds_map_add(m,"Head over to SailorCum to get a Rimjob. \n \n(Quest located in the VIP area under the bar)","Отправляйся в СейлорКам за аннилингусом.\n \n(Задание находится в VIP-зоне под баром)");
- ds_map_add(m,"Buy the inverted bunny costume from SailorCum and in return she will perform a rimjob on you !\n \n(Quest located in the VIP area under the bar)","Купи у СейлорКам перевёрнутый костюм крольчихи, и взамен она сделает тебе аннилингус!\n \n(Задание находится в VIP-зоне под баром)");
+ ds_map_add(m,"Head over to SailorCum to get a Rimjob. \n \n(Quest located in the VIP area under the bar)","Отправляйся в СейлорКам за анилингусом.\n \n(Задание находится в VIP-зоне под баром)");
+ ds_map_add(m,"Buy the inverted bunny costume from SailorCum and in return she will perform a rimjob on you !\n \n(Quest located in the VIP area under the bar)","Купи у СейлорКам перевёрнутый костюм крольчихи, и взамен она сделает тебе анилингус!\n \n(Задание находится в VIP-зоне под баром)");
  ds_map_add(m,"Save SailorCum!","Спаси СейлорКам!");
  ds_map_add(m,"Find the stolen relics and return them to the knights of Elira.","Найди украденные реликвии и верни их рыцарям Элиры.");
  ds_map_add(m,"Return the relic to the church","Верни реликвию в церковь.");
@@ -429,7 +429,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Reload.","Перезагрузка.");
  ds_map_add(m,"Improve your reputation in the village by doing a quest.","Выполни задание, чтобы улучшить свою репутацию в деревне.");
  ds_map_add(m,"The Lusty Half elf Maid","Похотливая полуэльфийка-служанка");
- ds_map_add(m,"Go to the table, the voice of the fan will tell you what to do.","Подойди к столу: голос поклонника подскажет, что делать.");
+ ds_map_add(m,"Go to the table, the voice of the fan will tell you what to do.","Подойди к столу: голос из вентиляции подскажет, что делать.");
  ds_map_add(m,"Look for the other succubus named Willow who had met Ava. In her letter she had said she would be at the abandoned Big Dream building.","Найди другую суккубку по имени Уиллоу, которая встречалась с Авой. В письме она написала, что будет в заброшенном здании «Большой Мечты».");
  ds_map_add(m,"The White Lady","Белая дама");
  ds_map_add(m,"ni se como llegue a esto XD debeia ser mas ordenado","Не знаю, как я до такого дошла XD Надо было всё организовать получше.");
@@ -472,7 +472,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Come back to ivy wilde. she is on the second floor of the hotel.","Возвращайся к Айви Уайлд. Она на втором этаже отеля.");
  ds_map_add(m,"Beat the other Ivy Wilde.","Победи другую Айви Уайлд.");
  ds_map_add(m,"Find the leg of Ivy. According to Ivy, she can feel her leg having encounters since she can feel her having sex. At night she is most likely is hiding so look for her in the day.","Найди ногу Айви. По словам Айви, она чувствует, как её нога встречается с кем-то, поскольку может ощущать, как та занимается сексом. Ночью нога, скорее всего, прячется, так что ищи её днём.");
- ds_map_add(m,"Find my other me.","Найди другую себя.");
+ ds_map_add(m,"Find my other me.","Найди моё второе «я».");
  ds_map_add(m,"Help Zoi Weona by paying for her services.","Помоги Зои Веона, оплатив её услуги.");
  ds_map_add(m,"A Dumb Half Orc.","Глупая полуорчиха.");
  ds_map_add(m,"They talk and apologize each other.","Они поговорили и извинились друг перед другом.");
@@ -491,7 +491,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"returns the dimensional fracture to vasera.","Верни межпространственный разлом Васере.");
  ds_map_add(m,"take the crystal.","Забери кристалл.");
  ds_map_add(m,"Fight against red.","Сразись с Ред.");
- ds_map_add(m,"Search the crystal.","Исследуй кристалл.");
+ ds_map_add(m,"Search the crystal.","Найди кристалл.");
  ds_map_add(m,"We are the bad guys?","Мы что, злодеи?");
  ds_map_add(m,"Train with Sakura to be a better succubus.","Тренируйся с Сакурой, чтобы стать более умелой суккубкой.");
  ds_map_add(m,"Defeat Sakura.","Победи Сакуру.");
@@ -651,7 +651,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"To see a monster's damage affinity, you can check it in the Waifsteary.","Узнать устойчивость монстра к разным типам урона можно в Вайфустерии.");
  ds_map_add(m,"Line will have the affinity of the strongest element they possess, whether it's slash, pierce, impact, or magic.","Стихия Лайн определяется её самым сильным элементом: рубящим, колющим, ударным или магическим.");
  ds_map_add(m,"These special cubes are really simple, so let's explain them.","Эти особые кубики очень просты, давай разберёмся.");
- ds_map_add(m,"The potion cube will restore mana. The broken heart cube reduces the enemy's damage, attack interval, and healing.","Кубик зелья восстанавливает ману. Кубик разбитого сердца снижает урон врага, интервал между его атаками и эффективность лечения.");
+ ds_map_add(m,"The potion cube will restore mana. The broken heart cube reduces the enemy's damage, attack interval, and healing.","Кубик зелья восстанавливает ману. Кубик разбитого сердца снижает урон врага, частоту его атак и эффективность лечения.");
  ds_map_add(m,"To heavy to run or fly","Слишком тяжёлая, чтобы бегать или летать");
  ds_map_add(m,"Equipment","Снаряжение");
  ds_map_add(m,"WAIFSTEARY","ВАЙФУСТЕРИЯ");
@@ -1755,7 +1755,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.","На этой странице напечатан лишь бессмысленный текст-заполнитель для вёрстки.");
  ds_map_add(m,"Fisherman Footjob","Фут-джоб с рыбаком");
  ds_map_add(m,"Line Tickle Tickle :v","Лайн: щекотно-щекотно :v");
- ds_map_add(m,"Siness Rimjob","Аннилингус от Синесс");
+ ds_map_add(m,"Siness Rimjob","Анилингус от Синесс");
  ds_map_add(m,"CatLady Pussycat","Кошечка кошкодевушки");
  ds_map_add(m,"Sam Armpit","Подмышки Сэм");
  ds_map_add(m,"Haigure!","Хайгуре!");
@@ -1763,7 +1763,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Baina Dress off","Снять платье с Байны");
  ds_map_add(m,"Leaf tentacle","Щупальце Лифи");
  ds_map_add(m,"Vasuki pregnant futanari","Беременная фута-нари Васуки");
- ds_map_add(m,"Kristoff Rimjob","Аннилингус от Кристоффа");
+ ds_map_add(m,"Kristoff Rimjob","Анилингус от Кристоффа");
  ds_map_add(m,"Line footstomp","Лайн топчет ногами");
  ds_map_add(m,"Vasera GangBang","Групповуха с Васерой");
  ds_map_add(m,"Sakura succubus trainig","Тренировка суккуба с Сакурой");
@@ -1777,7 +1777,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Bell and line rought sex","Грубый секс Белла и Лайн");
  ds_map_add(m,"Marael only purpose","Единственное предназначение Мараэль");
  ds_map_add(m,"Lucy Novel","Роман Люси");
- ds_map_add(m,"Line Rimjob","Аннилингус от Лайн");
+ ds_map_add(m,"Line Rimjob","Анилингус от Лайн");
  ds_map_add(m,"Line SelfWorship and Lili Sniffing","Самолюбование Лайн и обнюхивание Лили");
  ds_map_add(m,"Line Naked Coat","Лайн в обнажённом плаще");
  ds_map_add(m,"Line and Gilfried","Лайн и Гильфрид");
@@ -2160,7 +2160,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"In the dark west of the farm, a brown leather demon awaits you.","В тёмной части к западу от фермы тебя ждёт демон в коричневой коже.");
  ds_map_add(m,"In a realm where the line between person and object is blurred, a golden-twintailed woman awaits you.","В мире, где грань между человеком и предметом размыта, тебя ждёт женщина с золотыми волосами, собранными в два хвоста.");
  ds_map_add(m,"You will meet a powerful man surrounded by sheets of knowledge whose state is haunted by loss.","Ты встретишь могущественного мужчину среди книжных страниц и знаний; его владения омрачены утратой.");
- ds_map_add(m,"A big green pet near the institute of knowledge, yearns to see its mistress again, unfortunately it is out of control.","Большой зелёный питомец возле института знаний мечтает снова увидеть свою хозяйку, но, к несчастью, он вышел из-под контроля.");
+ ds_map_add(m,"A big green pet near the institute of knowledge, yearns to see its mistress again, unfortunately it is out of control.","Большой зелёный питомец возле института знаний мечтает снова увидеть свою хозяйку. К несчастью, она потеряла контроль над собой.");
  ds_map_add(m,"Once said she was your teacher distracted by her own desires now she sells hamburgers your visit will brighten her miserable day.","Когда-то она была твоей учительницей, но, увлёкшись собственными желаниями, теперь продаёт гамбургеры. Твой визит скрасит её жалкий день.");
  ds_map_add(m,"Silver skin companion awaits you away from home seeks to destroy itself.","Тебя ждёт спутница с серебристой кожей вдали от дома, которая стремится уничтожить саму себя.");
  ds_map_add(m,"Once helped for the second time by the lost dragon the fisherman will be in the basement of holes where his wishes will be frustrated.","После того как заблудшая драконица поможет во второй раз, рыбак окажется в подвале с отверстиями, где его желания так и не сбудутся.");
@@ -4285,13 +4285,13 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"What?! You saw what was in the briefcase!","Что?! Ты видел, что было в портфеле?!");
  ds_map_add(m,"What! NO it will be 10,000 Arcs we saw your dirty secret.","Что?! НЕТ! Давай 10 000 арков. Мы узнали твой грязный секрет.");
  ds_map_add(m,"Oh you saved my life take 1000 Arcs for your trouble.","Ты спасла мне жизнь. Возьми 1000 арков за хлопоты.");
- ds_map_add(m,"Gilfried we found your briefcase.","Гилфрид, мы нашли твой портфель.");
- ds_map_add(m,"Gilfried The Monster Fucker.","Гилфрид, трахатель монстродевушек.");
+ ds_map_add(m,"Gilfried we found your briefcase.","Гильфрид, мы нашли твой портфель.");
+ ds_map_add(m,"Gilfried The Monster Fucker.","Гильфрид, трахатель монстродевушек.");
  ds_map_add(m,"Ok it's time to go, if you want to see her again go to this address that's where we sleep.","Ладно, пора идти. Если захочешь увидеть её снова, приходи по этому адресу. Там мы и живём.");
  ds_map_add(m,"Yeah Oohw, I swear it's the first time it's happened.","Да, о-ох... клянусь, со мной такое впервые.");
  ds_map_add(m,"You said that the librarian is always in her own world.","Ты сказал, что библиотекарь всегда погружена в свой мир.");
  ds_map_add(m,"Wha what happend?","Ч-что случилось?");
- ds_map_add(m,"Ehhh Gilfried?","Э-э... Гилфрид?");
+ ds_map_add(m,"Ehhh Gilfried?","Э-э... Гильфрид?");
  ds_map_add(m,"Dude she is half succubus.","Чувак, она наполовину суккуб.");
  ds_map_add(m,"Yeah that was better than I imagine you are not a just a regular elf.","Да, это было даже лучше, чем я представлял. Ты ведь не обычная эльфийка.");
  ds_map_add(m,"Ohh it felt so good in my poopa.","О-о, как же приятно было моей попке.");
@@ -4436,7 +4436,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Mmmmmm.","М-м-м.");
  ds_map_add(m,"What must be inside for him to be this desperate?","Что же там внутри, раз он так отчаянно пытается его вернуть?");
  ds_map_add(m,"Yes, he looked very desperate.","Да, он выглядел совершенно отчаявшимся.");
- ds_map_add(m,"Well you found Gilfried's briefcase now we just have to return it.","Ну вот, мы нашли портфель Гилфрида. Осталось только вернуть его.");
+ ds_map_add(m,"Well you found Gilfried's briefcase now we just have to return it.","Ну вот, мы нашли портфель Гильфрида. Осталось только вернуть его.");
  ds_map_add(m,"* Line receives the key * ... thanks.","*Лайн получает ключ* ... Спасибо.");
  ds_map_add(m,"Bring the solid gold key to The Bitch","Отнеси массивный золотой ключ Стерве.");
  ds_map_add(m,"B-but, I told you that. Ahh whatever.","Н-но ведь я сама тебе об этом рассказала. Ах, ладно.");
@@ -4455,7 +4455,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Hello kitty <3","Привет, киска <3");
  ds_map_add(m,"AAHHHHHH!","А-А-А-А-А!");
  ds_map_add(m,"RAWRRRR!","РРРААА!");
- ds_map_add(m,"Hey isn't that the clothes stolen from smooshers?!","Эй, разве это не одежда, украденная из Smooshers?!");
+ ds_map_add(m,"Hey isn't that the clothes stolen from smooshers?!","Эй, разве это не одежда, украденная из «Смушерс»?!");
  ds_map_add(m,"Hello kitty. <3","Привет, киска. <3");
  ds_map_add(m,"No! we must help him.","Нет! Мы должны ему помочь.");
  ds_map_add(m,"Let's get the fuck out of here line!","Лайн, валим к чёрту отсюда!");

@@ -9,16 +9,16 @@
     420,
     1231,
     1988,
-    4007,
-    6289
+    4007
   ],
-  "glyphs12": 1557,
-  "glyphs10": 1652,
-  "core_sha256": "6b98836e7000ea406d7326e6357f553da8072ed8951b302ba785ef362f2a6420",
-  "status": "compiled-local-build-and-city-smoke-passed",
+  "glyphs12": 1555,
+  "glyphs10": 1650,
+  "core_sha256": "9b7775fc0aa127ecd7454713fac9aae07e9b3f2d1f3f2711d832c4bb8f4d608a",
+  "status": "r7-compiled-signed-city-smoke-passed",
   "windows_build_checked": true,
   "android_apk_signature_and_contents_checked": true,
   "city_smoke_checked": true,
+  "physical_controller_tested": false,
   "android_device_tested": false,
   "full_playthrough_tested": false
 }

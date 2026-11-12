@@ -167,7 +167,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Ivy, a honey slime, recognizes you as an adventurer who helps people and asks if you can help her find a part of herself that hasn't returned.","Bal özü slime'ı Ivy, insanlara yardım eden bir maceracı olduğunu anlayıp geri dönmeyen beden parçasını bulmasına yardım edip edemeyeceğini soruyor.");
  ds_map_add(m,"You heard the Grand Captain of the Elira Guards arguing with a woman about the ineptitude of the knights. Maybe if you help them, they can assist you in your quest.","Elira Muhafızları'nın Büyük Kaptanı'nın bir kadınla şövalyelerin beceriksizliği üzerine tartıştığını duydun. Belki onlara yardım edersen görevinde sana destek olurlar.");
  ds_map_add(m,"You encountered Faye, a space-dimensional traveler trapped in your dimension. You decided to help her because you felt sorry for her.","Boyutunda mahsur kalmış boyutlararası bir gezgin olan Faye ile karşılaştın. Ona acıdığın için yardım etmeye karar verdin.");
- ds_map_add(m,"Vasuki tells you that something bad is happening at the mushroom house in the magenta swamp. Upon investigating, it seems that there may be human trafficking and drug activities occurring there.","Vasuki, eflatun bataklıktaki mantar evinde kötü bir şeyler olduğunu söylüyor. Araştırınca orada insan kaçakçılığı ve uyuşturucu faaliyetleri olabileceği anlaşılıyor.");
+ ds_map_add(m,"Vasuki tells you that something bad is happening at the mushroom house in the magenta swamp. Upon investigating, it seems that there may be human trafficking and drug activities occurring there.","Vasuki, Fuşya Bataklığı'ndaki mantar evinde kötü bir şeyler olduğunu söylüyor. Araştırınca orada insan kaçakçılığı ve uyuşturucu faaliyetleri olabileceği anlaşılıyor.");
  ds_map_add(m,"You found someone smelling the flowers, but as soon as you spoke to them, they attacked you. Find out what's really going on!","Çiçekleri koklayan birini gördün ama konuşur konuşmaz sana saldırdı. Gerçekte neler olup bittiğini öğren!");
  ds_map_add(m,"There's something about Marael that doesn't quite convince you. Look into what she's really hiding.","Marael hakkında içine sinmeyen bir şey var. Gerçekte ne sakladığını araştır.");
  ds_map_add(m,"A letter addressed to Marael gives you clues that a woman named Willow also contacted Ava. Look for her to gather more information.","Marael'e yazılmış bir mektup, Willow adında bir kadının da Ava'yla iletişime geçtiğine dair ipuçları veriyor. Daha fazla bilgi toplamak için onu bul.");
@@ -255,7 +255,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Win the beer drinking competition against Rynn.","Rynn'e karşı bira içme yarışmasını kazan.");
  ds_map_add(m,"Beer Fight!","Bira Düellosu!");
  ds_map_add(m,"Visit Kamiko at the Jailfarm","Jailfarm'da Kamiko'yu ziyaret et.");
- ds_map_add(m,"Look for the criminal who is impersonating a guard on the bridge that connects to the magenta swamp.","Eflatun bataklığa bağlanan köprüde muhafız kılığına giren suçluyu bul.");
+ ds_map_add(m,"Look for the criminal who is impersonating a guard on the bridge that connects to the magenta swamp.","Fuşya Bataklığı'na bağlanan köprüde muhafız kılığına giren suçluyu bul.");
  ds_map_add(m,"Help Sam catch the criminal.","Sam'in suçluyu yakalamasına yardım et.");
  ds_map_add(m,"Look for the heroin that appears in the jail-farm.","Jailfarm'da ortaya çıkan kadın kahramanı bul.");
  ds_map_add(m,"Defeat the white demon.","Beyaz iblisi yen.");
@@ -272,7 +272,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Go back to Marael.","Marael'e geri dön.");
  ds_map_add(m,"Power awakening","Gücün Uyanışı");
  ds_map_add(m,"SaveHause","Güvenli Ev");
- ds_map_add(m,"At night he goes to the window adjoining Aldo's room.","Gece, Aldo'nun odasına bitişik pencereye gider.");
+ ds_map_add(m,"At night he goes to the window adjoining Aldo's room.","Gece, Aldo'nun odasının yanındaki pencereye git.");
  ds_map_add(m,"After sleeping with callie you feel dirty go take a bath in her shower.","Callie'yle yattıktan sonra kendini kirli hissediyorsun; git, onun duşunda yıkan.");
  ds_map_add(m,"It looks like Callie wants to talk to you, go to her.","Callie seninle konuşmak istiyor gibi görünüyor. Yanına git.");
  ds_map_add(m,"Explore Callie's home..","Callie'nin evini keşfet..");
@@ -321,7 +321,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Defeat the shadow Wizard money Gang.","Gölge Büyücü Para Çetesi'ni yen.");
  ds_map_add(m,"Popo-Portals!?","Popo Portalları!?");
  ds_map_add(m,"Sexscene","Seks sahnesi");
- ds_map_add(m,"defeat the top bitch.","En tepedeki kaltakla dövüş.");
+ ds_map_add(m,"defeat the top bitch.","En tepedeki kaltağı yen.");
  ds_map_add(m,"Help lucy.","Lucy'ye yardım et.");
  ds_map_add(m,"Now I'm the top bitch!","Artık en tepedeki kaltak benim!");
  ds_map_add(m,"Give Naoki the ingredients to prepare the potion.","İksiri hazırlaması için malzemeleri Naoki'ye ver.");
@@ -339,7 +339,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Free to come and go.","Girip çıkmak serbest.");
  ds_map_add(m,"Defeat the Vasera clone.","Vasera'nın klonunu yen.");
  ds_map_add(m,"Search for Vasera's clone.","Vasera'nın klonunu ara.");
- ds_map_add(m,"Doppelganger","İkiz");
+ ds_map_add(m,"Doppelganger","Tıpatıp Bir Kopya");
  ds_map_add(m,"Sex scene 2.","Seks sahnesi 2.");
  ds_map_add(m,"Sex scene.","Seks sahnesi.");
  ds_map_add(m,"Go back to Sakura in Smoosher.","Smoosher'daki Sakura'nın yanına dön.");
@@ -373,7 +373,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Reload.","Yeniden yükle.");
  ds_map_add(m,"Improve your reputation in the village by doing a quest.","Bir görev yaparak köydeki itibarını artır.");
  ds_map_add(m,"The Lusty Half elf Maid","Azgın Yarı Elf Hizmetçi");
- ds_map_add(m,"Go to the table, the voice of the fan will tell you what to do.","Masaya git; hayranının sesi sana ne yapacağını söyleyecek.");
+ ds_map_add(m,"Go to the table, the voice of the fan will tell you what to do.","Masaya git; havalandırmadan gelen ses sana ne yapacağını söyleyecek.");
  ds_map_add(m,"Look for the other succubus named Willow who had met Ava. In her letter she had said she would be at the abandoned Big Dream building.","Ava ile tanışmış olan Willow adlı diğer sukkubusu ara. Mektubunda terk edilmiş Big Dream binasında olacağını söylemişti.");
  ds_map_add(m,"The White Lady","Beyaz Kadın");
  ds_map_add(m,"ni se como llegue a esto XD debeia ser mas ordenado","Buraya nasıl geldiğimi ben de bilmiyorum XD Daha düzenli olmalıydım.");
@@ -387,17 +387,17 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Bad Ending","Kötü Son");
  ds_map_add(m,"Quest Reload.","Görevi yeniden başlat.");
  ds_map_add(m,"Defeat the flower.","Çiçeği yen.");
- ds_map_add(m,"Look for the flower in the secret place on the magenta swamp.","Eflatun bataklıktaki gizli yerde çiçeği ara.");
- ds_map_add(m,"Look for the flower, it must be passing the cat tails in the magenta swamp.","Çiçeği ara; eflatun bataklıkta kedi kuyruğu otlarını geçince olmalı.");
- ds_map_add(m,"Go to the magenta swamp and look for the flower.","Eflatun bataklığa git ve çiçeği ara.");
+ ds_map_add(m,"Look for the flower in the secret place on the magenta swamp.","Fuşya Bataklığı'ndaki gizli yerde çiçeği ara.");
+ ds_map_add(m,"Look for the flower, it must be passing the cat tails in the magenta swamp.","Çiçeği ara; Fuşya Bataklığı'nda kedi kuyruğu otlarını geçince olmalı.");
+ ds_map_add(m,"Go to the magenta swamp and look for the flower.","Fuşya Bataklığı'na git ve çiçeği ara.");
  ds_map_add(m,"Defeat the bunny in the Forest.","Ormandaki tavşanı yen.");
- ds_map_add(m,"Hopes and dreams","Umuda ve Hayallere");
+ ds_map_add(m,"Hopes and dreams","Umutlar ve Hayaller");
  ds_map_add(m,"Go to the VIP room under the bar and talk to Sieki.","Barın altındaki VIP odasına git ve Sieki ile konuş.");
  ds_map_add(m,"Quest reload.","Görevi yeniden yükle.");
  ds_map_add(m,"Look for the money that was earned illicitly. (2/3)","Yasadışı yollardan kazanılan parayı ara. (2/3)");
  ds_map_add(m,"Look for evidence that this house is used for human trafficking. (1/3)","Bu evin insan kaçakçılığı için kullanıldığına dair kanıt ara. (1/3)");
  ds_map_add(m,"Look for evidence that this house is used to launder money. (0/3)","Bu evin kara para aklamak için kullanıldığına dair kanıt ara. (0/3)");
- ds_map_add(m,"See what is going on inside the hause. (Location magenta swamp and you need a vasuki to enter the hause)","Evin içinde neler olup bittiğine bak. (Konum: eflatun bataklık. Eve girmek için bir Vasuki'ye ihtiyacın var.)");
+ ds_map_add(m,"See what is going on inside the hause. (Location magenta swamp and you need a vasuki to enter the hause)","Evin içinde neler olup bittiğine bak. (Konum: Fuşya Bataklığı. Eve girmek için Vasuki'ye ihtiyacın var.)");
  ds_map_add(m,"Good intentions","İyi Niyetler");
  ds_map_add(m,"End cutscene Line plz caca","Ara sahne sonu: Line, lütfen, kahretsin.");
  ds_map_add(m,"Robot appear.","Robot ortaya çıkıyor.");
@@ -416,7 +416,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Come back to ivy wilde. she is on the second floor of the hotel.","Ivy Wilde'ın yanına geri dön. Otelin ikinci katında.");
  ds_map_add(m,"Beat the other Ivy Wilde.","Diğer Ivy Wilde'ı yen.");
  ds_map_add(m,"Find the leg of Ivy. According to Ivy, she can feel her leg having encounters since she can feel her having sex. At night she is most likely is hiding so look for her in the day.","Ivy'nin bacağını bul. Ivy'ye göre, bacağının yaşadığı karşılaşmaları hissedebiliyor; onun seks yaptığını bile duyumsuyor. Geceleri saklanıyor olabilir, bu yüzden gündüz ara.");
- ds_map_add(m,"Find my other me.","Benim diğer yarımı bul.");
+ ds_map_add(m,"Find my other me.","Diğer benliğimi bul.");
  ds_map_add(m,"Help Zoi Weona by paying for her services.","Hizmetlerinin ücretini ödeyerek Zoi Weona'ya yardım et.");
  ds_map_add(m,"A Dumb Half Orc.","Aptal Bir Yarı-Ork.");
  ds_map_add(m,"They talk and apologize each other.","Konuşup birbirlerinden özür dilerler.");
@@ -459,7 +459,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Sam's note.","Sam'in Notu");
  ds_map_add(m,"Accompany Sam to the entrance of the town.","Sam'e kasabanın girişine kadar eşlik et.");
  ds_map_add(m,"Stop the Tricotext criminal and her robot from putting that diaper on that cat woman.","Tricotext suçlusunun ve robotunun o kedi kadına bez bağlamasını engelle.");
- ds_map_add(m,"Find the criminal from Tricotext, according to the information that sam gave you could he be in the magenta swamp.","Sam'in verdiği bilgilere göre Tricotextli suçluyu ara. Eflatun bataklıkta olabilir.");
+ ds_map_add(m,"Find the criminal from Tricotext, according to the information that sam gave you could he be in the magenta swamp.","Sam'in verdiği bilgilere göre Tricotextli suçluyu ara. Fuşya Bataklığı'nda olabilir.");
  ds_map_add(m,"Win the sparring match against Sam.","Sam'e karşı antrenman maçını kazan.");
  ds_map_add(m,"The hero of Tricotex","Tricotex'in Kahramanı");
  ds_map_add(m,"Quest Overload","Görev Aşırı Yükü");
@@ -469,7 +469,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Take Vasuki to your house to rest.","Vasuki'yi dinlenmesi için evine götür.");
  ds_map_add(m,"Grab the crystal.","Kristali al.");
  ds_map_add(m,"Defeat the treasure hunters Cuervo.","Hazine avcısı Cuervo'yu yen.");
- ds_map_add(m,"Find the dimensional Crystal. The last piece of the dimensional crystal was seen in the magenta swamp (You need a vasuqui to find the crystal).","Boyut Kristali'ni bul. Son parçası eflatun bataklıkta görülmüştü. (Kristali bulmak için bir Vasuki'ye ihtiyacın var.)");
+ ds_map_add(m,"Find the dimensional Crystal. The last piece of the dimensional crystal was seen in the magenta swamp (You need a vasuqui to find the crystal).","Boyut Kristali'ni bul. Son parçası Fuşya Bataklığı'nda görülmüştü. (Kristali bulmak için Vasuki'ye ihtiyacın var.)");
  ds_map_add(m,"Defeat the treasure hunters Naga.","Hazine avcısı Naga'yı yen.");
  ds_map_add(m,"The Lost Dragon","Kayıp Ejderha");
  ds_map_add(m,"Talk to Lili","Lili ile konuş.");
@@ -525,8 +525,8 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Go to marael's house and talk to her.","Marael'in evine git ve onunla konuş.");
  ds_map_add(m,"Follow the scent of the pie to find Marael.","Marael'i bulmak için turtanın kokusunu takip et.");
  ds_map_add(m,"Go to the forest south of the hospital and look for Sieki.","Hastanenin güneyindeki ormana git ve Sieki'yi ara.");
- ds_map_add(m,"Talk to Saeki, she is in the basement of the bar.","Saeki ile konuş; barın bodrumunda.");
- ds_map_add(m,"You know the secret password, go to the bar door to the right of the counter to enter the vip basement and talk to saeki owner of the place.","Gizli parolayı biliyorsun. Bodrumdaki VIP bölümüne girmek ve mekânın sahibi Saeki ile konuşmak için bar tezgâhının sağındaki kapıya git.");
+ ds_map_add(m,"Talk to Saeki, she is in the basement of the bar.","Sieki ile konuş; barın bodrumunda.");
+ ds_map_add(m,"You know the secret password, go to the bar door to the right of the counter to enter the vip basement and talk to saeki owner of the place.","Gizli parolayı biliyorsun. Bodrumdaki VIP bölümüne girmek ve mekânın sahibi Sieki ile konuşmak için bar tezgâhının sağındaki kapıya git.");
  ds_map_add(m,"Lili said she saw MsHonney leave a note, look for that note in the basement of the hotel.","Lili, Honney Hanımın bir not bıraktığını görmüş. O notu otelin bodrumunda ara.");
  ds_map_add(m,"Go talk to the receptionist.","Resepsiyon görevlisiyle konuşmaya git.");
  ds_map_add(m,"Go see the show.","Gösteriyi izlemeye git.");
@@ -594,7 +594,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"To see a monster's damage affinity, you can check it in the Waifsteary.","Bir canavarın hasar yatkınlığını görmek için Waifu Ansiklopedisi'ne bakabilirsin.");
  ds_map_add(m,"Line will have the affinity of the strongest element they possess, whether it's slash, pierce, impact, or magic.","Line'ın yatkınlığı, sahip olduğu en güçlü elemente göre belirlenir: kesme, delme, darbe veya büyü.");
  ds_map_add(m,"These special cubes are really simple, so let's explain them.","Bu özel küpler çok basit; hadi onları açıklayalım.");
- ds_map_add(m,"The potion cube will restore mana. The broken heart cube reduces the enemy's damage, attack interval, and healing.","İksir küpü manayı yeniler. Kırık kalp küpü ise düşmanın hasarını, saldırı aralığını ve iyileşmesini azaltır.");
+ ds_map_add(m,"The potion cube will restore mana. The broken heart cube reduces the enemy's damage, attack interval, and healing.","İksir küpü manayı yeniler. Kırık kalp küpü ise düşmanın hasarını, saldırı sıklığını ve iyileşmesini azaltır.");
  ds_map_add(m,"To heavy to run or fly","Koşmak veya uçmak için fazla ağır");
  ds_map_add(m,"Equipment","Ekipman");
  ds_map_add(m,"WAIFSTEARY","WAIFU ANSİKLOPEDİSİ");
@@ -1154,7 +1154,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"We already know what to do Line!","Line, ne yapacağımızı artık biliyoruz!");
  ds_map_add(m,"Very well, I appreciate you staying safe.","Pekâlâ, güvende kalmana sevindim.");
  ds_map_add(m,"I won't even think about the place, that's how dedicated I am to not making trouble!","O yeri aklımdan bile geçirmeyeceğim. Sorun çıkarmamaya bu kadar kararlıyım işte!");
- ds_map_add(m,"Lastly, there is a scammer posing as a guard you can see her description on the flyers around town and if I were to say one place you shouldn't go it would be the bridge that leads to the magenta swamp.","Son olarak, muhafız kılığına giren bir dolandırıcı var. Onun tarifini kasabanın dört bir yanındaki ilanlarda görebilirsin. Uzak durman gereken tek bir yer söyleyeceksem, o da eflatun bataklığa giden köprü.");
+ ds_map_add(m,"Lastly, there is a scammer posing as a guard you can see her description on the flyers around town and if I were to say one place you shouldn't go it would be the bridge that leads to the magenta swamp.","Son olarak, muhafız kılığına giren bir dolandırıcı var. Onun tarifini kasabanın dört bir yanındaki ilanlarda görebilirsin. Uzak durman gereken tek bir yer söyleyeceksem, o da Fuşya Bataklığı'na giden köprü.");
  ds_map_add(m,"I think I'm familiar with your description, we'll stay out of it <3","Tarif ettiğin kişiyi tanıyor gibiyim. Oradan uzak duracağız <3.");
  ds_map_add(m,"Sometimes from time to time, a foreign heroine comes to catch criminals escaping from her sector, so if you see a lady in a bikini with light blue hair around here in the jail-farm, don't bother her.","Bazen başka bir yerden gelen bir kadın kahraman, kendi bölgesinden kaçan suçluları yakalamaya gelir. Hapishane çiftliğinin çevresinde açık mavi saçlı, bikinili bir kadın görürsen onu rahatsız etme.");
  ds_map_add(m,"Noted :O","Aklımda :O");
@@ -1694,7 +1694,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Cow mowwwww","İnek möööö");
  ds_map_add(m,"Maruia Lick","Maruia'yı yalama");
  ds_map_add(m,"Naoki blowjob","Naoki'ye oral seks");
- ds_map_add(m,"Zoi Weona onahole","Zoi Weona'nın onahole'u");
+ ds_map_add(m,"Zoi Weona onahole","Zoi Weona — Onahole");
  ds_map_add(m,"Ivy Wilde mommy issues","Ivy Wilde'ın anne kompleksi");
  ds_map_add(m,"Future Fragment sex","Gelecek Parçası: Seks");
  ds_map_add(m,"Vasuki and Line public sex","Vasuki ve Line'ın halka açık seksi");
@@ -3436,7 +3436,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Don't tell Red how I got it I think she would be sad if she knew.","Red'e bunu nasıl elde ettiğimi söyleme. Öğrenirse üzüleceğini düşünüyorum.");
  ds_map_add(m,"Oh, Line about the money.","Ah Line, para meselesine gelince...");
  ds_map_add(m,"Oh so-sorry sorry.","Ah, ö-özür dilerim, özür dilerim.");
- ds_map_add(m,"Hey don't get in the line!","Hey, sıraya gir!");
+ ds_map_add(m,"Hey don't get in the line!","Hey, araya kaynama!");
  ds_map_add(m,"Four corner","Dört Köşe");
  ds_map_add(m,"In four corners you will find everything to pass the time, they restore Night club and if something goes wrong everything is close to the hospital..","Dört Köşe'de vakit geçirecek her şeyi bulabilirsin. Restoranlar ve gece kulüpleri var; bir şey ters giderse hastane de hemen yakınında.");
  ds_map_add(m,"Hmm ... okay but don't be as loud as usual, okay Solstice?","Hmm... peki ama her zamanki gibi çok gürültü yapma, olur mu Solstice?");
@@ -4029,7 +4029,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Nice to meet you both and about your friend unfortunately I have not seen her.","İkinizle tanıştığıma memnun oldum. Arkadaşınıza gelince, ne yazık ki onu görmedim.");
  ds_map_add(m,"I-I am so sorry I did not introduce myself before, I am Line and this is my fairy's familiar her name is Lili.","Daha önce kendimi tanıtmadığım için ç-çok özür dilerim. Ben Line, bu da peri yoldaşım Lili.");
  ds_map_add(m,"Oh... your name was Line right?","Şey... Adın Line'dı, değil mi?");
- ds_map_add(m,"We need your help we are looking for my friend Ava she is an angel and Saeki said you might know about her.","Yardımına ihtiyacımız var. Arkadaşım Ava'yı arıyoruz. Kendisi bir melek ve Saeki senin onun hakkında bir şeyler biliyor olabileceğini söyledi.");
+ ds_map_add(m,"We need your help we are looking for my friend Ava she is an angel and Saeki said you might know about her.","Yardımına ihtiyacımız var. Arkadaşım Ava'yı arıyoruz. Kendisi bir melek ve Sieki senin onun hakkında bir şeyler biliyor olabileceğini söyledi.");
  ds_map_add(m,"You're welcome, I haven't seen people from a while ago, you can eat whatever you want and stay as long as you want <3.","Rica ederim. Uzun zamandır kimseyi görmüyordum. İstediğinizi yiyebilir, istediğiniz kadar kalabilirsiniz. <3");
  ds_map_add(m,"Thank you Marael for inviting us to your home.","Bizi evine davet ettiğin için teşekkürler Marael.");
  ds_map_add(m,"Let's search the house she must have another way out of this place.","Evi arayalım. Buradan çıkmanın başka bir yolunu mutlaka biliyor olmalı.");
@@ -4168,7 +4168,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Unsheathe boy and don't look at it for too long it might be a bit much for mortals.","Hadi çıkar delikanlı, ama çok uzun süre bakma. Ölümlülere biraz fazla gelebilir.");
  ds_map_add(m,"I hope you don't mind me calling Lemmy but I need to relax after all that has happened.","Lemmy'yi çağırmamın seni rahatsız etmeyeceğini umuyorum ama bütün bunlardan sonra biraz rahatlamaya ihtiyacım var.");
  ds_map_add(m,"Yes, my name is ZONE-tan and I came to this island to rest and have a good time but it all ended so badly.","Evet, adım ZONE-tan. Dinlenmek ve güzel vakit geçirmek için bu adaya gelmiştim ama her şey berbat bir şekilde sonuçlandı.");
- ds_map_add(m,"Wh-who are you Lemmy's mistress?!","S-sen kimsin? Lemmy'nin metresi misin?!");
+ ds_map_add(m,"Wh-who are you Lemmy's mistress?!","S-sen kimsin? Lemmy'nin hanımı misin?!");
  ds_map_add(m,"Just a little bit more!!!","B-biraz daha!!!");
  ds_map_add(m,"AHhhhh the key is absorbing that thing.","AAAAH, anahtar o şeyi emiyor!");
  ds_map_add(m,"Ah, ah ah here it is.","Ah, ah, işte burada.");
@@ -4177,11 +4177,11 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"*Line and Lili enter the carriage*","*Line ve Lili arabaya girer.*");
  ds_map_add(m,"Ah fine.","Ah, peki.");
  ds_map_add(m,"Wait! Is it too late to forget about this?","Bekle! Bundan vazgeçmek için artık çok mu geç?");
- ds_map_add(m,"Do not worry Lemmy, your mistress will be fine.","Endişelenme Lemmy, metresine bir şey olmayacak.");
+ ds_map_add(m,"Do not worry Lemmy, your mistress will be fine.","Endişelenme Lemmy, hanımına bir şey olmayacak.");
  ds_map_add(m,"He wants us to get into the carriage.","Arabaya binmemizi istiyor.");
  ds_map_add(m,"AHhh what did he say?","AAAAH, ne dedi?");
  ds_map_add(m,"bluplulup.","Bluplulup.");
- ds_map_add(m,"Lemmy we brought the key to your mistress.","Lemmy, anahtarı metresine getirdik.");
+ ds_map_add(m,"Lemmy we brought the key to your mistress.","Lemmy, hanımın için anahtarı getirdik.");
  ds_map_add(m,"Ohh Ok, this is my first time in such a public place.","Oh, peki. Böyle halka açık bir yerde ilk kez yapıyorum.");
  ds_map_add(m,"Don't worry, I've done it many times and she's always in her own world and besides her there's no one in the library.","Endişelenme, bunu birçok kez yaptım. O her zaman kendi dünyasında olur ve zaten kütüphanede ondan başka kimse yok.");
  ds_map_add(m,"But what about the librarian?","Peki ya kütüphaneci?");

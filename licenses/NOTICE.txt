@@ -9,3 +9,5 @@ uber-apk-signer：https://github.com/patrickfav/uber-apk-signer （Apache-2.0，
 本仓库不含原游戏程序、音频、CG或完整APK；本地成品需用户自己的原游戏数据。
 
 Android 前端触控修改的完整源码：android/TouchDispatch.smali、android/patch-native-input.ps1，遵循上游 AGPL-3.0，详见 android/TOUCH-PATCH.md。
+
+原生手柄前端兼容修改包含 android/GamepadAxis.smali，随现有 Android 前端补丁按 AGPL-3.0 提供完整修改源码。

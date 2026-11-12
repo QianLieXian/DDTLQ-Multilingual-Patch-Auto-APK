@@ -524,8 +524,8 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Go to marael's house and talk to her.","Ve a casa de Marael y habla con ella.");
  ds_map_add(m,"Follow the scent of the pie to find Marael.","Sigue el olor de la tarta para encontrar a Marael.");
  ds_map_add(m,"Go to the forest south of the hospital and look for Sieki.","Ve al bosque al sur del hospital y busca a Sieki.");
- ds_map_add(m,"Talk to Saeki, she is in the basement of the bar.","Habla con Saeki; está en el sótano del bar.");
- ds_map_add(m,"You know the secret password, go to the bar door to the right of the counter to enter the vip basement and talk to saeki owner of the place.","Ya conoces la contraseña secreta. Ve a la puerta del bar situada a la derecha del mostrador para entrar al sótano VIP y habla con Saeki, la dueña del lugar.");
+ ds_map_add(m,"Talk to Saeki, she is in the basement of the bar.","Habla con Sieki; está en el sótano del bar.");
+ ds_map_add(m,"You know the secret password, go to the bar door to the right of the counter to enter the vip basement and talk to saeki owner of the place.","Ya conoces la contraseña secreta. Ve a la puerta del bar situada a la derecha del mostrador para entrar al sótano VIP y habla con Sieki, la dueña del lugar.");
  ds_map_add(m,"Lili said she saw MsHonney leave a note, look for that note in the basement of the hotel.","Lili dijo que vio a la señorita Honney dejar una nota. Busca esa nota en el sótano del hotel.");
  ds_map_add(m,"Go talk to the receptionist.","Ve a hablar con la recepcionista.");
  ds_map_add(m,"Go see the show.","Ve a ver el espectáculo.");
@@ -592,7 +592,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"To see a monster's damage affinity, you can check it in the Waifsteary.","Para consultar la afinidad de daño de un monstruo, puedes verla en la Waifsteary.");
  ds_map_add(m,"Line will have the affinity of the strongest element they possess, whether it's slash, pierce, impact, or magic.","La afinidad de Line será la del elemento más fuerte que tenga, ya sea corte, perforación, impacto o magia.");
  ds_map_add(m,"These special cubes are really simple, so let's explain them.","Estos cubos especiales son muy sencillos; vamos a explicarlos.");
- ds_map_add(m,"The potion cube will restore mana. The broken heart cube reduces the enemy's damage, attack interval, and healing.","El cubo de poción restaura maná. El cubo del corazón roto reduce el daño, el intervalo de ataque y la curación del enemigo.");
+ ds_map_add(m,"The potion cube will restore mana. The broken heart cube reduces the enemy's damage, attack interval, and healing.","El cubo de poción restaura maná. El cubo del corazón roto reduce el daño, la frecuencia de ataque y la curación del enemigo.");
  ds_map_add(m,"To heavy to run or fly","Demasiado pesado para correr o volar");
  ds_map_add(m,"Equipment","Equipamiento");
  ds_map_add(m,"EQUIPMENT","EQUIPAMIENTO");
@@ -2101,7 +2101,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"I see many stars colliding, fire star, lucky star and a star that divides like the cells all in the house of the star of the sea.","Veo muchas estrellas chocando: la estrella de fuego, la estrella de la suerte y una estrella que se divide como las células. Todas están en la casa de la Estrella del Mar.");
  ds_map_add(m,"The stars show me that another star will shine for you, A GIFT! down where the privileged stars meet, there destiny will be waiting for you.","Las estrellas me dicen que otra estrella brillará para ti: ¡un REGALO! Abajo, donde se reúnen las estrellas privilegiadas, allí te estará esperando el destino.");
  ds_map_add(m,"Opmeit nu, ramot edeup, erepse, sotad odnagrac! AHHH I see it, I see your future.","Opmeit nu, ramot edeup, erepse, sotad odnagrac! ¡AHHH, ya lo veo, veo tu futuro!");
- ds_map_add(m,"Ah! your-your destiny is blocked, it's hard for me to read it, but for ","¡Ah! Tu-tu destino está bloqueado. Me cuesta leerlo, pero por");
+ ds_map_add(m,"Ah! your-your destiny is blocked, it's hard for me to read it, but for ","¡Ah! Tu-tu destino está bloqueado. Me cuesta leerlo, pero por ");
  ds_map_add(m," arcs I'm sure I'll be able to focus on it."," Arcs estoy segura de que podré concentrarme.");
  ds_map_add(m,"What? Are you really going to give me that Crystal orb as a gift?\nYou know that for a fortune teller, this is the best thing in the world.\nYou know what I will give you anything you want, but first I will see my future.","¡¿Qué?! ¿De verdad vas a regalarme esa esfera de cristal?\nSabes que, para una adivina, es lo mejor del mundo.\n¿Sabes qué? Te daré lo que quieras, pero primero quiero ver mi futuro.");
  ds_map_add(m,"You have already met all the events that the stars told me.","Ya has vivido todos los acontecimientos que me anunciaron las estrellas.");

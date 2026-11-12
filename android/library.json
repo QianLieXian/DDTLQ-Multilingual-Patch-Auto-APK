@@ -15,6 +15,7 @@
         "active": true,
         "fancyName": "默认存档"
       }
-    ]
+    ],
+    "enablePhysicalControllers": true
   }
 ]

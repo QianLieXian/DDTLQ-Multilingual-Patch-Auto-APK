@@ -24,7 +24,7 @@
  invoke-virtual {v0,v1,v1,v1,v1},Landroid/widget/LinearLayout;->setPadding(IIII)V
  new-instance v1,Landroid/widget/TextView;
  invoke-direct {v1,p0},Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
- const-string v2,"DDTLQ 2.01.04 Deutsche Übersetzung r6"
+ const-string v2,"DDTLQ 2.01.04 Deutsche Übersetzung r7"
  invoke-virtual {v1,v2},Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
  const/high16 v2,0x41c00000
  invoke-virtual {v1,v2},Landroid/widget/TextView;->setTextSize(F)V

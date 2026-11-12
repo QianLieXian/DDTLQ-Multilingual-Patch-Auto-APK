@@ -1,0 +1,22 @@
+using System;
+using System.IO;
+using System.Linq;
+using UndertaleModLib.Compiler;
+using UndertaleModLib.Models;
+var q=new CodeImportGroup(Data);
+q.QueueReplace("gml_Script_qa_assert","global.qa_checks+=1;if(!argument0){global.qa_failures+=1;show_debug_message(\"R7_FAIL|\"+string(argument1));}");
+q.QueueReplace("gml_Script_qa_pad_reset","global.qa_connected=true;global.qa_focus=true;global.qa_lx=0;global.qa_ly=0;global.qa_rx=0;global.qa_ry=0;global.qa_mouse=false;global.qa_mouse_press=false;global.qa_mouse_release=false;for(var i=0;i<16;i+=1)global.qa_buttons[i]=false;");
+q.QueueReplace("gml_Script_qa_connected","return global.qa_connected && argument0==0;");
+q.QueueReplace("gml_Script_qa_button","var i=argument1-gp_face1;if(i<0||i>=16)return false;return global.qa_buttons[i];");
+q.QueueReplace("gml_Script_qa_axis","switch(argument1){case gp_axislh:return global.qa_lx;case gp_axislv:return global.qa_ly;case gp_axisrh:return global.qa_rx;case gp_axisrv:return global.qa_ry;}return 0;");
+q.QueueReplace("gml_Script_qa_focus","return global.qa_focus;");
+q.QueueReplace("gml_Script_qa_mouse","return (argument0==mb_left||argument0==mb_any)&&global.qa_mouse;");
+q.QueueReplace("gml_Script_qa_mouse_pressed","return (argument0==mb_left||argument0==mb_any)&&global.qa_mouse_press;");
+q.QueueReplace("gml_Script_qa_mouse_released","return (argument0==mb_left||argument0==mb_any)&&global.qa_mouse_release;");
+q.QueueAppend("gml_Object_o_start_variables_Create_0","\nglobal.qa_done=false;global.qa_checks=0;global.qa_failures=0;qa_pad_reset();global.qa_connected=false;qa_connected(0);qa_axis(0,gp_axislh);qa_button(0,gp_face1);qa_focus();qa_mouse(mb_left);qa_mouse_pressed(mb_left);qa_mouse_released(mb_left);\n");
+string tests=File.ReadAllText(Path.Combine(Path.GetDirectoryName(ScriptPath),"r7-qa-gamepad.gml"));
+q.QueueAppend("gml_Object_o_start_variables_Step_0","\nif(!global.qa_done && room==rm_Main_menu && instance_exists(o_brain_dressup) && !instance_exists(o_fade_room)){global.qa_done=true;\n"+tests+"\n}\n");
+var result=q.Import();if(!result.Successful)throw new Exception(result.PrintAllErrors(true));
+var map=new System.Collections.Generic.Dictionary<string,string>{{"gamepad_is_connected","qa_connected"},{"gamepad_button_check","qa_button"},{"gamepad_axis_value","qa_axis"},{"window_has_focus","qa_focus"},{"mouse_check_button","qa_mouse"},{"mouse_check_button_pressed","qa_mouse_pressed"},{"mouse_check_button_released","qa_mouse_released"}};
+foreach(var code in Data.Code.Where(c=>!c.Name.Content.StartsWith("gml_Script_qa_")))foreach(var i in code.Instructions)
+ if(i.Kind==UndertaleInstruction.Opcode.Call&&i.ValueFunction!=null&&map.TryGetValue(i.ValueFunction.Name.Content,out var target))i.ValueFunction=Data.Functions.First(f=>f.Name.Content==target||f.Name.Content=="gml_Script_"+target);

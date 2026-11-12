@@ -15,6 +15,7 @@
         "active": true,
         "fancyName": "Default Save"
       }
-    ]
+    ],
+    "enablePhysicalControllers": true
   }
 ]

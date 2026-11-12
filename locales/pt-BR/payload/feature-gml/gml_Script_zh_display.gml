@@ -135,7 +135,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Nun Dress","Vestido de freira");
  ds_map_add(m,"Nun Socks","Meias de freira");
  ds_map_add(m,"Nun Boots","Botas de freira");
- ds_map_add(m,"Pelletclad Blade","Lâmina revestida de pelotas");
+ ds_map_add(m,"Pelletclad Blade","Lâmina Revestida de Projéteis");
  ds_map_add(m,"Place Holder Quest","Missão provisória");
  ds_map_add(m,"Finally, you muster the courage to embark on an adventure with your fairy familiar to find and bring back your childhood best friend.","Finalmente, você reúne coragem para partir em uma aventura com sua fada familiar, a fim de encontrar e trazer de volta sua melhor amiga de infância.");
  ds_map_add(m,"Check the cat woman's shop; there might be something that interests you.","Dê uma olhada na loja da mulher-gato; talvez haja algo que desperte seu interesse.");
@@ -264,7 +264,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Go back to Marael.","Volte até Marael.");
  ds_map_add(m,"Power awakening","Despertar do poder");
  ds_map_add(m,"SaveHause","Lugar para ficar");
- ds_map_add(m,"At night he goes to the window adjoining Aldo's room.","À noite, ele vai até a janela ao lado do quarto de Aldo.");
+ ds_map_add(m,"At night he goes to the window adjoining Aldo's room.","À noite, vá até a janela ao lado do quarto de Aldo.");
  ds_map_add(m,"After sleeping with callie you feel dirty go take a bath in her shower.","Depois de transar com Callie, você se sente suja. Vá tomar banho no chuveiro dela.");
  ds_map_add(m,"It looks like Callie wants to talk to you, go to her.","Parece que Callie quer conversar com você. Vá falar com ela.");
  ds_map_add(m,"Explore Callie's home..","Explore a casa de Callie..");
@@ -371,7 +371,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"ni se como llegue a esto XD debeia ser mas ordenado","Nem sei como cheguei a isto XD. Devia ser mais organizada.");
  ds_map_add(m,"no se que pasa aqui","Não sei o que está acontecendo aqui.");
  ds_map_add(m,"defeat marael to gather the relic.","Derrote Marael para obter a relíquia.");
- ds_map_add(m,"search the house at night ( Marael's house ).","Procure pela casa à noite (a casa de Marael).");
+ ds_map_add(m,"search the house at night ( Marael's house ).","Vasculhe a casa de Marael à noite.");
  ds_map_add(m,"Go to bed and pretend to be asleep.","Vá para a cama e finja que está dormindo.");
  ds_map_add(m,"Sexscene cooking pie ","Cena de sexo preparando torta ");
  ds_map_add(m,"Go to the kitchen Marael is waiting for you with a surprise.","Vá até a cozinha. Marael está esperando por você com uma surpresa.");
@@ -586,7 +586,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"To see a monster's damage affinity, you can check it in the Waifsteary.","Para conferir a afinidade de dano de um monstro, consulte a Galeria de Waifus.");
  ds_map_add(m,"Line will have the affinity of the strongest element they possess, whether it's slash, pierce, impact, or magic.","Line terá a afinidade do elemento mais forte que possuir: corte, perfuração, impacto ou magia.");
  ds_map_add(m,"These special cubes are really simple, so let's explain them.","Esses cubos especiais são bem simples. Vamos explicar cada um.");
- ds_map_add(m,"The potion cube will restore mana. The broken heart cube reduces the enemy's damage, attack interval, and healing.","O cubo de poção recupera mana. O cubo de coração partido reduz o dano, o intervalo entre ataques e a cura do inimigo.");
+ ds_map_add(m,"The potion cube will restore mana. The broken heart cube reduces the enemy's damage, attack interval, and healing.","O cubo de poção recupera mana. O cubo de coração partido reduz o dano, a frequência dos ataques e a cura do inimigo.");
  ds_map_add(m,"To heavy to run or fly","Pesado demais para correr ou voar");
  ds_map_add(m,"Equipment","Equipamento");
  ds_map_add(m,"WAIFSTEARY","GALERIA DE WAIFUS");
@@ -2449,7 +2449,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"I mean, I could have taken the letter and given it to you now, but I didn't want to touch your juices.","Quer dizer, eu poderia ter pegado a carta e entregado a você agora, mas não queria tocar nos seus fluidos.");
  ds_map_add(m,"I am going to take it.","Vou pegá-la.");
  ds_map_add(m,"Oh and she left a letter by your side but your squirt left it on the floor","Ah, e ela deixou uma carta ao seu lado, mas seu jato a jogou no chão.");
- ds_map_add(m,"I don't even want to answer, but MsHonney has already left.","Nem quero responder, mas a senhorita Honey já foi embora.");
+ ds_map_add(m,"I don't even want to answer, but MsHonney has already left.","Nem quero responder, mas a Sra. Honney já foi embora.");
  ds_map_add(m,"What... what happened?","O... o que aconteceu?");
  ds_map_add(m,"Hey i'm busy here!","Ei, estou ocupada aqui!");
  ds_map_add(m,"Oh shit!","Ah, merda!");
@@ -2467,18 +2467,18 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"Oh I-I am sorry, you better find a be-better wizard Line.","Ah, d-desculpe. É melhor procurar um ma-mago melhor, Line.");
  ds_map_add(m,"He doesn't look nearly as powerful as the magicians from my time; are they actually that good?","Ele não parece nem de longe tão poderoso quanto os magos da minha época. Eles são mesmo tão bons assim?");
  ds_map_add(m,"Well ... hehehe who knows the truth. but I need your help urgently Naoki.","Bem... hehehe, quem sabe a verdade? Mas preciso urgentemente da sua ajuda, Naoki.");
- ds_map_add(m,"Oh, were you looking for me? I'm sorry I asked MsHonney for a place to practice my show. Although practicing is a bit difficult here it smells strange and everything is wet.","Ah, estavam procurando por mim? Desculpe, pedi à senhorita Honey um lugar para ensaiar meu espetáculo. Embora seja um pouco difícil praticar aqui: o cheiro é estranho e está tudo molhado.");
+ ds_map_add(m,"Oh, were you looking for me? I'm sorry I asked MsHonney for a place to practice my show. Although practicing is a bit difficult here it smells strange and everything is wet.","Ah, estavam procurando por mim? Desculpe, pedi à Sra. Honney um lugar para ensaiar meu espetáculo. Embora seja um pouco difícil praticar aqui: o cheiro é estranho e está tudo molhado.");
  ds_map_add(m,"Naoki we finally find you!","Naoki, finalmente encontramos você!");
  ds_map_add(m,"Hey!! only residents can access that section of the hotel.","Ei!! Só os hóspedes podem acessar essa área do hotel.");
  ds_map_add(m,"Hey!! only the staff can access that section of the hotel.","Ei!! Só os funcionários podem acessar essa área do hotel.");
  ds_map_add(m,"Also that is the floor where baina stays, if something goes wrong we can ask her for help.","Além disso, Baina fica nesse andar. Se algo der errado, podemos pedir ajuda a ela.");
  ds_map_add(m,"I don't think it hurts here is a safe place after all.","Não acho que faça mal. Afinal, este lugar é seguro.");
  ds_map_add(m,"What do you say line?","O que você acha, Line?");
- ds_map_add(m,"Calm I know MsHonney, returning to the subject, it seems she is not from here she had very strange clothes and that's all I know.","Calma, conheço a senhorita Honey. Voltando ao assunto, parece que ela não é daqui. Estava usando roupas muito estranhas, e é só isso que sei.");
+ ds_map_add(m,"Calm I know MsHonney, returning to the subject, it seems she is not from here she had very strange clothes and that's all I know.","Calma, conheço a Sra. Honney. Voltando ao assunto, parece que ela não é daqui. Estava usando roupas muito estranhas, e é só isso que sei.");
  ds_map_add(m,"Lili !! do not be-believe her, that is false it was not like that.","Lili!! N-não acredite nela. Isso é mentira, não foi assim.");
  ds_map_add(m,"Hey! But tell us what she want, the last time I left you alone with a woman in this hotel I found my friend in a puddle of pee!","Ei! Mas conte o que ela quer. Da última vez que deixei você sozinha com uma mulher neste hotel, encontrei minha amiga numa poça de xixi!");
  ds_map_add(m,"Oh no, it seems a lady saw you in the town and asked me if you could find her on the third floor.","Ah, não. Uma senhora viu você na cidade e me perguntou se poderia encontrá-la no terceiro andar.");
- ds_map_add(m,"Yes, does MsHonney ne-need me again <3?","Sim, a senhorita Honey precisa de mim de novo? <3");
+ ds_map_add(m,"Yes, does MsHonney ne-need me again <3?","Sim, a Sra. Honney precisa de mim de novo? <3");
  ds_map_add(m,"Hey you are Line aren't you?","Ei, você é a Line, não é?");
  ds_map_add(m,"Hey you! the girl with blue hair with the fairy.","Ei, você aí! A garota de cabelo azul que está com a fada.");
  ds_map_add(m,"oh cierto losiento lili u.u","Ah, é verdade. Desculpa, Lili. u.u");
@@ -4183,7 +4183,7 @@ if(!ds_exists(global.zh_display_map,ds_type_map)){
  ds_map_add(m,"The sword in the anvil of the purple and green forest remains a mystery to most, but its magic endures, waiting to be discovered by those truly worthy. This legend inspires generations to seek wisdom, purity, and strength in their hearts, in pursuit of a greater purpose in this magical corner of the world.","A espada na bigorna da Floresta Roxa e Verde continua sendo um mistério para a maioria. Mas sua magia perdura, à espera de ser descoberta por alguém verdadeiramente digno. Essa lenda inspira gerações a buscar sabedoria, pureza e força em seus corações, em busca de um propósito maior neste canto mágico do mundo.");
  ds_map_add(m,"The brave who venture into this forest must make a gesture of peace, imitate the purity of a rabbit, and show the strength of a gorilla to lift the sword from the anvil at its purple center. Only a few throughout the centuries have been worthy of this feat and become guardians of the forest, destined to protect peace and harmony in the world.","Os bravos que se aventuram nesta floresta devem fazer um gesto de paz, imitar a pureza de um coelho e demonstrar a força de um gorila para retirar a espada da bigorna em seu centro roxo. Ao longo dos séculos, apenas alguns foram dignos desse feito e se tornaram guardiões da floresta, destinados a proteger a paz e a harmonia do mundo.");
  ds_map_add(m,"In a remote forest with a purple center and shimmering green trees, lies a legendary sword forged by The one Horned god. This unique sword, with an unusual hilt made of balls, can only be claimed by those who demonstrate wisdom, purity, and strength.","Em uma floresta remota, com um centro roxo e árvores verdes cintilantes, encontra-se uma espada lendária forjada pelo Deus de Um Chifre. Essa espada única, com um punho incomum feito de bolas, só pode ser reivindicada por quem demonstrar sabedoria, pureza e força.");
- ds_map_add(m,"The Pelletclad Blade.","A Lâmina Revestida de Bolas.");
+ ds_map_add(m,"The Pelletclad Blade.","A Lâmina Revestida de Projéteis.");
  ds_map_add(m,"*snif snif* Ok :c.","*snif, snif* Está bem. :c");
  ds_map_add(m,"Let's go get it, before you get scolded again for yelling and screaming.","Vamos buscá-la antes que você leve outra bronca por gritar e fazer escândalo.");
  ds_map_add(m,"Oh I am sorry I am sorry I am sorry :c.","Ah, desculpe, desculpe, desculpe! :c");

@@ -13,3 +13,9 @@ Sol çubuk hareket içindir. Sağda **Onayla** (Z) ve **Geri** (X), altta **Dura
 Tıklamak için oyun ekranına dokunun; sürüklemek için basılı tutup hareket ettirin. L/R, sol/sağ fare düğmesini seçer; normal kullanımda L seçin. Üstteki yardım düğmesi menüyü açar. Bir menü seçeneğinin üzerinden sürüklemek onu çalıştırmaz.
 
 [简体中文](README.md) · [English](README.en.md) · [Português](README.pt-BR.md) · [Русский](README.ru.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md)
+
+## Xbox
+
+Xbox oyun kumandası: sol çubuk veya yön tuşları hareket ettirir; A onaylar ya da konuşur; B geri döner; Start duraklatır; Y veya View, Yardım menüsünü açar. Sağ çubuk sanal imleci hareket ettirir. RT veya X sol tıktır; sürüklemek için basılı tutun. LT sağ tıktır. Hassas imleç hareketi için LB, hızlandırmak için RB tuşunu basılı tutun. Kumandayı USB veya Bluetooth ile bağlayın. Sistem kumandayı tanıyorsa ayrıca tuş eşleme yazılımı gerekmez.
+
+Bağlandıktan veya oyuna döndükten sonra devam etmeden önce düğmeleri bırakıp çubukları ortalayın.

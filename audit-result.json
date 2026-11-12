@@ -1,134 +1,89 @@
 {
-  "version": "2.01.04-multilingual-r6",
-  "original_game_hashes_preserved": 5,
+  "version": "2.01.04-multilingual-r7",
   "languages": [
     {
       "locale": "zh-CN",
-      "core_count": 4890,
-      "ui_count": 52,
-      "missing_ids": 0,
-      "empty_entries": 0,
-      "windows_build_checked": true,
-      "android_signature_and_embedded_data_checked": true,
-      "headless_city_load_240_frames": true,
-      "android_device_tested": false,
-      "full_playthrough_tested": false
+      "signature_and_contents_checked": true,
+      "native_axis_helper_included": true,
+      "physical_controller_tested": false,
+      "android_device_tested": false
     },
     {
       "locale": "en",
-      "core_count": 4890,
-      "ui_count": 52,
-      "missing_ids": 0,
-      "empty_entries": 0,
-      "windows_build_checked": true,
-      "android_signature_and_embedded_data_checked": true,
-      "headless_city_load_240_frames": true,
-      "android_device_tested": false,
-      "full_playthrough_tested": false
+      "signature_and_contents_checked": true,
+      "native_axis_helper_included": true,
+      "physical_controller_tested": false,
+      "android_device_tested": false
     },
     {
       "locale": "pt-BR",
-      "core_count": 4890,
-      "ui_count": 52,
-      "missing_ids": 0,
-      "empty_entries": 0,
-      "windows_build_checked": true,
-      "android_signature_and_embedded_data_checked": true,
-      "headless_city_load_240_frames": true,
-      "android_device_tested": false,
-      "full_playthrough_tested": false
+      "signature_and_contents_checked": true,
+      "native_axis_helper_included": true,
+      "physical_controller_tested": false,
+      "android_device_tested": false
     },
     {
       "locale": "ru",
-      "core_count": 4890,
-      "ui_count": 52,
-      "missing_ids": 0,
-      "empty_entries": 0,
-      "windows_build_checked": true,
-      "android_signature_and_embedded_data_checked": true,
-      "headless_city_load_240_frames": true,
-      "android_device_tested": false,
-      "full_playthrough_tested": false
+      "signature_and_contents_checked": true,
+      "native_axis_helper_included": true,
+      "physical_controller_tested": false,
+      "android_device_tested": false
     },
     {
       "locale": "es",
-      "core_count": 4890,
-      "ui_count": 52,
-      "missing_ids": 0,
-      "empty_entries": 0,
-      "windows_build_checked": true,
-      "android_signature_and_embedded_data_checked": true,
-      "headless_city_load_240_frames": true,
-      "android_device_tested": false,
-      "full_playthrough_tested": false
+      "signature_and_contents_checked": true,
+      "native_axis_helper_included": true,
+      "physical_controller_tested": false,
+      "android_device_tested": false
     },
     {
       "locale": "de",
-      "core_count": 4890,
-      "ui_count": 52,
-      "missing_ids": 0,
-      "empty_entries": 0,
-      "windows_build_checked": true,
-      "android_signature_and_embedded_data_checked": true,
-      "headless_city_load_240_frames": true,
-      "android_device_tested": false,
-      "full_playthrough_tested": false
+      "signature_and_contents_checked": true,
+      "native_axis_helper_included": true,
+      "physical_controller_tested": false,
+      "android_device_tested": false
     },
     {
       "locale": "ja",
-      "core_count": 4890,
-      "ui_count": 52,
-      "missing_ids": 0,
-      "empty_entries": 0,
-      "windows_build_checked": true,
-      "android_signature_and_embedded_data_checked": true,
-      "headless_city_load_240_frames": true,
-      "android_device_tested": false,
-      "full_playthrough_tested": false
+      "signature_and_contents_checked": true,
+      "native_axis_helper_included": true,
+      "physical_controller_tested": false,
+      "android_device_tested": false
     },
     {
       "locale": "fr",
-      "core_count": 4890,
-      "ui_count": 52,
-      "missing_ids": 0,
-      "empty_entries": 0,
-      "windows_build_checked": true,
-      "android_signature_and_embedded_data_checked": true,
-      "headless_city_load_240_frames": true,
-      "android_device_tested": false,
-      "full_playthrough_tested": false
+      "signature_and_contents_checked": true,
+      "native_axis_helper_included": true,
+      "physical_controller_tested": false,
+      "android_device_tested": false
     },
     {
       "locale": "ko",
-      "core_count": 4890,
-      "ui_count": 52,
-      "missing_ids": 0,
-      "empty_entries": 0,
-      "windows_build_checked": true,
-      "android_signature_and_embedded_data_checked": true,
-      "headless_city_load_240_frames": true,
-      "android_device_tested": false,
-      "full_playthrough_tested": false
+      "signature_and_contents_checked": true,
+      "native_axis_helper_included": true,
+      "physical_controller_tested": false,
+      "android_device_tested": false
     },
     {
       "locale": "tr",
-      "core_count": 4890,
-      "ui_count": 52,
-      "missing_ids": 0,
-      "empty_entries": 0,
-      "windows_build_checked": true,
-      "android_signature_and_embedded_data_checked": true,
-      "headless_city_load_240_frames": true,
-      "android_device_tested": false,
-      "full_playthrough_tested": false
+      "signature_and_contents_checked": true,
+      "native_axis_helper_included": true,
+      "physical_controller_tested": false,
+      "android_device_tested": false
     }
   ],
-  "town_performance": {
-    "before_gml_ms_per_frame": 39.8,
-    "after_gml_ms_per_frame": 5.68,
-    "method": "same-save local Butterscotch comparison; not an Android-device measurement"
-  },
+  "core_per_locale": 4890,
+  "ui_per_locale": 52,
+  "eight_language_text_corrections": 391,
+  "japanese_placeholder_omissions_replaced": 23,
+  "gamepad_simulated_assertions_per_target": 52,
+  "gamepad_data_targets": [
+    "Windows game data",
+    "Android ported game data"
+  ],
+  "city_smoke_passed_languages": 10,
+  "original_game_files_preserved": 5,
+  "full_playthrough_tested": false,
   "public_game_assets_included": false,
-  "public_apks_included": false,
-  "native_speaker_review_claimed": false
+  "public_apks_included": false
 }

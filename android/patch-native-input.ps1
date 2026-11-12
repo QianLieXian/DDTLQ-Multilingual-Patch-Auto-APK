@@ -54,3 +54,12 @@ $icons=@'
 $text=$text.Replace(' :save_done',$icons)
 [IO.File]::WriteAllText($launcher,$text,(New-Object Text.UTF8Encoding($false)))
 Write-Host 'Touch input: coordinate-first, primary-pointer drag, cancellation/pause release.'
+
+$router=Join-Path $folder 'GamepadRouter.smali'
+$routerText=[IO.File]::ReadAllText($router).Replace("`r`n","`n")
+$axisPattern='(?m)^(\s*)invoke-virtual (\{[^}]+\}), Landroid/view/MotionEvent;->getAxisValue\(I\)F$'
+$axisCount=[regex]::Matches($routerText,$axisPattern).Count
+if($axisCount -lt 8 -or $axisCount -gt 20){throw 'Unexpected pinned gamepad axis handler.'}
+$routerText=[regex]::Replace($routerText,$axisPattern,'$1invoke-static $2, Lcom/qianliexian/ddtlq/GamepadAxis;->value(Landroid/view/MotionEvent;I)F')
+[IO.File]::WriteAllText($router,$routerText,(New-Object Text.UTF8Encoding($false)))
+Write-Host ('Native gamepad axes patched: '+$axisCount)

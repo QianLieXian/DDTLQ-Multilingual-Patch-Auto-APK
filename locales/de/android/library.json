@@ -15,6 +15,7 @@
         "active": true,
         "fancyName": "Standard-Spielstand"
       }
-    ]
+    ],
+    "enablePhysicalControllers": true
   }
 ]

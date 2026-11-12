@@ -6,10 +6,11 @@
   "glyphs12": 2128,
   "glyphs10": 2223,
   "core_sha256": "13cf5f850f822826ec8790de501066616f4beb9db9856ecce67a556377e9d38d",
-  "status": "compiled-local-build-and-city-smoke-passed",
+  "status": "r7-compiled-signed-city-smoke-passed",
   "windows_build_checked": true,
   "android_apk_signature_and_contents_checked": true,
   "city_smoke_checked": true,
+  "physical_controller_tested": false,
   "android_device_tested": false,
   "full_playthrough_tested": false
 }

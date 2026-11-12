@@ -6,9 +6,10 @@ var scheme=argument0, moving="Teclas de dirección", accept="Z", back="X", pause
 if(scheme==1){moving="W A S D";accept="K";back="L";}
 if(scheme==2){moving="W A S D";accept="Barra espaciadora";back="Q";pause="Tab";}
 if(os_type==os_android){moving="Joystick izquierdo";accept="Derecha: OK (Z)";back="Lado derecho: Volver (X)";pause="Botón de pausa en la parte inferior";}
+if(variable_global_exists("zh_pad_device") && global.zh_pad_device>=0){moving="Xbox LS / D-Pad";accept="A";back="B";pause="Start";}
 draw_text(20,52,moving+": Mover");
 draw_text(20,84,accept+": OK / Hablar / Interactuar / Correr");
 draw_text(20,116,back+": Cancelar / Volver");
 draw_text(20,148,pause+": Menú / Pausa / Salir del combate");
-draw_text(20,180,"Toca o usa el ratón: arrastra los bloques    N: pantalla completa");
+if(variable_global_exists("zh_pad_device") && global.zh_pad_device>=0)draw_text(20,180,"RS + RT/X | LT | LB/RB | Y/View");else draw_text(20,180,"Toca o usa el ratón: arrastra los bloques    N: pantalla completa");
 draw_set_font(oldfont);draw_set_color(oldcolor);draw_set_alpha(oldalpha);draw_set_halign(oldh);draw_set_valign(oldv);

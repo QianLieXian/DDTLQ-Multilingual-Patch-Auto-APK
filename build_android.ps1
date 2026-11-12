@@ -44,6 +44,7 @@ try {
     Copy-Item -LiteralPath (Join-Path $sourceDir 'LauncherReady.smali') -Destination (Join-Path $newDex 'Launcher$Ready.smali')
     Copy-Item -LiteralPath (Join-Path $sourceDir 'CrashApp.smali') -Destination (Join-Path $newDex 'CrashApp.smali')
     Copy-Item -LiteralPath (Join-Path $PatchRoot 'android\TouchDispatch.smali') -Destination (Join-Path $newDex 'TouchDispatch.smali')
+    Copy-Item -LiteralPath (Join-Path $PatchRoot 'android\GamepadAxis.smali') -Destination (Join-Path $newDex 'GamepadAxis.smali')
     & (Join-Path $PatchRoot 'android\patch-native-input.ps1') -Stage $stage
     $embedded = Join-Path $stage 'assets\embedded'
     $ddtlq = Join-Path $stage 'assets\ddtlq'
@@ -92,7 +93,7 @@ try {
     $xml.Save($manifestPath)
     $yamlPath=Join-Path $stage 'apktool.yml'
     $yaml=[IO.File]::ReadAllText($yamlPath)
-    $yaml=$yaml -replace 'versionCode: 32','versionCode: 2010406' -replace 'versionName: dev',('versionName: ' + $script:PatchVersion)
+    $yaml=$yaml -replace 'versionCode: 32','versionCode: 2010407' -replace 'versionName: dev',('versionName: ' + $script:PatchVersion)
     [IO.File]::WriteAllText($yamlPath,$yaml,(New-Object Text.UTF8Encoding($false)))
     $unsigned = Join-Path $nativeRoot 'DDTLQ-2.01.04-zh-port-unsigned.apk'
     & $java.FullName '-jar' $apktool 'b' $stage '-o' $unsigned >> (Join-Path $build 'apktool.log')

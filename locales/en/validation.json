@@ -6,12 +6,11 @@
   "glyphs12": 2,
   "glyphs10": 97,
   "core_sha256": "2f4564e1cb0f76578e280a0b0f6a5fdd1a0639b4d56368c22446de2785cb7814",
-  "status": "compiled-local-build-and-city-smoke-passed",
-  "verification": "Compiled with pinned UndertaleModCli; 180-frame controls screen and F9 helper screenshot checked in the existing runner. Android package pending.",
-  "metadata_refresh_reason": "Core text remains exactly the original; internal-sentinel explanatory metadata added.",
+  "status": "r7-compiled-signed-city-smoke-passed",
   "windows_build_checked": true,
   "android_apk_signature_and_contents_checked": true,
   "city_smoke_checked": true,
+  "physical_controller_tested": false,
   "android_device_tested": false,
   "full_playthrough_tested": false
 }

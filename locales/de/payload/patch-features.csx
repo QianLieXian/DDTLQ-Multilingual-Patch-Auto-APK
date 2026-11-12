@@ -8,6 +8,18 @@ var featureRoot=Path.GetDirectoryName(ScriptPath);
 if(Data.GeneralInfo.BytecodeVersion!=17||Data.Fonts.Count!=3||!Data.Strings.Any(s=>s.Content.StartsWith("2.01.04"))||!Data.GameObjects.Any(o=>o.Name.Content=="o_start_variables"))throw new Exception("Unsupported game/version; expected original DDTLQ 2.01.04 VM17");
 var import=new CodeImportGroup(Data);
 foreach(var file in Directory.GetFiles(Path.Combine(featureRoot,"feature-gml"),"*.gml").OrderBy(x=>x))if(!Path.GetFileName(file).StartsWith("gml_Object_"))import.QueueReplace(Path.GetFileNameWithoutExtension(file),File.ReadAllText(file).Replace("__ZH_ROOM_COUNT__",Data.Rooms.Count.ToString()));
+
+// Rewrite only real mouse-coordinate identifiers, preserving quoted game text.
+var padDecompile=new UndertaleModLib.Decompiler.GlobalDecompileContext(Data);
+foreach(var code in Data.Code.ToArray()){
+ if(!code.Instructions.Any(i=>i.ValueVariable!=null && (i.ValueVariable.Name.Content=="mouse_x" || i.ValueVariable.Name.Content=="mouse_y")))continue;
+ var original=new Underanalyzer.Decompiler.DecompileContext(padDecompile,code,Data.ToolInfo.DecompilerSettings).DecompileToString();
+ var rewritten=System.Text.RegularExpressions.Regex.Replace(original,@"""(?:\\.|[^""\\])*""|\bmouse_[xy]\b",m=>m.Value.StartsWith("\"")?m.Value:(m.Value=="mouse_x"?"zh_mouse_x()":"zh_mouse_y()"));
+ import.QueueReplace(code,rewritten);
+}
+import.QueueAppend(Data.GameObjects.First(o=>o.Name.Content=="o_start_variables").EventHandlerFor(EventType.Step,EventSubtypeStep.BeginStep,Data),"zh_pad_poll();");
+import.QueueAppend("gml_Object_o_start_variables_Create_0","\nzh_pad_init();\n");
+
 import.QueueReplace("gml_Script_string_wrap",File.ReadAllText(Path.Combine(featureRoot,"feature-gml","gml_Script_zh_wrap.gml")));
 import.QueueAppend("gml_Object_o_start_variables_Create_0",File.ReadAllText(Path.Combine(featureRoot,"feature-gml","gml_Object_o_zh_tools_Create_0.gml")));
 import.QueueAppend("gml_Object_o_start_variables_Create_0","\nif(os_type==os_android)global.controls=1;\n");
@@ -48,6 +60,10 @@ string fortuneHint=fortuneRows.EnumerateArray().First(r=>r.GetProperty("id").Get
 if(fortuneHint.StartsWith("text_adv_list,"))fortuneHint=fortuneHint.Substring("text_adv_list,".Length).TrimStart();
 string fortuneLiteral="\""+fortuneHint.Replace("\\","\\\\").Replace("\"","\\\"").Replace("\n","\\n").Replace("\r","\\r")+"\"";
 import.QueueFindReplace("gml_Object_o_shop_fortuneteller_Create_0","ds_list_add(\"text_adv_list,On the top floor, you will be met by someone whose attention has been captivated by your potential.\");","ds_list_add(text_adv_list, "+fortuneLiteral+");",true);
+
+// Mouse events bypass polling wrappers: block clicks through the helper overlay.
+foreach(var obj in new[]{"o_square","o_square_respald"})import.QueuePrepend("gml_Object_"+obj+"_Mouse_4","if(global.zh_load_active || global.zh_panel || global.zh_input_cooldown>0 || keyboard_check_pressed(vk_f9) || zh_pad_key(vk_f9,1))exit;\n");
+import.QueuePrepend("gml_Object_o_square_Mouse_7","if(zh_mouse_raw(mb_left,0))exit;\n");
 
 var result=import.Import();if(!result.Successful)throw new Exception(result.PrintAllErrors(true));
 // Redirect only the original calls; wrappers keep their original built-in targets.

@@ -15,6 +15,7 @@
         "active": true,
         "fancyName": "デフォルトセーブ"
       }
-    ]
+    ],
+    "enablePhysicalControllers": true
   }
 ]

@@ -23,3 +23,9 @@
 Toque na tela para clicar; mantenha o dedo pressionado e mova para arrastar. L/R selecionam o botão esquerdo/direito do mouse; use L normalmente. Abra o menu auxiliar pelo botão superior. Arrastar sobre o menu não confirma uma opção.
 
 [简体中文](README.md) · [English](README.en.md) · [Português](README.pt-BR.md) · [Русский](README.ru.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md)
+
+## Xbox
+
+Controles Xbox têm suporte nativo. Use o analógico esquerdo (LS) ou o direcional para se mover; A confirma e inicia conversas, B volta e Start pausa o jogo. Y ou View abre a “Ajuda”. O analógico direito (RS) move o cursor virtual. RT ou X funciona como o botão esquerdo do mouse; mantenha pressionado para arrastar. LT funciona como o botão direito. Segure LB para mover o cursor com precisão ou RB para acelerar. O sistema reconhece controles USB e Bluetooth; não é necessário usar um programa para mapear os botões.
+
+Depois de conectar ou voltar ao jogo, solte os botões e centralize os analógicos antes de continuar.

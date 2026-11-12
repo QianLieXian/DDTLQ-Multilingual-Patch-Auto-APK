@@ -15,3 +15,9 @@ La distribución pública contiene el parche y las herramientas; cada jugador ap
 Toca la pantalla para hacer clic; mantén el dedo y muévelo para arrastrar. L/R seleccionan el botón izquierdo/derecho del ratón; normalmente usa L. Abre el menú de ayuda con el botón superior. Arrastrar por una opción no la activa.
 
 [简体中文](README.md) · [English](README.en.md) · [Português](README.pt-BR.md) · [Русский](README.ru.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md)
+
+## Xbox
+
+Los mandos Xbox tienen soporte nativo. Muévete con el stick izquierdo (LS) o la cruceta; A confirma e inicia conversaciones, B vuelve atrás y Start pausa. Y o View abre Ayuda. El stick derecho (RS) mueve el cursor virtual; RT o X hace clic izquierdo y permite arrastrar al mantenerlo pulsado; LT hace clic derecho. Mantén LB para mover el cursor con precisión o RB para acelerarlo. Conecta el mando por USB o Bluetooth y deja que el sistema lo reconozca; no necesitas programas de asignación de botones.
+
+Tras conectar el mando o volver al juego, suelta los botones y centra los sticks antes de continuar.

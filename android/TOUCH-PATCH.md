@@ -7,3 +7,7 @@ The default layout provides a direction stick, Confirm, Back, Pause and Helper. 
 The frontend modification follows the upstream frontend's AGPL-3.0 licensing; see `licenses` and the upstream source information in the main README. `touch-icons.json` contains original, generated L/R button artwork as PNG data. The build installs these assets into the runner's layout sprite directory.
 
 These source and assembly checks do not substitute for testing every phone or Android version.
+
+## Native controller axes
+
+GamepadAxis.smali preserves Z/RZ input when those ranges exist and falls back to RX/RY only if the preferred range is absent. patch-native-input.ps1 redirects the pinned frontend axis reads to this helper; GamepadRouter still performs Android InputDevice button, trigger, hat, hotplug and pause routing. Both frontend changes follow the upstream AGPL-3.0 licence.

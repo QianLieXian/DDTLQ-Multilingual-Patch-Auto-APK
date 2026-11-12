@@ -113,7 +113,7 @@
 .method public static report(Landroid/content/Context;)Ljava/lang/String;
  .locals 9
  new-instance v0,Ljava/lang/StringBuilder;
- const-string v1,"Relatório local de erros do DDTLQ r6.\n\n"
+ const-string v1,"Relatório local de erros do DDTLQ r7.\n\n"
  invoke-direct {v0,v1},Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
  invoke-virtual {p0},Landroid/content/Context;->getFilesDir()Ljava/io/File;
  move-result-object v1

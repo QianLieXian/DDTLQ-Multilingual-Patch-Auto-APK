@@ -2,7 +2,7 @@
   "locale": "ru",
   "actual_core": 4890,
   "actual_ui": 52,
-  "status": "compiled-local-build-and-city-smoke-passed",
+  "status": "r7-compiled-signed-city-smoke-passed",
   "installable": true,
   "reviewed": true,
   "needs_review_remaining": [],

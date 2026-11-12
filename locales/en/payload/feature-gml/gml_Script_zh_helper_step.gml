@@ -10,18 +10,18 @@ if(keyboard_check_pressed(vk_f10))action=3;
 if(keyboard_check_pressed(vk_f11))action=4;
 if(keyboard_check_pressed(vk_f12))action=5;
 if(global.zh_input_cooldown>0)global.zh_input_cooldown-=1;
-if(keyboard_check_pressed(vk_f9)){panel=!panel;zh_tap_wait=0;global.zh_input_cooldown=3;}
+if((keyboard_check_pressed(vk_f9) || zh_pad_key(vk_f9,true))){panel=!panel;zh_tap_wait=0;zh_tap_x=-1;zh_tap_y=-1;global.zh_input_cooldown=3;}
 if(panel){
- if(keyboard_check_pressed(vk_up))zh_choice=(zh_choice+6) mod 7;
- if(keyboard_check_pressed(vk_down))zh_choice=(zh_choice+1) mod 7;
- if(keyboard_check_pressed(ord("X"))||keyboard_check_pressed(vk_escape)){panel=false;global.zh_input_cooldown=3;}
- else if(global.zh_input_cooldown==0 && (keyboard_check_pressed(ord("Z"))||keyboard_check_pressed(vk_enter))){action=zh_choice;global.zh_input_cooldown=3;}
+ if((keyboard_check_pressed(vk_up) || zh_pad_key(vk_up,true)))zh_choice=(zh_choice+6) mod 7;
+ if((keyboard_check_pressed(vk_down) || zh_pad_key(vk_down,true)))zh_choice=(zh_choice+1) mod 7;
+ if((keyboard_check_pressed(ord("X")) || zh_pad_key(ord("X"),true))||keyboard_check_pressed(vk_escape)){panel=false;global.zh_input_cooldown=3;}
+ else if(global.zh_input_cooldown==0 && ((keyboard_check_pressed(ord("Z")) || zh_pad_key(ord("Z"),true))||keyboard_check_pressed(vk_enter))){action=zh_choice;global.zh_input_cooldown=3;}
 }
 // Sample one frame after release: Android updates cursor coordinates after Step.
 if(zh_tap_wait>0){
  zh_tap_wait-=1;
  if(zh_tap_wait==0){
-  var px=device_mouse_x_to_gui(0),py=device_mouse_y_to_gui(0);
+  var px=zh_device_mouse_x_to_gui(0),py=zh_device_mouse_y_to_gui(0);
   if(!global.zh_port_mode && px>=342 && px<384 && py>=2 && py<24 && zh_tap_x>=342 && zh_tap_y<24){panel=!panel;global.zh_input_cooldown=3;}
   else if(panel && global.zh_input_cooldown==0 && px>=42 && px<342 && py>=40 && py<180 && zh_tap_x>=42 && zh_tap_x<342 && zh_tap_y>=40 && zh_tap_y<180 && floor((py-40)/20)==floor((zh_tap_y-40)/20) && point_distance(px,py,zh_tap_x,zh_tap_y)<=10){
    var row=floor((py-40)/20);
@@ -29,8 +29,8 @@ if(zh_tap_wait>0){
   }
  }
 }
-if(mouse_check_button_pressed(mb_left)){zh_tap_x=device_mouse_x_to_gui(0);zh_tap_y=device_mouse_y_to_gui(0);}
-if(mouse_check_button_released(mb_left))zh_tap_wait=1;
+if(zh_mouse_raw(mb_left,1)){if(global.zh_input_cooldown==0){zh_tap_x=zh_device_mouse_x_to_gui(0);zh_tap_y=zh_device_mouse_y_to_gui(0);}else{zh_tap_x=-1;zh_tap_y=-1;}}
+if(zh_mouse_raw(mb_left,2))zh_tap_wait=1;
 global.zh_panel=panel;
 if(action==6){global.zh_dex=1-global.zh_dex;hint="Bestiary completion option updated. Story victory records remain unchanged.";zh_settings_save();}
 if(action==0){global.zh_gallery=1-global.zh_gallery;with(o_gallery)event_perform(ev_create,0);hint="Gallery option updated.";zh_settings_save();}

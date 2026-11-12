@@ -1,0 +1,3344 @@
+{
+  "version": "2.01.04-multilingual-r7",
+  "reviewer": "Contextual AI editorial review (Codex)",
+  "external_machine_translation_service_used": false,
+  "correction_count": 391,
+  "japanese_placeholder_omissions_replaced": 23,
+  "scope": "All eight non-English/non-Chinese locale files structurally scanned; semantic review of flagged and contextual priority entries. This is not native-speaker approval or exhaustive line-by-line human review.",
+  "corrections": [
+    {
+      "locale": "de",
+      "id": 1566,
+      "old": "Lucy braucht dich, um weitere Quests zu erledigen und sie so zum Fertigstellen ihres Romans zu motivieren. (Um die Quest fortzusetzen, muss Lucy deine Partnerin sein.)",
+      "text": "Erledige weitere Quests, um Lucy zum Fertigstellen ihres Romans zu motivieren. (Um die Quest fortzusetzen, muss Lucy deine Partnerin sein.)",
+      "reason": "Clarify that the player must perform more quests, not that Lucy needs the player in order to do quests herself.",
+      "source_evidence": "translation-source 1566; o_quest_system_Create_0 quest The Lusty Half elf Maid: Improve your reputation, then Lucy needs you to do more quests."
+    },
+    {
+      "locale": "de",
+      "id": 1884,
+      "old": "Sowohl Line als auch die Monster haben eigene Elemente. Diese können stark oder schwach sein.",
+      "text": "Sowohl Line als auch die Monster haben eigene Elemente, die gegenüber anderen Elementen im Vor- oder Nachteil sein können.",
+      "reason": "The tutorial explains relative elemental strengths/weaknesses, not elements that are intrinsically strong or weak in isolation.",
+      "source_evidence": "1883 chart: which type of damage has an advantage over another; 1884 English and Chinese context; 1886 strongest element selects affinity."
+    },
+    {
+      "locale": "de",
+      "id": 1889,
+      "old": "Der Trankwürfel stellt Mana wieder her. Der Würfel mit dem gebrochenen Herzen verringert den Schaden, das Angriffsintervall und die Heilung des Gegners.",
+      "text": "Der Trankwürfel stellt Mana wieder her. Der Würfel mit dem gebrochenen Herzen verringert den Schaden, die Angriffshäufigkeit und die Heilung des Gegners.",
+      "reason": "Correct the original interval/frequency wording error using actual enemy logic. Lowering the interval would mean faster attacks, opposite to this debuff.",
+      "source_evidence": "gml_Object_o_enemie_Step_0.gml lines 10-40: heart_timer=0.75/0.5 while love_time>0, otherwise1; time_to_attack += heart_timer toward unchanged threshold. French frequency wording already agrees with code."
+    },
+    {
+      "locale": "de",
+      "id": 2483,
+      "old": "Leider kann ich ihn nicht finden. Wenn du ihn unbedingt willst, verkaufe ich ihn dir für tausend Arcs.",
+      "text": "Leider kann ich ihn nicht finden. Wenn du die Aktentasche unbedingt willst, verkaufe ich sie dir für tausend Arcs.",
+      "reason": "The unavailable man is the owner, but the sold object is the feminine Aktentasche. Existing repeated ihn makes the offer sound as though the man is being sold.",
+      "source_evidence": "gml_Object_o_npc_kamiko_Other_11.gml:64 text begins You want to buy the briefcase I have? then blackmailing the guy who lost it, followed by sell it for a thousand Arcs."
+    },
+    {
+      "locale": "de",
+      "id": 3066,
+      "old": "Danke. Um zur Bibliothek zu gelangen, folge einfach dieser Straße westlich der Stadt.",
+      "text": "Danke. Um zur Bibliothek zu gelangen, folge dieser Straße nach Westen.",
+      "reason": "Nach Westen gives the required travel direction; westlich der Stadt describes the road location instead.",
+      "source_evidence": "translation-source3066 English follow this road to the west of town and Chinese context 一直往镇子西边走."
+    },
+    {
+      "locale": "de",
+      "id": 4009,
+      "old": "Hallo und einen schönen Tag! Die Onaholes warten auf dich.",
+      "text": "Hallo und einen schönen Tag! Die Wichshülsen warten auf dich.",
+      "reason": "One remaining English plural Onaholes escaped the earlier concordance; align with the established German human-role term.",
+      "source_evidence": "4009 and repeated onahole role terminology 838,849,867,881,2422,3132,3142,5647,5828,6530."
+    },
+    {
+      "locale": "de",
+      "id": 6050,
+      "old": "Nachdem Frau Mshonney Lilis Plan verstanden hat, bringt sie alle Zirkusmitarbeiter in die Mitte.",
+      "text": "Nachdem Frau Honney Lilis Plan verstanden hat, bringt sie alle Zirkusmitarbeiter in die Mitte.",
+      "reason": "Avoid adding Frau before Mshonney: Ms is the source title, not part of the surname. Use the same Frau Honney as 2980 and the adjacent plot.",
+      "source_evidence": "Source MsHonney/Mshonney variants refer to the same circus organizer; 2980,4847,4872 now consistently Frau Honney."
+    },
+    {
+      "locale": "de",
+      "id": 6051,
+      "old": "Lili erzählt Frau Mshonney hinter Lines Rücken alles.",
+      "text": "Lili erzählt Frau Honney hinter Lines Rücken alles.",
+      "reason": "Same organizer as 6050 and 2980; remove the spurious surname Mshonney.",
+      "source_evidence": "translation-source6051 and6050 continuous circus narration; canonical German2980 Frau Honney."
+    },
+    {
+      "locale": "fr",
+      "id": 1602,
+      "old": "Va redémarrer les générateurs. Ils se trouvent dans le sous-sol, à gauche de l’hôpital.",
+      "text": "Va redémarrer les générateurs. Ils se trouvent à gauche, dans le sous-sol de l’hôpital.",
+      "reason": "Keep the generators inside the hospital basement. Current à gauche de l’hôpital can send the player to the left outside the hospital.",
+      "source_evidence": "translation-source1602: generators are in the left basement of the hospital; Chinese 医院左侧的地下室; quest reboot generators."
+    },
+    {
+      "locale": "fr",
+      "id": 2483,
+      "old": "Malheureusement, je ne le trouve pas. Je te le vendrai mille Arcs si tu le veux à ce point.",
+      "text": "Malheureusement, je ne trouve pas son propriétaire. Je te vendrai la mallette mille Arcs si tu la veux à ce point.",
+      "reason": "Distinguish the unfindable owner from the mallette being sold; the latter is feminine, not le.",
+      "source_evidence": "gml_Object_o_npc_kamiko_Other_11.gml:64 source array explicitly distinguishes the guy who lost it from the briefcase offer."
+    },
+    {
+      "locale": "fr",
+      "id": 6773,
+      "old": "Je n'ai pas insisté davantage. Je lui ai dit que j'allais bien et que lui rendre visite quand elle en aurait le temps lui ferait du bien.",
+      "text": "Je n’ai pas insisté davantage. Je lui ai dit que j’allais bien et que rendre visite aux enfants et à leurs responsables, quand elle en aurait le temps, lui ferait du bien.",
+      "reason": "Lui rendre visite is singular and loses the plural people being discussed; make the established group explicit without inventing participants.",
+      "source_evidence": "gml_RoomCC_rm_marael_hause_45_Create.gml:10 talks about the orphans and their caregivers, help these children, then if she had time to visit them."
+    },
+    {
+      "locale": "pt-BR",
+      "id": 1462,
+      "old": "À noite, ele vai até a janela ao lado do quarto de Aldo.",
+      "text": "À noite, vá até a janela ao lado do quarto de Aldo.",
+      "reason": "This is the player’s next quest instruction, not a statement that an unidentified man goes to the window. The source he is a source pronoun error.",
+      "source_evidence": "gml_Object_o_quest_system_Create_0.gml:2 A beautiful family quest stages use player directives;1462 follows player shower stage1463 and precedes Quest complete."
+    },
+    {
+      "locale": "pt-BR",
+      "id": 1576,
+      "old": "Procure pela casa à noite (a casa de Marael).",
+      "text": "Vasculhe a casa de Marael à noite.",
+      "reason": "Procure pela casa means look for the house; the player is already staying there and must search inside it at night.",
+      "source_evidence": "gml_Object_o_quest_system_Create_0.gml:2 quest sequence Go to bed and pretend to be asleep -> search the house at night (Marael’s house) -> defeat Marael."
+    },
+    {
+      "locale": "pt-BR",
+      "id": 1889,
+      "old": "O cubo de poção recupera mana. O cubo de coração partido reduz o dano, o intervalo entre ataques e a cura do inimigo.",
+      "text": "O cubo de poção recupera mana. O cubo de coração partido reduz o dano, a frequência dos ataques e a cura do inimigo.",
+      "reason": "Reducing the interval would increase the attack rate. Actual code slows timer progress, therefore reduces frequency instead.",
+      "source_evidence": "gml_Object_o_enemie_Step_0.gml:10-40 heart_timer drops from1 to0.75/0.5 while love_time is active, and time_to_attack += heart_timer."
+    },
+    {
+      "locale": "pt-BR",
+      "id": 767,
+      "old": "Lâmina revestida de pelotas",
+      "text": "Lâmina Revestida de Projéteis",
+      "reason": "The same book/legendary weapon currently has three different translated titles (pelotas, Projéteis, Bolas); match the author dialogue title.",
+      "source_evidence": "Source767 Pelletclad Blade,2611 author of The Pelletclad Blade,6871 The Pelletclad Blade. Identical distinctive source title."
+    },
+    {
+      "locale": "pt-BR",
+      "id": 6871,
+      "old": "A Lâmina Revestida de Bolas.",
+      "text": "A Lâmina Revestida de Projéteis.",
+      "reason": "Match the established title in the author dialogue2611 and item767; Bolas wrongly suggests a different title/object.",
+      "source_evidence": "translation-source767/2611/6871 all contain the same Pelletclad Blade name."
+    },
+    {
+      "locale": "pt-BR",
+      "id": 5108,
+      "old": "Nem quero responder, mas a senhorita Honey já foi embora.",
+      "text": "Nem quero responder, mas a Sra. Honney já foi embora.",
+      "reason": "The organizer’s surname is Honney. Honey and senhorita appeared only in this segment, obscuring that this is the same Sra. Honney as the quest and password option.",
+      "source_evidence": "English original at this ID MsHonney; Portuguese2980,4847,4872,5889,5896,6050,6051 use Sra. Honney. Preserve original surname spelling."
+    },
+    {
+      "locale": "pt-BR",
+      "id": 5127,
+      "old": "Ah, estavam procurando por mim? Desculpe, pedi à senhorita Honey um lugar para ensaiar meu espetáculo. Embora seja um pouco difícil praticar aqui: o cheiro é estranho e está tudo molhado.",
+      "text": "Ah, estavam procurando por mim? Desculpe, pedi à Sra. Honney um lugar para ensaiar meu espetáculo. Embora seja um pouco difícil praticar aqui: o cheiro é estranho e está tudo molhado.",
+      "reason": "The organizer’s surname is Honney. Honey and senhorita appeared only in this segment, obscuring that this is the same Sra. Honney as the quest and password option.",
+      "source_evidence": "English original at this ID MsHonney; Portuguese2980,4847,4872,5889,5896,6050,6051 use Sra. Honney. Preserve original surname spelling."
+    },
+    {
+      "locale": "pt-BR",
+      "id": 5134,
+      "old": "Calma, conheço a senhorita Honey. Voltando ao assunto, parece que ela não é daqui. Estava usando roupas muito estranhas, e é só isso que sei.",
+      "text": "Calma, conheço a Sra. Honney. Voltando ao assunto, parece que ela não é daqui. Estava usando roupas muito estranhas, e é só isso que sei.",
+      "reason": "The organizer’s surname is Honney. Honey and senhorita appeared only in this segment, obscuring that this is the same Sra. Honney as the quest and password option.",
+      "source_evidence": "English original at this ID MsHonney; Portuguese2980,4847,4872,5889,5896,6050,6051 use Sra. Honney. Preserve original surname spelling."
+    },
+    {
+      "locale": "pt-BR",
+      "id": 5138,
+      "old": "Sim, a senhorita Honey precisa de mim de novo? <3",
+      "text": "Sim, a Sra. Honney precisa de mim de novo? <3",
+      "reason": "The organizer’s surname is Honney. Honey and senhorita appeared only in this segment, obscuring that this is the same Sra. Honney as the quest and password option.",
+      "source_evidence": "English original at this ID MsHonney; Portuguese2980,4847,4872,5889,5896,6050,6051 use Sra. Honney. Preserve original surname spelling."
+    },
+    {
+      "locale": "es",
+      "id": 1723,
+      "old": "Habla con Saeki; está en el sótano del bar.",
+      "text": "Habla con Sieki; está en el sótano del bar.",
+      "reason": "Saeki/Sieki son la misma dueña del bar; se usa el nombre de la ficha de personaje.",
+      "source_evidence": "source[367,368,1722,1723,1724]"
+    },
+    {
+      "locale": "es",
+      "id": 1724,
+      "old": "Ya conoces la contraseña secreta. Ve a la puerta del bar situada a la derecha del mostrador para entrar al sótano VIP y habla con Saeki, la dueña del lugar.",
+      "text": "Ya conoces la contraseña secreta. Ve a la puerta del bar situada a la derecha del mostrador para entrar al sótano VIP y habla con Sieki, la dueña del lugar.",
+      "reason": "Saeki/Sieki son la misma dueña del bar; se usa el nombre de la ficha de personaje.",
+      "source_evidence": "source[367,368,1722,1723,1724]"
+    },
+    {
+      "locale": "es",
+      "id": 4509,
+      "old": "¡Ah! Tu-tu destino está bloqueado. Me cuesta leerlo, pero por",
+      "text": "¡Ah! Tu-tu destino está bloqueado. Me cuesta leerlo, pero por ",
+      "reason": "金額の前の空白が失われ、por50のように連結される。",
+      "source_evidence": "source[4509] ends in ASCII space; source[4510] begins in space; fortune-teller dynamic-price line"
+    },
+    {
+      "locale": "ja",
+      "id": 687,
+      "old": "Liliと交わした契約書。自分の問題をどうにかしたくて、彼女に主人になってもらい、サキュバスの力の鍛え方を教えてもらうよう頼んだ。それに、新しいことにも無理やり挑戦させてほしいって<3。",
+      "text": "リリと交わした契約書。自分の問題をどうにかしたくて、彼女に主人になってもらい、サキュバスの力の鍛え方を教えてもらうよう頼んだ。それに、新しいことにも無理やり挑戦させてほしいって<3。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 687; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 823,
+      "old": "Liliは、サキュバスの力をもっと積極的に鍛えるよう急かしてくる。そこで、店を切り盛りしている猫女を誘惑してみることに。知り合いだから、少しは簡単なはず。",
+      "text": "リリは、サキュバスの力をもっと積極的に鍛えるよう急かしてくる。そこで、店を切り盛りしている猫女を誘惑してみることに。知り合いだから、少しは簡単なはず。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 823; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 827,
+      "old": "村人たちにひどい悪戯をしている猫女がいる。なのに、カリーの娘が犯人だと疑われている。本当の犯人を見つけて、カリーの娘を助けよう！",
+      "text": "村人たちにひどい悪戯をしている猫女がいる。なのに、キャリーの娘が犯人だと疑われている。本当の犯人を見つけて、キャリーの娘を助けよう！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 827; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 850,
+      "old": "Liliに、ひどく臭うからお風呂に入れと言われた。",
+      "text": "リリに、ひどく臭うからお風呂に入れと言われた。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 850; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 881,
+      "old": "Liliは、Lineがセックスについてまるで無知だと思って腹を立てている。どちらが優れたオナホールか、勝負を挑んできた。",
+      "text": "リリは、ラインがセックスについてまるで無知だと思って腹を立てている。どちらが優れたオナホールか、勝負を挑んできた。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 881; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1432,
+      "old": "Liliのフェラ。",
+      "text": "リリのフェラ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1432; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1433,
+      "old": "Lineのフェラ。",
+      "text": "ラインのフェラ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1433; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1463,
+      "old": "カリーと寝たあと、自分が汚れたように感じる。彼女のシャワーを借りて体を洗おう。",
+      "text": "キャリーと寝たあと、自分が汚れたように感じる。彼女のシャワーを借りて体を洗おう。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1463; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1464,
+      "old": "カリーが話をしたがっているようだ。彼女のところへ行こう。",
+      "text": "キャリーが話をしたがっているようだ。彼女のところへ行こう。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1464; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1465,
+      "old": "カリーの家を探索する……",
+      "text": "キャリーの家を探索する……",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1465; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1466,
+      "old": "カリーに昼食へ招待された。昼間に彼女の家へ行こう。",
+      "text": "キャリーに昼食へ招待された。昼間に彼女の家へ行こう。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1466; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1596,
+      "old": "カットシーン終了：Line、頼む、クソッ。",
+      "text": "カットシーン終了：ライン、頼む、クソッ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1596; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1628,
+      "old": "Liliはヴァセラに、自分の家に泊まってもいいと伝える。",
+      "text": "リリはヴァセラに、自分の家に泊まってもいいと伝える。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1628; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1644,
+      "old": "Lineはカミコと取引をする。",
+      "text": "ラインはカミコと取引をする。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1644; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1646,
+      "old": "Liliはカミコと取引をする。",
+      "text": "リリはカミコと取引をする。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1646; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1670,
+      "old": "Liliと話す",
+      "text": "リリと話す",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1670; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1676,
+      "old": "Liliが話しかけてくる。",
+      "text": "リリが話しかけてくる。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1676; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1679,
+      "old": "カリーの娘と一緒に戻る",
+      "text": "キャリーの娘と一緒に戻る",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1679; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1703,
+      "old": "カリーと話す。（赤い店の店員。）",
+      "text": "キャリーと話す。（赤い店の店員。）",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1703; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1705,
+      "old": "カリーといちゃつく。（赤い店の店員。）",
+      "text": "キャリーといちゃつく。（赤い店の店員。）",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1705; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1706,
+      "old": "カリーと話す。（赤い店の女性店員。）",
+      "text": "キャリーと話す。（赤い店の女性店員。）",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1706; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1723,
+      "old": "サエキと話せ。彼女はバーの地下室にいる。",
+      "text": "シエキと話せ。彼女はバーの地下室にいる。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1723; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1725,
+      "old": "Liliはハニーさんがメモを残すのを見たと言っていた。ホテルの地下室でそのメモを探せ。",
+      "text": "リリはハニーさんがメモを残すのを見たと言っていた。ホテルの地下室でそのメモを探せ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1725; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1755,
+      "old": "プッシエルが2階を掃除するのを手伝え。",
+      "text": "プシエルが2階を掃除するのを手伝え。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1755; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1884,
+      "old": "Lineにもモンスターにも、それぞれ属性がある。属性によって、相手に強かったり弱かったりするんだ。",
+      "text": "ラインにもモンスターにも、それぞれ属性がある。属性によって、相手に強かったり弱かったりするんだ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1884; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 1886,
+      "old": "Lineの属性は、斬撃・刺突・打撃・魔法のうち、最も強い属性によって決まる。",
+      "text": "ラインの属性は、斬撃・刺突・打撃・魔法のうち、最も強い属性によって決まる。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 1886; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 2353,
+      "old": "実は知ってる。でも、ただの道徳の基本だからって理由だけで、あなたがそれをしないことを願うわ。",
+      "text": "実は知ってる。でも、せめて最低限の良心があるなら、そんなことはしないでほしい。",
+      "reason": "否定と理由の関係を自然に修正する。元の日本語は「道徳だからしない」への願いとして不自然だった。",
+      "source_evidence": "source[2353] + zh_context: 希望你别这么做、哪怕只是基本道德"
+    },
+    {
+      "locale": "ja",
+      "id": 2408,
+      "old": "Line、伝えておく。もしまた私を見かけたら、機会があれば必ず殺してくれ。",
+      "text": "ライン、伝えておく。もしまた私を見かけたら、機会があれば必ず殺してくれ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 2408; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 2693,
+      "old": "見て、あの猫がリリよ。カリーを刑務所送りにしかけた子。まあ、結局カリーは刑務所に入ったんだけどね。",
+      "text": "見て、リリ。キャリーを刑務所送りにしかけた、あの猫だよ。まあ、結局キャリーは刑務所に入っちゃったけど、分かるでしょ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。; Look Lili はリリへの呼びかけであり、猫の正体がリリという意味ではない。",
+      "source_evidence": "source ID 2693; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ; source[2693]; fairy Lili and actual slime-cat culprit quest[827,1685]"
+    },
+    {
+      "locale": "ja",
+      "id": 2741,
+      "old": "*Lineは赤面する* そ、そうだね。たぶん無理かな、えへへ。",
+      "text": "*ラインは赤面する* そ、そうだね。たぶん無理かな、えへへ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 2741; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 2793,
+      "old": "Liliがアリーナをなだめる",
+      "text": "リリがアリーナをなだめる",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 2793; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 2794,
+      "old": "Lineがアリーナをなだめる",
+      "text": "ラインがアリーナをなだめる",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 2794; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 2875,
+      "old": "やっと*げっぷ*酔っぱらって、カリーをデートに誘う勇気が出てきた。",
+      "text": "やっと*げっぷ*酔っぱらって、キャリーをデートに誘う勇気が出てきた。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 2875; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 3056,
+      "old": "彼女はそこにいるよ。心配しないで、カリー。",
+      "text": "彼女はそこにいるよ。心配しないで、キャリー。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 3056; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 3096,
+      "old": "*Lineの口を手で塞ぎ、ささやく* 黙って。",
+      "text": "*ラインの口を手で塞ぎ、ささやく* 黙って。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 3096; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 3442,
+      "old": "Lineのくすぐり遊び :v",
+      "text": "ラインのくすぐり遊び :v",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 3442; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 3452,
+      "old": "Lineの足踏み",
+      "text": "ラインの足踏み",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 3452; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 3465,
+      "old": "Lineのアナル舐め",
+      "text": "ラインのアナル舐め",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 3465; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 3466,
+      "old": "Lineの自己崇拝とLiliの匂い嗅ぎ",
+      "text": "ラインの自己崇拝とリリの匂い嗅ぎ",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 3466; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 3468,
+      "old": "Lineとギルフリード",
+      "text": "ラインとギルドフリード",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 3468; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 3469,
+      "old": "Lineとサクラのセックス",
+      "text": "ラインとサクラのセックス",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 3469; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 3470,
+      "old": "Lineのよだれたっぷりフェラ",
+      "text": "ラインのよだれたっぷりフェラ",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 3470; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 3484,
+      "old": "Lineのグローリーホール・フェラ",
+      "text": "ラインのグローリーホール・フェラ",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 3484; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 3485,
+      "old": "Liliのグローリーホール・フェラ",
+      "text": "リリのグローリーホール・フェラ",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 3485; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 3711,
+      "old": "本当に？ カリー、そんなにいいの？ はは、じゃあこのジョークを持ちネタにしようかな。",
+      "text": "本当に？ キャリー、そんなにいいの？ はは、じゃあこのジョークを持ちネタにしようかな。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 3711; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 3727,
+      "old": "やあ、カリー。太ももは茶色いの？",
+      "text": "やあ、キャリー。太ももは茶色いの？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 3727; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 3826,
+      "old": "Liliのいる場所をタッチするか、ボタンを押してね<3",
+      "text": "リリのいる場所をタッチするか、ボタンを押してね<3",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 3826; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 3951,
+      "old": "Lineの絶頂",
+      "text": "ラインの絶頂",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 3951; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 4761,
+      "old": "Lineが18歳になったとき、妖精の相棒を授かった。二人は一緒に、Lineの友人を探す旅に出た。",
+      "text": "ラインが18歳になったとき、妖精の相棒を授かった。二人は一緒に、ラインの友人を探す旅に出た。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 4761; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 4819,
+      "old": "*Lineはマリアの耳元で願いをささやく*",
+      "text": "*ラインはマリアの耳元で願いをささやく*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 4819; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 4824,
+      "old": "Lineとマルイアはその場に残り、鉱夫たちは全員洞窟を出ていく。",
+      "text": "ラインとマルイアはその場に残り、鉱夫たちは全員洞窟を出ていく。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 4824; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 4876,
+      "old": "LineとLiliは、ちょうどショーを聞けるタイミングで到着した。",
+      "text": "ラインとリリは、ちょうどショーを聞けるタイミングで到着した。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 4876; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 4897,
+      "old": "カリーに話しかけて。",
+      "text": "キャリーに話しかけて。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 4897; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 4986,
+      "old": "カリー、よ、喜んで。",
+      "text": "キャリー、よ、喜んで。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 4986; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 4990,
+      "old": "ああ……カリー、本当にごめんなさい。",
+      "text": "ああ……キャリー、本当にごめんなさい。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 4990; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 4993,
+      "old": "本当によかったわね、カリー。これで子供たちと一緒にいられるわ。",
+      "text": "本当によかったわね、キャリー。これで子供たちと一緒にいられるわ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 4993; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 4995,
+      "old": "カリー、ついに農場刑務所から出られたのね！",
+      "text": "キャリー、ついに農場刑務所から出られたのね！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 4995; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5016,
+      "old": "よし、カリーに告白できるくらいには酔ったぞ。",
+      "text": "よし、キャリーに告白できるくらいには酔ったぞ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5016; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5097,
+      "old": "*Lineは秘密の合言葉を覚えた*",
+      "text": "*ラインは秘密の合言葉を覚えた*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5097; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5165,
+      "old": "*Lineがボトルの栓を抜くと、アイヴィーは元の身長に戻った*",
+      "text": "*ラインがボトルの栓を抜くと、アイヴィーは元の身長に戻った*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5165; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5173,
+      "old": "これで魔女の集会に参加できるの？",
+      "text": "これでサバトに参加できるの？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5173; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5260,
+      "old": "Lineは自分がベッドにいることに気づき、サムがここまで運んでくれたのだと理解する。",
+      "text": "ラインは自分がベッドにいることに気づき、サムがここまで運んでくれたのだと理解する。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5260; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5261,
+      "old": "LiliがLineを起こす。",
+      "text": "リリがラインを起こす。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5261; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5305,
+      "old": "くそっ、あの女、魔女の集会で俺のタマを蹴りやがった。",
+      "text": "くそっ、あの女、サバトで俺のタマを蹴りやがった。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5305; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5411,
+      "old": "*Lineはロボットから漂う匂いに気づき始める* んん……あのタンク……あの触手……あっ、どうすればいいか分かった！",
+      "text": "*ラインはロボットから漂う匂いに気づき始める* んん……あのタンク……あの触手……あっ、どうすればいいか分かった！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5411; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5547,
+      "old": "*Lineはサムの筋肉質で汗ばんだ身体を、いやらしい目つきで見つめずにはいられない*",
+      "text": "*ラインはサムの筋肉質で汗ばんだ身体を、いやらしい目つきで見つめずにはいられない*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5547; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5593,
+      "old": "Lineはミルクの入ったバケツを取り出し始める。",
+      "text": "ラインはミルクの入ったバケツを取り出し始める。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5593; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5732,
+      "old": "*Lineの頭をなでる* よしよし、大丈夫だよ。",
+      "text": "*ラインの頭をなでる* よしよし、大丈夫だよ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5732; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5835,
+      "old": "こんにちは、SailorCumよ。後ろを向いて。アナルを舐めてあげる。",
+      "text": "こんにちは、セーラーカムよ。後ろを向いて。アナルを舐めてあげる。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5835; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5839,
+      "old": "耳だけは処女のお嬢さん、10アーク払うわ。それ以上でも以下でもない。その代わり、Lineにペニスを生やすための異変の果実を渡してちょうだい。",
+      "text": "耳だけは処女のお嬢さん、10アーク払うわ。それ以上でも以下でもない。その代わり、ラインにペニスを生やすための異変の果実を渡してちょうだい。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5839; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5899,
+      "old": "*じゅるっ* ああ〜、今回は私がこの仕事を担当することになったけど、SailorCumはいつだって全力よ！ ムハハハハ！",
+      "text": "*じゅるっ* ああ〜、今回は私がこの仕事を担当することになったけど、セーラーカムはいつだって全力よ！ ムハハハハ！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5899; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5937,
+      "old": "*Lineは自分のペニスに手を滑らせ、Liliとルーシー、そして自分の淫液の匂いを嗅ぐ* ああ、どういたしまして、ルーシー。*くんくん* 私たちはそのためにここにいるんだから。",
+      "text": "*ラインは自分のペニスに手を滑らせ、リリとルーシー、そして自分の淫液の匂いを嗅ぐ* ああ、どういたしまして、ルーシー。*くんくん* 私たちはそのためにここにいるんだから。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5937; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5955,
+      "old": "*Lineが机の引き出しを開ける* うーん、果物がいっぱい入っているね :v。",
+      "text": "*ラインが机の引き出しを開ける* うーん、果物がいっぱい入っているね :v。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5955; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 5995,
+      "old": "*Lineはあなたのために喜んでいるふりをしながら、笑顔の裏で必死に涙をこらえている*",
+      "text": "*ラインはあなたのために喜んでいるふりをしながら、笑顔の裏で必死に涙をこらえている*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 5995; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6012,
+      "old": "LiliとLineは漁師をじっと見つめる。",
+      "text": "リリとラインは漁師をじっと見つめる。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6012; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6041,
+      "old": "もちろんよ、Line <3。あなたの戦闘能力も向上しているみたいだしね。",
+      "text": "もちろんよ、ライン <3。あなたの戦闘能力も向上しているみたいだしね。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6041; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6048,
+      "old": "よし、私の手品にはあなたが必要よ、Line。じっと立っていて、それからハイグレ！ と叫んで！",
+      "text": "よし、私の手品にはあなたが必要よ、ライン。じっと立っていて、それからハイグレ！ と叫んで！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6048; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6050,
+      "old": "Liliの計画を理解したハニーさんは、サーカスの全員を中央に集める。",
+      "text": "リリの計画を理解したハニーさんは、サーカスの全員を中央に集める。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6050; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6051,
+      "old": "LiliはLineに内緒で、計画のすべてをハニーさんに話す。",
+      "text": "リリはラインに内緒で、計画のすべてをハニーさんに話す。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6051; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6061,
+      "old": "Line、今すぐその椅子に座って！",
+      "text": "ライン、今すぐその椅子に座って！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6061; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6065,
+      "old": "もう、Lili！ あなたって本当に救いようがない！ 許してあげられるか分からないわ。",
+      "text": "もう、リリ！ あなたって本当に救いようがない！ 許してあげられるか分からないわ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6065; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6068,
+      "old": "Lili、恥ずかしすぎるよ！ みんなに見られてたし、私までびしょ濡れになっちゃった。いったい何なの？！ それにハイグレって何？！",
+      "text": "リリ、恥ずかしすぎるよ！ みんなに見られてたし、私までびしょ濡れになっちゃった。いったい何なの？！ それにハイグレって何？！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6068; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6082,
+      "old": "ああ、Line、お金のことなんだけど……",
+      "text": "ああ、ライン、お金のことなんだけど……",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6082; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6106,
+      "old": "Lili、意地悪しないで！",
+      "text": "リリ、意地悪しないで！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6106; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6118,
+      "old": "おい、何なんだよ！ Lineは見た目によらず、かなり強いんだぞ。",
+      "text": "おい、何なんだよ！ ラインは見た目によらず、かなり強いんだぞ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6118; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6125,
+      "old": "廃屋の隣で待っているわ。Line、遅れないで。来なければ一人で先に進むから。",
+      "text": "廃屋の隣で待っているわ。ライン、遅れないで。来なければ一人で先に進むから。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6125; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6126,
+      "old": "……任務に行け、Alura。",
+      "text": "……任務に行け、アルーラ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6126; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6132,
+      "old": "ありがとう、Lili。",
+      "text": "ありがとう、リリ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6132; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6134,
+      "old": "いや、Liliの言うとおりだ。これを手伝ってくれれば、行方不明の友人のことを衛兵全員に伝えておこう。誰かが見つけたら、私に報告が来る。",
+      "text": "いや、リリの言うとおりだ。これを手伝ってくれれば、行方不明の友人のことを衛兵全員に伝えておこう。誰かが見つけたら、私に報告が来る。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6134; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6135,
+      "old": "Lili、落ち着いて。大したことじゃないよ。",
+      "text": "リリ、落ち着いて。大したことじゃないよ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6135; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6140,
+      "old": "この問題を解決するため、Aluraを雇った。",
+      "text": "この問題を解決するため、アルーラを雇った。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6140; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6143,
+      "old": "やあ、Line！",
+      "text": "やあ、ライン！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6143; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6144,
+      "old": "Line、廃屋の隣で待っているわ。遅れないでね。来なければ一人で先に進むから。",
+      "text": "ライン、廃屋の隣で待っているわ。遅れないでね。来なければ一人で先に進むから。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6144; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6148,
+      "old": "まあ、そういうわけだ。なぜか衛兵たちは昼間に持ち場を離れてしまう。そこで、この問題に対処するためにAluraを雇ったんだ。",
+      "text": "まあ、そういうわけだ。なぜか衛兵たちは昼間に持ち場を離れてしまう。そこで、この問題に対処するためにアルーラを雇ったんだ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6148; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6150,
+      "old": "それとLili、狂人みたいに振る舞うのはやめて。",
+      "text": "それとリリ、狂人みたいに振る舞うのはやめて。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6150; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6151,
+      "old": "二人ともやめなさい。Alura、あなたの髪が乱れているのは確かよ。",
+      "text": "二人ともやめなさい。アルーラ、あなたの髪が乱れているのは確かよ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6151; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6156,
+      "old": "Lili、そんなに怒らないで！",
+      "text": "リリ、そんなに怒らないで！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6156; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6165,
+      "old": "Line、そのクソ鎧を着てこい！",
+      "text": "ライン、そのクソ鎧を着てこい！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6165; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6175,
+      "old": "助けなきゃ。急いで、Line！",
+      "text": "助けなきゃ。急いで、ライン！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6175; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6176,
+      "old": "Liliが今、攻撃している！",
+      "text": "リリが今、攻撃している！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6176; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6179,
+      "old": "早く、Line。病院に入らなきゃ。あいつら、建物の中のどこかから出てきているみたい！",
+      "text": "早く、ライン。病院に入らなきゃ。あいつら、建物の中のどこかから出てきているみたい！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6179; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6193,
+      "old": "じゃあ、これだけだ。もう一人が帰ってから出ていた先走り液だ。*数滴をLineの口に垂らす*",
+      "text": "じゃあ、これだけだ。もう一人が帰ってから出ていた先走り液だ。*数滴をラインの口に垂らす*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6193; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6199,
+      "old": "あああっ、ごめんねLili！ もう我慢できないの。お尻が疼いてる。彼が必要なの。彼こそ運命の人かもしれない。あなたには絶対に飽きたりしないから！",
+      "text": "あああっ、ごめんねリリ！ もう我慢できないの。お尻が疼いてる。彼が必要なの。彼こそ運命の人かもしれない。あなたには絶対に飽きたりしないから！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6199; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6200,
+      "old": "ヒュヒュヒュ、ずいぶん濡れてるな。ご褒美をやろう。俺のでかくて汗臭い金玉を嗅がせてやる。*ズボンを下ろし、巨大な金玉をLineの目の前に突き出す*",
+      "text": "ヒュヒュヒュ、ずいぶん濡れてるな。ご褒美をやろう。俺のでかくて汗臭い金玉を嗅がせてやる。*ズボンを下ろし、巨大な金玉をラインの目の前に突き出す*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6200; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6233,
+      "old": "Liliは天使みたい。いつだって私のそばにいてくれる。",
+      "text": "リリは天使みたい。いつだって私のそばにいてくれる。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6233; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6239,
+      "old": "Rynnは眠ってしまったわ。あなたは情報を探しに来たんじゃ――",
+      "text": "リンは眠ってしまったわ。あなたは情報を探しに来たんじゃ――",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6239; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6240,
+      "old": "Line、やっと見つけた！",
+      "text": "ライン、やっと見つけた！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6240; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6250,
+      "old": "*Lineはヴァセラの手を取る* 大丈夫、心配しないで。思っているより早く家に帰れるよ<3",
+      "text": "*ラインはヴァセラの手を取る* 大丈夫、心配しないで。思っているより早く家に帰れるよ<3",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6250; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6261,
+      "old": "*小声で* え、Line、頼むから黙って。彼の殺気を本当に感じる。",
+      "text": "*小声で* え、ライン、頼むから黙って。彼の殺気を本当に感じる。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6261; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6266,
+      "old": "*小声で* Line、この人怖いよ。首の周りに雷の痕があるなんて、ものすごい力を持っていそう。ここから逃げたほうがいい。",
+      "text": "*小声で* ライン、この人怖いよ。首の周りに雷の痕があるなんて、ものすごい力を持っていそう。ここから逃げたほうがいい。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6266; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6267,
+      "old": "*泣き始める* Lili、ど、どうしていつもみたいに私をかばってくれないの？",
+      "text": "*泣き始める* リリ、ど、どうしていつもみたいに私をかばってくれないの？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6267; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6274,
+      "old": "えっと、そこまで言うなら……へへ。この次元では人殺しが悪いことだなんて、本当に残念ね、Lili<3。",
+      "text": "えっと、そこまで言うなら……へへ。この次元では人殺しが悪いことだなんて、本当に残念ね、リリ<3。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6274; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6281,
+      "old": "（くそっ、どうして今まで気づかなかった？ Lineはこの男に欲情していて、本当の状況が見えていない。）",
+      "text": "（くそっ、どうして今まで気づかなかった？ ラインはこの男に欲情していて、本当の状況が見えていない。）",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6281; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6285,
+      "old": "今はやめて、Lili。それで、どうやってエネルギーを与えるの？",
+      "text": "今はやめて、リリ。それで、どうやってエネルギーを与えるの？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6285; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6286,
+      "old": "*小声で* ねえ、Line、今の話がどういう方向に進んでいるか聞こえた？",
+      "text": "*小声で* ねえ、ライン、今の話がどういう方向に進んでいるか聞こえた？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6286; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6289,
+      "old": "Vasera the Darkbright",
+      "text": "ヴァセラ the Darkbright",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6289; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6306,
+      "old": "Line、あいつのケツを蹴り飛ばす準備をして！",
+      "text": "ライン、あいつのケツを蹴り飛ばす準備をして！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6306; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6322,
+      "old": "そうでしょ、Line？ Line？ 聞いてるの、このバカ！",
+      "text": "そうでしょ、ライン？ ライン？ 聞いてるの、このバカ！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6322; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6324,
+      "old": "Lili、あ、あいつの……あそこを見て。",
+      "text": "リリ、あ、あいつの……あそこを見て。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6324; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6325,
+      "old": "さあLine、とどめを刺して！",
+      "text": "さあライン、とどめを刺して！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6325; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6327,
+      "old": "さようなら、Line。ありがとう。あなたのおかげで、少しはストレスが和らいだと思う。",
+      "text": "さようなら、ライン。ありがとう。あなたのおかげで、少しはストレスが和らいだと思う。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6327; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6328,
+      "old": "元気でね、ナオキ。そういえば、私の名前はLineよ。",
+      "text": "元気でね、ナオキ。そういえば、私の名前はラインよ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6328; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6343,
+      "old": "Line、Sabbathの場所が分かったと思う。",
+      "text": "ライン、サバトの場所が分かったと思う。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6343; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6344,
+      "old": "運がいいわね。今日は彼女がSabbathの入口を警備する番だそうよ。",
+      "text": "運がいいわね。今日は彼女がサバトの入口を警備する番だそうよ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6344; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6346,
+      "old": "悪いな、兄弟。前回のSabbathでは彼女とヤッたんだ。ハハハ。",
+      "text": "悪いな、兄弟。前回のサバトでは彼女とヤッたんだ。ハハハ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6346; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6355,
+      "old": "Sabbath？ それはいったい何なんだ？",
+      "text": "サバト？ それはいったい何なんだ？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6355; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6356,
+      "old": "はあ、明日別の持ち場を割り当てられたら、またSabbathに行こうぜ。",
+      "text": "はあ、明日別の持ち場を割り当てられたら、またサバトに行こうぜ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6356; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6368,
+      "old": "もちろん。心配しないで。私とLiliは戦いに慣れているから、一緒なら安全よ<3。",
+      "text": "もちろん。心配しないで。私とリリは戦いに慣れているから、一緒なら安全よ<3。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6368; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6378,
+      "old": "ほら、Lili？ やっぱり何かおかしいと思ったんだ。",
+      "text": "ほら、リリ？ やっぱり何かおかしいと思ったんだ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6378; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6382,
+      "old": "Lili。",
+      "text": "リリ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6382; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6386,
+      "old": "Lili、ここに残ってもいいよ。無理についてこさせたりしないから。",
+      "text": "リリ、ここに残ってもいいよ。無理についてこさせたりしないから。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6386; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6393,
+      "old": "Lili、こ、これが唯一のチャンスなんだ。",
+      "text": "リリ、こ、これが唯一のチャンスなんだ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6393; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6420,
+      "old": "やあ、Line。見て！ 占いを教えてくれる先生を見つけたの。",
+      "text": "やあ、ライン。見て！ 占いを教えてくれる先生を見つけたの。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6420; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6435,
+      "old": "どういたしまして。私はLine、あなたの頼れるヒロインだからね :D。",
+      "text": "どういたしまして。私はライン、あなたの頼れるヒロインだからね :D。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6435; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6437,
+      "old": "Lineはようやく片付けを終え、恥ずかしい出来事の痕跡は何も残らなかった。",
+      "text": "ラインはようやく片付けを終え、恥ずかしい出来事の痕跡は何も残らなかった。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6437; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6439,
+      "old": "Lineは精液の水たまりを、できるだけ急いで掃除し始める。",
+      "text": "ラインは精液の水たまりを、できるだけ急いで掃除し始める。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6439; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6455,
+      "old": "数分後、Aluraは落ち着きを取り戻した。",
+      "text": "数分後、アルーラは落ち着きを取り戻した。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6455; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6457,
+      "old": "何か起こる前に、LineとLiliがAluraを押さえつける。",
+      "text": "何か起こる前に、ラインとリリがアルーラを押さえつける。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6457; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6459,
+      "old": "くそっ、Line！ 今こそ介入する時よ！",
+      "text": "くそっ、ライン！ 今こそ介入する時よ！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6459; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6466,
+      "old": "うそでしょ、Line！ 見て、あいつらヘリコプターをやってる！",
+      "text": "うそでしょ、ライン！ 見て、あいつらヘリコプターをやってる！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6466; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6483,
+      "old": "よくやったわ、Lili。<3",
+      "text": "よくやったわ、リリ。<3",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6483; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6489,
+      "old": "Line、ちょっと待って。何とかできるか考えてみよう。",
+      "text": "ライン、ちょっと待って。何とかできるか考えてみよう。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6489; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6495,
+      "old": "ああ、Lili、もう我慢できないよ。",
+      "text": "ああ、リリ、もう我慢できないよ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6495; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6502,
+      "old": "Lili、電球を壊せる？ そうすれば衛兵に私たちが通るところを見られずに済むかもしれない。",
+      "text": "リリ、電球を壊せる？ そうすれば衛兵に私たちが通るところを見られずに済むかもしれない。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6502; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6508,
+      "old": "Line、残りのアークを探して、全部燃やさなきゃ。",
+      "text": "ライン、残りのアークを探して、全部燃やさなきゃ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6508; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6519,
+      "old": "残念ながら、ヴァスキ、Line、Liliは追い詰められてしまう。",
+      "text": "残念ながら、ヴァスキ、ライン、リリは追い詰められてしまう。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6519; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6527,
+      "old": "ああ、Lineって本当にいい人ね。だから好きなのかも。へへ。",
+      "text": "ああ、ラインって本当にいい人ね。だから好きなのかも。へへ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6527; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6529,
+      "old": "待って、Lineは何もしていない。彼女を連れてきたのは私よ。全部私の責任なの。",
+      "text": "待って、ラインは何もしていない。彼女を連れてきたのは私よ。全部私の責任なの。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6529; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6541,
+      "old": "違う、このロバ！ バーの地下でVIP向けのサービスをして稼いだ金のことだよ。Lineだって場所を知っている。",
+      "text": "違う、このロバ！ バーの地下でVIP向けのサービスをして稼いだ金のことだよ。ラインだって場所を知っている。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6541; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6556,
+      "old": "Line、触らないで。アークの入った袋から少しこぼれただけよ。これも証拠として持っていきましょう。",
+      "text": "ライン、触らないで。アークの入った袋から少しこぼれただけよ。これも証拠として持っていきましょう。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6556; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6564,
+      "old": "うん、そうね、Line。でも、何かおかしいわ。",
+      "text": "うん、そうね、ライン。でも、何かおかしいわ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6564; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6567,
+      "old": "Line、早く、その花を……*咳き込む* 取って、お願い。",
+      "text": "ライン、早く、その花を……*咳き込む* 取って、お願い。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6567; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6570,
+      "old": "私ももう我慢できない。どうしてもやらなきゃ。*ベルはLineの頭に足を乗せる*",
+      "text": "私ももう我慢できない。どうしてもやらなきゃ。*ベルはラインの頭に足を乗せる*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6570; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6573,
+      "old": "ああ、Line、これはまずいよ。",
+      "text": "ああ、ライン、これはまずいよ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6573; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6575,
+      "old": "本当にありがとう、Line。どうやってお返しすればいいか分からないわ。",
+      "text": "本当にありがとう、ライン。どうやってお返しすればいいか分からないわ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6575; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6578,
+      "old": "ごめんなさい、Line。花のせいで攻撃的になってしまったの。大丈夫？",
+      "text": "ごめんなさい、ライン。花のせいで攻撃的になってしまったの。大丈夫？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6578; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6584,
+      "old": "*発情したナオキの先走り液をLineが感じ取る。* 心配しないで。で、できるだけ早く探してくる。",
+      "text": "*発情したナオキの先走り液をラインが感じ取る。* 心配しないで。で、できるだけ早く探してくる。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6584; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6607,
+      "old": "材料は集まった、Line？",
+      "text": "材料は集まった、ライン？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6607; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6608,
+      "old": "見て、Line。もう一匹狼男がいるよ。こ、ここまで頑張ったんだから、き、君にもご褒美が必要だよね~ こ、こいつらは少し攻、攻撃的だけど、君は乱暴なのが好きだよね？ そ、そうでしょ？~~ *ナオキは拘束を解き、狼男たちが二人に飛びかかって好き放題するに任せる*",
+      "text": "見て、ライン。もう一匹狼男がいるよ。こ、ここまで頑張ったんだから、き、君にもご褒美が必要だよね~ こ、こいつらは少し攻、攻撃的だけど、君は乱暴なのが好きだよね？ そ、そうでしょ？~~ *ナオキは拘束を解き、狼男たちが二人に飛びかかって好き放題するに任せる*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6608; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6612,
+      "old": "Line、Lili、ナオキは狼男たちを待ち構える。",
+      "text": "ライン、リリ、ナオキは狼男たちを待ち構える。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6612; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6622,
+      "old": "いいショーだったよ、みんな。Line、そろそろ行こう。",
+      "text": "いいショーだったよ、みんな。ライン、そろそろ行こう。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6622; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6627,
+      "old": "LINE、危ないよ D:！",
+      "text": "ライン、危ないよ D:！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6627; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6632,
+      "old": "Line、そこから離れて！ 落ちちゃうよ！",
+      "text": "ライン、そこから離れて！ 落ちちゃうよ！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6632; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6634,
+      "old": "Line、お願いだから！ 大丈夫なの？！",
+      "text": "ライン、お願いだから！ 大丈夫なの？！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6634; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6640,
+      "old": "そうよ、Line。それからマラエルを探し続けましょう。",
+      "text": "そうよ、ライン。それからマラエルを探し続けましょう。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6640; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6644,
+      "old": "Line、お願い、死なないで！",
+      "text": "ライン、お願い、死なないで！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6644; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6660,
+      "old": "Lili、あなたって本当に悪い影響を与える子ね。分かってる？",
+      "text": "リリ、あなたって本当に悪い影響を与える子ね。分かってる？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6660; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6665,
+      "old": "Line、これを見て！ 何か月もここで暮らせるくらい食料があるよ！",
+      "text": "ライン、これを見て！ 何か月もここで暮らせるくらい食料があるよ！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6665; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6670,
+      "old": "ごめんなさい、Line。今は話せないの。あなたへのサプライズを準備しているところよ <3。",
+      "text": "ごめんなさい、ライン。今は話せないの。あなたへのサプライズを準備しているところよ <3。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6670; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6686,
+      "old": "じ、自分の紹介が遅れてしまって、本当にごめんなさい。私はLineで、こちらは私の妖精の使い魔、Liliです。",
+      "text": "じ、自分の紹介が遅れてしまって、本当にごめんなさい。私はラインで、こちらは私の妖精の使い魔、リリです。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6686; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6687,
+      "old": "あら……あなたの名前はLineだったわよね？",
+      "text": "あら……あなたの名前はラインだったわよね？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6687; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6688,
+      "old": "助けてほしいんです。友達のAvaを探しています。彼女は天使で、Saekiがあなたなら何か知っているかもしれないと言っていました。",
+      "text": "助けてほしいんです。友達のエイヴァを探しています。彼女は天使で、シエキがあなたなら何か知っているかもしれないと言っていました。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6688; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6692,
+      "old": "くそっ、Line！ 正気を失わないで。冷静になりましょう。まだここから脱出できるかもしれない。",
+      "text": "くそっ、ライン！ 正気を失わないで。冷静になりましょう。まだここから脱出できるかもしれない。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6692; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6698,
+      "old": "Lili、ここで何かおかしなことが起きていると思わない？",
+      "text": "リリ、ここで何かおかしなことが起きていると思わない？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6698; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6704,
+      "old": "Avaにそんなことができるの？",
+      "text": "エイヴァにそんなことができるの？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6704; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6707,
+      "old": "Lili、彼女が隠していたのはこれよ。Avaを知っているんだ！",
+      "text": "リリ、彼女が隠していたのはこれよ。エイヴァを知っているんだ！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6707; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6714,
+      "old": "あら……Line。",
+      "text": "あら……ライン。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6714; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6715,
+      "old": "え、Line、それはパイの話じゃないと思うよ。*Line、お願いだからバカなことはしないで。*",
+      "text": "え、ライン、それはパイの話じゃないと思うよ。*ライン、お願いだからバカなことはしないで。*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6715; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6716,
+      "old": "あ、あなたのプラムを食べろってこと？！ 温かくて、湿っていて、ジューシーなパイを！",
+      "text": "あ、あなたの温かくてしっとりしたプラムパイを、私に食べろっていうの？！",
+      "reason": "プラムとパイを分離しない。原文にないジューシーという性質を追加しない。",
+      "source_evidence": "source[6716]: YOUR PLUM, WARM, MOIST,PIE"
+    },
+    {
+      "locale": "ja",
+      "id": 6719,
+      "old": "あらあら、Line。ずいぶん興奮しているのね。私のことをママって呼んじゃうなんて、かわいい子 <3。",
+      "text": "あらあら、ライン。ずいぶん興奮しているのね。私のことをママって呼んじゃうなんて、かわいい子 <3。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6719; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6723,
+      "old": "わあ、Lili。彼女、エプロンしか着けてないよ。それに、すごく大きな……*ごくり* お尻……。*小声*",
+      "text": "わあ、リリ。彼女、エプロンしか着けてないよ。それに、すごく大きな……*ごくり* お尻……。*小声*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6723; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6725,
+      "old": "しっかりして、Line！ 本当にAvaを見つけたいんでしょう！ *小声*",
+      "text": "しっかりして、ライン！ 本当にエイヴァを見つけたいんでしょう！ *小声*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6725; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6731,
+      "old": "Line！ Line！ 起きて！ *小声*",
+      "text": "ライン！ ライン！ 起きて！ *小声*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6731; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6733,
+      "old": "分かった、分かった。目を覚ましたらLineに伝えるよ。",
+      "text": "分かった、分かった。目を覚ましたらラインに伝えるよ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6733; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6739,
+      "old": "Lili、Lineの面倒を見てあげて。エネルギーを吸い取るとき、少しやりすぎたみたい。でも、どうして我慢できるの？ はは、久しぶりだったんだもの。ははは。",
+      "text": "リリ、ラインの面倒を見てあげて。エネルギーを吸い取るとき、少しやりすぎたみたい。でも、どうして我慢できるの？ はは、久しぶりだったんだもの。ははは。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6739; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6743,
+      "old": "Lili、見て！",
+      "text": "リリ、見て！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6743; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6744,
+      "old": "Avaについて何か分かるまでは、まだ帰れない。",
+      "text": "エイヴァについて何か分かるまでは、まだ帰れない。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6744; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6752,
+      "old": "Lili、マラエルは自分の部屋で眠っていないわ。",
+      "text": "リリ、マラエルは自分の部屋で眠っていないわ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6752; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6757,
+      "old": "分からないわ、Line。でも、あなたは半分しかサキュバスじゃない。将来どうなるかなんて、誰にも分からないわ。",
+      "text": "分からないわ、ライン。でも、あなたは半分しかサキュバスじゃない。将来どうなるかなんて、誰にも分からないわ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6757; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6759,
+      "old": "どうしたの、Line？",
+      "text": "どうしたの、ライン？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6759; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6761,
+      "old": "Lineが戦闘中に大量のマッチを消すと、Lewdserkerが発動します。",
+      "text": "ラインが戦闘中に大量のマッチを消すと、Lewdserkerが発動します。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6761; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6762,
+      "old": "Lineは体の内側から力が湧き上がるのを感じる。同時に、子宮が激しく熱を帯びていく。",
+      "text": "ラインは体の内側から力が湧き上がるのを感じる。同時に、子宮が激しく熱を帯びていく。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6762; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6767,
+      "old": "本当にそのとおりね、Lili <3！",
+      "text": "本当にそのとおりね、リリ <3！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6767; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6768,
+      "old": "自分を知ることも人生の一部よ、マラエル。問題が起きるかもしれないけど、一緒に乗り越えていこう。そうでしょう、Line？",
+      "text": "自分を知ることも人生の一部よ、マラエル。問題が起きるかもしれないけど、一緒に乗り越えていこう。そうでしょう、ライン？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6768; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6770,
+      "old": "……あなたが感じている空腹は、サキュバスの貪欲さによるものよ。あなたは半分エルフだから、エネルギーを得るために交わる必要はないけれど、心の空虚さは常に残るの……。Line、あなたは本当にいい子よ。この行動があなたに悲劇をもたらさないことを心から願っているわ。",
+      "text": "……あなたが感じている空腹は、サキュバスの貪欲さによるものよ。あなたは半分エルフだから、エネルギーを得るために交わる必要はないけれど、心の空虚さは常に残るの……。ライン、あなたは本当にいい子よ。この行動があなたに悲劇をもたらさないことを心から願っているわ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6770; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6784,
+      "old": "Line、お願い。これが私の人生で幸せになれる最後のチャンスなの……。",
+      "text": "ライン、お願い。これが私の人生で幸せになれる最後のチャンスなの……。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6784; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6786,
+      "old": "Line、話を聞いて。あなたが来てから、私はたくさん嘘をついた。それは分かっている。でも、あなた自身も心の中では私が善人だと分かっているでしょう。お願い、家に戻ってきて。",
+      "text": "ライン、話を聞いて。あなたが来てから、私はたくさん嘘をついた。それは分かっている。でも、あなた自身も心の中では私が善人だと分かっているでしょう。お願い、家に戻ってきて。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6786; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6787,
+      "old": "もうだめだ！ 茶番は終わりよ。あなたがAvaを知っていることも、天使に叶えてもらおうとしている願いのことも、全部分かっているんだから。",
+      "text": "もうだめだ！ 茶番は終わりよ。あなたがエイヴァを知っていることも、天使に叶えてもらおうとしている願いのことも、全部分かっているんだから。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6787; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6790,
+      "old": "Line、ここで何をしているの？！",
+      "text": "ライン、ここで何をしているの？！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6790; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6797,
+      "old": "Avaがあなたにこんな思いをさせてしまったことも、本当に申し訳なく思っているわ。",
+      "text": "エイヴァがあなたにこんな思いをさせてしまったことも、本当に申し訳なく思っているわ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6797; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6817,
+      "old": "Line、起きて！ 通りの真ん中で裸になっているわよ。衛兵に捕まってしまう！",
+      "text": "ライン、起きて！ 通りの真ん中で裸になっているわよ。衛兵に捕まってしまう！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6817; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6820,
+      "old": "*ごくり* 私は馬車から降りるね。外で待っているわ、Line。:v",
+      "text": "*ごくり* 私は馬車から降りるね。外で待っているわ、ライン。:v",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6820; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6833,
+      "old": "くそっ、Line！ 鍵を引き抜いて！",
+      "text": "くそっ、ライン！ 鍵を引き抜いて！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6833; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6835,
+      "old": "*LineとLiliは馬車に乗り込む*",
+      "text": "*ラインとリリは馬車に乗り込む*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6835; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6850,
+      "old": "待って、Line。本当に1000アークはいらないの？",
+      "text": "待って、ライン。本当に1000アークはいらないの？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6850; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6857,
+      "old": "Gilfried、あなたのブリーフケースを見つけたわ。",
+      "text": "ギルドフリード、あなたのブリーフケースを見つけたわ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6857; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6858,
+      "old": "Gilfried、モンスター娘専門のヤリチン。",
+      "text": "ギルドフリード、モンスター娘専門のヤリチン。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6858; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6863,
+      "old": "えっと……Gilfried？",
+      "text": "えっと……ギルドフリード？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6863; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6876,
+      "old": "Lili、作者はこの島に住んでいるんだよ！",
+      "text": "リリ、作者はこの島に住んでいるんだよ！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6876; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6887,
+      "old": "うーん……Lili。",
+      "text": "うーん……リリ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6887; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6892,
+      "old": "ええ、きっと彼女も元気になると思う。それから……いつもそばにいてくれてありがとう、Lili。",
+      "text": "ええ、きっと彼女も元気になると思う。それから……いつもそばにいてくれてありがとう、リリ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6892; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6895,
+      "old": "……ええ、Lili？",
+      "text": "……ええ、リリ？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6895; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6896,
+      "old": "やあ、Line。",
+      "text": "やあ、ライン。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6896; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6901,
+      "old": "どうしたの、Line？",
+      "text": "どうしたの、ライン？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6901; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6910,
+      "old": "Lineさん、私がここに来たのは、この行為を止めるためです。私はシスター・ネロを愛しています。ああ……それに、どうしてあなたは修道女の服を着ているのですか？",
+      "text": "ラインさん、私がここに来たのは、この行為を止めるためです。私はシスター・ネロを愛しています。ああ……それに、どうしてあなたは修道女の服を着ているのですか？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6910; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6914,
+      "old": "お願いだから修道女の服を着ないで、Line！ これがマラエルの警告していたことなのよ。お願い、やめて！ こんなことをしたら、一生後悔することになるわ。",
+      "text": "お願いだから修道女の服を着ないで、ライン！ これがマラエルの警告していたことなのよ。お願い、やめて！ こんなことをしたら、一生後悔することになるわ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6914; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6915,
+      "old": "（何が起きているの？ どうしてLiliを泣かせたの？ 私は昼間に何をしたの？！ ああ、Lili、どうか許して……。）",
+      "text": "（何が起きているの？ どうしてリリを泣かせたの？ 私は昼間に何をしたの？！ ああ、リリ、どうか許して……。）",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6915; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6916,
+      "old": "Line、や、やめて！ お願いだから。これはあなたらしくない。あなたは絶対に、こんなふうに誰かを傷つけたりしない。*泣き始める*",
+      "text": "ライン、や、やめて！ お願いだから。これはあなたらしくない。あなたは絶対に、こんなふうに誰かを傷つけたりしない。*泣き始める*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6916; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6920,
+      "old": "やめて、Line！ とぼけるのはもうやめて。お願いだから、そんなことをしないで！",
+      "text": "やめて、ライン！ とぼけるのはもうやめて。お願いだから、そんなことをしないで！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6920; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6932,
+      "old": "はは、こんにちはLine。見て、こんなところで仕事を見つけたよ。",
+      "text": "はは、こんにちはライン。見て、こんなところで仕事を見つけたよ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6932; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6943,
+      "old": "（Ava、あなたは何を企んでいるの？ これも本当にあなたの計画の一部なの？ それとも、本当に危険な目に遭っているの？）",
+      "text": "（エイヴァ、あなたは何を企んでいるの？ これも本当にあなたの計画の一部なの？ それとも、本当に危険な目に遭っているの？）",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6943; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6957,
+      "old": "ちょっと、何様のつもり？！ Lineは島の人々を助けてきたのよ。あなたのことだって助けたでしょう！ 見た目がどうだって関係ないじゃない！",
+      "text": "ちょっと、何様のつもり？！ ラインは島の人々を助けてきたのよ。あなたのことだって助けたでしょう！ 見た目がどうだって関係ないじゃない！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6957; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6960,
+      "old": "*Lineが一歩前に出る* すみません、少しお聞きしたいのですが……*修道女は嫌悪感をあらわにして一歩後ずさる*",
+      "text": "*ラインが一歩前に出る* すみません、少しお聞きしたいのですが……*修道女は嫌悪感をあらわにして一歩後ずさる*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6960; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6961,
+      "old": "（Avaは教会全体にも嘘をついていた。預言をでっち上げ、それを実現させるためにサキュバスたちを操っていたのね。）",
+      "text": "（エイヴァは教会全体にも嘘をついていた。預言をでっち上げ、それを実現させるためにサキュバスたちを操っていたのね。）",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6961; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6966,
+      "old": "私たちはあなたを待っていました、Line。",
+      "text": "私たちはあなたを待っていました、ライン。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6966; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6974,
+      "old": "ああ、Line、はっきり話しなさいよ。いい大人なんだから、まったく。",
+      "text": "ああ、ライン、はっきり話しなさいよ。いい大人なんだから、まったく。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6974; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6976,
+      "old": "何なんだよ、Line。どういう意味だ？",
+      "text": "何なんだよ、ライン。どういう意味だ？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6976; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6983,
+      "old": "Line、大丈夫？",
+      "text": "ライン、大丈夫？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6983; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6987,
+      "old": "Lineさん、申し訳ありません。彼女はサキュバスを嫌っているのです。両親がサキュバスのせいで離婚したものですから。",
+      "text": "ラインさん、申し訳ありません。彼女はサキュバスを嫌っているのです。両親がサキュバスのせいで離婚したものですから。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6987; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 6993,
+      "old": "Line、ここから出ましょう。Avaにはあなたが必要だということを忘れないで。",
+      "text": "ライン、ここから出ましょう。エイヴァにはあなたが必要だということを忘れないで。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 6993; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7007,
+      "old": "（Lineがブリーフケースを開くと、何百枚もの写真が入っていた）",
+      "text": "（ラインがブリーフケースを開くと、何百枚もの写真が入っていた）",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7007; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7013,
+      "old": "さて、Gilfriedのブリーフケースを見つけたんだから、あとは返すだけね。",
+      "text": "さて、ギルドフリードのブリーフケースを見つけたんだから、あとは返すだけね。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7013; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7014,
+      "old": "*Lineが鍵を受け取る* ……ありがとう。",
+      "text": "*ラインが鍵を受け取る* ……ありがとう。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7014; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7035,
+      "old": "Line、さっさとこんなクソみたいな場所から逃げよう！",
+      "text": "ライン、さっさとこんなクソみたいな場所から逃げよう！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7035; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7036,
+      "old": "Line、あなたは先に行ってもいいよ。ちょっと刺激が強すぎるかもしれないから。",
+      "text": "ライン、あなたは先に行ってもいいよ。ちょっと刺激が強すぎるかもしれないから。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7036; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7039,
+      "old": "さあ、Line。これで決着をつける時間よ。",
+      "text": "さあ、ライン。これで決着をつける時間よ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7039; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7049,
+      "old": "Line、本当に私を殺したいのか？",
+      "text": "ライン、本当に私を殺したいのか？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7049; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7058,
+      "old": "Line、来い。",
+      "text": "ライン、来い。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7058; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7065,
+      "old": "……ごめんね、Line。正直なところ、あなたのサキュバスとしての一面を探すことを、このまま続けるべきなのか分からなくなってきた。結局、問題ばかり増えているように思えるの。",
+      "text": "……ごめんね、ライン。正直なところ、あなたのサキュバスとしての一面を探すことを、このまま続けるべきなのか分からなくなってきた。結局、問題ばかり増えているように思えるの。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7065; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7066,
+      "old": "Lili……何か……言ってよ。",
+      "text": "リリ……何か……言ってよ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7066; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7073,
+      "old": "ほら、Line。これを食べて。",
+      "text": "ほら、ライン。これを食べて。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7073; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7075,
+      "old": "すばらしいわ、Line。立場が入れ替わることで、どれほど気持ちよくなれるか理解してくれてうれしいわ。",
+      "text": "すばらしいわ、ライン。立場が入れ替わることで、どれほど気持ちよくなれるか理解してくれてうれしいわ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7075; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7083,
+      "old": "Line、きれいだね。",
+      "text": "ライン、きれいだね。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7083; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7085,
+      "old": "Line、お金を稼ぎたいなら、気持ちいいキスをしてあげればいいのよ <3！",
+      "text": "ライン、お金を稼ぎたいなら、気持ちいいキスをしてあげればいいのよ <3！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7085; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7087,
+      "old": "Line、あなたは生まれつきのスムーシャーね！",
+      "text": "ライン、あなたは生まれつきのスムーシャーね！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7087; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7089,
+      "old": "あら……心配しないで、Line。そんなに悪くなかったわよ。",
+      "text": "あら……心配しないで、ライン。そんなに悪くなかったわよ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7089; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7096,
+      "old": "気をつけて、Line！ 警戒して！",
+      "text": "気をつけて、ライン！ 警戒して！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7096; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7102,
+      "old": "どうしたの、Line？",
+      "text": "どうしたの、ライン？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7102; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7105,
+      "old": "ははは、Line。最高だったよ！ <3",
+      "text": "ははは、ライン。最高だったよ！ <3",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7105; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7107,
+      "old": "心配しないで、Line。これはあなたがしてくれたことへの恩返しなのよ。あのアークを燃やしたせいで法律上の問題まで起こしてしまったし、この仕事で少しでも家を良くできるかもしれないから。",
+      "text": "心配しないで、ライン。これはあなたがしてくれたことへの恩返しなのよ。あのアークを燃やしたせいで法律上の問題まで起こしてしまったし、この仕事で少しでも家を良くできるかもしれないから。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7107; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7111,
+      "old": "落ち着いて、Lili。衛兵の話では、スライムは倒されると回復状態に入るそうよ。",
+      "text": "落ち着いて、リリ。衛兵の話では、スライムは倒されると回復状態に入るそうよ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7111; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7118,
+      "old": "う、うん。ここならAvaについて、もっと詳しい情報が分かるはず。",
+      "text": "う、うん。ここならエイヴァについて、もっと詳しい情報が分かるはず。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7118; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7119,
+      "old": "心配しないで、Line。ひとまず島を調べてみましょう。Avaについて、もっと情報が見つかるかもしれないわ。",
+      "text": "心配しないで、ライン。ひとまず島を調べてみましょう。エイヴァについて、もっと情報が見つかるかもしれないわ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7119; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7146,
+      "old": "Lili！",
+      "text": "リリ！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7146; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7157,
+      "old": "Lili、今はやめて。大きな責任を背負わされた気分なんだ。今はただここを出たい。",
+      "text": "リリ、今はやめて。大きな責任を背負わされた気分なんだ。今はただここを出たい。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7157; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7158,
+      "old": "ねえLine、本当にこの申し出を受けるつもり……？",
+      "text": "ねえライン、本当にこの申し出を受けるつもり……？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7158; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7184,
+      "old": "ほらLine、ここを見てよ。めちゃくちゃじゃない……",
+      "text": "ほらライン、ここを見てよ。めちゃくちゃじゃない……",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7184; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7185,
+      "old": "えっ、でも誰が？ Lili！",
+      "text": "えっ、でも誰が？ リリ！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7185; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7189,
+      "old": "Line、いろいろありがとう。お金も、やり直す機会も。でも、正直に言うと、私たちはこれからも働きながら盗みを続ける。",
+      "text": "ライン、いろいろありがとう。お金も、やり直す機会も。でも、正直に言うと、私たちはこれからも働きながら盗みを続ける。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7189; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7199,
+      "old": "ここを本当に大切に思っているのね。Lili、今が一番傷つきやすい時期の相手に、手を出すつもりはないわ。",
+      "text": "ここを本当に大切に思っているのね。リリ、今が一番傷つきやすい時期の相手に、手を出すつもりはないわ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7199; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7200,
+      "old": "ねえLine、本気で思ってたわけじゃ……",
+      "text": "ねえライン、本気で思ってたわけじゃ……",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7200; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7208,
+      "old": "私たちはできる限りこの場所を守ってきた。Lineのおかげで、ここを再建できる。",
+      "text": "私たちはできる限りこの場所を守ってきた。ラインのおかげで、ここを再建できる。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7208; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7217,
+      "old": "*顔を覆う* Line、それはそういう意味のウォータースポーツじゃないよ。ほら、あっちを見て。",
+      "text": "*顔を覆う* ライン、それはそういう意味のウォータースポーツじゃないよ。ほら、あっちを見て。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7217; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7225,
+      "old": "Line、ここは表向きの施設よ。VIP向けの別エリアで、ほら、あれを楽しむ人たちのための「ウォータースポーツ」ね。",
+      "text": "ライン、ここは表向きの施設よ。VIP向けの別エリアで、ほら、あれを楽しむ人たちのための「ウォータースポーツ」ね。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7225; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7227,
+      "old": "Line、ここで何をしているの？ えっ、どうやって入ったの？",
+      "text": "ライン、ここで何をしているの？ えっ、どうやって入ったの？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7227; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7257,
+      "old": "Liliが手を握ってくれないと、新しい場所ではおしっこできないの ;c。",
+      "text": "リリが手を握ってくれないと、新しい場所ではおしっこできないの ;c。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7257; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7266,
+      "old": "おい、Line、起きて！",
+      "text": "おい、ライン、起きて！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7266; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7281,
+      "old": "ついに島に到着した。Eleonorと私は、人生を懸けた研究を始める！",
+      "text": "ついに島に到着した。エレノアと私は、人生を懸けた研究を始める！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7281; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7284,
+      "old": "でも、誤解しないでね。私はあなたのお母さんよ。助けてあげたいだけ。へへ、じゃあ行くわね、Aldo。*額にキス*",
+      "text": "でも、誤解しないでね。私はあなたのお母さんよ。助けてあげたいだけ。へへ、じゃあ行くわね、アルド。*額にキス*",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7284; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7286,
+      "old": "さあ、元気を出して、Aldo！ もっとプライバシーを守れるように、ドアを用意してあげるわ <3。",
+      "text": "さあ、元気を出して、アルド！ もっとプライバシーを守れるように、ドアを用意してあげるわ <3。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7286; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7288,
+      "old": "大丈夫よ、Aldo。恥ずかしがらなくていいの。",
+      "text": "大丈夫よ、アルド。恥ずかしがらなくていいの。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7288; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7291,
+      "old": "でも、Aldo、あなたの年頃なら、そういうことをするのは普通よ。",
+      "text": "でも、アルド、あなたの年頃なら、そういうことをするのは普通よ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7291; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7298,
+      "old": "ど、どうしたの、Line？",
+      "text": "ど、どうしたの、ライン？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7298; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7318,
+      "old": "私たちはベッドに横になり、夢中でキスをした。彼は私の口の味が変だとまで言った。はは。",
+      "text": "私たちはベッドに横になり、夢中でキスをした。私の口が変な味だとまで言われたよ。はは。",
+      "reason": "直前から相手はCallieなので、原文heの誤記を彼という男性指示にしない。",
+      "source_evidence": "source[7300,7304,7315,7318,7324], Callie relationship sequence"
+    },
+    {
+      "locale": "ja",
+      "id": 7320,
+      "old": "Line、すごくきれいよ。少し髪が乱れているけど、はは。ねえ、今日はここに泊まっていかない？",
+      "text": "ライン、すごくきれいよ。少し髪が乱れているけど、はは。ねえ、今日はここに泊まっていかない？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7320; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7326,
+      "old": "キャリーとの関係を終わらせ、Aldoに真実を話せば、この悪夢も終わる。",
+      "text": "キャリーとの関係を終わらせ、アルドに真実を話せば、この悪夢も終わる。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7326; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7328,
+      "old": "家を出る前に、その夜Aldoの部屋を訪ねると伝えた。",
+      "text": "家を出る前に、その夜アルドの部屋を訪ねると伝えた。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7328; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7332,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "わ、私も愛してる、アルド。お母さんよりもたくさん触ってくれるんだもの。あなたのほうが好きよ、アルド、私の大切な息子。",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7332] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7333,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "ぼ、僕はこうしたいんだ。たまらなく欲しい。愛してる、愛してるよ、ママ！",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7333] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7334,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "ああ、アルド。なんて悪い子なの。新しいママとこんなことをしちゃいけないのよ！",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7334] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7335,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "ライン、これ、最高だよ。自慰よりずっといい。*さらに強く突く*",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7335] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7336,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "しーっ、しーっ。*小声で* アルド、アルド、そう、彼女は知ってる。でも、でも話を合わせて。お母さんの恋人を奪う息子になって、そのペニスで何も考えられなくなるくらい私を抱いて！",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7336] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7338,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "ああっ、もっと強く！ か、彼のことを考えてるわけじゃない。話していたから、ちょっと思い出しただけ。",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7338] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7339,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "ねえ、彼のことを考えて自慰してるんじゃないでしょうね？！",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7339] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7340,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "ああ、そう、そうね！ 大切なアルドが家にいるときは、しないように覚えておくわ。私たちのあの子に、私の声を聞かせたくないものね。",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7340] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7341,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "まったく、ライン、ああっ。なぜだか分からないけど、あなたが大好きだから今回は見逃してあげる。でも、アルドが留守でよかったわね。私以外に誰かが家にいるときは、こんなことをしようなんて絶対に思わないで！",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7341] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7342,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "わ、私……（もう何もかもどうでもいい。）声が出ちゃうの、キャリー。本当にこれが欲しかったの。",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7342] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7343,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "えっ？！ ライン、何してるの！",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7343] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7344,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "もっと、もっと強く叩いて！",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7344] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7345,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "ああ、ああっ、そう、それっ！ これが欲しかったの！！",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7345] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7346,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "ああ……ア、アルド……ズボンを下ろして。",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7346] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7347,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "分かってるよ。これは恋愛じゃなくて、ただ欲求を満たしてるだけだって言ったよね。それに、お母さんもあなたがサキュバスだって知ってるんだよね。",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7347] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7348,
+      "old": "ねえ、Aldo、お願いだから話を聞いて。",
+      "text": "ねえ、アルド、お願いだから話を聞いて。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7348; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7351,
+      "old": "（だ、だから服が乱れていたんだ。だからあんなに体が熱かった。Liliは本当に何があったか聞いていたんだ。だからあんなに様子がおかしかったのか。）",
+      "text": "（だ、だから服が乱れていたんだ。だからあんなに体が熱かった。リリは本当に何があったか聞いていたんだ。だからあんなに様子がおかしかったのか。）",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7351; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7352,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "（あ、あの夜、彼が自慰しているのを見つけて、わ、私が誘惑して、自分のものにして、彼と寝たんだ。じ、自分の義理の息子と。）",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7352] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7358,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "何、それ、いつ？！ お風呂場に来て、私のお尻にペニスを入れてなんて、一度も言ってない！",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7358] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7360,
+      "old": "Aldo、ここで何をしているの？",
+      "text": "アルド、ここで何をしているの？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7360; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7361,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "*お尻に圧迫感を感じる* あっ？！ 何が起きてるの？",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7361] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7365,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "ああっ、待って、アルド！ ああ、だめ……へ、へへへっ。",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7365] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7366,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "ああっ！ あなたの濃くて熱い精液で、いっぱいになっていくのが分かる！",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7366] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7367,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "ああ、あっ、ああっ！ 義理の息子とのセックス、最高！！",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7367] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7368,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "受け止めて、ママ！ 僕の子を、そのお腹に宿して！",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7368] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7369,
+      "old": "（年齢確認が必要なため、性的描写の翻訳を保留）",
+      "text": "もっと、もっと強く、アルド！ もっと強く、私をあなたのものにして！",
+      "reason": "審査のメタ説明が台詞を置き換えていた欠落を、原文の意味で補う。年齢を追加せず、原文にある成人の関係と発話だけを維持する。",
+      "source_evidence": "source[7369] en + zh_context; adult evidence source[2994]=Aldo eighteen, [4761]=Line turned 18, [4906]=already twenty; Callie relationship source[7300,7326]"
+    },
+    {
+      "locale": "ja",
+      "id": 7372,
+      "old": "……Line。",
+      "text": "……ライン。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7372; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7373,
+      "old": "Aldo、聞いて。実は……",
+      "text": "アルド、聞いて。実は……",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7373; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7377,
+      "old": "Line、見事な仕事だったわ <3。",
+      "text": "ライン、見事な仕事だったわ <3。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7377; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7379,
+      "old": "あら、何でもないわ、Lili。どうしてそんなに真剣なの？ へへ？",
+      "text": "あら、何でもないわ、リリ。どうしてそんなに真剣なの？ へへ？",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7379; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7388,
+      "old": "お願いです、話を聞いてください。これは私のEleonorだけの問題ではありません。あの女性たちの家族のことも考えてください！",
+      "text": "お願いです、話を聞いてください。これは私のエレノアだけの問題ではありません。あの女性たちの家族のことも考えてください！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7388; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7391,
+      "old": "成功すれば、あの女性たち全員をスライムとして蘇らせられる。必要なのは、私の美しいEleonorと適合する一人だけだ。その一人が、変身したすべての女性を永遠に安定させてくれる。",
+      "text": "成功すれば、あの女性たち全員をスライムとして蘇らせられる。必要なのは、私の美しいエレノアと適合する一人だけだ。その一人が、変身したすべての女性を永遠に安定させてくれる。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7391; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7392,
+      "old": "私は狂ってなんかいない！ あの女性たちの命はすべて、Eleonorを元の姿に戻すための手段だったんだ！",
+      "text": "私は狂ってなんかいない！ あの女性たちの命はすべて、エレノアを元の姿に戻すための手段だったんだ！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7392; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7399,
+      "old": "Eleonor、愛しい人よ。お願いだ、もう一度彼女たちを捕食してくれ。",
+      "text": "エレノア、愛しい人よ。お願いだ、もう一度彼女たちを捕食してくれ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7399; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7405,
+      "old": "Eleonor、彼女たちを捕食しろ！",
+      "text": "エレノア、彼女たちを捕食しろ！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7405; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7410,
+      "old": "もう話は終わりか？ Eleonorに降伏して、彼女を蘇らせろ！",
+      "text": "もう話は終わりか？ エレノアに降伏して、彼女を蘇らせろ！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7410; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7415,
+      "old": "エ、Eleonor、き、君は変わってしまった。復活まであと少しなんだ。",
+      "text": "エ、エレノア、き、君は変わってしまった。復活まであと少しなんだ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7415; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7427,
+      "old": "Line、彼の言葉に惑わされないで。すべての責任は彼にある。",
+      "text": "ライン、彼の言葉に惑わされないで。すべての責任は彼にある。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7427; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7432,
+      "old": "な、何があったんだ、愛するEleonor。どうして……どうして？ 君は死ぬ必要なんてなかったのに。",
+      "text": "な、何があったんだ、愛するエレノア。どうして……どうして？ 君は死ぬ必要なんてなかったのに。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7432; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7434,
+      "old": "Eleonorのためにも、自分のためにも、研究を急がなければ。",
+      "text": "エレノアのためにも、自分のためにも、研究を急がなければ。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7434; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7445,
+      "old": "行きましょう、Line。ここは何かがおかしい気がする！",
+      "text": "行きましょう、ライン。ここは何かがおかしい気がする！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7445; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7457,
+      "old": "LINE、大丈夫？！",
+      "text": "ライン、大丈夫？！",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7457; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ja",
+      "id": 7463,
+      "old": "Lili、すごく怖いよ ;c。",
+      "text": "リリ、すごく怖いよ ;c。",
+      "reason": "同じ人物/店名が英語と日本語や別表記に分裂していたため、該当会話内の実際の指示先に合わせる。",
+      "source_evidence": "source ID 7463; canonical cards 348 Callie=キャリー, 356 Pussiel=プシエル, 367 Sieki=シエキ, 409 Gildfried=ギルドフリード, 431 Eleneor=エレノア; 1604 defines Sabbath as nightclub nickname; 824/845 Ava=エイヴァ"
+    },
+    {
+      "locale": "ko",
+      "id": 403,
+      "old": "루시는 정말 멋진 사람이야. 네가 그녀의 소설을 망치지 않았으면 좋겠어.",
+      "text": "루시는 정말 멋진 사람이야. 그녀의 소설과 관련해서 실망시키지 않았으면 좋겠어.",
+      "reason": "let her down은 그녀를 실망시키는 것이며 소설 자체를 망치는 행동으로 좁히지 않는다.",
+      "source_evidence": "source[403]: do not let her down with her novel"
+    },
+    {
+      "locale": "ko",
+      "id": 1550,
+      "old": "세일러컴에게 뒤집어 입는 버니 의상을 사 줘. 그러면 보답으로 네 엉덩이를 핥아 줄 거야!\n \n(퀘스트 위치: 술집 아래 VIP 구역)",
+      "text": "세일러컴에게 역바니 의상을 사 줘. 그러면 보답으로 네 엉덩이를 핥아 줄 거야!\n \n(퀘스트 위치: 술집 아래 VIP 구역)",
+      "reason": "inverted bunny는 옷을 뒤집어 입는 뜻이 아니라 노출 부위를 뒤바꾼 역바니 의상이다.",
+      "source_evidence": "source[1550], VIP clothing-purchase quest"
+    },
+    {
+      "locale": "ru",
+      "id": 1538,
+      "old": "Найди ключ, чтобы любовница Лемми снова смогла контролировать свою демоническую форму.",
+      "text": "Найди ключ, чтобы хозяйка Лемми снова смогла контролировать свою демоническую форму.",
+      "reason": "mistress在此指女主人，非情妇；与853、2810、6829/6838/6843的主仆关系一致。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Search for the key to bring Lemmy's mistress back into control of her demon form.",
+        "zh_context": "找到钥匙，让雷米的女主人重新控制她的恶魔形态。",
+        "context": "853明确his mistress，2810明确his owner及demonic seal；两者同一人物。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 1632,
+      "old": "Исследуй кристалл.",
+      "text": "Найди кристалл.",
+      "reason": "任务要求寻找水晶，原译Исследуй是研究/检查水晶，改变任务动作。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Search the crystal.",
+        "zh_context": "寻找水晶。",
+        "context": "gml_Object_o_quest_system_Create_0.gml:2 We are the bad guys?任务依次Search the crystal/Fight against red/take the crystal。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 1570,
+      "old": "Подойди к столу: голос поклонника подскажет, что делать.",
+      "text": "Подойди к столу: голос из вентиляции подскажет, что делать.",
+      "reason": "fan在本任务指通风装置，非粉丝。现有中语境也受同义词误导；以原脚本场景为准。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Go to the table, the voice of the fan will tell you what to do.",
+        "zh_context": "走到桌边，粉丝的声音会告诉你该怎么做。",
+        "context": "gml_RoomCC_rm_fnaf_2_Create.gml:5连续对白I think it comes from the ventilation/Alo who is it/房间桌前坐下；gml_Object_o_quest_system_Create_0.gml:2 The White Lady阶段要求到桌边听fan声音。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 1570,
+      "old": "Masaya git; hayranının sesi sana ne yapacağını söyleyecek.",
+      "text": "Masaya git; havalandırmadan gelen ses sana ne yapacağını söyleyecek.",
+      "reason": "fan在本任务指通风装置，非粉丝。现有中语境也受同义词误导；以原脚本场景为准。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Go to the table, the voice of the fan will tell you what to do.",
+        "zh_context": "走到桌边，粉丝的声音会告诉你该怎么做。",
+        "context": "gml_RoomCC_rm_fnaf_2_Create.gml:5连续对白I think it comes from the ventilation/Alo who is it/房间桌前坐下；gml_Object_o_quest_system_Create_0.gml:2 The White Lady阶段要求到桌边听fan声音。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 1613,
+      "old": "Найди другую себя.",
+      "text": "Найди моё второе «я».",
+      "reason": "任务是帮助Ivy寻找她的另一部分，原译другую себя错误变成寻找玩家自己的另一人格。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Find my other me.",
+        "zh_context": "找到另一个我。",
+        "context": "gml_Object_o_quest_system_Create_0.gml:2任务Find my other me下Find the leg of Ivy/Beat the other Ivy Wilde/Come back to ivy wilde。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 1613,
+      "old": "Benim diğer yarımı bul.",
+      "text": "Diğer benliğimi bul.",
+      "reason": "保留my other me的另一个自我含义，避免原译other half作为恋人或一半的歧义。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Find my other me.",
+        "zh_context": "找到另一个我。",
+        "context": "同Ivy任务原脚本；并非寻找另一半伴侣。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 1462,
+      "old": "Ночью он подходит к окну, примыкающему к комнате Альдо.",
+      "text": "Ночью подойди к окну рядом с комнатой Альдо.",
+      "reason": "这是任务给玩家的行动要求，原稿跟随不规范英文译为第三人称他去；改为直接指示玩家。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "At night he goes to the window adjoining Aldo's room.",
+        "zh_context": "晚上去与阿尔多房间相邻的窗边。",
+        "context": "gml_Object_o_quest_system_Create_0.gml:2 A beautiful family任务阶段，前置去Callie家/洗澡，后置Quest complete；7328玩家也明确说当晚会到Aldo房间。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 1462,
+      "old": "Gece, Aldo'nun odasına bitişik pencereye gider.",
+      "text": "Gece, Aldo'nun odasının yanındaki pencereye git.",
+      "reason": "这是任务给玩家的行动要求，原稿跟随不规范英文译为第三人称他去；改为直接指示玩家。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "At night he goes to the window adjoining Aldo's room.",
+        "zh_context": "晚上去与阿尔多房间相邻的窗边。",
+        "context": "gml_Object_o_quest_system_Create_0.gml:2 A beautiful family任务阶段，前置去Callie家/洗澡，后置Quest complete；7328玩家也明确说当晚会到Aldo房间。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 4477,
+      "old": "Большой зелёный питомец возле института знаний мечтает снова увидеть свою хозяйку, но, к несчастью, он вышел из-под контроля.",
+      "text": "Большой зелёный питомец возле института знаний мечтает снова увидеть свою хозяйку. К несчастью, она потеряла контроль над собой.",
+      "reason": "原译最后он失控错指宠物；故事实际是女主人恶魔形态失控。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "A big green pet near the institute of knowledge, yearns to see its mistress again, unfortunately it is out of control.",
+        "zh_context": "知识殿堂附近，一只巨大的绿色宠物，渴望再见女主人。可惜，它已失去控制。",
+        "context": "853女主人遇到麻烦；2810 owner is out of control，女主人封印钥匙失窃；1538要找钥匙恢复女主人控制。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 400,
+      "old": "У Белла такая прекрасная миссия. Надеюсь, он сможет вырастить ещё больше этих вымерших цветов.",
+      "text": "У Белл такая прекрасная миссия. Надеюсь, Белл сможет вырастить ещё больше этих вымерших цветов.",
+      "reason": "以姓名代替额外男性代词，兼容人物6377明确they/them设定；植物复育目标未改。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Bell has such a beautiful mission and I hope he can sprout more of these extinct flowers.",
+        "zh_context": "贝尔的使命真美好，希望他能让更多这些已经灭绝的花朵重新发芽。",
+        "context": "6377 Bell明确要求they/them；并不添加人物年龄或性别。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 6857,
+      "old": "Гилфрид, мы нашли твой портфель.",
+      "text": "Гильфрид, мы нашли твой портфель.",
+      "reason": "同一人物姓名统一为409人物标签、物品698/699与任务1542/1543使用的Гильфрид；不将源Gilfried/Gildfried拼写变体作两个人。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Gilfried we found your briefcase.",
+        "zh_context": "吉尔德弗里德，找到你的公文包了。",
+        "context": "409=Gildfried→Гильфрид；698/699/852同一失窃公文包人物。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 6858,
+      "old": "Гилфрид, трахатель монстродевушек.",
+      "text": "Гильфрид, трахатель монстродевушек.",
+      "reason": "同一人物姓名统一为409人物标签、物品698/699与任务1542/1543使用的Гильфрид；不将源Gilfried/Gildfried拼写变体作两个人。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Gilfried The Monster Fucker.",
+        "zh_context": "吉尔德弗里德，怪物操手",
+        "context": "409=Gildfried→Гильфрид；698/699/852同一失窃公文包人物。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 6863,
+      "old": "Э-э... Гилфрид?",
+      "text": "Э-э... Гильфрид?",
+      "reason": "同一人物姓名统一为409人物标签、物品698/699与任务1542/1543使用的Гильфрид；不将源Gilfried/Gildfried拼写变体作两个人。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Ehhh Gilfried?",
+        "zh_context": "呃，吉尔德弗里德？",
+        "context": "409=Gildfried→Гильфрид；698/699/852同一失窃公文包人物。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 7013,
+      "old": "Ну вот, мы нашли портфель Гилфрида. Осталось только вернуть его.",
+      "text": "Ну вот, мы нашли портфель Гильфрида. Осталось только вернуть его.",
+      "reason": "同一人物姓名统一为409人物标签、物品698/699与任务1542/1543使用的Гильфрид；不将源Gilfried/Gildfried拼写变体作两个人。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Well you found Gilfried's briefcase now we just have to return it.",
+        "zh_context": "好了，吉尔德弗里德的公文包找到了，接下来只要还回去。",
+        "context": "409=Gildfried→Гильфрид；698/699/852同一失窃公文包人物。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 849,
+      "old": "Она-хол, прикреплённая к стене в VIP-зоне бара, говорит, что сделает тебе аннилингус, если ты купишь весь её наряд!",
+      "text": "Она-хол, прикреплённая к стене в VIP-зоне бара, говорит, что сделает тебе анилингус, если ты купишь весь её наряд!",
+      "reason": "修正俄语术语拼写：анилингус只有一个н，与2522/5835相同术语一致。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "An Onahole stuck to the wall in the VIP area of the bar tells you that if you buy her entire outfit, she'll give you a rimjob!",
+        "zh_context": "酒吧VIP区有个被固定在墙上的人形飞机杯。她说，只要买齐她全身那套衣服，就给你舔肛！",
+        "context": "2522、5835正确拼写为анилингус；只修拼写，不变更动作方向。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 1549,
+      "old": "Отправляйся в СейлорКам за аннилингусом.\n \n(Задание находится в VIP-зоне под баром)",
+      "text": "Отправляйся в СейлорКам за анилингусом.\n \n(Задание находится в VIP-зоне под баром)",
+      "reason": "修正俄语术语拼写：анилингус只有一个н，与2522/5835相同术语一致。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Head over to SailorCum to get a Rimjob. \n \n(Quest located in the VIP area under the bar)",
+        "zh_context": "前往水手之精，接受舔肛服务。\n\n（任务位于酒吧下方的贵宾区。）",
+        "context": "2522、5835正确拼写为анилингус；只修拼写，不变更动作方向。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 1550,
+      "old": "Купи у СейлорКам перевёрнутый костюм крольчихи, и взамен она сделает тебе аннилингус!\n \n(Задание находится в VIP-зоне под баром)",
+      "text": "Купи у СейлорКам перевёрнутый костюм крольчихи, и взамен она сделает тебе анилингус!\n \n(Задание находится в VIP-зоне под баром)",
+      "reason": "修正俄语术语拼写：анилингус只有一个н，与2522/5835相同术语一致。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Buy the inverted bunny costume from SailorCum and in return she will perform a rimjob on you !\n \n(Quest located in the VIP area under the bar)",
+        "zh_context": "向水手射精娘购买反穿兔女郎服，她就会给你舔肛！\n \n（任务位于酒吧地下的VIP区）",
+        "context": "2522、5835正确拼写为анилингус；只修拼写，不变更动作方向。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 3443,
+      "old": "Аннилингус от Синесс",
+      "text": "Анилингус от Синесс",
+      "reason": "修正俄语术语拼写：анилингус只有一个н，与2522/5835相同术语一致。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Siness Rimjob",
+        "zh_context": "西妮丝的舔肛",
+        "context": "2522、5835正确拼写为анилингус；只修拼写，不变更动作方向。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 3451,
+      "old": "Аннилингус от Кристоффа",
+      "text": "Анилингус от Кристоффа",
+      "reason": "修正俄语术语拼写：анилингус只有一个н，与2522/5835相同术语一致。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Kristoff Rimjob",
+        "zh_context": "克里斯托夫的舔肛",
+        "context": "2522、5835正确拼写为анилингус；只修拼写，不变更动作方向。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 3465,
+      "old": "Аннилингус от Лайн",
+      "text": "Анилингус от Лайн",
+      "reason": "修正俄语术语拼写：анилингус只有一个н，与2522/5835相同术语一致。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Line Rimjob",
+        "zh_context": "莱茵的舔肛",
+        "context": "2522、5835正确拼写为анилингус；只修拼写，不变更动作方向。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 7032,
+      "old": "Эй, разве это не одежда, украденная из Smooshers?!",
+      "text": "Эй, разве это не одежда, украденная из «Смушерс»?!",
+      "reason": "餐厅品牌在此单条退回英文，统一为物品与任务中稳定的Смушерс。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Hey isn't that the clothes stolen from smooshers?!",
+        "zh_context": "喂，那不是从揉揉店偷来的衣服？！",
+        "context": "702/703/754/755/854/1532/1533/1535均Смушерс。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 6084,
+      "old": "Hey, sıraya gir!",
+      "text": "Hey, araya kaynama!",
+      "reason": "原文否定/中语境别插队，原译sıraya gir变成让人去排队。用自然土语明确禁止插队。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Hey don't get in the line!",
+        "zh_context": "喂，别插队！"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 6829,
+      "old": "S-sen kimsin? Lemmy'nin metresi misin?!",
+      "text": "S-sen kimsin? Lemmy'nin hanımı misin?!",
+      "reason": "metres意为情妇，非Lemmy的女主人；统一前文hanım/主人关系。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Wh-who are you Lemmy's mistress?!",
+        "zh_context": "你、你是谁，雷米的女主人？！",
+        "context": "853及2810明确owner与mistress同指女主人；女主人因封印钥匙被盗失控。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 6838,
+      "old": "Endişelenme Lemmy, metresine bir şey olmayacak.",
+      "text": "Endişelenme Lemmy, hanımına bir şey olmayacak.",
+      "reason": "metres意为情妇，非Lemmy的女主人；统一前文hanım/主人关系。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Do not worry Lemmy, your mistress will be fine.",
+        "zh_context": "别担心，雷米，女主人不会有事。",
+        "context": "853及2810明确owner与mistress同指女主人；女主人因封印钥匙被盗失控。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 6843,
+      "old": "Lemmy, anahtarı metresine getirdik.",
+      "text": "Lemmy, hanımın için anahtarı getirdik.",
+      "reason": "metres意为情妇，非Lemmy的女主人；统一前文hanım/主人关系。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Lemmy we brought the key to your mistress.",
+        "zh_context": "雷米，我们给你女主人，把钥匙带来了。",
+        "context": "853及2810明确owner与mistress同指女主人；女主人因封印钥匙被盗失控。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 3458,
+      "old": "Zoi Weona'nın onahole'u",
+      "text": "Zoi Weona — Onahole",
+      "reason": "原译Zoi Weona'nın onahole'u表示佐伊拥有的玩具；场景名实际是佐伊扮演该角色。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Zoi Weona onahole",
+        "zh_context": "佐伊·薇欧娜：肉便器",
+        "context": "1614为Zoi付服务费帮助她；源名Zoi Weona onahole没有所有格。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 1511,
+      "old": "En tepedeki kaltakla dövüş.",
+      "text": "En tepedeki kaltağı yen.",
+      "reason": "源为Defeat必须击败，原译dövüş只要求交战，漏掉胜利条件。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "defeat the top bitch.",
+        "zh_context": "打败那个最嚣张的婊子。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 1529,
+      "old": "İkiz",
+      "text": "Tıpatıp Bir Kopya",
+      "reason": "支线是Vasera克隆体，原译İkiz孪生者易误读为亲生双胞胎；以完全相同的复制体表达。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Doppelganger",
+        "zh_context": "另一个自己",
+        "context": "1527 Defeat the Vasera clone/1528 Search for Vasera clone。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 1588,
+      "old": "Umuda ve Hayallere",
+      "text": "Umutlar ve Hayaller",
+      "reason": "修复任务标题多出的向格，恢复希望与梦想并列名词。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Hopes and dreams",
+        "zh_context": "希望与梦想"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 1594,
+      "old": "Evin içinde neler olup bittiğine bak. (Konum: eflatun bataklık. Eve girmek için bir Vasuki'ye ihtiyacın var.)",
+      "text": "Evin içinde neler olup bittiğine bak. (Konum: Fuşya Bataklığı. Eve girmek için Vasuki'ye ihtiyacın var.)",
+      "reason": "任务需要具体角色Vasuki，不是一只名为Vasuki的物种；沼泽地名同时统一地图Fuşya Bataklığı。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "See what is going on inside the hause. (Location magenta swamp and you need a vasuki to enter the hause)",
+        "zh_context": "看看屋里出了什么事。（位于洋红沼泽，需要瓦苏基带你进去）",
+        "context": "5753地图名Fuşya Bataklığı，5754欢迎牌同名；1664带Vasuki回家，5560为完整人物名。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 1667,
+      "old": "Boyut Kristali'ni bul. Son parçası eflatun bataklıkta görülmüştü. (Kristali bulmak için bir Vasuki'ye ihtiyacın var.)",
+      "text": "Boyut Kristali'ni bul. Son parçası Fuşya Bataklığı'nda görülmüştü. (Kristali bulmak için Vasuki'ye ihtiyacın var.)",
+      "reason": "任务需要具体角色Vasuki，不是一只名为Vasuki的物种；沼泽地名同时统一地图Fuşya Bataklığı。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Find the dimensional Crystal. The last piece of the dimensional crystal was seen in the magenta swamp (You need a vasuqui to find the crystal).",
+        "zh_context": "寻找次元水晶。最后一块碎片曾出现在洋红沼泽。（需要瓦苏基帮忙才能找到水晶。）",
+        "context": "5753地图名Fuşya Bataklığı，5754欢迎牌同名；1664带Vasuki回家，5560为完整人物名。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 842,
+      "old": "Vasuki, eflatun bataklıktaki mantar evinde kötü bir şeyler olduğunu söylüyor. Araştırınca orada insan kaçakçılığı ve uyuşturucu faaliyetleri olabileceği anlaşılıyor.",
+      "text": "Vasuki, Fuşya Bataklığı'ndaki mantar evinde kötü bir şeyler olduğunu söylüyor. Araştırınca orada insan kaçakçılığı ve uyuşturucu faaliyetleri olabileceği anlaşılıyor.",
+      "reason": "任务/日志沼泽名Eflatun与地图及后文Fuşya不同，统一地图显示名，避免寻找错误目的地。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Vasuki tells you that something bad is happening at the mushroom house in the magenta swamp. Upon investigating, it seems that there may be human trafficking and drug activities occurring there.",
+        "zh_context": "瓦苏基告诉你，洋红沼泽的蘑菇屋里出了坏事。调查之后，那里似乎涉及人口贩卖和毒品交易。",
+        "context": "5753 Magenta swamp=Fuşya Bataklığı；5754/5542/6367相同地点一致。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 1442,
+      "old": "Eflatun bataklığa bağlanan köprüde muhafız kılığına giren suçluyu bul.",
+      "text": "Fuşya Bataklığı'na bağlanan köprüde muhafız kılığına giren suçluyu bul.",
+      "reason": "任务/日志沼泽名Eflatun与地图及后文Fuşya不同，统一地图显示名，避免寻找错误目的地。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Look for the criminal who is impersonating a guard on the bridge that connects to the magenta swamp.",
+        "zh_context": "找到那个冒充守卫的罪犯，他就在通往洋红沼泽的桥上。",
+        "context": "5753 Magenta swamp=Fuşya Bataklığı；5754/5542/6367相同地点一致。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 1584,
+      "old": "Eflatun bataklıktaki gizli yerde çiçeği ara.",
+      "text": "Fuşya Bataklığı'ndaki gizli yerde çiçeği ara.",
+      "reason": "任务/日志沼泽名Eflatun与地图及后文Fuşya不同，统一地图显示名，避免寻找错误目的地。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Look for the flower in the secret place on the magenta swamp.",
+        "zh_context": "到洋红沼泽的隐秘地点寻找那朵花。",
+        "context": "5753 Magenta swamp=Fuşya Bataklığı；5754/5542/6367相同地点一致。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 1585,
+      "old": "Çiçeği ara; eflatun bataklıkta kedi kuyruğu otlarını geçince olmalı.",
+      "text": "Çiçeği ara; Fuşya Bataklığı'nda kedi kuyruğu otlarını geçince olmalı.",
+      "reason": "任务/日志沼泽名Eflatun与地图及后文Fuşya不同，统一地图显示名，避免寻找错误目的地。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Look for the flower, it must be passing the cat tails in the magenta swamp.",
+        "zh_context": "寻找那朵花，应该在洋红沼泽，穿过猫尾草之后。",
+        "context": "5753 Magenta swamp=Fuşya Bataklığı；5754/5542/6367相同地点一致。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 1586,
+      "old": "Eflatun bataklığa git ve çiçeği ara.",
+      "text": "Fuşya Bataklığı'na git ve çiçeği ara.",
+      "reason": "任务/日志沼泽名Eflatun与地图及后文Fuşya不同，统一地图显示名，避免寻找错误目的地。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Go to the magenta swamp and look for the flower.",
+        "zh_context": "前往品红沼泽，寻找那朵花。",
+        "context": "5753 Magenta swamp=Fuşya Bataklığı；5754/5542/6367相同地点一致。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 1656,
+      "old": "Sam'in verdiği bilgilere göre Tricotextli suçluyu ara. Eflatun bataklıkta olabilir.",
+      "text": "Sam'in verdiği bilgilere göre Tricotextli suçluyu ara. Fuşya Bataklığı'nda olabilir.",
+      "reason": "任务/日志沼泽名Eflatun与地图及后文Fuşya不同，统一地图显示名，避免寻找错误目的地。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Find the criminal from Tricotext, according to the information that sam gave you could he be in the magenta swamp.",
+        "zh_context": "寻找来自特里科特克斯的罪犯。根据萨姆提供的消息，对方可能在品红沼泽。",
+        "context": "5753 Magenta swamp=Fuşya Bataklığı；5754/5542/6367相同地点一致。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 2845,
+      "old": "Son olarak, muhafız kılığına giren bir dolandırıcı var. Onun tarifini kasabanın dört bir yanındaki ilanlarda görebilirsin. Uzak durman gereken tek bir yer söyleyeceksem, o da eflatun bataklığa giden köprü.",
+      "text": "Son olarak, muhafız kılığına giren bir dolandırıcı var. Onun tarifini kasabanın dört bir yanındaki ilanlarda görebilirsin. Uzak durman gereken tek bir yer söyleyeceksem, o da Fuşya Bataklığı'na giden köprü.",
+      "reason": "任务/日志沼泽名Eflatun与地图及后文Fuşya不同，统一地图显示名，避免寻找错误目的地。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Lastly, there is a scammer posing as a guard you can see her description on the flyers around town and if I were to say one place you shouldn't go it would be the bridge that leads to the magenta swamp.",
+        "zh_context": "最后，有个骗子在冒充卫兵，镇上各处的传单都有她的描述。非要说哪里不能去，那就是通往洋红沼泽的桥。",
+        "context": "5753 Magenta swamp=Fuşya Bataklığı；5754/5542/6367相同地点一致。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 1723,
+      "old": "Saeki ile konuş; barın bodrumunda.",
+      "text": "Sieki ile konuş; barın bodrumunda.",
+      "reason": "Saeki为源Sieki拼写变体，同一VIP区老板，统一人物标签与任务称呼Sieki。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "Talk to Saeki, she is in the basement of the bar.",
+        "zh_context": "和茜姬交谈，她在酒吧地下室。",
+        "context": "367角色Sieki；368说明管理VIP区域；1722去找Sieki，1723在酒吧地下室接续同一任务。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 1724,
+      "old": "Gizli parolayı biliyorsun. Bodrumdaki VIP bölümüne girmek ve mekânın sahibi Saeki ile konuşmak için bar tezgâhının sağındaki kapıya git.",
+      "text": "Gizli parolayı biliyorsun. Bodrumdaki VIP bölümüne girmek ve mekânın sahibi Sieki ile konuşmak için bar tezgâhının sağındaki kapıya git.",
+      "reason": "Saeki为源Sieki拼写变体，同一VIP区老板，统一人物标签与任务称呼Sieki。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "You know the secret password, go to the bar door to the right of the counter to enter the vip basement and talk to saeki owner of the place.",
+        "zh_context": "你已经知道秘密口令。去酒吧柜台右侧的门，进入地下贵宾区，和老板茜姬交谈。",
+        "context": "367角色Sieki；368说明管理VIP区域；1722去找Sieki，1723在酒吧地下室接续同一任务。"
+      }
+    },
+    {
+      "locale": "tr",
+      "id": 6688,
+      "old": "Yardımına ihtiyacımız var. Arkadaşım Ava'yı arıyoruz. Kendisi bir melek ve Saeki senin onun hakkında bir şeyler biliyor olabileceğini söyledi.",
+      "text": "Yardımına ihtiyacımız var. Arkadaşım Ava'yı arıyoruz. Kendisi bir melek ve Sieki senin onun hakkında bir şeyler biliyor olabileceğini söyledi.",
+      "reason": "Saeki为源Sieki拼写变体，同一VIP区老板，统一人物标签与任务称呼Sieki。",
+      "source_evidence": {
+        "source": "DDTLQ-Multilingual-Patch/translation-source.json",
+        "en": "We need your help we are looking for my friend Ava she is an angel and Saeki said you might know about her.",
+        "zh_context": "我们需要你的帮助，在找我的朋友艾娃，她是个天使。茜姬说，你可能知道她的事。",
+        "context": "367角色Sieki；368说明管理VIP区域；1722去找Sieki，1723在酒吧地下室接续同一任务。"
+      }
+    },
+    {
+      "locale": "ru",
+      "id": 1889,
+      "old": "Кубик зелья восстанавливает ману. Кубик разбитого сердца снижает урон врага, интервал между его атаками и эффективность лечения.",
+      "text": "Кубик зелья восстанавливает ману. Кубик разбитого сердца снижает урон врага, частоту его атак и эффективность лечения.",
+      "reason": "Original tutorial says attack interval but actual heart_timer slows the attack accumulator: reduce attack frequency, not interval.",
+      "source_evidence": "gml_Object_o_enemie_Step_0.gml:10-40"
+    },
+    {
+      "locale": "es",
+      "id": 1889,
+      "old": "El cubo de poción restaura maná. El cubo del corazón roto reduce el daño, el intervalo de ataque y la curación del enemigo.",
+      "text": "El cubo de poción restaura maná. El cubo del corazón roto reduce el daño, la frecuencia de ataque y la curación del enemigo.",
+      "reason": "Original tutorial says attack interval but actual heart_timer slows the attack accumulator: reduce attack frequency, not interval.",
+      "source_evidence": "gml_Object_o_enemie_Step_0.gml:10-40"
+    },
+    {
+      "locale": "ja",
+      "id": 1889,
+      "old": "ポーションキューブはマナを回復する。割れたハートのキューブは、敵のダメージ、攻撃間隔、回復効果を低下させる。",
+      "text": "ポーションキューブはマナを回復する。割れたハートのキューブは、敵のダメージ、攻撃頻度、回復効果を低下させる。",
+      "reason": "Original tutorial says attack interval but actual heart_timer slows the attack accumulator: reduce attack frequency, not interval.",
+      "source_evidence": "gml_Object_o_enemie_Step_0.gml:10-40"
+    },
+    {
+      "locale": "ko",
+      "id": 1889,
+      "old": "물약 큐브는 마나를 회복해. 깨진 하트 큐브는 적의 공격력, 공격 간격, 회복 효과를 낮춰.",
+      "text": "물약 큐브는 마나를 회복해. 깨진 하트 큐브는 적의 공격력, 공격 빈도, 회복 효과를 낮춰.",
+      "reason": "Original tutorial says attack interval but actual heart_timer slows the attack accumulator: reduce attack frequency, not interval.",
+      "source_evidence": "gml_Object_o_enemie_Step_0.gml:10-40"
+    },
+    {
+      "locale": "tr",
+      "id": 1889,
+      "old": "İksir küpü manayı yeniler. Kırık kalp küpü ise düşmanın hasarını, saldırı aralığını ve iyileşmesini azaltır.",
+      "text": "İksir küpü manayı yeniler. Kırık kalp küpü ise düşmanın hasarını, saldırı sıklığını ve iyileşmesini azaltır.",
+      "reason": "Original tutorial says attack interval but actual heart_timer slows the attack accumulator: reduce attack frequency, not interval.",
+      "source_evidence": "gml_Object_o_enemie_Step_0.gml:10-40"
+    }
+  ],
+  "remaining_source_ambiguities": [
+    "3727: brown thighs is an ambiguous source garment description; preserve general legwear wording rather than invent a precise garment.",
+    "1495 / 2602: original directions differ in the number of left turns; not silently rewritten without map-route evidence."
+  ]
+}

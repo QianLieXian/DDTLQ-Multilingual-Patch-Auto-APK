@@ -18,6 +18,8 @@ LITERAL = re.compile(r'"(?:[^"\\]|\\.)*"')
 # Preserve literal percent signs too, without consuming the following word.
 TOKENS = re.compile(r'%(?:\d+\$)?[-+0#]*\d*(?:\.\d+)?[sdif](?![A-Za-z])|%|\{[A-Za-z_][A-Za-z_0-9]*\}|<3|\\[nrt]')
 
+TRANSLATOR_META = re.compile(r"\b(?:as an AI|I (?:can't|cannot) translate|translation (?:withheld|pending|omitted))\b|翻訳.{0,16}(?:保留|省略)|年齢確認.{0,24}(?:必要|ため)|번역.{0,12}(?:보류|불가)|перевод.{0,20}(?:приостановлен|невозможен)|çeviri.{0,20}(?:bekletil|yapılam)", re.I)
+
 def load(path):
     return json.loads(path.read_text('utf-8-sig'))
 
@@ -33,6 +35,8 @@ def indexed(rows, expected, label):
             raise ValueError(f'{label}: duplicate ID {ident}')
         if not isinstance(text, str) or not text.strip():
             raise ValueError(f'{label}: empty/non-string text {ident}')
+        if TRANSLATOR_META.search(text):
+            raise ValueError(f'{label}: translator meta text at ID {ident}')
         if unicodedata.normalize('NFC', text) != text:
             raise ValueError(f'{label}: text must use NFC Unicode at {ident}')
         result[ident] = text
@@ -100,6 +104,8 @@ def compile_locale(locale, fonts12, fonts10):
     allowed = translated.get('allowed_unchanged', {})
     for ident, text in texts.items():
         original = core[ident]['en']
+        if TRANSLATOR_META.search(text):
+            raise ValueError(f'Translator meta text is not game dialogue: ID {ident}')
         if ident in [1988, 4007] and text != original:
             raise ValueError(f'ID {ident} is an internal wrapping-width sentinel and must preserve the source')
         if ident in [6185, 6186]:
@@ -132,7 +138,7 @@ def compile_locale(locale, fonts12, fonts10):
     for row in legacy_rows:
         row['zh'] = texts.get(row['id'], row['source'])
     dump(temp / 'payload/translations.json', legacy_rows)
-    mapping = {ui[ident]['source_zh']: text.replace('r5','r6') if ident in ['ui:037','ui:040'] else text
+    mapping = {ui[ident]['source_zh']: text.replace('r5','r7').replace('r6','r7') if ident in ['ui:037','ui:040'] else text
                for ident, text in ui_texts.items()}
     for path in list((temp / 'payload/feature-gml').glob('*.gml')) + list((temp / 'android').glob('*.smali')) + list((temp / 'android').glob('*.json')):
         if path.name == 'gml_Script_zh_display.gml':

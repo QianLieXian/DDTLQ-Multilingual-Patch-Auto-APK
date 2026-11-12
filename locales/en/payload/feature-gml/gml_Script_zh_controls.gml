@@ -6,9 +6,10 @@ var scheme=argument0, moving="Directional buttons", accept="Z", back="X", pause=
 if(scheme==1){moving="W A S D";accept="K";back="L";}
 if(scheme==2){moving="W A S D";accept="Spacebar";back="Q";pause="Tab";}
 if(os_type==os_android){moving="Left analog stick";accept="Confirm button on the right / Z";back="Back button on the right / X";pause="Pause button at the bottom";}
+if(variable_global_exists("zh_pad_device") && global.zh_pad_device>=0){moving="Xbox LS / D-Pad";accept="A";back="B";pause="Start";}
 draw_text(20,52,moving+": Move");
 draw_text(20,84,accept+": Confirm / Talk / Interact / Run");
 draw_text(20,116,back+": Cancel / Back");
 draw_text(20,148,pause+": Menu / Pause / Quit battle");
-draw_text(20,180,"Touch or mouse: drag blocks    N: Fullscreen");
+if(variable_global_exists("zh_pad_device") && global.zh_pad_device>=0)draw_text(20,180,"RS + RT/X | LT | LB/RB | Y/View");else draw_text(20,180,"Touch or mouse: drag blocks    N: Fullscreen");
 draw_set_font(oldfont);draw_set_color(oldcolor);draw_set_alpha(oldalpha);draw_set_halign(oldh);draw_set_valign(oldv);

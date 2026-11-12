@@ -16,7 +16,7 @@ def refresh():
         if path.suffix.lower() in {'.apk','.exe','.dll','.win','.droid','.dat','.zip','.7z','.keystore','.jks','.pyc'}:
             raise ValueError('Unexpected binary/private build artifact: '+str(rel))
         files.append({'path':rel.as_posix(),'sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
-    manifest['version']='2.01.04-multilingual-r6'
+    manifest['version']='2.01.04-multilingual-r7'
     manifest['files']=files
     (ROOT/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
     print('Source-only manifest:',len(files),'files')

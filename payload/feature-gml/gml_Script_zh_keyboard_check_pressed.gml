@@ -1,4 +1,4 @@
-if(global.zh_panel || global.zh_input_cooldown>0)return false;
+if(global.zh_load_active || global.zh_panel || global.zh_input_cooldown>0)return false;
 var key=argument0, touched=false;
 if(os_type==os_android && instance_exists(o_android_controls)) {
  var ctl=o_android_controls;
@@ -8,4 +8,4 @@ if(os_type==os_android && instance_exists(o_android_controls)) {
  case vk_enter: case vk_tab: touched=ctl.button_tab.button_pressionado; break;
  }
 }
-return keyboard_check_pressed(key) || touched;
+return keyboard_check_pressed(key) || touched || zh_pad_key(key,1);

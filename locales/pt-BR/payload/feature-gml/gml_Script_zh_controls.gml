@@ -6,9 +6,10 @@ var scheme=argument0, moving="Teclas direcionais", accept="Z", back="X", pause="
 if(scheme==1){moving="W A S D";accept="K";back="L";}
 if(scheme==2){moving="W A S D";accept="Barra de espaço";back="Q";pause="Tab";}
 if(os_type==os_android){moving="Analógico esquerdo";accept="OK à direita / Z";back="Voltar à direita / X";pause="Pausa perto da parte inferior";}
+if(variable_global_exists("zh_pad_device") && global.zh_pad_device>=0){moving="Xbox LS / D-Pad";accept="A";back="B";pause="Start";}
 draw_text(20,52,moving+": mover");
 draw_text(20,84,accept+": confirmar / conversar / interagir / correr");
 draw_text(20,116,back+": cancelar / voltar");
 draw_text(20,148,pause+": menu / pausar / sair da batalha");
-draw_text(20,180,"Toque ou mouse: arraste os blocos    N: tela cheia");
+if(variable_global_exists("zh_pad_device") && global.zh_pad_device>=0)draw_text(20,180,"RS + RT/X | LT | LB/RB | Y/View");else draw_text(20,180,"Toque ou mouse: arraste os blocos    N: tela cheia");
 draw_set_font(oldfont);draw_set_color(oldcolor);draw_set_alpha(oldalpha);draw_set_halign(oldh);draw_set_valign(oldv);

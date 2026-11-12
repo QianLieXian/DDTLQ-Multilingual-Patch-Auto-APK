@@ -7,3 +7,9 @@ Sur Android : joystick à gauche, Valider (Z) et Retour (X) à droite, Pause en 
 Touchez l’écran pour cliquer ; maintenez le doigt et déplacez-le pour glisser. L/R choisissent le bouton gauche/droit de la souris ; utilisez L normalement. Le bouton d’aide en haut ouvre le menu. Glisser sur une option ne la valide pas.
 
 [简体中文](README.md) · [English](README.en.md) · [Português](README.pt-BR.md) · [Русский](README.ru.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md)
+
+## Xbox
+
+Les manettes Xbox sont prises en charge directement. Le stick gauche (LS) ou la croix directionnelle permet de se déplacer ; A valide et lance les conversations, B revient en arrière et Start met en pause. Y ou View ouvre « Aide ». Le stick droit (RS) déplace le curseur virtuel. RT ou X correspond au clic gauche : maintenez la touche pour faire glisser un élément. LT correspond au clic droit. Maintenez LB pour déplacer le curseur avec précision, ou RB pour accélérer. Les manettes USB et Bluetooth sont reconnues par le système, sans logiciel de configuration supplémentaire.
+
+Après la connexion ou le retour au jeu, relâchez les boutons et recentrez les sticks avant de continuer.

@@ -36,3 +36,10 @@ Display translation now uses an indexed lookup instead of repeatedly searching t
 Public downloads contain **patch source, translations, configuration and instructions only**. Original game files, audio, CG and complete game APKs are excluded. Obtain a compatible original game and build locally. Public versions use regular Latest releases.
 
 [Validation](VALIDATION.md) · [License notices](licenses/NOTICE.txt) · [Touch patch source](android/TOUCH-PATCH.md)
+
+
+## Native Xbox input — Windows and Android
+
+Connect a controller recognised by the OS via USB or Bluetooth. No keyboard-mapping application is required. LS/D-pad move; A confirms/talks, B goes back, Start pauses, and Y/View toggles Helper. RS moves the virtual cursor. RT or X holds the left mouse button for clicks/drags, LT is right click, LB gives precise cursor motion and RB speeds it up. Release all buttons and centre the sticks after connecting, returning to the game or changing scenes.
+
+r7 corrects 391 entries across the eight other translations, including 23 Japanese placeholder omissions. [Review evidence and limits](maintainer/R7-TRANSLATION-AUDIT.json). Native controller APIs are integrated; automated script-level input tests do not constitute physical-controller or Android-device testing.
