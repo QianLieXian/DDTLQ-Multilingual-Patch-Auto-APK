@@ -1,6 +1,7 @@
 ﻿param([string]$ApkPath)
 try {
     . (Join-Path $PSScriptRoot 'common.ps1')
+    . (Join-Path $PSScriptRoot 'android\apk-zip.ps1')
     Select-PatchLanguage 'zh-CN'
     if (!$ApkPath) {
         $candidate = @(Get-ChildItem -LiteralPath $PSScriptRoot -Filter '*.apk' -File)
@@ -29,6 +30,7 @@ try {
         foreach ($entry in @($zip.Entries)) { if ($entry.FullName -eq $gameEntry -or $entry.FullName -match '^META-INF/[^/]+\.(SF|RSA|DSA|EC|MF)$') { $entry.Delete() } }
         [IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zip, $patchedData, $gameEntry, [IO.Compression.CompressionLevel]::Optimal) | Out-Null
     } finally { $zip.Dispose() }
+    Repair-ApkZipHeaders $unsigned | Out-Host
     $javaZip = Join-Path $ToolsDirectory 'java17.zip'
     Get-CheckedDownload $PatchManifest.java.url $javaZip $PatchManifest.java.sha256
     $javaRoot = Join-Path $ToolsDirectory 'java'
@@ -49,6 +51,7 @@ try {
     if ($signed.Count -ne 1) { throw '没有找到唯一的签名成品。' }
     & $java.FullName '-Dfile.encoding=UTF-8' '-jar' $signer '-a' $signed[0].FullName '-y'
     if ($LASTEXITCODE -ne 0) { throw '签名或对齐校验失败。' }
+    Test-ApkZipHeaders $signed[0].FullName | Out-Host
     $final = Join-Path $build 'DDTLQ-2.01.04-zh-android.apk'
     Move-Item -LiteralPath $signed[0].FullName -Destination $final
     $zip = [IO.Compression.ZipFile]::OpenRead($final)

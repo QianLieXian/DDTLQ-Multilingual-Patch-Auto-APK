@@ -1,5 +1,7 @@
 # Doki Doki Tri-Line Quest (DDTLQ) — Français
 
+**Correction du plantage Android, r8 :** Des descripteurs ZIP incohérents dans les APK r7 empêchaient le chargement des classes de démarrage. Pour toutes les langues, les en-têtes sont normalisés avant signature ; la structure et les CRC sont vérifiés après signature. Recréez votre APK avec r8. Le nouvel essai sur le téléphone concerné reste à faire.
+
 Il vous faut votre propre version Windows compatible de DDTLQ 2.01.04 Beta. Lancez `WindowsPatch.bat` pour Windows ou `Build-APK.bat` pour Android. Choisissez **8 — Français**, appuyez sur Entrée, puis indiquez le dossier de votre jeu Windows. Le résultat est placé dans `output`. Le programme crée une APK signée à partir de vos propres fichiers ; aucune APK Android d’origine n’est nécessaire. Android 7 ou plus récent, ARM64. Ce paquet contient uniquement le correctif et les outils, pas le jeu complet.
 
 Sur Android : joystick à gauche, Valider (Z) et Retour (X) à droite, Pause en bas. Le bouton « Aide » ouvre les fonctions supplémentaires. Traduction : brouillon par IA et révision contextuelle locale par Codex ; aucun parcours intégral ni test par un locuteur natif n’est revendiqué.

@@ -1,5 +1,7 @@
 # Doki Doki Tri-Line Quest (DDTLQ) — Türkçe
 
+**Android kapanma düzeltmesi r8:** r7 APK dosyalarındaki tutarsız ZIP veri tanımlayıcıları başlangıç sınıflarının yüklenmesini engelliyordu. Tüm dillerde imzalamadan önce başlıklar düzeltilir; sonrasında yapı ve açılmış verilerin CRC değerleri doğrulanır. APK dosyasını r8 ile yeniden oluşturun. Sorun yaşanan telefondaki tekrar testi henüz yapılmadı.
+
 ## Kurulum
 
 Kendi uyumlu **Doki Doki Tri-Line Quest 2.01.04 Beta Windows** oyun klasörünüz gerekir. Yama paketini tamamen çıkarın.

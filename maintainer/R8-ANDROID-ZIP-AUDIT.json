@@ -1,0 +1,17 @@
+{
+  "revision": "r8",
+  "issue": "Android startup crash before application creation",
+  "evidence": "Android 12 log: classes.dex extraction failed, ZIP size/crc32 mismatch; subsequent class-not-found errors",
+  "root_cause": "ZIP bit 3 set on 102 entries but required data descriptors absent",
+  "original_invalid_descriptors": 102,
+  "fixed_entries_checked": 235,
+  "fixed_invalid_descriptors": 0,
+  "decompressed_crc_size_check": "all 235 entries pass",
+  "signature": "v2/v3 and zipalign verified, same signing certificate as r7",
+  "versionCode": 2010408,
+  "apk_sha256": "5820cd959958d6a2d64cfb2bbb407e679024c56268934795db392f578e0d1af4",
+  "payload_comparison": "141 unchanged non-META-INF entries; only AndroidManifest.xml and classes18.dex changed for version metadata/text; game data/audio/native libs unchanged",
+  "pipeline": "All languages normalize ZIP headers before signing; final APK structure/descriptors/decompressed CRCs checked after signing",
+  "windows_powershell_5_1": "Original r7 rejected with 102 invalid descriptors; repaired signed r8 passes",
+  "android_device_retest": "pending; no successful phone runtime test claimed"
+}

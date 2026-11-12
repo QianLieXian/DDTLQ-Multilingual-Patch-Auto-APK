@@ -1,6 +1,7 @@
 ﻿param([string]$GameDirectory, [string]$Language)
 try {
     . (Join-Path $PSScriptRoot 'common.ps1')
+    . (Join-Path $PSScriptRoot 'android\apk-zip.ps1')
     Select-PatchLanguage $Language
     $GameDirectory = Resolve-GameDirectory $GameDirectory
     $source = Join-Path $GameDirectory 'data.win'
@@ -93,11 +94,12 @@ try {
     $xml.Save($manifestPath)
     $yamlPath=Join-Path $stage 'apktool.yml'
     $yaml=[IO.File]::ReadAllText($yamlPath)
-    $yaml=$yaml -replace 'versionCode: 32','versionCode: 2010407' -replace 'versionName: dev',('versionName: ' + $script:PatchVersion)
+    $yaml=$yaml -replace 'versionCode: 32','versionCode: 2010408' -replace 'versionName: dev',('versionName: ' + $script:PatchVersion)
     [IO.File]::WriteAllText($yamlPath,$yaml,(New-Object Text.UTF8Encoding($false)))
     $unsigned = Join-Path $nativeRoot 'DDTLQ-2.01.04-zh-port-unsigned.apk'
     & $java.FullName '-jar' $apktool 'b' $stage '-o' $unsigned >> (Join-Path $build 'apktool.log')
     if ($LASTEXITCODE -ne 0 -or !(Test-Path -LiteralPath $unsigned)) { throw '安卓构建失败，请查看 apktool.log。' }
+    Repair-ApkZipHeaders $unsigned | Out-Host
     $jar = [IO.Compression.ZipFile]::OpenRead($signer)
     try { [IO.Compression.ZipFileExtensions]::ExtractToFile($jar.GetEntry('debug.keystore'), (Join-Path $ToolsDirectory 'patch.keystore'), $true) } finally { $jar.Dispose() }
     $signDir = Join-Path $nativeRoot 'signed'
@@ -107,6 +109,7 @@ try {
     if ($signed.Count -ne 1) { throw '没有找到唯一的签名成品。' }
     & $java.FullName '-jar' $signer '-a' $signed[0].FullName '-y' >> (Join-Path $build 'sign.log')
     if ($LASTEXITCODE -ne 0) { throw 'APK 签名验证失败。' }
+    Test-ApkZipHeaders $signed[0].FullName | Out-Host
     $final = Join-Path $build ('DDTLQ-' + $script:PatchVersion + '-android.apk')
     Move-Item -LiteralPath $signed[0].FullName -Destination $final
     $zip = [IO.Compression.ZipFile]::OpenRead($final)

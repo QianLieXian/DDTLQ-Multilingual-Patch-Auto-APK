@@ -1,5 +1,5 @@
-{
-  "version": "2.01.04-multilingual-r7",
+﻿{
+  "version": "2.01.04-multilingual-r8",
   "pc_data_sha256": "22109979ad640925cd32f1e6e6b557866f06b38464ce62ed61d9315d487338b8",
   "utmt": {
     "url": "https://github.com/UnderminersTeam/UndertaleModTool/releases/download/0.9.2.0/UTMT_CLI_v0.9.2.0-Windows.zip",
@@ -28,7 +28,7 @@
     },
     {
       "path": "android/CrashApp.smali",
-      "sha256": "393de893a8985a455ffc7e27b37be7b207b61facd0144ee15c1a6b006bea8a32"
+      "sha256": "694307dcc071a7707ee2e27781694326af58a0f4789373d697ce33ef63e55c37"
     },
     {
       "path": "android/ddtlq_icon.xml",
@@ -48,7 +48,7 @@
     },
     {
       "path": "android/Launcher.smali",
-      "sha256": "1200268712993cb7328c8fd08df1d8b9cf4a4fb9e4a41c50a1f4c7d50d9c1ff0"
+      "sha256": "44e359eff9bcb0173065425cbf194be2d5c27c0ea59197ab706dea48d562b02b"
     },
     {
       "path": "android/LauncherReady.smali",
@@ -80,11 +80,11 @@
     },
     {
       "path": "build_android.ps1",
-      "sha256": "2e643a655c7d4bc55341befe0a41eea05e4a213db6183a852a613b6df9bcdba1"
+      "sha256": "022eacb2f37ea92dfde48d082c833b44dfde52722e841322c2ebf07c586397c5"
     },
     {
       "path": "common.ps1",
-      "sha256": "575cde74dda0c11c13bf43438a51f2903c49f0ce46e2b270e113281f052a17d3"
+      "sha256": "a750006c414a27f7a9f7304f37823f1bab0e974d0e49ee7187497b8f74d3ac0a"
     },
     {
       "path": "import_save.ps1",
@@ -120,7 +120,7 @@
     },
     {
       "path": "locales/de/android/CrashApp.smali",
-      "sha256": "30b0e3b3dd635b9346b266d32c66f4d491b5899b9c32d2772d0ac3cf01560d0d"
+      "sha256": "1c298192cf5e0d2f37369fb98aeea3c0eed7d1d1569dc60e36a102044d1e2fba"
     },
     {
       "path": "locales/de/android/ddtlq_icon.xml",
@@ -140,7 +140,7 @@
     },
     {
       "path": "locales/de/android/Launcher.smali",
-      "sha256": "421e7da8e32028d810407fa2a890a284524a0960837080a518366a74ff28572a"
+      "sha256": "8252c94115214658d96ad7419e4d3b31dd8da76d17c64f8b7e8c383b7333ce12"
     },
     {
       "path": "locales/de/android/LauncherReady.smali",
@@ -416,7 +416,7 @@
     },
     {
       "path": "locales/de/ui.json",
-      "sha256": "e91c6bae561156a9959f3c4fc6563ff39e663fde1ec1e974ea2b434ce0e56c11"
+      "sha256": "159a74530a2823970fdb29492fece7ca477bd1f0a4c3086a2b3599e3ea47745b"
     },
     {
       "path": "locales/de/validation.json",
@@ -424,7 +424,7 @@
     },
     {
       "path": "locales/en/android/CrashApp.smali",
-      "sha256": "15052819bfcaa9ff42013b65eb733b1a2c0fb92fe9a7e0c66b6fc16f688a76d5"
+      "sha256": "749570614382af76597f52b929693761417da1e4625e048ec983b319a242a52e"
     },
     {
       "path": "locales/en/android/ddtlq_icon.xml",
@@ -444,7 +444,7 @@
     },
     {
       "path": "locales/en/android/Launcher.smali",
-      "sha256": "e165c2c9bf3e8cea76610aeb731541aac5b9674527092a9101617d5cf30a7d8d"
+      "sha256": "c39b46098c5ad6f7e61fe59cb79df9b7ecf3ac0d9634ca3287d3c6212cb4f44b"
     },
     {
       "path": "locales/en/android/LauncherReady.smali",
@@ -716,7 +716,7 @@
     },
     {
       "path": "locales/en/ui.json",
-      "sha256": "3ef7da9d7384d3eb01b0a018af57d7ec54e343b245598dfb4d41d8a427379186"
+      "sha256": "032998816fa5734808897d3647295f0598a16039355bacb97e8183919e78cc2e"
     },
     {
       "path": "locales/en/validation.json",
@@ -724,7 +724,7 @@
     },
     {
       "path": "locales/es/android/CrashApp.smali",
-      "sha256": "e89f7fbc75f6f11747d35db5de8096e0d40e4fc90e30a2bc60c2743aeceea556"
+      "sha256": "edd4080a0d10711bf781889ea0a9316422a3e27d9d562086346ae2b0e762de39"
     },
     {
       "path": "locales/es/android/ddtlq_icon.xml",
@@ -744,7 +744,7 @@
     },
     {
       "path": "locales/es/android/Launcher.smali",
-      "sha256": "cb78929b0e19d41986d15d314d36a0129fae0eb7b9674ca8dd0d4237b7ef922b"
+      "sha256": "4b15bf702c5f7682e0bb1be5892ac7b5405d9214f77cd63811085fb085ffda9c"
     },
     {
       "path": "locales/es/android/LauncherReady.smali",
@@ -1020,7 +1020,7 @@
     },
     {
       "path": "locales/es/ui.json",
-      "sha256": "7763f5b18a1fc6dc678b7c19eb34058a3e73ad571b9d2f7842443a2bcad7d03b"
+      "sha256": "68927ebcf7266032335c9a54d9a670b5d644c43e12e4ac4ae3a7d6898fd4f4d2"
     },
     {
       "path": "locales/es/validation.json",
@@ -1028,7 +1028,7 @@
     },
     {
       "path": "locales/fr/android/CrashApp.smali",
-      "sha256": "23947b0fc3ea6a18d7e20865ece3013210b38c6281fe57d0ab4f49f2d7dba64c"
+      "sha256": "bfef2db784f89fdbabc2f6e8ae67ba742ce6ca2da51eacc6c52ba9f6437ce7e9"
     },
     {
       "path": "locales/fr/android/ddtlq_icon.xml",
@@ -1048,7 +1048,7 @@
     },
     {
       "path": "locales/fr/android/Launcher.smali",
-      "sha256": "f30696e76b07ea152708b7a922ad7e0570f4310fc4e5193b13fe00b99d34799a"
+      "sha256": "a8d05283bdc6de090594bbaf0dba7ef552c8f6c990d61cd292083a42960b5004"
     },
     {
       "path": "locales/fr/android/LauncherReady.smali",
@@ -1324,7 +1324,7 @@
     },
     {
       "path": "locales/fr/ui.json",
-      "sha256": "f1460460ec2b74f24519a1666cec44e1c518b57c5c6de8cf1ad802773262b43c"
+      "sha256": "b058dfdfce9ff9a1408e8f73530ea0a718776889ee19b46d710b38d4a2bd436a"
     },
     {
       "path": "locales/fr/validation.json",
@@ -1332,7 +1332,7 @@
     },
     {
       "path": "locales/ja/android/CrashApp.smali",
-      "sha256": "f8420182cef9880eaaeea293ddf0344643a941b1a5ef19dbea8a2f6dfbaa4222"
+      "sha256": "25cf09b830b26c98822605aa18e528db54b1a2d0d62f1ea63e938b4fb8e7ae22"
     },
     {
       "path": "locales/ja/android/ddtlq_icon.xml",
@@ -1352,7 +1352,7 @@
     },
     {
       "path": "locales/ja/android/Launcher.smali",
-      "sha256": "a84adb000d34c04d8e4f54c1a7daf6b2888439353bdec921520b301190501d42"
+      "sha256": "8961e85e59bd29e9c64ebd920af4bbcf2b97cdf294b1a2f39892fd7a58ba24f6"
     },
     {
       "path": "locales/ja/android/LauncherReady.smali",
@@ -1624,7 +1624,7 @@
     },
     {
       "path": "locales/ja/ui.json",
-      "sha256": "f6b848f3e495d33905cacd94b82e2220b17ff92429b1b3e16aae5af88b6d2ccf"
+      "sha256": "adc7441ae1d08af878682f62ad7becd7b3130f4857e7e4d8b5b34e04f0efa26b"
     },
     {
       "path": "locales/ja/validation.json",
@@ -1632,7 +1632,7 @@
     },
     {
       "path": "locales/ko/android/CrashApp.smali",
-      "sha256": "48e4b37f1063de19049dcd5566bb46d0895c98a835b8721554f9e5dce43faa6d"
+      "sha256": "a4562e193580147649eaffd2d45e5bed89fe28aac11a21495d09d2abd34444d4"
     },
     {
       "path": "locales/ko/android/ddtlq_icon.xml",
@@ -1652,7 +1652,7 @@
     },
     {
       "path": "locales/ko/android/Launcher.smali",
-      "sha256": "05540deb8205127bb4228e765261b1e95e978accac4e7d152da963e6f2386124"
+      "sha256": "519af6066a8e7f222a45b1ac4b0322382b40b52ff1db52b0954be514c1f3bac7"
     },
     {
       "path": "locales/ko/android/LauncherReady.smali",
@@ -1928,7 +1928,7 @@
     },
     {
       "path": "locales/ko/ui.json",
-      "sha256": "42758cd363520944a7ff231b76930038df0f723327585126a64d87eec7d268e6"
+      "sha256": "b9ecb33b15450106651e488bc9bb4dc6d16f04ddaf10241cbc61e8d7c4d9c15c"
     },
     {
       "path": "locales/ko/validation.json",
@@ -1936,7 +1936,7 @@
     },
     {
       "path": "locales/pt-BR/android/CrashApp.smali",
-      "sha256": "68bf9a260392429f3027176543103aa3c27df44a991159bd6dc7da4b8aacf3a8"
+      "sha256": "c4e1c222947c63a10a1bbc88ba264f80305cf474bb9a5edc484e337e6e9b4db5"
     },
     {
       "path": "locales/pt-BR/android/ddtlq_icon.xml",
@@ -1956,7 +1956,7 @@
     },
     {
       "path": "locales/pt-BR/android/Launcher.smali",
-      "sha256": "ce157baf6fd51ee9185520c7cf019c7900d4c5f0dad81137abb2d710ed197600"
+      "sha256": "b5d3a56103d07e38a41029b06f19d0d204742d89b94c96429af69e115a18a61c"
     },
     {
       "path": "locales/pt-BR/android/LauncherReady.smali",
@@ -2228,7 +2228,7 @@
     },
     {
       "path": "locales/pt-BR/ui.json",
-      "sha256": "59705b986bc8f5791779817d5ac7b3eb9485cf71d98e835f8a99ae6a4dafad63"
+      "sha256": "b172e63bda80ef74ac2e52baaf235439384f7a92807a3a8fab58ed3fa9d37a89"
     },
     {
       "path": "locales/pt-BR/validation.json",
@@ -2236,7 +2236,7 @@
     },
     {
       "path": "locales/ru/android/CrashApp.smali",
-      "sha256": "534e80c1635a628f60c6d42c98a82f83e57bb7149dceed686de3e4515636dfd1"
+      "sha256": "167a790a657f01cb150d47b20cfa4d5af199887062029bc4f24c1c6774311a0d"
     },
     {
       "path": "locales/ru/android/ddtlq_icon.xml",
@@ -2256,7 +2256,7 @@
     },
     {
       "path": "locales/ru/android/Launcher.smali",
-      "sha256": "03522dd907a1a531c30bb463d662f1df0982f9e88103e6d508f26d3b2340544c"
+      "sha256": "117bae24cf1e9cf0ee03c728c48447042da98f8e0e50bf1217555625a6215e8c"
     },
     {
       "path": "locales/ru/android/LauncherReady.smali",
@@ -2532,7 +2532,7 @@
     },
     {
       "path": "locales/ru/ui.json",
-      "sha256": "7f798700cd350398a206fb124348f16e2e649811246a05449a140cd0fc5c3220"
+      "sha256": "27de2dfd09d3eb3e1e7957109950703ca385e9952b5007f0ce344a93a226ccf2"
     },
     {
       "path": "locales/ru/validation.json",
@@ -2540,7 +2540,7 @@
     },
     {
       "path": "locales/tr/android/CrashApp.smali",
-      "sha256": "c53611722fa54f1dc4b32c479a6606a8c6bb87e252801239a5ea4867674fb591"
+      "sha256": "6a85b5e48b5f0982979dd06aa7aefbb2098ab2b8472b6cd7d7ea1a5342448948"
     },
     {
       "path": "locales/tr/android/ddtlq_icon.xml",
@@ -2560,7 +2560,7 @@
     },
     {
       "path": "locales/tr/android/Launcher.smali",
-      "sha256": "2444097c118e7e844213a03337c40bb1ad4972ad0b94250ed432783f407f72fd"
+      "sha256": "959bf8b44e284a0ddb8141938e200c089849717221191eb3ce8dec98e30ec730"
     },
     {
       "path": "locales/tr/android/LauncherReady.smali",
@@ -2836,7 +2836,7 @@
     },
     {
       "path": "locales/tr/ui.json",
-      "sha256": "f03132d28f6064109f8b541b9708c48240656d8fa0b6af6f2c91f06123ca8cb3"
+      "sha256": "965660a98f388100fec49e1bafb5d16c33ac58411f6c9f47d7802e1d69427c2a"
     },
     {
       "path": "locales/tr/validation.json",
@@ -2844,7 +2844,7 @@
     },
     {
       "path": "locales/zh-CN/android/CrashApp.smali",
-      "sha256": "29b241d5610adb91e8488c0c87da584450f43fc8e85796c698a881f35936db77"
+      "sha256": "adff5c1d83f0a859652cd2f3f95be4bd36871edf590f82f2ca8ea98808aa47f1"
     },
     {
       "path": "locales/zh-CN/android/ddtlq_icon.xml",
@@ -2864,7 +2864,7 @@
     },
     {
       "path": "locales/zh-CN/android/Launcher.smali",
-      "sha256": "9084072ed60841b4d097233054349570021cbe8a645a4b8495cd9de4c40f3676"
+      "sha256": "7a09ba3955f961f850d3c8cf28fcf2f679a4d5ea3670212530e778ad0146ec32"
     },
     {
       "path": "locales/zh-CN/android/LauncherReady.smali",
@@ -3132,7 +3132,7 @@
     },
     {
       "path": "locales/zh-CN/ui.json",
-      "sha256": "4b11064f162ddcfbc0ce1e041be0c2b9e09a2efa6734bf0e63aa524f9e27762a"
+      "sha256": "e7fa74f294ad1eca5b24f8c6b67adadad97ccd98a2e39cc8d50b8646d8a7ff38"
     },
     {
       "path": "locales/zh-CN/validation.json",
@@ -3172,7 +3172,7 @@
     },
     {
       "path": "patch_original_apk.ps1",
-      "sha256": "850d2e2bce946a07097ca6568620b9691182922220524308aa46c5fc2c9ee4a5"
+      "sha256": "147a141d8f7cb4e49ee2aadd383a56b7e83b71662d69be707e4513b15e6dc5d9"
     },
     {
       "path": "patch_pc.ps1",
@@ -3416,35 +3416,35 @@
     },
     {
       "path": "README.de.md",
-      "sha256": "8a1628f8d53c803e9ab850276614fd913dc7497a9a9d329987ddebd4aad2a071"
+      "sha256": "e82ec201ae77bf31a8a01e960c138c47c9ed83ee37c9a00f7fc33810e9d0922e"
     },
     {
       "path": "README.es.md",
-      "sha256": "0134d41a5f94662d70568e9f0dd56975b6d8be4246551d8d3d8946591f2b0364"
+      "sha256": "d63ad4cd48cc8223ba2e8c9a63143aa399af58626bef27ff1807d9f98581f690"
     },
     {
       "path": "README.fr.md",
-      "sha256": "ca217e4e978a8b6bbc343c158dc680bbb3c0bf4a59a41a0050e3576450f60e4b"
+      "sha256": "cf70e3565844823b161bee6140c85c0e95fc385b46fa8c82a4080b66ff9dc767"
     },
     {
       "path": "README.ja.md",
-      "sha256": "8c3c26571771a5a9dc303142fcddaa12a44d6e736fe29f9cfde52a61d76cc015"
+      "sha256": "b75c1175fa9245ac3ec15b246ee4143ce5653373c7daac2c09849bfe0335f2d3"
     },
     {
       "path": "README.ko.md",
-      "sha256": "8692400182a225acf94e4d6022610c1f14c4eca78586305e14ba08ff7f733122"
+      "sha256": "d93df8329af7456664f2512000b2269b8bd8e84ab889c246faecc9e9e77b8602"
     },
     {
       "path": "README.pt-BR.md",
-      "sha256": "d3a9099aca4348c4c416a073ee218395a702728c6f0c79823970a8c77359017a"
+      "sha256": "e374e24de387c28c1cf5898d70660bb42b54ea6d64b9ca31048173f5caa3a3dc"
     },
     {
       "path": "README.ru.md",
-      "sha256": "dc6c02dae3b460d0416ab49d997c370fec238c0e6174eb1ca533d58c821c52e0"
+      "sha256": "b0477dac9df2a9f8a13cc2509136b9ce96f1f981f5624d0730982ab7362f1615"
     },
     {
       "path": "README.tr.md",
-      "sha256": "8e69657449b6b8f0568864975fe5968d3279db01f7f72de4d29a5b939d986093"
+      "sha256": "3768678e960e0ba0617f0f54a15f2f839656a307d033557b11cb637ef28c3069"
     },
     {
       "path": "saves/Memory Quartz Line 99.ini",
@@ -3473,6 +3473,14 @@
     {
       "path": "导入城镇辅助存档.bat",
       "sha256": "c554b603745887895a8d6c437ef35d6242c889fbfb54551de06a4e60900e7bf8"
+    },
+    {
+      "path": "android/apk-zip.ps1",
+      "sha256": "0b35e1562cf64a757a7c06e85ac44eb49d51750a1a1cd96d4184a66562d7ba3a"
+    },
+    {
+      "path": "maintainer/R8-ANDROID-ZIP-AUDIT.json",
+      "sha256": "4aa53190c72f78440d0b35e45af41c514c355cae3b8a104946b0739355868013"
     }
   ]
 }

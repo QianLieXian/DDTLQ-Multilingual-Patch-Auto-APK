@@ -58,7 +58,7 @@ function Select-PatchLanguage([string]$Language) {
     $script:PatchPackage = 'com.qianliexian.ddtlq.' + $script:PatchLocale.ToLowerInvariant().Replace('-','_')
     if ($script:PatchLocale -eq 'zh-CN') { $script:PatchPackage = 'com.qianliexian.ddtlq.zh' }
     $script:PatchLabel = 'DDTLQ ' + $script:PatchLocale
-    $script:PatchVersion = '2.01.04-' + $script:PatchLocale + '-r7'
+    $script:PatchVersion = '2.01.04-' + $script:PatchLocale + '-r8'
     Write-Host ('Selected / 已选择：' + $selected[0].name)
 }
 function Resolve-GameDirectory([string]$GameDirectory) {

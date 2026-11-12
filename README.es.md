@@ -1,5 +1,7 @@
 # Doki Doki Tri-Line Quest (DDTLQ) — Español
 
+**Corrección de cierre en Android, r8:** Los descriptores ZIP incoherentes de los APK r7 impedían cargar las clases de inicio. Todas las versiones normalizan las cabeceras antes de firmar y comprueban la estructura y los CRC después. Vuelve a crear el APK con r8. Falta repetir la prueba en el teléfono afectado.
+
 ## Windows
 1. Extrae el paquete completo del parche. Ten tu propia copia compatible de DDTLQ 2.01.04 Beta para Windows.
 2. Ejecuta `WindowsPatch.bat`, elige **5 — Español** y pulsa **Enter**.

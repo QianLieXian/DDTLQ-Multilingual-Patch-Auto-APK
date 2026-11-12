@@ -1,5 +1,7 @@
 # Doki Doki Tri-Line Quest — patch em português do Brasil
 
+**Correção de falha no Android, r8:** Descritores ZIP inconsistentes nos APKs r7 impediam o carregamento das classes de inicialização. Em todos os idiomas, os cabeçalhos são normalizados antes da assinatura; a estrutura e os CRCs são verificados depois. Gere o APK novamente com r8. Ainda falta repetir o teste no celular afetado.
+
 ## Instalação no Windows
 
 1. Tenha uma cópia original e compatível de **Doki Doki Tri-Line Quest 2.01.04 Beta para Windows**.
